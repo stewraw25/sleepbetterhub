@@ -42,8 +42,8 @@ export default async function BlogPost({ params }: Props) {
       </header>
 
       {post.image && (
-        <div className="mb-10 rounded-2xl overflow-hidden border">
-          <Image src={post.image} alt={`${post.title} — sleep science guide`} width={1200} height={630} className="w-full h-auto" />
+        <div className="mb-10 rounded-2xl overflow-hidden border relative aspect-[1200/630]">
+          <Image src={post.image} alt={`${post.title} — sleep science guide`} fill sizes="100vw" className="object-cover" />
         </div>
       )}
 

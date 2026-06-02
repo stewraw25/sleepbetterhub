@@ -80,7 +80,7 @@ export default async function ProductReviewPage({ params }: Props) {
             </div>
 
             <div className="mt-6 rounded-3xl overflow-hidden border bg-card aspect-[16/9] md:aspect-[16/8.5] relative">
-              <Image src={product.image} alt={`${product.name} mouth tape strips — best for ${product.bestFor.join(', ')} 2026`} fill className="object-cover" />
+              <Image src={product.image} alt={`${product.name} mouth tape strips — best for ${product.bestFor.join(', ')} 2026`} fill sizes="(max-width: 1024px) 100vw, 800px" className="object-cover" />
             </div>
 
             <div className="prose review-prose mt-8 max-w-none">

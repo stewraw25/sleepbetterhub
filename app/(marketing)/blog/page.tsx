@@ -16,7 +16,7 @@ export default function BlogIndex() {
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group block rounded-2xl border overflow-hidden bg-card hover:border-primary/40 transition">
             {post.image && (
               <div className="h-48 bg-muted overflow-hidden relative">
-                <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition" />
+                <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition" />
               </div>
             )}
             <div className="p-6">

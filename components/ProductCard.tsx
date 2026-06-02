@@ -17,6 +17,7 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
           src={product.image} 
           alt={product.name} 
           fill
+          sizes="(max-width: 768px) 100vw, 320px"
           className="object-cover group-hover:scale-105 transition-transform duration-500" 
         />
         <div className="absolute top-3 right-3 flex gap-1.5">
