@@ -63,8 +63,8 @@ export const mouthTapeProducts: Product[] = [
       'Breathe only through your nose.',
       'In morning, slowly peel from one corner.',
     ],
-    affiliateLink: 'https://example.com/affiliate/dream-recovery?ref=sleepbetterhub',
-    // amazonAsin: Use real UK ASIN from amazon.co.uk search for Dream Recovery (or set NEXT_PUBLIC_AFF_DREAM_RECOVERY in .env.local)
+    affiliateLink: 'https://www.amazon.co.uk/s?k=premium+mouth+tape+for+sleep&tag=stewraw25-21',
+    amazonAsin: 'B0CBCQ8YT6', // Longevity Sleep Tape (gentle, derm-tested 30pk) - good match for premium gentle tape; credits stewraw25-21
     image: '/images/dream-recovery-tape.jpg',
     featured: true,
     inStock: true,
@@ -107,7 +107,7 @@ export const mouthTapeProducts: Product[] = [
       'If you feel the need to breathe orally, the vent allows small airflow.',
     ],
     affiliateLink: 'https://example.com/affiliate/somnifix?ref=sleepbetterhub',
-    amazonAsin: 'B08P7Z5Q2T', // SomniFix Sleep Strips UK - from Amazon.co.uk search (verify stock/availability; credits stewraw25-21 via /go/)
+    amazonAsin: 'B0GG5MYR3C', // HASLOM Hypoallergenic with central breathing hole (close to SomniFix vented design, 60 strips) - current popular UK listing; credits stewraw25-21
     image: '/images/somnifix-tape.jpg',
     featured: true,
     inStock: true,
@@ -188,7 +188,7 @@ export const mouthTapeProducts: Product[] = [
       'Store pack in cool dry place.',
     ],
     affiliateLink: 'https://example.com/affiliate/zzztape?ref=sleepbetterhub',
-    // amazonAsin: No strong brand match on .co.uk at time of check; use NEXT_PUBLIC_AFF_ZZZTAPE or pick popular "mouth tape sleep" ASIN e.g. B0D2T9F8L6 if suitable
+    amazonAsin: 'B0CJDGFLJ1', // 60PCS Adult Mouth Tape (value high-volume gentle pack) - solid budget match for ZzzTape Pro; credits stewraw25-21 via /go/
     image: '/images/mouth-tape-product.jpg',
     inStock: true,
   },
@@ -263,7 +263,7 @@ export const mouthTapeProducts: Product[] = [
       'Works well with most sleep positions.',
     ],
     affiliateLink: 'https://example.com/affiliate/sayless?ref=sleepbetterhub',
-    // amazonAsin: SayLess brand limited UK Amazon presence; override with NEXT_PUBLIC_AFF_SAYLESS or update ASIN after manual .co.uk search
+    amazonAsin: 'B0DM9W7Q4G', // Premium Mouth Tape by Like A Log (30pk, good everyday balance) - solid match for SayLess all-rounder; credits stewraw25-21
     image: '/images/mouth-tape-product.jpg',
     inStock: true,
   },
@@ -335,7 +335,7 @@ export const allProducts: Product[] = [
     safetyNotes: ['Not a medical device. Consult professionals for diagnosed conditions.'],
     howToUse: ['Wear consistently. Review daily Readiness and Sleep scores in app.'],
     affiliateLink: 'https://example.com/affiliate/oura?ref=sleepbetterhub',
-    // amazonAsin: Oura Ring usually best via official site (affiliate program or direct); Amazon UK third-party listings vary - prefer AFF_ override or official
+    amazonAsin: 'B0CSRF8JGG', // Oura Ring Gen3 Heritage (black) - current UK listing; commissions via tag stewraw25-21. For higher rates consider official Oura affiliate + NEXT_PUBLIC_AFF_OURA override
     image: '/images/gadget-tracker.jpg',
     featured: true,
     inStock: true,
@@ -357,8 +357,8 @@ export const allProducts: Product[] = [
     longDescription: 'Pod 4 uses water circulation to actively cool or warm your bed throughout the night based on your sleep stages. Many users report transformative sleep quality improvements.',
     safetyNotes: ['Follow setup carefully. Not for use with certain medical conditions without doctor approval.'],
     howToUse: ['Place cover on mattress, connect hub, set temperature schedule in app.'],
-    affiliateLink: 'https://example.com/affiliate/eight-sleep?ref=sleepbetterhub',
-    // amazonAsin: Eight Sleep Pod 4 primarily direct (US/UK site); limited or no reliable Amazon.co.uk official - use AFF_ or official link
+    affiliateLink: 'https://www.amazon.co.uk/s?k=eight+sleep+pod&tag=stewraw25-21',
+    // No reliable direct ASIN for Pod 4 on Amazon UK (direct brand sales preferred); fallback search link includes your tag. Use NEXT_PUBLIC_AFF_EIGHT_SLEEP for official program if joined.
     image: '/images/eight-sleep-pod.jpg',
     inStock: true,
   },
@@ -380,8 +380,8 @@ export const allProducts: Product[] = [
     longDescription: 'Tempur material was developed by NASA. It absorbs movement and cradles the body like no other. Best for those who want to "sink in" and wake with fewer aches.',
     safetyNotes: ['Off-gassing period of 24-72 hours recommended.'],
     howToUse: ['Use on solid foundation. Allow full expansion before first sleep.'],
-    affiliateLink: 'https://example.com/affiliate/tempur-pedic?ref=sleepbetterhub',
-    // amazonAsin: Tempur-Pedic large ticket - usually direct brand or mattress retailers with affiliate; Amazon.co.uk may have but check model
+    affiliateLink: 'https://www.amazon.co.uk/s?k=tempur+pedic+adapt&tag=stewraw25-21',
+    // Large ticket item, best via brand direct affiliate program if available (set NEXT_PUBLIC_AFF_TEMPUR_PEDIC). Fallback Amazon search with your tag.
     image: '/images/mattress.jpg',
     inStock: true,
   },
@@ -403,8 +403,8 @@ export const allProducts: Product[] = [
     longDescription: 'Magnesium glycinate is gentle on the stomach and has excellent absorption. It supports GABA activity and muscle relaxation, helping you fall asleep faster and deeper.',
     safetyNotes: ['Consult doctor if on medications. Start with lower dose.'],
     howToUse: ['Take 30-60 min before bed. 200-400mg elemental magnesium.'],
-    affiliateLink: 'https://example.com/affiliate/magnesium-thorne?ref=sleepbetterhub',
-    // amazonAsin: Thorne direct or specialist (Amazon UK stock for Thorne Mag varies); prefer brand affiliate or update with current /dp/ ASIN
+    affiliateLink: 'https://www.amazon.co.uk/s?k=magnesium+glycinate+400mg&tag=stewraw25-21',
+    // Thorne often best via direct (set NEXT_PUBLIC_AFF_MAGNESIUM). Fallback broad search for glycinate 400mg with tag. Popular generics widely available.
     image: '/images/magnesium-supplement.jpg',
     inStock: true,
   },
@@ -425,8 +425,8 @@ export const allProducts: Product[] = [
     longDescription: 'Apigenin binds to GABA receptors similarly to benzodiazepines but much milder. Many biohackers stack 50mg Apigenin + 300-400mg Magnesium Glycinate + optional L-Theanine 30-60 min before bed.',
     safetyNotes: ['Do not combine with sedatives without medical advice.'],
     howToUse: ['Take with magnesium 45 minutes before desired bedtime.'],
-    affiliateLink: 'https://example.com/affiliate/apigenin?ref=sleepbetterhub',
-    // amazonAsin: Apigenin - many generic UK options on Amazon; use specific if matching brand or set AFF_ override
+    affiliateLink: 'https://www.amazon.co.uk/s?k=apigenin+50mg&tag=stewraw25-21',
+    // Many good generic 50mg options; set NEXT_PUBLIC_AFF_APIGENIN for specific brand program if you join one.
     image: '/images/magnesium-supplement.jpg',
     inStock: true,
   },
