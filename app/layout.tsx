@@ -25,16 +25,16 @@ export const metadata: Metadata = {
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepbetterhub.com')
   ),
   title: {
-    default: 'SleepBetterHub | Best Mouth Tape 2026, Sleep Strips & Insomnia Remedies',
+    default: 'SleepBetterHub | Best Mouth Tape 2026, Sleep Strips & How to Fall Asleep Fast',
     template: '%s | SleepBetterHub',
   },
-  description: 'Expert-tested mouth tape reviews, practical guides for how to fall asleep fast, sleep anxiety remedies, and evidence-based tools to stop mouth breathing. Honest 2026 comparisons for deeper sleep — side sleepers, CPAP, beards & sensitive skin.',
+  description: 'Expert-tested mouth tape & sleep strips 2026 reviews. Practical guides for how to fall asleep fast naturally, sleep anxiety remedies, stop mouth breathing at night. Honest comparisons for side sleepers, beards, CPAP & sensitive skin — evidence-based & safe.',
   icons: {
     icon: '/favicon.ico',
   },
   openGraph: {
-    title: 'SleepBetterHub — Best Mouth Tape 2026, Sleep Anxiety Remedies & Insomnia Help',
-    description: 'Independent reviews of the best mouth tape and sleep strips. Science-backed guides on how to fall asleep faster, reduce sleep anxiety, and switch to nasal breathing safely.',
+    title: 'SleepBetterHub — Best Mouth Tape 2026, Sleep Strips & How to Fall Asleep Fast',
+    description: 'Independent 2026 reviews of the best mouth tape, sleep strips & nasal tools. Science-backed guides on how to fall asleep fast naturally, sleep anxiety remedies, stop mouth breathing safely.',
     images: [{ url: '/images/hero-bedroom.jpg' }],
   },
   twitter: {

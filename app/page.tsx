@@ -1,14 +1,14 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Award, Users, Star, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ProductCard } from '@/components/ProductCard';
 import { Newsletter } from '@/components/Newsletter';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
-import { mouthTapeProducts, allProducts } from '@/lib/products';
+import { allProducts } from '@/lib/products';
 import { blogPosts } from '@/lib/blog';
 
 export default function Home() {
-  const featuredMouthTape = mouthTapeProducts.filter(p => p.featured).slice(0, 4);
   const trending = allProducts.filter(p => p.featured || p.rating > 4.5).slice(0, 6);
   const latestPosts = blogPosts.slice(0, 3);
 
@@ -49,9 +49,11 @@ export default function Home() {
             {/* Hero visual - contained, no overlap */}
             <div className="lg:col-span-5 hidden lg:block">
               <div className="relative">
-                <img 
+                <Image 
                   src="/images/hero-bedroom.jpg" 
                   alt="Calming modern bedroom setup for deeper sleep and insomnia relief" 
+                  width={600}
+                  height={480}
                   className="rounded-3xl object-cover w-full h-[420px] lg:h-[480px] shadow-2xl" 
                 />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/10 to-transparent" />
@@ -131,10 +133,12 @@ export default function Home() {
 
             <div className="md:col-span-5">
               <div className="rounded-3xl bg-card border p-2 shadow-sm">
-                <img 
-                  src="/images/mouth-tape-product.jpg" 
-                  alt="Premium mouth tape and sleep strips for how to stop mouth breathing at night" 
-                  className="rounded-2xl w-full" 
+                <Image 
+                  src="/images/value-mouth-tape.jpg" 
+                  alt="Affordable high-volume mouth tape sleep strips for beginners and value seekers - how to stop mouth breathing at night" 
+                  width={600}
+                  height={400}
+                  className="rounded-2xl w-full h-auto" 
                 />
               </div>
             </div>
@@ -147,7 +151,7 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-semibold tracking-tight">Why thousands trust SleepBetterHub for insomnia relief &amp; better sleep</h2>
-            <p className="text-muted-foreground mt-2">We test products ourselves with real side sleepers, beard owners and CPAP users. No sponsored "best of" lists. Evidence-based guides for sleep anxiety, mouth breathing &amp; more.</p>
+            <p className="text-muted-foreground mt-2">We test products ourselves with real side sleepers, beard owners and CPAP users. No sponsored &quot;best of&quot; lists. Evidence-based guides for sleep anxiety, mouth breathing &amp; more.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -203,7 +207,7 @@ export default function Home() {
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group block rounded-2xl border bg-card overflow-hidden card-hover">
                 {post.image && (
                   <div className="h-40 overflow-hidden bg-muted">
-                    <img src={post.image} alt="" className="w-full h-full object-cover group-hover:scale-[1.03] transition" />
+                    <Image src={post.image} alt={post.title} width={400} height={200} className="w-full h-full object-cover group-hover:scale-[1.03] transition" />
                   </div>
                 )}
                 <div className="p-5">

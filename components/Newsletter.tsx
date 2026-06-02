@@ -35,8 +35,9 @@ export function Newsletter() {
         description: 'Check your inbox for the latest research + product updates.',
       });
       setEmail('');
-    } catch (err: any) {
-      toast.error(err.message || 'Something went wrong. Please try again.');
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : 'Something went wrong. Please try again.';
+      toast.error(msg);
     } finally {
       setLoading(false);
     }

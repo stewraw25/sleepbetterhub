@@ -37,7 +37,7 @@ Dream Recovery earned the highest average score (4.8/5). Testers loved the balan
 Hostage Tape surprised us with incredible hold even on thick beards at a lower price. SomniFix's wider design and vent gave peace of mind to several testers.
 
 ## Best Value: ZzzTape Pro
-If you're testing the waters or on a budget, ZzzTape delivers 60 nights for under $13. Great for beginners.
+If you're testing the waters or on a budget, ZzzTape delivers 60 nights for under £10. Great for beginners.
 
 ## Key Takeaways 2026
 1. Gentler is usually better for long-term adherence.
@@ -148,7 +148,7 @@ Mouth taping is training wheels. The goal is to not need them forever.` ,
     slug: 'sleep-hygiene-2026',
     title: 'The 2026 Evidence-Based Sleep Hygiene Checklist (No Hacks, Just What Works)',
     excerpt: 'We cut through the influencer noise. Here are the interventions with the strongest evidence for improving sleep quality and consistency.',
-    content: `Sleep optimization has become a $100B+ industry filled with gadgets and supplements of varying value.
+    content: `Sleep optimization has become a multi-billion pound industry filled with gadgets and supplements of varying value.
 
 Here is what actually moves the needle, ranked roughly by impact:
 

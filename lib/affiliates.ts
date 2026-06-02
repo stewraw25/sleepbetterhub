@@ -19,13 +19,14 @@
 import { getProductBySlug } from './products';
 
 const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG || 'stewraw25-21';
+const AMAZON_DOMAIN = process.env.NEXT_PUBLIC_AMAZON_DOMAIN || 'www.amazon.co.uk'; // e.g. set to www.amazon.com for US market (use matching tag)
 
 function getAmazonUrl(asin: string): string {
   if (!AMAZON_TAG) {
-    return `https://www.amazon.co.uk/dp/${asin}`; // fallback without tag
+    return `https://${AMAZON_DOMAIN}/dp/${asin}`; // fallback without tag
   }
-  // Standard Amazon Associates link format for UK
-  return `https://www.amazon.co.uk/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
+  // Standard Amazon Associates link format - domain + tag must match your Associates account region for proper crediting
+  return `https://${AMAZON_DOMAIN}/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
 }
 
 const AFFILIATE_OVERRIDES: Record<string, string> = {

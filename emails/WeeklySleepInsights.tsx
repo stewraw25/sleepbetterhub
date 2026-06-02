@@ -43,7 +43,7 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
 
           {/* Featured articles */}
           <Section>
-            {featuredPosts.map((post, index) => (
+            {featuredPosts.map((post) => (
               <div key={post.slug} style={{ marginBottom: '32px' }}>
                 <Text style={articleCategory}>{post.category} • {post.readTime}</Text>
                 <Heading as="h2" style={articleTitle}>
@@ -82,7 +82,7 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
 
           {/* Footer */}
           <Text style={footer}>
-            You're receiving this because you subscribed to SleepBetterHub Weekly Sleep Insights.
+            You&apos;re receiving this because you subscribed to SleepBetterHub Weekly Sleep Insights.
             <br />
             <Link href="https://sleepbetterhub.com" style={footerLink}>sleepbetterhub.com</Link> · 
             <Link href="https://sleepbetterhub.com/about" style={footerLink}> Unsubscribe</Link>

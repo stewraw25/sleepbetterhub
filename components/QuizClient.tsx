@@ -115,7 +115,7 @@ export default function QuizClient() {
   const getRecommendations = (): { top: Product[]; reason: string; warning?: string } => {
     const a = answers as Answer;
 
-    let scored = mouthTapeProducts.map((p) => {
+    const scored = mouthTapeProducts.map((p) => {
       let score = p.rating * 10; // base on rating
 
       // Strong signals
@@ -214,7 +214,7 @@ export default function QuizClient() {
                     <Button variant="outline">Read Full Review</Button>
                   </Link>
                   <a href={getInternalAffiliateLink(product.slug)} target="_blank" rel="noopener noreferrer sponsored">
-                    <Button>Buy Now (Affiliate)</Button>
+                    <Button>Buy Now (Affiliate • UK Amazon)</Button>
                   </a>
                 </div>
               </div>

@@ -34,7 +34,7 @@ export async function GET(
   }
 
   // Get the final destination (respects env var overrides)
-  let destination = getAffiliateUrl(slug);
+  const destination = getAffiliateUrl(slug);
 
   // Optional: append consistent tracking parameters
   // You can customize this per program if needed

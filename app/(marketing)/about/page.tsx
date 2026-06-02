@@ -1,4 +1,4 @@
-import { Shield, Award, Users } from 'lucide-react';
+
 import { Newsletter } from '@/components/Newsletter';
 
 export default function AboutPage() {

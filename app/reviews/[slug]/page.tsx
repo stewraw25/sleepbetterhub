@@ -144,7 +144,7 @@ export default async function ProductReviewPage({ params }: Props) {
                   <Button size="lg" className="w-full text-base h-12">Buy on Official Site (Affiliate)</Button>
                 </a>
                 <p className="text-[10px] text-center text-muted-foreground mt-2.5">
-                  Affiliate link. We earn a small commission if you purchase. Thank you for supporting independent reviews.
+                  Affiliate link (Amazon UK store — ships to many countries worldwide). We earn a small commission if you purchase. Thank you for supporting independent reviews.
                 </p>
 
                 <Separator className="my-5" />
@@ -202,7 +202,7 @@ export default async function ProductReviewPage({ params }: Props) {
             offers: {
               '@type': 'Offer',
               url: product.affiliateLink,
-              priceCurrency: 'USD',
+              priceCurrency: 'GBP',
               price: product.priceValue,
               availability: 'https://schema.org/InStock',
             },

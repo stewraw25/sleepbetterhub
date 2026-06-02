@@ -3,15 +3,14 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
-import { Star, Filter, ArrowUpDown } from 'lucide-react';
+import { Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
-import { Checkbox } from '@/components/ui/checkbox';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ProductCard } from '@/components/ProductCard';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
-import { mouthTapeProducts, bestForOptions, Product } from '@/lib/products';
+import { mouthTapeProducts, bestForOptions } from '@/lib/products';
 import { SafetyAlert } from '@/components/SafetyAlert';
 
 type SortOption = 'rating' | 'price-low' | 'price-high' | 'reviews';
@@ -279,6 +278,14 @@ export default function MouthTapeHub() {
               {
                 q: "How long does it take to get used to mouth taping?",
                 a: "Most people adapt in 3–7 nights. Start with shorter periods (first half of night or naps), use the gentlest tape, and combine with nasal strips or saline rinses for best results."
+              },
+              {
+                q: "Best mouth tape for side sleepers 2026?",
+                a: "Dream Recovery and similar gentle wide tapes excel for side sleepers because they stay put without shifting. Look for medical-grade low-tack adhesive and breathable fabric."
+              },
+              {
+                q: "Best beard friendly mouth tape UK?",
+                a: "Hostage Tape and SomniFix-style vented strips are favorites for beards. Strong hold without residue is key; many beard owners report only these stay all night."
               }
             ].map((item, i) => (
               <div key={i} className="border rounded-xl p-5 bg-card">
@@ -318,6 +325,16 @@ export default function MouthTapeHub() {
                 "@type": "Question",
                 "name": "How long does it take to get used to mouth taping?",
                 "acceptedAnswer": { "@type": "Answer", "text": "Most people adapt in 3–7 nights. Start with shorter periods (first half of night or naps), use the gentlest tape, and combine with nasal strips or saline rinses for best results." }
+              },
+              {
+                "@type": "Question",
+                "name": "Best mouth tape for side sleepers 2026?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Dream Recovery and similar gentle wide tapes excel for side sleepers because they stay put without shifting. Look for medical-grade low-tack adhesive and breathable fabric." }
+              },
+              {
+                "@type": "Question",
+                "name": "Best beard friendly mouth tape UK?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Hostage Tape and SomniFix-style vented strips are favorites for beards. Strong hold without residue is key; many beard owners report only these stay all night." }
               }
             ]
           })

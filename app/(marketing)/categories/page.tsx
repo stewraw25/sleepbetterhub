@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { getProductsByCategory, categoryLabels } from '@/lib/products';
-import { ProductCard } from '@/components/ProductCard';
 
 const categorySlugs = ['nasal', 'gadgets', 'mattresses', 'supplements'] as const;
 

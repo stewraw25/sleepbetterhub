@@ -6,7 +6,7 @@ export type Product = {
   category: 'mouth-tape' | 'nasal' | 'gadgets' | 'mattresses' | 'supplements' | 'bedding';
   rating: number; // 0-5
   reviewCount: number;
-  price: string; // e.g. "$14.99 / 30 nights"
+  price: string; // e.g. "£13.49 / 30 strips" (GBP for UK/international compatibility)
   priceValue: number; // for sorting
   bestFor: string[]; // tags
   pros: string[];
@@ -32,8 +32,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.8,
     reviewCount: 1243,
-    price: '$16.99 / 30 strips',
-    priceValue: 16.99,
+    price: '£13.49 / 30 strips',
+    priceValue: 13.49,
     bestFor: ['Side Sleepers', 'Sensitive Skin', 'CPAP Users'],
     pros: [
       'Gentle medical-grade adhesive, no residue',
@@ -77,8 +77,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.6,
     reviewCount: 2891,
-    price: '$23.99 / 28 nights',
-    priceValue: 23.99,
+    price: '£18.99 / 28 nights',
+    priceValue: 18.99,
     bestFor: ['Beards', 'Side Sleepers', 'CPAP Users'],
     pros: [
       'Patented "mouth strip" design with center vent for safety',
@@ -120,8 +120,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.7,
     reviewCount: 967,
-    price: '$14.99 / 30 nights',
-    priceValue: 14.99,
+    price: '£11.99 / 30 nights',
+    priceValue: 11.99,
     bestFor: ['Beards', 'Heavy Mouth Breathers', 'Value'],
     pros: [
       'Outstanding value – great performance at lower price',
@@ -161,8 +161,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.4,
     reviewCount: 612,
-    price: '$12.49 / 60 strips',
-    priceValue: 12.49,
+    price: '£9.99 / 60 strips',
+    priceValue: 9.99,
     bestFor: ['Value', 'Beginners', 'Sensitive Skin'],
     pros: [
       'Best value – 60 strips per pack',
@@ -189,7 +189,7 @@ export const mouthTapeProducts: Product[] = [
     ],
     affiliateLink: 'https://www.amazon.co.uk/dp/B0CJDGFLJ1?tag=stewraw25-21',
     amazonAsin: 'B0CJDGFLJ1', // 60PCS Adult Mouth Tape (value high-volume gentle pack) - solid budget match for ZzzTape Pro; credits stewraw25-21 via /go/
-    image: '/images/mouth-tape-product.jpg',
+    image: '/images/value-mouth-tape.jpg',
     inStock: true,
   },
   {
@@ -200,8 +200,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.5,
     reviewCount: 431,
-    price: '$18.50 / 25 nights',
-    priceValue: 18.5,
+    price: '£14.99 / 25 nights',
+    priceValue: 14.99,
     bestFor: ['Sensitive Skin', 'Children (teens)', 'Light Sleepers'],
     pros: [
       'Extremely gentle – best for sensitive skin and first-timers',
@@ -238,8 +238,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.3,
     reviewCount: 289,
-    price: '$15.99 / 35 nights',
-    priceValue: 15.99,
+    price: '£12.99 / 35 nights',
+    priceValue: 12.99,
     bestFor: ['Side Sleepers', 'Value', 'Everyday Use'],
     pros: [
       'Great balance of price, quantity, and performance',
@@ -264,7 +264,7 @@ export const mouthTapeProducts: Product[] = [
     ],
     affiliateLink: 'https://www.amazon.co.uk/dp/B0DM9W7Q4G?tag=stewraw25-21',
     amazonAsin: 'B0DM9W7Q4G', // Premium Mouth Tape by Like A Log (30pk, good everyday balance) - solid match for SayLess all-rounder; credits stewraw25-21
-    image: '/images/mouth-tape-product.jpg',
+    image: '/images/value-mouth-tape.jpg',
     inStock: true,
   },
 ];
@@ -280,8 +280,8 @@ export const allProducts: Product[] = [
     category: 'nasal',
     rating: 4.5,
     reviewCount: 4521,
-    price: '$14.99 / 30 strips',
-    priceValue: 14.99,
+    price: '£11.99 / 30 strips',
+    priceValue: 11.99,
     bestFor: ['Congestion', 'Allergies', 'Snoring'],
     pros: ['Drug-free instant relief', 'Clinically proven to open airways', 'Easy to apply and remove', 'Widely available'],
     cons: ['Single-use only', 'Can leave slight mark on nose if worn long'],
@@ -302,8 +302,8 @@ export const allProducts: Product[] = [
     category: 'nasal',
     rating: 4.2,
     reviewCount: 387,
-    price: '$24.99 / 2-pack (reusable)',
-    priceValue: 24.99,
+    price: '£19.99 / 2-pack (reusable)',
+    priceValue: 19.99,
     bestFor: ['Athletes', 'Stronger Dilation', 'Reusable'],
     pros: ['Reusable for months', 'Stronger physical dilation than external strips', 'No adhesive on skin'],
     cons: ['Can feel unusual inside nose at first', 'Needs regular cleaning'],
@@ -325,8 +325,8 @@ export const allProducts: Product[] = [
     category: 'gadgets',
     rating: 4.7,
     reviewCount: 892,
-    price: '$299–$549',
-    priceValue: 299,
+    price: '£239–£439',
+    priceValue: 239,
     bestFor: ['Sleep Tracking', 'Recovery Data', 'Long-term Insights'],
     pros: ['Best-in-class sleep staging and readiness score', 'Comfortable 24/7 wear', 'Excellent app and insights', 'Long battery'],
     cons: ['Expensive', 'Subscription for full features after first year', 'Learning curve for data'],
@@ -348,8 +348,8 @@ export const allProducts: Product[] = [
     category: 'gadgets',
     rating: 4.8,
     reviewCount: 654,
-    price: '$2,499+ (mattress cover)',
-    priceValue: 2499,
+    price: '£1,999+ (mattress cover)',
+    priceValue: 1999,
     bestFor: ['Temperature Regulation', 'Couples', 'Deep Recovery'],
     pros: ['Active cooling/heating for bed', 'Tracks sleep automatically', 'Dramatic improvement for hot sleepers', 'Great for couples with dual zones'],
     cons: ['Very expensive', 'Requires subscription for full AI coaching', 'Fits specific mattresses'],
@@ -371,8 +371,8 @@ export const allProducts: Product[] = [
     category: 'mattresses',
     rating: 4.6,
     reviewCount: 2341,
-    price: '$1,899–$3,499 (Queen)',
-    priceValue: 1899,
+    price: '£1,499–£2,799 (Queen)',
+    priceValue: 1499,
     bestFor: ['Pressure Relief', 'Motion Isolation', 'Back Pain'],
     pros: ['Legendary pressure relief and body contouring', 'Excellent motion isolation for couples', 'Very durable'],
     cons: ['Heavy', 'Slow to respond (classic memory foam feel)', 'Heat retention in some models'],
@@ -394,8 +394,8 @@ export const allProducts: Product[] = [
     category: 'supplements',
     rating: 4.7,
     reviewCount: 3120,
-    price: '$22 / 60 servings',
-    priceValue: 22,
+    price: '£17 / 60 servings',
+    priceValue: 17,
     bestFor: ['Relaxation', 'Muscle Recovery', 'Sleep Onset'],
     pros: ['Highly bioavailable form', 'Calms nervous system without grogginess', 'Supports hundreds of body functions', 'Third-party tested'],
     cons: ['Takes 2-4 weeks for full effect for some', 'Can cause loose stools at high doses'],
@@ -416,8 +416,8 @@ export const allProducts: Product[] = [
     category: 'supplements',
     rating: 4.4,
     reviewCount: 487,
-    price: '$29 / 60 capsules',
-    priceValue: 29,
+    price: '£23 / 60 capsules',
+    priceValue: 23,
     bestFor: ['Deep Sleep', 'Anxiety Reduction', 'Stacking with Magnesium'],
     pros: ['Natural flavonoid from chamomile', 'Promotes calm without sedation hangover', 'Popular in Andrew Huberman sleep cocktail'],
     cons: ['Research still emerging for sleep specifically', 'Can interact with some medications'],
@@ -427,7 +427,7 @@ export const allProducts: Product[] = [
     howToUse: ['Take with magnesium 45 minutes before desired bedtime.'],
     affiliateLink: 'https://www.amazon.co.uk/s?k=apigenin+50mg&tag=stewraw25-21',
     // Many good generic 50mg options; set NEXT_PUBLIC_AFF_APIGENIN for specific brand program if you join one.
-    image: '/images/magnesium-supplement.jpg',
+    image: '/images/apigenin-supplement.jpg',
     inStock: true,
   },
 ];

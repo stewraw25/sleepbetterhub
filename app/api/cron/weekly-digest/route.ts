@@ -61,8 +61,9 @@ export async function GET(request: Request) {
       results,
       note: 'In production, replace testRecipients with a loop over your Resend audience contacts or trigger a Broadcast from the dashboard.',
     });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error('Weekly digest cron error:', err);
-    return NextResponse.json({ error: err.message || 'Failed to send digest' }, { status: 500 });
+    const msg = err instanceof Error ? err.message : 'Failed to send digest';
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
 }
