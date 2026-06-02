@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -187,7 +188,7 @@ export default function QuizClient() {
           {top.map((product, index) => (
             <div key={product.id} className="flex flex-col md:flex-row gap-5 rounded-2xl border bg-card p-6">
               <div className="md:w-48 shrink-0">
-                <img src={product.image} alt={`${product.name} recommended by sleep quiz`} className="rounded-xl w-full aspect-video object-cover" />
+                <Image src={product.image} alt={`${product.name} recommended by sleep quiz`} width={300} height={120} className="rounded-xl w-full aspect-video object-cover" />
               </div>
               <div className="flex-1">
                 <div className="flex items-start justify-between">

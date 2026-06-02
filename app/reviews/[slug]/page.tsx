@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Script from 'next/script';
+import Image from 'next/image';
 import { Star, Check, X, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -79,7 +80,7 @@ export default async function ProductReviewPage({ params }: Props) {
             </div>
 
             <div className="mt-6 rounded-3xl overflow-hidden border bg-card aspect-[16/9] md:aspect-[16/8.5]">
-              <img src={product.image} alt={`${product.name} mouth tape strips — best for ${product.bestFor.join(', ')} 2026`} className="object-cover w-full h-full" />
+              <Image src={product.image} alt={`${product.name} mouth tape strips — best for ${product.bestFor.join(', ')} 2026`} width={800} height={450} className="object-cover w-full h-full" />
             </div>
 
             <div className="prose review-prose mt-8 max-w-none">

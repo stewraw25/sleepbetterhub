@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Star, ArrowRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Product } from '@/lib/products';
@@ -12,9 +13,11 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl border bg-card transition-all hover:shadow-lg hover:-translate-y-0.5">
       <div className="relative h-44 bg-muted flex items-center justify-center overflow-hidden">
-        <img 
+        <Image 
           src={product.image} 
           alt={product.name} 
+          width={320}
+          height={176}
           className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
         />
         <div className="absolute top-3 right-3 flex gap-1.5">

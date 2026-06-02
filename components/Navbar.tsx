@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 import { Menu, Moon, Sun, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -34,7 +35,7 @@ export function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-2.5 font-semibold text-xl tracking-tight">
-            <img src="/images/logo.jpg" alt="SleepBetterHub" className="h-7 w-7 rounded-full object-cover ring-1 ring-border" />
+            <Image src="/images/logo.jpg" alt="SleepBetterHub" width={28} height={28} className="h-7 w-7 rounded-full object-cover ring-1 ring-border" />
             <span><span className="text-primary">Sleep</span>BetterHub</span>
           </Link>
 
