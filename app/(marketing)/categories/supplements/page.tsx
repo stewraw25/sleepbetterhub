@@ -19,7 +19,7 @@ export default function SupplementsCategory() {
       </div>
 
       <div className="mt-10">
-        <AdPlaceholder label="Supplements Ad Placeholder" />
+        <AdPlaceholder label="Supplements Mid-page Ad" />
       </div>
 
       <div className="prose text-sm text-muted-foreground mt-8 max-w-prose">

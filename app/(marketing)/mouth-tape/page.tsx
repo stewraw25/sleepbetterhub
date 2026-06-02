@@ -251,7 +251,7 @@ export default function MouthTapeHub() {
               <Button>Take the Sleep Quiz →</Button>
             </Link>
           </div>
-          <AdPlaceholder label="In-content / Mid-page AdSense" className="h-auto min-h-[138px]" />
+          <AdPlaceholder label="In-content / Mid-page Ad" className="h-auto min-h-[138px]" />
         </div>
 
         {/* FAQ SECTION — for featured snippets & E-E-A-T (2026 SEO) */}

@@ -22,7 +22,7 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
         />
         <div className="absolute top-3 right-3 flex gap-1.5">
           {product.featured && (
-            <Badge variant="secondary" className="bg-white/90 text-foreground backdrop-blur">Featured</Badge>
+            <Badge className="bg-black/70 text-white backdrop-blur border border-white/20">Featured</Badge>
           )}
           <Badge className="bg-primary/90 text-primary-foreground backdrop-blur">{product.brand}</Badge>
         </div>
