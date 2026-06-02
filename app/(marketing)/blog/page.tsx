@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { blogPosts } from '@/lib/blog';
 
 export default function BlogIndex() {
@@ -14,8 +15,8 @@ export default function BlogIndex() {
         {blogPosts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group block rounded-2xl border overflow-hidden bg-card hover:border-primary/40 transition">
             {post.image && (
-              <div className="h-48 bg-muted overflow-hidden">
-                <img src={post.image} alt="" className="w-full h-full object-cover group-hover:scale-105 transition" />
+              <div className="h-48 bg-muted overflow-hidden relative">
+                <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition" />
               </div>
             )}
             <div className="p-6">

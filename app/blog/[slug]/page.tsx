@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { blogPosts, getPostBySlug } from '@/lib/blog';
 import { Newsletter } from '@/components/Newsletter';
 
@@ -42,7 +43,7 @@ export default async function BlogPost({ params }: Props) {
 
       {post.image && (
         <div className="mb-10 rounded-2xl overflow-hidden border">
-          <img src={post.image} alt={`${post.title} — sleep science guide`} className="w-full" />
+          <Image src={post.image} alt={`${post.title} — sleep science guide`} width={1200} height={630} className="w-full h-auto" />
         </div>
       )}
 

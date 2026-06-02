@@ -55,6 +55,8 @@ export default function Home() {
                   width={600}
                   height={480}
                   className="rounded-3xl object-cover w-full h-[420px] lg:h-[480px] shadow-2xl" 
+                  priority
+                  loading="eager"
                 />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/10 to-transparent" />
               </div>

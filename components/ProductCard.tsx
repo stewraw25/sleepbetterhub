@@ -16,9 +16,8 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
         <Image 
           src={product.image} 
           alt={product.name} 
-          width={320}
-          height={176}
-          className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500" 
         />
         <div className="absolute top-3 right-3 flex gap-1.5">
           {product.featured && (
