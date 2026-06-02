@@ -471,25 +471,96 @@ components/
 
 ---
 
-## Deployment — Vercel (Recommended)
+## Deployment — Vercel (Recommended & Easiest)
 
-1. Push to GitHub
-2. Import project at [vercel.com/new](https://vercel.com/new)
-3. It auto-detects Next.js — just hit Deploy
-4. Add custom domain + set up env vars if you added any
+**Yes — it is very easy to put SleepBetterHub live.** The project is already a clean Next.js 16 production build (verified multiple times, 36 routes, static where possible, dynamic only for /go redirects and APIs). Vercel has first-class Next.js support and a generous free tier that is perfect for this.
 
-**Environment variables** (if you use them):
-- Nothing required out of the box.
-- For analytics: Vercel Analytics or Plausible is one-line.
-- For the newsletter (see "Newsletter & Weekly Emails" section below): `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `NEXT_PUBLIC_FROM_EMAIL`, `CRON_SECRET`
+### Quick Deploy Steps (10-15 minutes)
 
-**Production checklist before launch:**
-- [ ] Set up Amazon Associates (see "Amazon Associates (UK) Setup" section above) + any direct brand links
-- [ ] Add real OG images / update `metadataBase` in layout if custom domain
-- [ ] Set up real newsletter + weekly digest (Resend is already wired — see instructions below)
-- [ ] Consider adding a simple `/go/[slug]` redirect route for cleaner affiliate links + tracking
-- [ ] Test quiz on mobile
-- [ ] Run `npm run build` and fix any warnings
+1. **Commit & push to GitHub (one-time)**
+   - The local repo is already committed with the full site (including your `stewraw25-21` Amazon wiring).
+   - Create a new repository on GitHub (public or private, name it `sleepbetterhub` or similar).
+   - In your terminal (in the `sleepbetterhub` folder):
+     ```bash
+     git remote add origin https://github.com/YOUR_GITHUB_USERNAME/sleepbetterhub.git
+     git branch -M main
+     git push -u origin main
+     ```
+     (Replace `YOUR_GITHUB_USERNAME` with yours. You may need to authenticate via browser or GitHub CLI.)
+
+2. **Deploy on Vercel**
+   - Go to https://vercel.com/new
+   - Import your GitHub repo (search for `sleepbetterhub`).
+   - Vercel auto-detects it as a Next.js project.
+   - Click **Deploy**. It will build and give you a live URL like `https://sleepbetterhub-abc123.vercel.app`.
+
+3. **Add your critical environment variables (do this right after first deploy)**
+   - In Vercel dashboard → your project → **Settings → Environment Variables**.
+   - Add these (Production + Preview + Development scopes, or at least Production):
+
+     **Required for your Amazon commissions to work live:**
+     ```
+     NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=stewraw25-21
+     ```
+
+     **Optional right now (email/newsletter — you said leave for now):**
+     Copy the values from your local `.env.local` (but never commit the file itself):
+     ```
+     RESEND_API_KEY=re_ffcFKopK_...          # your real key
+     RESEND_AUDIENCE_ID=                     # (create one in Resend → Audiences if you want list management)
+     NEXT_PUBLIC_FROM_EMAIL=onboarding@resend.dev
+     CRON_SECRET=53b3152a...                 # the long one you have
+     TEST_EMAIL_RECIPIENTS=stewraw25@hotmail.co.uk
+     ```
+
+   - After adding vars, redeploy (or let Vercel auto-redeploy on the next push).
+
+4. **Test everything live**
+   - Visit your new Vercel URL.
+   - Browse the site (it should feel identical to local).
+   - **Test affiliate links** (the most important for £££):
+     - Click "Buy" on any product card (homepage trending, /mouth-tape, reviews, or quiz results).
+     - It goes through `/go/somnifix` etc. and should land on `amazon.co.uk/... ?tag=stewraw25-21&...&ref=sleepbetterhub`
+     - Do this for a few (SomniFix, Hostage Tape, Breathe Right are pre-wired with real ASINs).
+   - Check mobile (Vercel gives a nice preview).
+   - Submit the newsletter form — it will show success (uses dev fallback or sends welcome if you added the Resend key).
+
+5. **Custom domain (recommended for branding & SEO)**
+   - Buy a domain (e.g. sleepbetterhub.com or sleepbetterhub.co.uk) if you haven't.
+   - In Vercel → Domains → add it.
+   - Follow the DNS instructions (usually A or CNAME records — very quick).
+   - Once live on your domain:
+     - Update `metadataBase` in `app/layout.tsx` to your final URL:
+       ```ts
+       metadataBase: new URL('https://sleepbetterhub.com'),
+       ```
+     - (You can also set `NEXT_PUBLIC_SITE_URL` env var and make layout read it dynamically.)
+     - Redeploy.
+   - Submit your sitemap (`https://yourdomain.com/sitemap.xml`) to Google Search Console.
+
+### Production Checklist (current state)
+- [x] Amazon Associates UK tag `stewraw25-21` wired + real ASINs for top products (see "Amazon Associates (UK) Setup")
+- [x] All affiliate CTAs use clean internal `/go/[slug]` (easy to track or change later)
+- [x] `npm run build` clean (verified)
+- [x] SEO basics done (metadata, JSON-LD schemas, sitemap, OG images, keyword targeting from Trends research)
+- [ ] Add `NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=stewraw25-21` in Vercel (critical for earnings)
+- [ ] (Optional now) Set up Resend audience + full keys if you want real email signups + weekly digest
+- [ ] Update `metadataBase` + add custom domain
+- [ ] Test all /go/ links on the live domain
+- [ ] Add your site to Google Search Console + submit sitemap
+- [ ] (Later) Set up Vercel Cron for weekly digest if using Resend (Settings → Cron Jobs)
+
+**Environment variables summary for live monetization:**
+The only one you **must** set for commissions right now is the Amazon tag above. Everything else (Resend, AFF_ overrides for direct programs) is optional or can be added later.
+
+The site is already very production-ready. The first deploy will give you a shareable link immediately.
+
+### After Deploy
+- Update any links in content or social to the new domain.
+- Monitor Vercel logs for the /go redirects (you'll see the final Amazon URLs).
+- If an ASIN goes out of stock, either update it in `lib/products.ts` + push, or set a `NEXT_PUBLIC_AFF_XXX` override in Vercel env vars (takes precedence, no code change).
+
+Need help with the git push commands, a specific env var, or anything after you hit Deploy? Just paste the Vercel URL or any error here and I'll walk you through it.
 
 ---
 

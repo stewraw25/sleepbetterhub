@@ -19,7 +19,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sleepbetterhub.com'),
+  // Uses your final domain in production, falls back gracefully on Vercel preview URLs
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepbetterhub.com')
+  ),
   title: {
     default: 'SleepBetterHub | Best Mouth Tape 2026, Sleep Strips & Insomnia Remedies',
     template: '%s | SleepBetterHub',
