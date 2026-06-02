@@ -106,7 +106,7 @@ export const mouthTapeProducts: Product[] = [
       'Press firmly around edges.',
       'If you feel the need to breathe orally, the vent allows small airflow.',
     ],
-    affiliateLink: 'https://example.com/affiliate/somnifix?ref=sleepbetterhub',
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0GG5MYR3C?tag=stewraw25-21',
     amazonAsin: 'B0GG5MYR3C', // HASLOM Hypoallergenic with central breathing hole (close to SomniFix vented design, 60 strips) - current popular UK listing; credits stewraw25-21
     image: '/images/somnifix-tape.jpg',
     featured: true,
@@ -147,7 +147,7 @@ export const mouthTapeProducts: Product[] = [
       'Center over mouth and smooth outward.',
       'For beards: press around contours of facial hair.',
     ],
-    affiliateLink: 'https://example.com/affiliate/hostage-tape?ref=sleepbetterhub',
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0C9B492LN?tag=stewraw25-21',
     amazonAsin: 'B0C9B492LN', // Hostage Tape UK - from Amazon.co.uk (beard/CPAP friendly); tag stewraw25-21 via /go/
     image: '/images/hostage-tape.jpg',
     featured: true,
@@ -187,7 +187,7 @@ export const mouthTapeProducts: Product[] = [
       'Use one strip per night.',
       'Store pack in cool dry place.',
     ],
-    affiliateLink: 'https://example.com/affiliate/zzztape?ref=sleepbetterhub',
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0CJDGFLJ1?tag=stewraw25-21',
     amazonAsin: 'B0CJDGFLJ1', // 60PCS Adult Mouth Tape (value high-volume gentle pack) - solid budget match for ZzzTape Pro; credits stewraw25-21 via /go/
     image: '/images/mouth-tape-product.jpg',
     inStock: true,
@@ -225,7 +225,7 @@ export const mouthTapeProducts: Product[] = [
       'Perfect for gradual introduction – some users start with half nights.',
       'Remove very slowly in the morning.',
     ],
-    affiliateLink: 'https://example.com/affiliate/mytape?ref=sleepbetterhub',
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0G54DFVX7?tag=stewraw25-21',
     amazonAsin: 'B0G54DFVX7', // Gentle mouth tape (similar to MyoTape style) - sourced from Amazon.co.uk search results
     image: '/images/mytape.jpg',
     inStock: true,
@@ -262,7 +262,7 @@ export const mouthTapeProducts: Product[] = [
       'Standard application.',
       'Works well with most sleep positions.',
     ],
-    affiliateLink: 'https://example.com/affiliate/sayless?ref=sleepbetterhub',
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0DM9W7Q4G?tag=stewraw25-21',
     amazonAsin: 'B0DM9W7Q4G', // Premium Mouth Tape by Like A Log (30pk, good everyday balance) - solid match for SayLess all-rounder; credits stewraw25-21
     image: '/images/mouth-tape-product.jpg',
     inStock: true,
@@ -289,7 +289,7 @@ export const allProducts: Product[] = [
     longDescription: 'Breathe Right nasal strips gently lift and open nasal passages to improve airflow. Excellent complement or alternative for those who cannot mouth tape due to congestion.',
     safetyNotes: ['For external use only.', 'Discontinue if skin irritation occurs.'],
     howToUse: ['Clean nose. Peel and apply across bridge of nose. Press to activate spring action.'],
-    affiliateLink: 'https://example.com/affiliate/breathe-right?ref=sleepbetterhub',
+    affiliateLink: 'https://www.amazon.co.uk/dp/B017HO49RG?tag=stewraw25-21',
     amazonAsin: 'B017HO49RG', // Breathe Right Clear Nasal Strips - standard UK listing from Amazon.co.uk
     image: '/images/nasal-product.jpg',
     inStock: true,
@@ -311,7 +311,7 @@ export const allProducts: Product[] = [
     longDescription: 'Soft medical silicone internal dilators that physically expand the nasal valve. Many users combine with external strips for best results.',
     safetyNotes: ['Clean thoroughly after each use. Do not share.'],
     howToUse: ['Insert gently into each nostril until secure but comfortable.'],
-    affiliateLink: 'https://example.com/affiliate/nasal-dilator-pro?ref=sleepbetterhub',
+    affiliateLink: 'https://www.amazon.co.uk/dp/B00B4S61QE?tag=stewraw25-21',
     amazonAsin: 'B00B4S61QE', // Popular internal nasal dilator (Airmax style) widely available UK for sleep/breathing
     image: '/images/nasal-dilator.jpg',
     inStock: true,
@@ -334,7 +334,7 @@ export const allProducts: Product[] = [
     longDescription: 'Oura provides detailed nightly sleep architecture, HRV, temperature trends, and personalized recommendations. Indispensable for data-driven sleep improvement.',
     safetyNotes: ['Not a medical device. Consult professionals for diagnosed conditions.'],
     howToUse: ['Wear consistently. Review daily Readiness and Sleep scores in app.'],
-    affiliateLink: 'https://example.com/affiliate/oura?ref=sleepbetterhub',
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0CSRF8JGG?tag=stewraw25-21',
     amazonAsin: 'B0CSRF8JGG', // Oura Ring Gen3 Heritage (black) - current UK listing; commissions via tag stewraw25-21. For higher rates consider official Oura affiliate + NEXT_PUBLIC_AFF_OURA override
     image: '/images/gadget-tracker.jpg',
     featured: true,
