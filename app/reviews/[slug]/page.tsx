@@ -199,7 +199,7 @@ export default async function ProductReviewPage({ params }: Props) {
             name: product.name,
             brand: { '@type': 'Brand', name: product.brand },
             description: product.description,
-            image: `https://sleepbetterhub.com${product.image}`,
+            image: `${(process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepbetterhub.com'))}${product.image}`,
             offers: {
               '@type': 'Offer',
               url: product.affiliateLink,
@@ -236,7 +236,7 @@ export default async function ProductReviewPage({ params }: Props) {
             publisher: {
               '@type': 'Organization',
               name: 'SleepBetterHub',
-              url: 'https://sleepbetterhub.com'
+              url: (process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepbetterhub.com'))
             }
           })
         }} />
