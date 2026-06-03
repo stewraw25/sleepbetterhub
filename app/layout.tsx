@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   // Uses your final domain in production, falls back gracefully on Vercel preview URLs
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepbetterhub.com')
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepbetterhub.vercel.app')
   ),
   title: {
     default: 'SleepBetterHub | Best Mouth Tape 2026, Sleep Strips & How to Fall Asleep Fast',
