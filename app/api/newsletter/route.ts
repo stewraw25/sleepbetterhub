@@ -44,7 +44,7 @@ export async function POST(request: Request) {
     // Send a nice welcome email (works even without audience)
     try {
       await resend.emails.send({
-        from: process.env.NEXT_PUBLIC_FROM_EMAIL || 'onboarding@resend.dev',
+        from: process.env.NEXT_PUBLIC_FROM_EMAIL || 'hello@sleepmask.tech',
         to: email,
         subject: 'Welcome to SleepBetterHub Weekly Insights',
         html: `

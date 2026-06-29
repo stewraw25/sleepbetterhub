@@ -249,14 +249,14 @@ The "Weekly Sleep Insights" signup is **no longer fake** — it now uses **Resen
 
 2. Go to **Audiences** and create a new audience called **"SleepBetterHub Newsletter"** (or similar). Copy the Audience ID (long string like `78261a57-...`).
 
-3. (For real emails later) Go to **Domains**, add and verify your domain so you can send from a nice address like `insights@sleepmask.tech`. For testing you can use `onboarding@resend.dev`.
+3. (For real emails later) Go to **Domains**, add and verify your domain so you can send from a nice address like `hello@sleepmask.tech`. For testing you can use `onboarding@resend.dev`.
 
 4. Open the file `sleepbetterhub/.env.local` (it was already created for you) and replace the placeholder values:
 
    ```env
    RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxx          # paste your real key
    RESEND_AUDIENCE_ID=78261a57-0f3e-4e9c-9e5e-...      # paste the audience ID
-   NEXT_PUBLIC_FROM_EMAIL=insights@sleepmask.tech   # or onboarding@resend.dev for now
+   NEXT_PUBLIC_FROM_EMAIL=hello@sleepmask.tech   # or onboarding@resend.dev for now
    CRON_SECRET=your-super-secret-cron-key-here          # run `openssl rand -hex 32` in terminal and paste
    TEST_EMAIL_RECIPIENTS=your-real-email@example.com    # put your own email here for testing the digest
    ```
@@ -304,14 +304,14 @@ Once that works, you're good for local testing.
    - Go to Domains in Resend.
    - Add your domain (e.g. `sleepmask.tech` or `mail.sleepmask.tech`).
    - Add the DNS records they give you (DKIM, SPF, etc.).
-   - Once verified, you can send from `insights@sleepmask.tech` or `hello@...`
+   - Once verified, you can send from `hello@sleepmask.tech` or `hello@...`
 
 5. **Add environment variables**
    ```bash
    # In .env.local for local dev
    RESEND_API_KEY=re_xxxxxxxxxxxxxxxx
    RESEND_AUDIENCE_ID=78261a57-...          # from step 3
-   NEXT_PUBLIC_FROM_EMAIL=insights@sleepmask.tech
+   NEXT_PUBLIC_FROM_EMAIL=hello@sleepmask.tech
    CRON_SECRET=a-very-long-random-string   # used to protect the cron
    ```
 
@@ -357,7 +357,7 @@ For real scale, you can:
 It comes from whatever you set in `NEXT_PUBLIC_FROM_EMAIL`.
 
 **Strong recommendation:**
-- Use a nice branded address like `insights@sleepmask.tech` or `weekly@sleepmask.tech`.
+- Use a nice branded address like `hello@sleepmask.tech` or `weekly@sleepmask.tech`.
 - You **must** verify the domain in Resend before using it in production (otherwise emails go to spam or get blocked).
 
 During early testing you can use `onboarding@resend.dev` (Resend allows it), but switch to your own domain quickly for trust and deliverability.
