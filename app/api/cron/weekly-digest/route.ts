@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 import WeeklySleepInsights from '../../../../emails/WeeklySleepInsights';
 
-const FROM_EMAIL = process.env.NEXT_PUBLIC_FROM_EMAIL || 'insights@sleepbetterhub.com';
+const FROM_EMAIL = process.env.NEXT_PUBLIC_FROM_EMAIL || 'insights@sleepmask.tech';
 const CRON_SECRET = process.env.CRON_SECRET;
 
 export async function GET(request: Request) {

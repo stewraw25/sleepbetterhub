@@ -49,7 +49,7 @@ export function Footer() {
             <li><Link href="/about" className="hover:text-foreground">Affiliate Disclosure</Link></li>
             <li><Link href="/about" className="hover:text-foreground">Medical Disclaimer</Link></li>
             <li><Link href="/about" className="hover:text-foreground">Privacy &amp; Data</Link></li>
-            <li><a href="mailto:hello@sleepbetterhub.com" className="hover:text-foreground">Contact</a></li>
+            <li><a href="mailto:hello@sleepmask.tech" className="hover:text-foreground">Contact</a></li>
           </ul>
           <div className="mt-6 text-[10px] text-muted-foreground leading-snug">
             © {year} SleepBetterHub. Not medical advice.<br />Always consult a healthcare professional.

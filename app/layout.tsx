@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   // Uses your final domain in production, falls back gracefully on Vercel preview URLs
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepbetterhub.vercel.app')
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech')
   ),
   title: {
     default: 'SleepBetterHub | Best Mouth Tape 2026, Nasal Strips & Natural Sleep Aids for Insomnia & Sleep Problems',
@@ -71,7 +71,7 @@ export default function RootLayout({
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'SleepBetterHub',
-            url: 'https://sleepbetterhub.vercel.app',
+            url: 'https://sleepmask.tech',
             description: 'Independent reviews and guides for mouth tape, nasal strips, sleep aids and insomnia remedies worldwide.',
             sameAs: ['https://twitter.com', 'https://www.youtube.com'],
           })
@@ -81,10 +81,10 @@ export default function RootLayout({
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: 'SleepBetterHub',
-            url: 'https://sleepbetterhub.vercel.app',
+            url: 'https://sleepmask.tech',
             potentialAction: {
               '@type': 'SearchAction',
-              target: 'https://sleepbetterhub.vercel.app/search?q={search_term_string}',
+              target: 'https://sleepmask.tech/search?q={search_term_string}',
               'query-input': 'required name=search_term_string'
             }
           })

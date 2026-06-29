@@ -59,7 +59,7 @@ export default function AboutPage() {
       </div>
 
       <div className="mt-12 text-xs text-muted-foreground">
-        Questions? Reach us at <a href="mailto:hello@sleepbetterhub.com" className="underline">hello@sleepbetterhub.com</a>. 
+        Questions? Reach us at <a href="mailto:hello@sleepmask.tech" className="underline">hello@sleepmask.tech</a>. 
         We read every email.
       </div>
     </div>
