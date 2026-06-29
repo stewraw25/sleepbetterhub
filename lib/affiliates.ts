@@ -19,7 +19,7 @@
 import { getProductBySlug } from './products';
 
 const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG || 'stewraw25-21';
-const AMAZON_DOMAIN = process.env.NEXT_PUBLIC_AMAZON_DOMAIN || 'www.amazon.co.uk'; // e.g. set to www.amazon.com for US market (use matching tag)
+const AMAZON_DOMAIN = process.env.NEXT_PUBLIC_AMAZON_DOMAIN || 'www.amazon.com'; // Global default to .com for worldwide reach (update tag/domain per region if needed)
 
 function getAmazonUrl(asin: string): string {
   if (!AMAZON_TAG) {

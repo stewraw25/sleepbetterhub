@@ -5,6 +5,8 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Toaster } from 'sonner';
+import { AIChat } from '@/components/AIChat';
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -25,17 +27,20 @@ export const metadata: Metadata = {
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepbetterhub.vercel.app')
   ),
   title: {
-    default: 'SleepBetterHub | Best Mouth Tape 2026, Sleep Strips & How to Fall Asleep Fast',
+    default: 'SleepBetterHub | Best Mouth Tape 2026, Nasal Strips & Natural Sleep Aids for Insomnia & Sleep Problems',
     template: '%s | SleepBetterHub',
   },
-  description: 'Expert-tested mouth tape & sleep strips 2026 reviews. Practical guides for how to fall asleep fast naturally, sleep anxiety remedies, stop mouth breathing at night. Honest comparisons for side sleepers, beards, CPAP & sensitive skin — evidence-based & safe.',
+  description: 'Science-backed mouth tape, nasal strips, sleep trackers & natural sleep aids to help with insomnia, sleep anxiety, mouth breathing & snoring. Honest 2026 reviews & guides for better sleep worldwide.',
+  keywords: ['mouth tape for sleep', 'best mouth tape 2026', 'how to stop mouth breathing', 'insomnia remedies', 'natural sleep aids', 'nasal strips', 'sleep anxiety', 'how to fall asleep fast', 'sleep optimization', 'sleep problems'],
   icons: {
     icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'SleepBetterHub — Best Mouth Tape 2026, Sleep Strips & How to Fall Asleep Fast',
-    description: 'Independent 2026 reviews of the best mouth tape, sleep strips & nasal tools. Science-backed guides on how to fall asleep fast naturally, sleep anxiety remedies, stop mouth breathing safely.',
+    title: 'SleepBetterHub — Best Mouth Tape, Nasal Strips & Natural Sleep Aids 2026',
+    description: 'Independent reviews of the best mouth tape, sleep strips, nasal dilators & sleep tools. Evidence-based guides for insomnia, sleep anxiety, mouth breathing and deeper sleep — for sleepers worldwide.',
     images: [{ url: '/images/hero-bedroom.jpg' }],
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
@@ -59,6 +64,32 @@ export default function RootLayout({
           <Footer />
           <Toaster position="top-center" richColors closeButton />
         </ThemeProvider>
+
+        {/* Global SEO / E-E-A-T structured data for sleep products and site */}
+        <Script id="org-schema" type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'SleepBetterHub',
+            url: 'https://sleepbetterhub.vercel.app',
+            description: 'Independent reviews and guides for mouth tape, nasal strips, sleep aids and insomnia remedies worldwide.',
+            sameAs: ['https://twitter.com', 'https://www.youtube.com'],
+          })
+        }} />
+        <Script id="website-schema" type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'SleepBetterHub',
+            url: 'https://sleepbetterhub.vercel.app',
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: 'https://sleepbetterhub.vercel.app/search?q={search_term_string}',
+              'query-input': 'required name=search_term_string'
+            }
+          })
+        }} />
+        <AIChat />
       </body>
     </html>
   );

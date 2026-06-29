@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
@@ -46,7 +47,10 @@ export function Newsletter() {
   return (
     <div className="rounded-2xl border bg-card p-8 md:p-10">
       <div className="max-w-md">
-        <div className="uppercase tracking-[2px] text-xs font-medium text-primary mb-2">Stay Informed</div>
+        <div className="flex items-center gap-3 mb-2">
+          <Image src="/images/logo.jpg" alt="SleepBetterHub" width={24} height={24} className="h-6 w-6 rounded-full object-cover ring-1 ring-border" />
+          <div className="uppercase tracking-[2px] text-xs font-medium text-primary">Stay Informed</div>
+        </div>
         <h3 className="text-2xl font-semibold tracking-tight mb-2">Weekly Sleep Insights</h3>
         <p className="text-muted-foreground mb-6">
           Evidence-based tips, new product tests, and sleep science summaries. No spam, ever. Unsubscribe anytime.

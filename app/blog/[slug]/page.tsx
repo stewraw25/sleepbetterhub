@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { blogPosts, getPostBySlug } from '@/lib/blog';
+import { getPublishedPosts, getPostBySlug } from '@/lib/blog';
 import { Newsletter } from '@/components/Newsletter';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
+  return getPublishedPosts().map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: Props) {
@@ -27,6 +27,15 @@ export default async function BlogPost({ params }: Props) {
   const post = getPostBySlug(slug);
 
   if (!post) notFound();
+
+  // Respect publish date for scheduled posts
+  const publishDate = new Date(post.date);
+  publishDate.setHours(0, 0, 0, 0);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  if (publishDate > today) {
+    notFound();
+  }
 
   // Very basic content rendering — split by newlines for paragraphs
   const paragraphs = post.content.split('\n\n');

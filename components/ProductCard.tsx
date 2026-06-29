@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, ArrowRight } from 'lucide-react';
+import { Star, ArrowRight, ExternalLink } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Product } from '@/lib/products';
+import { getInternalAffiliateLink } from '@/lib/affiliates';
 
 interface ProductCardProps {
   product: Product;
@@ -56,16 +57,26 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
           {product.description}
         </p>
 
-        <div className="mt-4 flex items-center justify-between pt-4 border-t">
+        <div className="mt-4 flex items-center justify-between pt-4 border-t gap-2">
           <div className="text-xs text-muted-foreground">
             {product.reviewCount.toLocaleString()} reviews
           </div>
-          <Link 
-            href={`/reviews/${product.slug}`}
-            className="inline-flex items-center gap-1 rounded-lg px-2.5 py-1 text-xs font-medium text-foreground hover:bg-muted transition-all group-hover:gap-1.5"
-          >
-            Read review <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
+          <div className="flex gap-2">
+            <Link 
+              href={`/reviews/${product.slug}`}
+              className="inline-flex items-center gap-1 rounded-lg px-2.5 py-1 text-xs font-medium text-foreground hover:bg-muted transition-all"
+            >
+              Read review <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+            <a 
+              href={getInternalAffiliateLink(product.slug)} 
+              target="_blank" 
+              rel="noopener noreferrer nofollow"
+              className="inline-flex items-center gap-1 rounded-lg px-3 py-1 text-xs font-semibold bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
+            >
+              Shop now <ExternalLink className="h-3 w-3" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

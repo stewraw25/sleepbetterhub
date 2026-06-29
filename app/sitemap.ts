@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { allProducts } from '@/lib/products';
-import { blogPosts } from '@/lib/blog';
+import { getPublishedPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 
@@ -14,16 +14,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog',
     '/blog/how-to-fall-asleep-fast-naturally',
     '/blog/sleep-anxiety-remedies',
+    '/blog/how-to-stop-mouth-breathing-at-night',
     '/categories',
     '/categories/nasal',
     '/categories/gadgets',
     '/categories/supplements',
     '/categories/mattresses',
+    '/reviews/oura-ring-gen3',
+    '/reviews/eight-sleep-pod-4',
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: path === '' ? 1 : (path === '/mouth-tape' ? 0.95 : 0.8),
+    changeFrequency: (path === '' || path === '/mouth-tape') ? 'daily' as const : 'weekly' as const,
+    priority: path === '' ? 1 : (path === '/mouth-tape' || path.includes('mouth') ? 0.95 : 0.85),
   }));
 
   const productPages = allProducts.map((product) => ({
@@ -33,7 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const blogPages = blogPosts.map((post) => ({
+  const publishedBlogPosts = getPublishedPosts();
+  const blogPages = publishedBlogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly' as const,

@@ -43,7 +43,7 @@ export async function GET(request: Request) {
       const { data, error } = await resend.emails.send({
         from: `SleepBetterHub Insights <${FROM_EMAIL}>`,
         to: email,
-        subject: 'This Week in Sleep: New mouth tape tests + nasal breathing protocol',
+        subject: 'This Week in Sleep: New evidence-based guides + product updates',
         react: WeeklySleepInsights({ subscriberEmail: email }),
       });
 

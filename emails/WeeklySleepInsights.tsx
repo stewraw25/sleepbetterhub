@@ -11,15 +11,15 @@ import {
   Text,
   Button,
 } from '@react-email/components';
-import { blogPosts } from '../lib/blog';
+import { getPublishedPosts } from '../lib/blog';
 
 interface WeeklySleepInsightsProps {
   subscriberEmail?: string;
 }
 
 export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsightsProps) {
-  // Pick the 3 most recent posts for the digest
-  const featuredPosts = blogPosts.slice(0, 3);
+  // Pick the 3 most recent *published* posts for the digest
+  const featuredPosts = getPublishedPosts().slice(0, 3);
 
   return (
     <Html>

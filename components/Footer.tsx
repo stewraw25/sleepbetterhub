@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -7,7 +8,16 @@ export function Footer() {
     <footer className="border-t bg-muted/30">
       <div className="container py-12 grid grid-cols-2 md:grid-cols-4 gap-y-10 text-sm">
         <div>
-          <div className="font-semibold tracking-tight text-base mb-3">SleepBetterHub</div>
+          <div className="flex items-center gap-3 mb-3">
+            <Image 
+              src="/images/logo.jpg" 
+              alt="SleepBetterHub logo" 
+              width={48} 
+              height={48} 
+              className="h-12 w-12 rounded-full object-cover ring-1 ring-border" 
+            />
+            <div className="font-semibold tracking-tight text-lg">SleepBetterHub</div>
+          </div>
           <p className="text-muted-foreground leading-relaxed pr-4">
             Science-backed tools and honest reviews for deeper sleep in 2026.
           </p>
@@ -49,7 +59,8 @@ export function Footer() {
 
       <div className="border-t py-4">
         <div className="container text-[10px] text-muted-foreground flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
-          <div>
+          <div className="flex items-center gap-2">
+            <Image src="/images/logo.jpg" alt="" width={16} height={16} className="h-4 w-4 rounded-full object-cover opacity-60" />
             This site contains affiliate links. We may earn a commission at no extra cost to you. 
             We only recommend products we would (and do) personally use.
           </div>

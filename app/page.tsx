@@ -6,11 +6,11 @@ import { ProductCard } from '@/components/ProductCard';
 import { Newsletter } from '@/components/Newsletter';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { allProducts } from '@/lib/products';
-import { blogPosts } from '@/lib/blog';
+import { getPublishedPosts } from '@/lib/blog';
 
 export default function Home() {
   const trending = allProducts.filter(p => p.featured || p.rating > 4.5).slice(0, 6);
-  const latestPosts = blogPosts.slice(0, 3);
+  const latestPosts = getPublishedPosts().slice(0, 3);
 
   return (
     <div className="overflow-hidden">
@@ -24,11 +24,11 @@ export default function Home() {
               </div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-[1.05] mb-6">
-                Best mouth tape 2026 &amp; science-backed tools<br />for <span className="text-primary">deeper sleep</span>.
+                Best mouth tape, nasal strips &amp; natural sleep aids 2026<br />for <span className="text-primary">better sleep worldwide</span>.
               </h1>
               <p className="max-w-xl text-xl text-muted-foreground mb-8">
-                Honest reviews and practical guides for how to fall asleep fast, sleep anxiety remedies, 
-                stopping mouth breathing at night, and the mouth tape &amp; nasal tools that actually work. Tested on real sleepers.
+                Expert reviews and science-backed guides for insomnia remedies, sleep anxiety, how to fall asleep fast, 
+                stop mouth breathing at night, and proven tools that help people sleep better globally. Tested for real results.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
@@ -48,15 +48,15 @@ export default function Home() {
 
             {/* Hero visual - contained, no overlap */}
             <div className="lg:col-span-5 hidden lg:block">
-              <div className="relative">
+              <div className="relative aspect-[5/4] w-full">
                 <Image 
                   src="/images/hero-bedroom.jpg" 
                   alt="Calming modern bedroom setup for deeper sleep and insomnia relief" 
-                  width={600}
-                  height={480}
-                  className="rounded-3xl object-cover w-full h-[420px] lg:h-[480px] shadow-2xl" 
+                  fill
+                  className="rounded-3xl object-cover shadow-2xl" 
                   priority
                   loading="eager"
+                  sizes="(min-width: 1024px) 40vw, 100vw"
                 />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/10 to-transparent" />
               </div>
@@ -134,13 +134,13 @@ export default function Home() {
             </div>
 
             <div className="md:col-span-5">
-              <div className="rounded-3xl bg-card border p-2 shadow-sm">
+              <div className="rounded-3xl bg-card border p-2 shadow-sm relative aspect-[3/2]">
                 <Image 
                   src="/images/value-mouth-tape.jpg" 
                   alt="Affordable high-volume mouth tape sleep strips for beginners and value seekers - how to stop mouth breathing at night" 
-                  width={600}
-                  height={400}
-                  className="rounded-2xl w-full h-auto" 
+                  fill
+                  className="rounded-2xl object-cover" 
+                  sizes="(min-width: 768px) 40vw, 100vw"
                 />
               </div>
             </div>
@@ -158,13 +158,21 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { icon: <Star className="h-5 w-5" />, label: "4.6+ avg rating", desc: "Across every reviewed product" },
-              { icon: <Shield className="h-5 w-5" />, label: "Safety first", desc: "Every review includes clear warnings" },
-              { icon: <Users className="h-5 w-5" />, label: "Real-world testing", desc: "Side sleepers, beards, CPAP users" },
-              { icon: <Award className="h-5 w-5" />, label: "Independent", desc: "We buy products. We tell the truth." },
+              { label: "4.6+ avg rating", desc: "Across every reviewed product" },
+              { label: "Safety first", desc: "Every review includes clear warnings" },
+              { label: "Real-world testing", desc: "Side sleepers, beards, CPAP users" },
+              { label: "Independent", desc: "We buy products. We tell the truth." },
             ].map((stat, i) => (
               <div key={i} className="rounded-2xl border bg-card p-6 flex gap-4">
-                <div className="mt-0.5 text-primary">{stat.icon}</div>
+                <div className="mt-1 shrink-0">
+                  <Image 
+                    src="/images/logo.jpg" 
+                    alt="" 
+                    width={22} 
+                    height={22} 
+                    className="h-[22px] w-[22px] rounded-full object-cover ring-1 ring-border/50" 
+                  />
+                </div>
                 <div>
                   <div className="font-semibold">{stat.label}</div>
                   <div className="text-sm text-muted-foreground mt-0.5">{stat.desc}</div>
@@ -199,7 +207,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-8">
             <div>
               <div className="text-xs uppercase tracking-widest text-primary mb-1">LEARN</div>
-              <h3 className="text-3xl font-semibold tracking-tight">Latest sleep research &amp; guides for insomnia, sleep anxiety &amp; mouth taping</h3>
+              <h3 className="text-3xl font-semibold tracking-tight">Latest sleep research &amp; guides (new articles 1–2× per week)</h3>
             </div>
             <Link href="/blog" className="text-sm hidden md:block text-primary hover:underline">All articles →</Link>
           </div>
@@ -221,9 +229,9 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Targeted internal links for high-volume searches */}
+          {/* Targeted internal links for high-volume global searches */}
           <div className="mt-6 text-sm text-muted-foreground">
-            Popular searches we cover: <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">how to stop mouth breathing at night</Link> · <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/blog/mouth-taping-benefits-risks" className="text-primary hover:underline">mouth taping benefits and risks</Link> · <Link href="/blog/sleep-hygiene-2026" className="text-primary hover:underline">evidence-based insomnia remedies</Link>
+            Popular searches we cover: <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">how to stop mouth breathing at night</Link> · <Link href="/categories/supplements" className="text-primary hover:underline">best natural sleep aids</Link> · <Link href="/quiz" className="text-primary hover:underline">insomnia remedies</Link> · <Link href="/categories/nasal" className="text-primary hover:underline">nasal strips for snoring</Link>
           </div>
         </div>
       </section>
