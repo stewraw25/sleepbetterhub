@@ -47,6 +47,11 @@ const AFFILIATE_OVERRIDES: Record<string, string> = {
   'oura-ring-gen3': process.env.NEXT_PUBLIC_AFF_OURA || '',
   'eight-sleep-pod-6': process.env.NEXT_PUBLIC_AFF_EIGHT_SLEEP || '',
 
+  // Eight Sleep Accessories (share same affiliate program, fall back to product-specific UK URLs)
+  'eight-sleep-base': process.env.NEXT_PUBLIC_AFF_EIGHT_SLEEP || '',
+  'eight-sleep-blanket': process.env.NEXT_PUBLIC_AFF_EIGHT_SLEEP || '',
+  'eight-sleep-pillow-cover': process.env.NEXT_PUBLIC_AFF_EIGHT_SLEEP || '',
+
   // Mattresses
   'tempur-pedic-adapt': process.env.NEXT_PUBLIC_AFF_TEMPUR_PEDIC || '',
 
