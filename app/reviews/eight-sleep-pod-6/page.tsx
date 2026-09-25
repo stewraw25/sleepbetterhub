@@ -353,8 +353,73 @@ export default function EightSleepPod6Review() {
           </div>
         </div>
 
+        {/* EIGHT SLEEP ACCESSORIES */}
+        <div className="mt-14 rounded-2xl border bg-card p-6 md:p-8">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h3 className="font-semibold text-xl tracking-tight">Eight Sleep Accessories</h3>
+              <p className="text-sm text-muted-foreground mt-1">Expand your Eight Sleep setup with official accessories</p>
+            </div>
+            <Badge variant="outline">UK Shop</Badge>
+          </div>
+          
+          <div className="grid sm:grid-cols-3 gap-4">
+            {/* Base */}
+            <div className="rounded-xl border bg-background p-4">
+              <div className="font-medium">Eight Sleep Base</div>
+              <div className="text-2xl font-semibold tracking-tight mt-1">£1,699</div>
+              <p className="text-xs text-muted-foreground mt-2 mb-3">
+                Purpose-built bed frame for Pod 4/5/6. Optimised airflow for the cooling system.
+              </p>
+              <a 
+                href={getInternalAffiliateLink('eight-sleep-base')}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+              >
+                <Button variant="outline" size="sm" className="w-full">Shop Base</Button>
+              </a>
+            </div>
+
+            {/* Blanket */}
+            <div className="rounded-xl border bg-background p-4">
+              <div className="font-medium">Eight Sleep Blanket</div>
+              <div className="text-2xl font-semibold tracking-tight mt-1">£799</div>
+              <p className="text-xs text-muted-foreground mt-2 mb-3">
+                Temperature-controlled blanket for Pod 5/6. Extends climate control above you.
+              </p>
+              <a 
+                href={getInternalAffiliateLink('eight-sleep-blanket')}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+              >
+                <Button variant="outline" size="sm" className="w-full">Shop Blanket</Button>
+              </a>
+            </div>
+
+            {/* Pillow Cover */}
+            <div className="rounded-xl border bg-background p-4">
+              <div className="font-medium">Eight Sleep Pillow Cover</div>
+              <div className="text-2xl font-semibold tracking-tight mt-1">£999</div>
+              <p className="text-xs text-muted-foreground mt-2 mb-3">
+                Temperature control for your pillow. For hot sleepers who need head cooling.
+              </p>
+              <a 
+                href={getInternalAffiliateLink('eight-sleep-pillow-cover')}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+              >
+                <Button variant="outline" size="sm" className="w-full">Shop Pillow Cover</Button>
+              </a>
+            </div>
+          </div>
+
+          <p className="text-[10px] text-muted-foreground mt-4 text-center">
+            Affiliate links to eightsleep.com/uk. Accessories require a Pod system. Check compatibility before purchasing.
+          </p>
+        </div>
+
         {/* RELATED */}
-        <div className="mt-14">
+        <div className="mt-10">
           <h3 className="font-semibold text-xl mb-4 tracking-tight">Related Reviews</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link href="/reviews/oura-ring-gen3" className="block rounded-xl border p-4 hover:bg-muted/40 transition">

@@ -189,6 +189,32 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+          {/* Eight Sleep Accessories - compact row */}
+          <div className="mt-10 pt-8 border-t">
+            <div className="flex items-center justify-between mb-4">
+              <div className="text-sm font-medium">Eight Sleep Accessories</div>
+              <Link href="/reviews/eight-sleep-pod-6#accessories" className="text-xs text-primary hover:underline">View all →</Link>
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              <Link href="/go/eight-sleep-base" target="_blank" rel="noopener noreferrer sponsored" className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
+                <div className="text-sm font-medium">Base</div>
+                <div className="text-lg font-semibold tracking-tight">£1,699</div>
+                <div className="text-[10px] text-muted-foreground">Pod bed frame</div>
+              </Link>
+              <Link href="/go/eight-sleep-blanket" target="_blank" rel="noopener noreferrer sponsored" className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
+                <div className="text-sm font-medium">Blanket</div>
+                <div className="text-lg font-semibold tracking-tight">£799</div>
+                <div className="text-[10px] text-muted-foreground">Pod 5/6 only</div>
+              </Link>
+              <Link href="/go/eight-sleep-pillow-cover" target="_blank" rel="noopener noreferrer sponsored" className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
+                <div className="text-sm font-medium">Pillow Cover</div>
+                <div className="text-lg font-semibold tracking-tight">£999</div>
+                <div className="text-[10px] text-muted-foreground">Head cooling</div>
+              </Link>
+            </div>
+            <p className="text-[10px] text-muted-foreground mt-2 text-center">Affiliate links. Accessories require a Pod system.</p>
+          </div>
         </div>
       </section>
 
