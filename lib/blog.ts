@@ -424,7 +424,7 @@ If you’re a dedicated side sleeper struggling with dry mouth or waking up with
 - If deep sleep is low → focus on temperature (cool room or cooling mattress cover like Eight Sleep) and magnesium.
 - If you’re waking a lot → check for mouth breathing, nasal obstruction, or sleep apnea (get tested if needed).
 
-See our reviews of the [Oura Ring Gen3](/reviews/oura-ring-gen3) and [Eight Sleep Pod 4](/reviews/eight-sleep-pod-4).
+See our reviews of the [Oura Ring Gen3](/reviews/oura-ring-gen3) and [Eight Sleep Pod 6](/reviews/eight-sleep-pod-6).
 
 ## Pro Move: Combine Data With Behavior
 Trackers are most useful when paired with simple experiments:
@@ -568,7 +568,7 @@ Common causes:
 4. **Pre-bed cooling routine** — Take a warm (not hot) shower 1-2 hours before bed. The subsequent cool-down signals sleepiness.
 5. **Mouth tape + nasal breathing** — Surprisingly helpful. Mouth breathing can increase perceived heat and dryness.
 
-See the [Eight Sleep Pod 4 review](/reviews/eight-sleep-pod-4) for temperature-controlled sleep systems.
+See the [Eight Sleep Pod 6 review](/reviews/eight-sleep-pod-6) for temperature-controlled sleep systems.
 
 ## Quick Wins Most People Miss
 - Keep a glass of cool water by the bed (but don't overhydrate right before sleep).

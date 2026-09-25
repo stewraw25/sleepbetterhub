@@ -22,15 +22,26 @@ export async function generateStaticParams() {
   }));
 }
 
+const categoryMeta: Record<string, { label: string; backLink: string; backText: string }> = {
+  'mouth-tape': { label: 'Mouth Tape', backLink: '/mouth-tape', backText: 'Back to Mouth Tape Hub' },
+  'nasal': { label: 'Nasal Product', backLink: '/categories/nasal', backText: 'Back to Nasal Products' },
+  'gadgets': { label: 'Sleep Tech', backLink: '/categories/gadgets', backText: 'Back to Sleep Tech' },
+  'mattresses': { label: 'Mattress', backLink: '/categories/mattresses', backText: 'Back to Mattresses' },
+  'supplements': { label: 'Supplement', backLink: '/categories/supplements', backText: 'Back to Supplements' },
+  'bedding': { label: 'Bedding', backLink: '/categories', backText: 'Back to Categories' },
+};
+
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) return { title: 'Review Not Found' };
 
   const bestForText = product.bestFor.length ? ` for ${product.bestFor.slice(0,2).join(' & ')}` : '';
+  const catLabel = categoryMeta[product.category]?.label || 'Product';
+  
   return {
-    title: `${product.name} Review 2026 — Best Mouth Tape${bestForText}? Pros, Cons & Safety`,
-    description: `${product.name} tested 2026: ${product.description} Honest pros, cons, how to use for side sleepers, CPAP, beards & sleep anxiety relief. Full safety guide.`,
+    title: `${product.name} Review 2026 — Best ${catLabel}${bestForText}? Pros, Cons & Guide`,
+    description: `${product.name} tested 2026: ${product.description} Honest pros, cons, how to use. Full guide.`,
     openGraph: {
       images: [{ url: product.image }],
     },
@@ -49,11 +60,13 @@ export default async function ProductReviewPage({ params }: Props) {
     .filter((p) => p.category === product.category && p.id !== product.id)
     .slice(0, 3);
 
+  const catInfo = categoryMeta[product.category] || { backLink: '/categories', backText: 'Back to Categories' };
+
   return (
     <div className="bg-background">
       <div className="container py-8">
-        <Link href="/mouth-tape" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
-          <ArrowLeft className="h-4 w-4" /> Back to Mouth Tape Hub
+        <Link href={catInfo.backLink} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
+          <ArrowLeft className="h-4 w-4" /> {catInfo.backText}
         </Link>
 
         <div className="grid lg:grid-cols-12 gap-x-10 gap-y-8">
@@ -113,10 +126,12 @@ export default async function ProductReviewPage({ params }: Props) {
               )}
             </div>
 
-            {/* SAFETY */}
-            <div className="mt-10">
-              <SafetyAlert />
-            </div>
+            {/* SAFETY - only show mouth tape safety alert for mouth-tape products */}
+            {product.category === 'mouth-tape' && (
+              <div className="mt-10">
+                <SafetyAlert />
+              </div>
+            )}
 
             <div className="mt-6 rounded-xl border bg-muted/30 p-5">
               <div className="font-medium mb-2 text-sm tracking-tight">Full Safety Information &amp; Who Should NOT Use</div>

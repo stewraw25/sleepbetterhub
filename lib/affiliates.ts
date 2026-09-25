@@ -45,7 +45,7 @@ const AFFILIATE_OVERRIDES: Record<string, string> = {
 
   // Gadgets
   'oura-ring-gen3': process.env.NEXT_PUBLIC_AFF_OURA || '',
-  'eight-sleep-pod-4': process.env.NEXT_PUBLIC_AFF_EIGHT_SLEEP || '',
+  'eight-sleep-pod-6': process.env.NEXT_PUBLIC_AFF_EIGHT_SLEEP || '',
 
   // Mattresses
   'tempur-pedic-adapt': process.env.NEXT_PUBLIC_AFF_TEMPUR_PEDIC || '',

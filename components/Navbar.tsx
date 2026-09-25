@@ -10,6 +10,7 @@ import { useTheme } from 'next-themes';
 
 const navLinks = [
   { href: '/mouth-tape', label: 'Mouth Tape Hub' },
+  { href: '/reviews/eight-sleep-pod-6', label: 'Eight Sleep Review' },
   { href: '/quiz', label: 'Sleep Quiz' },
   { href: '/blog', label: 'Learn' },
   { href: '/about', label: 'About' },

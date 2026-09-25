@@ -148,6 +148,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EIGHT SLEEP FEATURE */}
+      <section className="section bg-gradient-to-b from-background to-muted/20">
+        <div className="container">
+          <div className="grid md:grid-cols-12 gap-8 md:gap-10 items-center">
+            <div className="md:col-span-5 order-2 md:order-1">
+              <div className="rounded-3xl bg-card border p-2 shadow-sm relative aspect-[4/3]">
+                <Image 
+                  src="/images/eight-sleep-pod.jpg" 
+                  alt="Eight Sleep Pod 6 temperature-controlled mattress cover — UK review 2026" 
+                  fill
+                  className="rounded-2xl object-cover" 
+                  sizes="(min-width: 768px) 40vw, 100vw"
+                />
+              </div>
+            </div>
+
+            <div className="md:col-span-7 order-1 md:order-2">
+              <div className="uppercase tracking-[2px] text-xs text-primary mb-3 font-medium">FEATURED REVIEW</div>
+              <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter mb-4 leading-none">
+                Eight Sleep Pod 6<br />UK Review 2026
+              </h2>
+              <p className="max-w-lg text-lg text-muted-foreground mb-4">
+                The temperature-controlled sleep system used by F1 teams and elite athletes. 
+                Active cooling from 12°C to 43°C, dual-zone for couples, and sleep tracking without a wearable.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                <span className="font-medium text-foreground">From £2,295</span> • 30-night trial • Used by professional athletes
+              </p>
+              <div className="flex gap-3">
+                <Link href="/reviews/eight-sleep-pod-6">
+                  <Button size="lg">Read Full Review</Button>
+                </Link>
+                <Link href="/go/eight-sleep-pod-6" target="_blank" rel="noopener noreferrer sponsored">
+                  <Button size="lg" variant="outline">Shop Eight Sleep UK</Button>
+                </Link>
+              </div>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Affiliate link. <Link href="/guides/eight-sleep-f1" className="underline hover:text-foreground">Why F1 teams use Eight Sleep →</Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* KEY BENEFITS / STATS */}
       <section className="section">
         <div className="container">
@@ -231,7 +275,7 @@ export default function Home() {
 
           {/* Targeted internal links for high-volume global searches */}
           <div className="mt-6 text-sm text-muted-foreground">
-            Popular searches we cover: <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">how to stop mouth breathing at night</Link> · <Link href="/categories/supplements" className="text-primary hover:underline">best natural sleep aids</Link> · <Link href="/quiz" className="text-primary hover:underline">insomnia remedies</Link> · <Link href="/categories/nasal" className="text-primary hover:underline">nasal strips for snoring</Link>
+            Popular searches we cover: <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/reviews/eight-sleep-pod-6" className="text-primary hover:underline">eight sleep review UK</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">how to stop mouth breathing at night</Link> · <Link href="/categories/supplements" className="text-primary hover:underline">best natural sleep aids</Link> · <Link href="/quiz" className="text-primary hover:underline">insomnia remedies</Link> · <Link href="/categories/nasal" className="text-primary hover:underline">nasal strips for snoring</Link>
           </div>
         </div>
       </section>
