@@ -21,12 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/categories/supplements',
     '/categories/mattresses',
     '/reviews/oura-ring-gen3',
-    '/reviews/eight-sleep-pod-4',
+    '/reviews/eight-sleep-pod-6',
+    '/guides/eight-sleep-f1',
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
-    changeFrequency: (path === '' || path === '/mouth-tape') ? 'daily' as const : 'weekly' as const,
-    priority: path === '' ? 1 : (path === '/mouth-tape' || path.includes('mouth') ? 0.95 : 0.85),
+    changeFrequency: (path === '' || path === '/mouth-tape' || path.includes('eight-sleep')) ? 'daily' as const : 'weekly' as const,
+    priority: path === '' ? 1 : (path === '/mouth-tape' || path.includes('mouth') || path.includes('eight-sleep')) ? 0.95 : 0.85,
   }));
 
   const productPages = allProducts.map((product) => ({

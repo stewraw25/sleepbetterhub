@@ -37,6 +37,7 @@ export function Footer() {
           <div className="font-medium mb-3">Categories</div>
           <ul className="space-y-2 text-muted-foreground">
             <li><Link href="/mouth-tape" className="hover:text-foreground">Mouth Tape &amp; Strips</Link></li>
+            <li><Link href="/reviews/eight-sleep-pod-6" className="hover:text-foreground">Eight Sleep Pod 6 Review</Link></li>
             <li><Link href="/categories/nasal" className="hover:text-foreground">Nasal Strips &amp; Dilators</Link></li>
             <li><Link href="/categories/gadgets" className="hover:text-foreground">Sleep Trackers &amp; Tech</Link></li>
             <li><Link href="/categories/supplements" className="hover:text-foreground">Supplements</Link></li>
