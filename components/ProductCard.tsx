@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Star, ArrowRight, ExternalLink } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Product } from '@/lib/products';
-import { getInternalAffiliateLink } from '@/lib/affiliates';
+import { getInternalAffiliateLink, SPONSORED_REL } from '@/lib/affiliates';
 
 interface ProductCardProps {
   product: Product;
@@ -59,7 +59,7 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
 
         <div className="mt-4 flex items-center justify-between pt-4 border-t gap-2">
           <div className="text-xs text-muted-foreground">
-            {product.reviewCount.toLocaleString()} reviews
+            Editorial score
           </div>
           <div className="flex gap-2">
             <Link 
@@ -71,7 +71,7 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
             <a 
               href={getInternalAffiliateLink(product.slug)} 
               target="_blank" 
-              rel="noopener noreferrer nofollow"
+              rel={SPONSORED_REL}
               className="inline-flex items-center gap-1 rounded-lg px-3 py-1 text-xs font-semibold bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
             >
               Shop now <ExternalLink className="h-3 w-3" />

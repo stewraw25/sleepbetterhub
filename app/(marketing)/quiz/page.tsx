@@ -1,14 +1,12 @@
 import type { Metadata } from 'next';
 import QuizClient from '@/components/QuizClient';
+import { pageMeta } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Sleep Quiz: Is Mouth Taping Right for You? (Insomnia & Sleep Anxiety)',
-  description: 'Take the free 2-minute sleep quiz. Get personalized mouth tape recommendations for side sleepers, beards, CPAP users, and those struggling with how to fall asleep or sleep anxiety. Includes full safety warnings.',
-  openGraph: {
-    title: 'Sleep Quiz — Is Mouth Taping Right for You?',
-    description: 'Instant personalized recommendations for best mouth tape 2026 based on your sleep style, breathing, and sensitivity. Evidence-based with safety first.',
-  },
-};
+export const metadata: Metadata = pageMeta({
+  title: 'Mouth Tape Sleep Quiz',
+  description: 'A two-minute quiz that suggests a mouth tape to consider, and warns you off taping if your nose is blocked or apnoea is a concern.',
+  path: '/quiz',
+});
 
 export default function QuizPage() {
   return <QuizClient />;

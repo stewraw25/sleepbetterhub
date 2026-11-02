@@ -1,28 +1,56 @@
 import Link from 'next/link';
-import Script from 'next/script';
 import Image from 'next/image';
 import { ArrowLeft, ArrowRight, Thermometer, Moon, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
-import { getInternalAffiliateLink } from '@/lib/affiliates';
+import { getInternalAffiliateLink, SPONSORED_REL } from '@/lib/affiliates';
+import { JsonLd } from '@/components/JsonLd';
+import { pageMeta } from '@/lib/seo';
+import { breadcrumbJsonLd } from '@/lib/schema';
+import { getSiteUrl } from '@/lib/site';
 
-export const metadata = {
-  title: 'Eight Sleep and Formula 1 — What\'s the Connection? (2026 Guide)',
-  description: 'Why do F1 teams and drivers use Eight Sleep? Learn about the Formula 1 partnership, how temperature-controlled sleep aids recovery, and whether it matters for regular buyers.',
-  keywords: ['eight sleep f1', 'eight sleep formula 1', 'eight sleep sponsorship', 'f1 sleep technology', 'eight sleep athletes'],
-  openGraph: {
-    title: 'Eight Sleep and Formula 1 — The Connection Explained',
-    description: 'Why F1 teams and professional athletes use Eight Sleep for recovery. The technology behind the partnership.',
-    images: [{ url: '/images/eight-sleep-pod.jpg' }],
-  },
-};
+export const metadata = pageMeta({
+  title: 'Eight Sleep and Formula 1',
+  description: 'What the Eight Sleep and Formula 1 connection actually is, and whether it should change a buying decision for the Pod 6.',
+  path: '/guides/eight-sleep-f1',
+  image: '/images/eight-sleep-pod.jpg',
+  type: 'article',
+});
 
 export default function EightSleepF1Guide() {
   const affiliateLink = getInternalAffiliateLink('eight-sleep-pod-6');
 
+  const site = getSiteUrl();
+
   return (
     <div className="bg-background">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Eight Sleep Pod 6', path: '/reviews/eight-sleep-pod-6' },
+          { name: 'Eight Sleep and Formula 1', path: '/guides/eight-sleep-f1' },
+        ])}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: 'Eight Sleep and Formula 1: What\'s the Connection?',
+          description: 'What the Eight Sleep and Formula 1 connection actually is, and whether it should change a buying decision for the Pod 6.',
+          image: [`${site}/images/eight-sleep-pod.jpg`],
+          datePublished: '2026-09-25',
+          dateModified: '2026-11-02',
+          author: { '@type': 'Organization', name: 'SleepBetterHub Editorial Team' },
+          publisher: {
+            '@type': 'Organization',
+            name: 'SleepBetterHub',
+            url: site,
+            logo: { '@type': 'ImageObject', url: `${site}/images/logo.jpg` },
+          },
+          mainEntityOfPage: `${site}/guides/eight-sleep-f1`,
+        }}
+      />
       {/* HEADER */}
       <div className="border-b bg-muted/30">
         <div className="container py-12 md:py-16">
@@ -145,14 +173,14 @@ export default function EightSleepF1Guide() {
                     Read Full Pod 6 Review <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <a href={affiliateLink} target="_blank" rel="noopener noreferrer sponsored">
+                <a href={affiliateLink} target="_blank" rel={SPONSORED_REL}>
                   <Button size="lg" variant="outline" className="w-full sm:w-auto">
                     Shop Eight Sleep UK
                   </Button>
                 </a>
               </div>
-              <p className="text-[10px] text-muted-foreground mt-3">
-                Affiliate link. We may earn a commission if you purchase — thank you for supporting independent content.
+              <p className="text-xs text-muted-foreground mt-3">
+                Brand-site link. No affiliate code is attached yet.
               </p>
             </div>
           </div>
@@ -165,7 +193,8 @@ export default function EightSleepF1Guide() {
                   <Image 
                     src="/images/eight-sleep-pod.jpg" 
                     alt="Eight Sleep Pod 6 — used by F1 teams for recovery" 
-                    fill 
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 420px"
                     className="object-cover" 
                   />
                 </div>
@@ -173,7 +202,7 @@ export default function EightSleepF1Guide() {
                   <div className="font-semibold mb-1">Eight Sleep Pod 6</div>
                   <div className="text-sm text-muted-foreground mb-3">The temperature-controlled sleep system used by F1 teams and athletes.</div>
                   <div className="text-2xl font-semibold tracking-tight">From £2,295</div>
-                  <a href={affiliateLink} target="_blank" rel="noopener noreferrer sponsored" className="mt-3 block">
+                  <a href={affiliateLink} target="_blank" rel={SPONSORED_REL} className="mt-3 block">
                     <Button className="w-full">Shop Eight Sleep UK</Button>
                   </a>
                 </div>
@@ -211,27 +240,6 @@ export default function EightSleepF1Guide() {
           <AdPlaceholder label="Bottom Ad" />
         </div>
 
-        {/* SCHEMA */}
-        <Script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Article',
-            headline: 'Eight Sleep and Formula 1 — What\'s the Connection?',
-            description: 'Why F1 teams and professional athletes use Eight Sleep for recovery. The technology behind the partnership and what it means for regular buyers.',
-            image: `${(process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech'))}/images/eight-sleep-pod.jpg`,
-            author: {
-              '@type': 'Organization',
-              name: 'SleepBetterHub Editorial Team'
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'SleepBetterHub',
-              url: (process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech'))
-            },
-            datePublished: '2026-09-25',
-            dateModified: '2026-09-25',
-          })
-        }} />
       </div>
     </div>
   );

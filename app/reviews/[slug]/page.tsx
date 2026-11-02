@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Script from 'next/script';
 import Image from 'next/image';
 import { Star, Check, X, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,9 +7,13 @@ import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 
 import { AdPlaceholder } from '@/components/AdPlaceholder';
+import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 import { SafetyAlert } from '@/components/SafetyAlert';
-import { getProductBySlug, allProducts } from '@/lib/products';
-import { getInternalAffiliateLink } from '@/lib/affiliates';
+import { JsonLd } from '@/components/JsonLd';
+import { getProductBySlug, allProducts, categoryLabels } from '@/lib/products';
+import { getAffiliateUrl, getInternalAffiliateLink, shopLabel, SPONSORED_REL } from '@/lib/affiliates';
+import { pageMeta } from '@/lib/seo';
+import { breadcrumbJsonLd, editorialReviewJsonLd, productJsonLd } from '@/lib/schema';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -36,16 +39,14 @@ export async function generateMetadata({ params }: Props) {
   const product = getProductBySlug(slug);
   if (!product) return { title: 'Review Not Found' };
 
-  const bestForText = product.bestFor.length ? ` for ${product.bestFor.slice(0,2).join(' & ')}` : '';
-  const catLabel = categoryMeta[product.category]?.label || 'Product';
-  
-  return {
-    title: `${product.name} Review 2026 — Best ${catLabel}${bestForText}? Pros, Cons & Guide`,
-    description: `${product.name} tested 2026: ${product.description} Honest pros, cons, how to use. Full guide.`,
-    openGraph: {
-      images: [{ url: product.image }],
-    },
-  };
+  const description = `${product.name}: ${product.description}`.slice(0, 160);
+
+  return pageMeta({
+    title: `${product.name} Review`,
+    description,
+    path: `/reviews/${product.slug}`,
+    image: product.image,
+  });
 }
 
 export default async function ProductReviewPage({ params }: Props) {
@@ -61,9 +62,24 @@ export default async function ProductReviewPage({ params }: Props) {
     .slice(0, 3);
 
   const catInfo = categoryMeta[product.category] || { backLink: '/categories', backText: 'Back to Categories' };
+  const destination = getAffiliateUrl(product.slug);
+  const categoryPath = product.category === 'mouth-tape'
+    ? '/mouth-tape'
+    : product.category === 'bedding'
+      ? '/categories'
+      : `/categories/${product.category}`;
 
   return (
     <div className="bg-background">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: categoryLabels[product.category], path: categoryPath },
+          { name: product.name, path: `/reviews/${product.slug}` },
+        ])}
+      />
+      <JsonLd data={productJsonLd(product)} />
+      <JsonLd data={editorialReviewJsonLd(product)} />
       <div className="container py-8">
         <Link href={catInfo.backLink} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> {catInfo.backText}
@@ -80,7 +96,7 @@ export default async function ProductReviewPage({ params }: Props) {
                   <div className="flex items-center text-xl font-semibold">
                     <Star className="h-5 w-5 fill-yellow-500 text-yellow-500 mr-1.5" /> {product.rating}
                   </div>
-                  <div className="text-muted-foreground">• {product.reviewCount.toLocaleString()} reviews</div>
+                  <div className="text-muted-foreground">• Editorial score</div>
                   <div className="text-muted-foreground">• {product.price}</div>
                 </div>
               </div>
@@ -93,7 +109,7 @@ export default async function ProductReviewPage({ params }: Props) {
             </div>
 
             <div className="mt-6 rounded-3xl overflow-hidden border bg-card aspect-[16/9] md:aspect-[16/8.5] relative">
-              <Image src={product.image} alt={`${product.name} mouth tape strips — best for ${product.bestFor.join(', ')} 2026`} fill sizes="(max-width: 1024px) 100vw, 800px" className="object-cover" />
+              <Image src={product.image} alt={`${product.name} by ${product.brand}`} fill sizes="(max-width: 1024px) 100vw, 800px" className="object-cover" priority />
             </div>
 
             <div className="prose review-prose mt-8 max-w-none">
@@ -154,20 +170,23 @@ export default async function ProductReviewPage({ params }: Props) {
                 <a
                   href={getInternalAffiliateLink(product.slug)}
                   target="_blank"
-                  rel="noopener noreferrer sponsored"
+                  rel={SPONSORED_REL}
                   className="mt-5 block"
                 >
-                  <Button size="lg" className="w-full text-base h-12">Buy on Official Site (Affiliate)</Button>
+                  <Button size="lg" className="w-full text-base h-12">{shopLabel(destination)}</Button>
                 </a>
-                <p className="text-[10px] text-center text-muted-foreground mt-2.5">
-                  Affiliate link (Amazon UK store — ships to many countries worldwide). We earn a small commission if you purchase. Thank you for supporting independent reviews.
-                </p>
+                <div className="mt-3">
+                  <AffiliateDisclosure />
+                </div>
+                {product.linkNote && (
+                  <p className="text-xs text-muted-foreground mt-2">{product.linkNote}</p>
+                )}
 
                 <Separator className="my-5" />
 
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between"><span className="text-muted-foreground">Rating</span> <span className="font-medium">{product.rating} / 5</span></div>
-                  <div className="flex justify-between"><span className="text-muted-foreground">Reviews</span> <span className="font-medium">{product.reviewCount.toLocaleString()}</span></div>
+                  <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Editorial</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Best For</span> <span className="font-medium text-right">{product.bestFor.join(', ')}</span></div>
                 </div>
               </div>
@@ -176,8 +195,7 @@ export default async function ProductReviewPage({ params }: Props) {
 
               {/* Trust note */}
               <div className="text-xs bg-muted/60 border rounded-xl p-4 text-muted-foreground">
-                We bought and tested this product ourselves (or equivalent current version). 
-                This review reflects real nights of sleep, not marketing claims.
+                Prices and stock were checked against the linked shop where we could. This page is an editorial overview, not a medical recommendation.
               </div>
 
               <div>
@@ -205,56 +223,6 @@ export default async function ProductReviewPage({ params }: Props) {
         <div className="mt-10">
           <AdPlaceholder label="Bottom of Review Ad" />
         </div>
-
-        {/* Product + Review Schema for SEO (E-E-A-T + rich results 2026) */}
-        <Script id="product-schema" type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: product.name,
-            brand: { '@type': 'Brand', name: product.brand },
-            description: product.description,
-            image: `${(process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech'))}${product.image}`,
-            offers: {
-              '@type': 'Offer',
-              url: product.affiliateLink,
-              priceCurrency: 'GBP',
-              price: product.priceValue,
-              availability: 'https://schema.org/InStock',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: product.rating,
-              reviewCount: product.reviewCount,
-            },
-          })
-        }} />
-        <Script id="review-schema" type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Review',
-            reviewBody: product.longDescription,
-            reviewRating: {
-              '@type': 'Rating',
-              ratingValue: product.rating,
-              bestRating: '5'
-            },
-            author: {
-              '@type': 'Organization',
-              name: 'SleepBetterHub Editorial Team'
-            },
-            itemReviewed: {
-              '@type': 'Product',
-              name: product.name,
-              brand: { '@type': 'Brand', name: product.brand }
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'SleepBetterHub',
-              url: (process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech'))
-            }
-          })
-        }} />
       </div>
     </div>
   );

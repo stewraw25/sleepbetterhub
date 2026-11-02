@@ -1,6 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getPublishedPosts } from '@/lib/blog';
+import { pageMeta } from '@/lib/seo';
+
+export const metadata: Metadata = pageMeta({
+  title: 'Sleep Guides',
+  description: 'Practical guides on mouth taping, snoring, nasal breathing, and sleep habits, written for readers in the UK and the US.',
+  path: '/blog',
+});
 
 export default function BlogIndex() {
   const publishedPosts = getPublishedPosts();

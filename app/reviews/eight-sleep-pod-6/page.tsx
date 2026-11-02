@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Script from 'next/script';
 import Image from 'next/image';
 import { Star, Check, X, ArrowLeft, Thermometer, Moon, Users, Zap, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,18 +7,17 @@ import { Separator } from '@/components/ui/separator';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { getProductBySlug } from '@/lib/products';
-import { getInternalAffiliateLink } from '@/lib/affiliates';
+import { getInternalAffiliateLink, SPONSORED_REL } from '@/lib/affiliates';
+import { JsonLd } from '@/components/JsonLd';
+import { pageMeta } from '@/lib/seo';
+import { breadcrumbJsonLd, editorialReviewJsonLd, productJsonLd } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Eight Sleep Pod 6 Review UK 2026 — Is It Worth £2,295+? Honest Verdict',
-  description: 'Honest Eight Sleep Pod 6 review for UK buyers. Pricing from £2,295, Autopilot temperature control, subscription costs, who it\'s for, and whether it\'s worth the investment. No invented claims.',
-  keywords: ['eight sleep review', 'eight sleep pod 6 review', 'eight sleep uk', 'is eight sleep worth it', 'eight sleep pod 6 uk price', 'best cooling mattress uk'],
-  openGraph: {
-    title: 'Eight Sleep Pod 6 Review UK 2026 — Worth the Investment?',
-    description: 'Full UK review of the Eight Sleep Pod 6 temperature-controlled sleep system. Pricing, features, subscription, and honest verdict.',
-    images: [{ url: '/images/eight-sleep-pod.jpg' }],
-  },
-};
+export const metadata = pageMeta({
+  title: 'Eight Sleep Pod 6 Review (UK)',
+  description: 'What the Eight Sleep Pod 6 cover does, what it costs from £2,295, the membership fee, and who should skip it.',
+  path: '/reviews/eight-sleep-pod-6',
+  image: '/images/eight-sleep-pod.jpg',
+});
 
 export default function EightSleepPod6Review() {
   const product = getProductBySlug('eight-sleep-pod-6');
@@ -32,6 +30,15 @@ export default function EightSleepPod6Review() {
 
   return (
     <div className="bg-background">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Sleep trackers', path: '/categories/gadgets' },
+          { name: 'Eight Sleep Pod 6', path: '/reviews/eight-sleep-pod-6' },
+        ])}
+      />
+      <JsonLd data={productJsonLd(product)} />
+      <JsonLd data={editorialReviewJsonLd(product)} />
       <div className="container py-8">
         <Link href="/categories/gadgets" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> Back to Sleep Tech
@@ -49,7 +56,7 @@ export default function EightSleepPod6Review() {
                   <div className="flex items-center text-xl font-semibold">
                     <Star className="h-5 w-5 fill-yellow-500 text-yellow-500 mr-1.5" /> {product.rating}
                   </div>
-                  <div className="text-muted-foreground">• {product.reviewCount.toLocaleString()} reviews</div>
+                  <div className="text-muted-foreground">• Editorial score</div>
                 </div>
               </div>
             </div>
@@ -66,7 +73,7 @@ export default function EightSleepPod6Review() {
 
             {/* AFFILIATE DISCLOSURE */}
             <div className="mt-6 text-xs text-muted-foreground bg-muted/50 rounded-lg p-3 border">
-              <strong>Affiliate disclosure:</strong> This page contains affiliate links to Eight Sleep. If you purchase through our links, we may earn a commission at no extra cost to you. This supports our independent reviews. We only recommend products we genuinely believe in.
+              <strong>Affiliate disclosure:</strong> The shop buttons go to Eight Sleep’s UK site. No affiliate code is configured, so these clicks are not commissioned. You should not pay extra either way.
             </div>
 
             <div className="prose review-prose mt-8 max-w-none">
@@ -292,20 +299,20 @@ export default function EightSleepPod6Review() {
                 <a
                   href={affiliateLink}
                   target="_blank"
-                  rel="noopener noreferrer sponsored"
+                  rel={SPONSORED_REL}
                   className="mt-5 block"
                 >
                   <Button size="lg" className="w-full text-base h-12">Shop Eight Sleep UK</Button>
                 </a>
-                <p className="text-[10px] text-center text-muted-foreground mt-2.5">
-                  Affiliate link to eightsleep.com/uk. We may earn a commission if you purchase — thank you for supporting independent reviews.
+                <p className="text-xs text-center text-muted-foreground mt-2.5">
+                  Brand-site link. No affiliate code is attached yet.
                 </p>
 
                 <Separator className="my-5" />
 
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between"><span className="text-muted-foreground">Rating</span> <span className="font-medium">{product.rating} / 5</span></div>
-                  <div className="flex justify-between"><span className="text-muted-foreground">Reviews</span> <span className="font-medium">{product.reviewCount.toLocaleString()}</span></div>
+                  <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Editorial</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Trial Period</span> <span className="font-medium">30 nights (check terms)</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Warranty</span> <span className="font-medium">2 years limited</span></div>
                 </div>
@@ -374,7 +381,7 @@ export default function EightSleepPod6Review() {
               <a 
                 href={getInternalAffiliateLink('eight-sleep-base')}
                 target="_blank"
-                rel="noopener noreferrer sponsored"
+                rel={SPONSORED_REL}
               >
                 <Button variant="outline" size="sm" className="w-full">Shop Base</Button>
               </a>
@@ -390,7 +397,7 @@ export default function EightSleepPod6Review() {
               <a 
                 href={getInternalAffiliateLink('eight-sleep-blanket')}
                 target="_blank"
-                rel="noopener noreferrer sponsored"
+                rel={SPONSORED_REL}
               >
                 <Button variant="outline" size="sm" className="w-full">Shop Blanket</Button>
               </a>
@@ -406,15 +413,15 @@ export default function EightSleepPod6Review() {
               <a 
                 href={getInternalAffiliateLink('eight-sleep-pillow-cover')}
                 target="_blank"
-                rel="noopener noreferrer sponsored"
+                rel={SPONSORED_REL}
               >
                 <Button variant="outline" size="sm" className="w-full">Shop Pillow Cover</Button>
               </a>
             </div>
           </div>
 
-          <p className="text-[10px] text-muted-foreground mt-4 text-center">
-            Affiliate links to eightsleep.com/uk. Accessories require a Pod system. Check compatibility before purchasing.
+          <p className="text-xs text-muted-foreground mt-4 text-center">
+            Brand-site links with no affiliate code yet. Accessories require a Pod system. Check compatibility before purchasing.
           </p>
         </div>
 
@@ -441,56 +448,6 @@ export default function EightSleepPod6Review() {
           <AdPlaceholder label="Bottom of Review Ad" />
         </div>
 
-        {/* SCHEMA */}
-        <Script id="product-schema" type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: 'Eight Sleep Pod 6',
-            brand: { '@type': 'Brand', name: 'Eight Sleep' },
-            description: product.description,
-            image: `${(process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech'))}${product.image}`,
-            offers: {
-              '@type': 'Offer',
-              url: 'https://www.eightsleep.com/uk/pod-cover/',
-              priceCurrency: 'GBP',
-              price: 2295,
-              availability: 'https://schema.org/InStock',
-              priceValidUntil: '2026-12-31',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: product.rating,
-              reviewCount: product.reviewCount,
-            },
-          })
-        }} />
-        <Script id="review-schema" type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Review',
-            reviewBody: 'Comprehensive UK review of the Eight Sleep Pod 6 temperature-controlled sleep system. Covers pricing, Autopilot features, subscription costs, and honest assessment of value.',
-            reviewRating: {
-              '@type': 'Rating',
-              ratingValue: product.rating,
-              bestRating: '5'
-            },
-            author: {
-              '@type': 'Organization',
-              name: 'SleepBetterHub Editorial Team'
-            },
-            itemReviewed: {
-              '@type': 'Product',
-              name: 'Eight Sleep Pod 6',
-              brand: { '@type': 'Brand', name: 'Eight Sleep' }
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'SleepBetterHub',
-              url: (process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech'))
-            }
-          })
-        }} />
       </div>
     </div>
   );

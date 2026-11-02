@@ -12,6 +12,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { mouthTapeProducts, bestForOptions } from '@/lib/products';
 import { SafetyAlert } from '@/components/SafetyAlert';
+import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 
 type SortOption = 'rating' | 'price-low' | 'price-high' | 'reviews';
 
@@ -83,15 +84,21 @@ export default function MouthTapeHub() {
             <div className="uppercase text-xs tracking-[2.5px] text-primary mb-2 font-medium">PREMIUM COMPARISON • 2026</div>
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tighter">Best Mouth Tape 2026: Sleep Strips Comparison &amp; Reviews</h1>
             <p className="mt-3 text-lg text-muted-foreground">
-              The most thorough, independent comparison of every major premium mouth tape and sleep strip for 2026. 
-              Tested by real side sleepers, beard owners, CPAP users, and sensitive skin sleepers. Find the best for how to stop mouth breathing, reduce snoring, and improve sleep quality safely.
+              A comparison of mouth tapes for side sleepers, beards, CPAP users, and sensitive skin, with the safety limits up front.
+            </p>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Choosing between tape and a nose strip for snoring? Read{' '}
+              <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary underline underline-offset-2">mouth tape vs nasal strips for snoring</Link>.
             </p>
           </div>
         </div>
       </div>
 
       <div className="container py-8">
-        <SafetyAlert />
+        <AffiliateDisclosure />
+        <div className="mt-4">
+          <SafetyAlert />
+        </div>
 
         {/* FILTERS + CONTROLS */}
         <div className="mt-8 mb-6 flex flex-col lg:flex-row gap-4 lg:items-end">
@@ -206,7 +213,6 @@ export default function MouthTapeHub() {
                     <td>
                       <div className="flex items-center gap-1 font-medium">
                         <Star className="h-3.5 w-3.5 fill-yellow-500 text-yellow-500" /> {p.rating}
-                        <span className="text-[10px] text-muted-foreground font-normal">({p.reviewCount})</span>
                       </div>
                     </td>
                     <td className="font-medium tabular-nums">{p.price}</td>
@@ -289,7 +295,7 @@ export default function MouthTapeHub() {
               }
             ].map((item, i) => (
               <div key={i} className="border rounded-xl p-5 bg-card">
-                <div className="font-semibold mb-1.5">{item.q}</div>
+                <h3 className="font-semibold mb-1.5">{item.q}</h3>
                 <div className="text-muted-foreground">{item.a}</div>
               </div>
             ))}

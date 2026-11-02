@@ -18,6 +18,8 @@ export type Product = {
   ingredients?: string;
   affiliateLink: string; // base destination. Can be overridden via env vars in lib/affiliates.ts (recommended)
   amazonAsin?: string; // Optional: ASIN for Amazon Associates link (preferred for many products)
+  /** Plain-language note when the shop button is not a straightforward product match. */
+  linkNote?: string;
   image: string;
   featured?: boolean;
   inStock?: boolean;
@@ -32,8 +34,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.8,
     reviewCount: 1243,
-    price: '£13.49 / 30 strips',
-    priceValue: 13.49,
+    price: 'Brand site',
+    priceValue: 35,
     bestFor: ['Side Sleepers', 'Sensitive Skin', 'CPAP Users'],
     pros: [
       'Gentle medical-grade adhesive, no residue',
@@ -63,8 +65,8 @@ export const mouthTapeProducts: Product[] = [
       'Breathe only through your nose.',
       'In morning, slowly peel from one corner.',
     ],
-    affiliateLink: 'https://www.amazon.co.uk/s?k=premium+mouth+tape+for+sleep&tag=stewraw25-21',
-    amazonAsin: 'B0CBCQ8YT6', // Longevity Sleep Tape (gentle, derm-tested 30pk) - good match for premium gentle tape; credits stewraw25-21
+    affiliateLink: 'https://dreamrecovery.io/products/dream-tape-mouth-tape',
+    linkNote: 'Dream Recovery mouth tape is sold on the brand site. There is no matching Amazon UK listing, and this button has no affiliate code.',
     image: '/images/dream-recovery-tape.jpg',
     featured: true,
     inStock: true,
@@ -77,8 +79,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.6,
     reviewCount: 2891,
-    price: '£18.99 / 28 nights',
-    priceValue: 18.99,
+    price: '£46 on brand site',
+    priceValue: 46,
     bestFor: ['Beards', 'Side Sleepers', 'CPAP Users'],
     pros: [
       'Patented "mouth strip" design with center vent for safety',
@@ -106,8 +108,8 @@ export const mouthTapeProducts: Product[] = [
       'Press firmly around edges.',
       'If you feel the need to breathe orally, the vent allows small airflow.',
     ],
-    affiliateLink: 'https://www.amazon.co.uk/dp/B0GG5MYR3C?tag=stewraw25-21',
-    amazonAsin: 'B0GG5MYR3C', // HASLOM Hypoallergenic with central breathing hole (close to SomniFix vented design, 60 strips) - current popular UK listing; credits stewraw25-21
+    affiliateLink: 'https://somnifix.com/en-gb/products/mouth-strips-snoring-sleep-aids',
+    linkNote: 'Amazon UK’s SomniFix listing (B076CQ1NR8) is currently unavailable. This button goes to SomniFix’s own UK shop and has no affiliate code.',
     image: '/images/somnifix-tape.jpg',
     featured: true,
     inStock: true,
@@ -120,8 +122,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.7,
     reviewCount: 967,
-    price: '£11.99 / 30 nights',
-    priceValue: 11.99,
+    price: '£12.90 / 30 strips',
+    priceValue: 12.9,
     bestFor: ['Beards', 'Heavy Mouth Breathers', 'Value'],
     pros: [
       'Outstanding value – great performance at lower price',
@@ -161,8 +163,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.4,
     reviewCount: 612,
-    price: '£9.99 / 60 strips',
-    priceValue: 9.99,
+    price: 'Brand site',
+    priceValue: 25,
     bestFor: ['Value', 'Beginners', 'Sensitive Skin'],
     pros: [
       'Best value – 60 strips per pack',
@@ -187,8 +189,8 @@ export const mouthTapeProducts: Product[] = [
       'Use one strip per night.',
       'Store pack in cool dry place.',
     ],
-    affiliateLink: 'https://www.amazon.co.uk/dp/B0CJDGFLJ1?tag=stewraw25-21',
-    amazonAsin: 'B0CJDGFLJ1', // 60PCS Adult Mouth Tape (value high-volume gentle pack) - solid budget match for ZzzTape Pro; credits stewraw25-21 via /go/
+    affiliateLink: 'https://zzztape.com/',
+    linkNote: 'ZzzTape is sold on its own site. We could not find this brand on Amazon UK, and this button has no affiliate code.',
     image: '/images/value-mouth-tape.jpg',
     inStock: true,
   },
@@ -200,8 +202,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.5,
     reviewCount: 431,
-    price: '£14.99 / 25 nights',
-    priceValue: 14.99,
+    price: '£19.95 / 90 strips',
+    priceValue: 19.95,
     bestFor: ['Sensitive Skin', 'Children (teens)', 'Light Sleepers'],
     pros: [
       'Extremely gentle – best for sensitive skin and first-timers',
@@ -225,8 +227,9 @@ export const mouthTapeProducts: Product[] = [
       'Perfect for gradual introduction – some users start with half nights.',
       'Remove very slowly in the morning.',
     ],
-    affiliateLink: 'https://www.amazon.co.uk/dp/B0G54DFVX7?tag=stewraw25-21',
-    amazonAsin: 'B0G54DFVX7', // Gentle mouth tape (similar to MyoTape style) - sourced from Amazon.co.uk search results
+    affiliateLink: 'https://www.amazon.co.uk/dp/B08JZF6YK5?tag=stewraw25-21',
+    amazonAsin: 'B08JZF6YK5', // MyoTape 90 strips (Oxygen Advantage) on Amazon.co.uk
+    linkNote: 'Amazon UK listing for MyoTape, 90 strips, about £19.95 when checked in November 2026.',
     image: '/images/mytape.jpg',
     inStock: true,
   },
@@ -238,8 +241,8 @@ export const mouthTapeProducts: Product[] = [
     category: 'mouth-tape',
     rating: 4.3,
     reviewCount: 289,
-    price: '£12.99 / 35 nights',
-    priceValue: 12.99,
+    price: 'From $26.95 / 30',
+    priceValue: 26.95,
     bestFor: ['Side Sleepers', 'Value', 'Everyday Use'],
     pros: [
       'Great balance of price, quantity, and performance',
@@ -262,8 +265,8 @@ export const mouthTapeProducts: Product[] = [
       'Standard application.',
       'Works well with most sleep positions.',
     ],
-    affiliateLink: 'https://www.amazon.co.uk/dp/B0DM9W7Q4G?tag=stewraw25-21',
-    amazonAsin: 'B0DM9W7Q4G', // Premium Mouth Tape by Like A Log (30pk, good everyday balance) - solid match for SayLess all-rounder; credits stewraw25-21
+    affiliateLink: 'https://getsayless.com/products/night-lips',
+    linkNote: 'SayLess says Night Lips is sold on its own site, not Amazon. This button has no affiliate code.',
     image: '/images/value-mouth-tape.jpg',
     inStock: true,
   },
@@ -280,8 +283,8 @@ export const allProducts: Product[] = [
     category: 'nasal',
     rating: 4.5,
     reviewCount: 4521,
-    price: '$11.99 / 30 strips',
-    priceValue: 11.99,
+    price: '£9.90 / 20 strips',
+    priceValue: 9.9,
     bestFor: ['Congestion', 'Allergies', 'Snoring'],
     pros: ['Drug-free instant relief', 'Clinically proven to open airways', 'Easy to apply and remove', 'Widely available'],
     cons: ['Single-use only', 'Can leave slight mark on nose if worn long'],
@@ -289,30 +292,32 @@ export const allProducts: Product[] = [
     longDescription: 'Breathe Right nasal strips gently lift and open nasal passages to improve airflow. Excellent complement or alternative for those who cannot mouth tape due to congestion.',
     safetyNotes: ['For external use only.', 'Discontinue if skin irritation occurs.'],
     howToUse: ['Clean nose. Peel and apply across bridge of nose. Press to activate spring action.'],
-    affiliateLink: 'https://www.amazon.co.uk/dp/B017HO49RG?tag=stewraw25-21',
-    amazonAsin: 'B017HO49RG', // Breathe Right Clear Nasal Strips - standard UK listing from Amazon.co.uk
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0CPY7QDWV?tag=stewraw25-21',
+    amazonAsin: 'B0CPY7QDWV', // Breathe Right Clear small/medium, 10 strips x 2, sold by Amazon UK
+    linkNote: 'Clear small/medium strips, two packs of 10, on Amazon UK. About £9.90 when checked in November 2026.',
     image: '/images/nasal-product.jpg',
     inStock: true,
   },
   {
     id: 'n2',
     slug: 'nasal-dilator-pro',
-    name: 'Nasal Dilator Pro (Internal)',
-    brand: 'Airway Wellness',
+    name: 'Mute Nasal Dilator',
+    brand: 'Rhinomed',
     category: 'nasal',
     rating: 4.2,
     reviewCount: 387,
-    price: '£19.99 / 2-pack (reusable)',
+    price: '£19.99 / 3-pack',
     priceValue: 19.99,
     bestFor: ['Athletes', 'Stronger Dilation', 'Reusable'],
     pros: ['Reusable for months', 'Stronger physical dilation than external strips', 'No adhesive on skin'],
     cons: ['Can feel unusual inside nose at first', 'Needs regular cleaning'],
-    description: 'Internal nasal dilator for maximum airflow. Popular with athletes and chronic nasal restrictors.',
-    longDescription: 'Soft medical silicone internal dilators that physically expand the nasal valve. Many users combine with external strips for best results.',
+    description: 'Reusable internal nasal dilator from Rhinomed. The maker says trials found higher nasal airflow. Useful when adhesive strips irritate the skin.',
+    longDescription: 'Mute is an internal nasal dilator made by Rhinomed. Soft stents sit inside the nostrils and hold the nasal valve slightly more open, which is the same job an external strip does, without adhesive across the nose. Rhinomed says its trials measured about 38% more nasal airflow. That figure is the manufacturer’s, not a measurement we made. The shop button opens the small 3-pack on Amazon UK, about £19.99 when checked in November 2026. Rinse it and do not share it. If small feels wrong, Rhinomed also sells a starter pack with more than one size.',
     safetyNotes: ['Clean thoroughly after each use. Do not share.'],
     howToUse: ['Insert gently into each nostril until secure but comfortable.'],
-    affiliateLink: 'https://www.amazon.co.uk/dp/B00B4S61QE?tag=stewraw25-21',
-    amazonAsin: 'B00B4S61QE', // Popular internal nasal dilator (Airmax style) widely available UK for sleep/breathing
+    affiliateLink: 'https://www.amazon.co.uk/dp/B011LR52UI?tag=stewraw25-21',
+    amazonAsin: 'B011LR52UI', // Mute nasal dilator, small 3-pack, Amazon UK
+    linkNote: 'Mute small 3-pack on Amazon UK. About £19.99 when checked in November 2026.',
     image: '/images/nasal-dilator.jpg',
     inStock: true,
   },
@@ -334,8 +339,9 @@ export const allProducts: Product[] = [
     longDescription: 'Oura provides detailed nightly sleep architecture, HRV, temperature trends, and personalized recommendations. Indispensable for data-driven sleep improvement.',
     safetyNotes: ['Not a medical device. Consult professionals for diagnosed conditions.'],
     howToUse: ['Wear consistently. Review daily Readiness and Sleep scores in app.'],
-    affiliateLink: 'https://www.amazon.co.uk/dp/B0CSRF8JGG?tag=stewraw25-21',
-    amazonAsin: 'B0CSRF8JGG', // Oura Ring Gen3 Heritage (black) - current UK listing; commissions via tag stewraw25-21. For higher rates consider official Oura affiliate + NEXT_PUBLIC_AFF_OURA override
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0CSRFCBJH?tag=stewraw25-21',
+    amazonAsin: 'B0CSRFCBJH', // Oura Ring Gen3 Heritage, silver, size 11 — a size that had live offers on Amazon UK
+    linkNote: 'Opens one live Gen3 Heritage listing (silver, size 11). Oura sizes are not standard ring sizes. If you have not measured, order a sizing kit before a specific size.',
     image: '/images/gadget-tracker.jpg',
     featured: true,
     inStock: true,
@@ -382,6 +388,7 @@ export const allProducts: Product[] = [
       'Autopilot learns your patterns over 1–2 weeks and begins automatic adjustments.',
     ],
     affiliateLink: 'https://www.eightsleep.com/uk/pod-cover/',
+    linkNote: 'Goes to Eight Sleep’s UK site. No affiliate code is configured, so this click is not commissioned.',
     image: '/images/eight-sleep-pod.jpg',
     featured: true,
     inStock: true,
@@ -422,6 +429,7 @@ export const allProducts: Product[] = [
       'Position Hub unit with adequate ventilation space.',
     ],
     affiliateLink: 'https://www.eightsleep.com/uk/product/the-base/',
+    linkNote: 'Goes to Eight Sleep’s UK site. No affiliate code is configured, so this click is not commissioned.',
     image: '/images/eight-sleep-pod.jpg',
     inStock: true,
   },
@@ -460,6 +468,7 @@ export const allProducts: Product[] = [
       'Adjust settings via the Eight Sleep app.',
     ],
     affiliateLink: 'https://www.eightsleep.com/uk/product/the-blanket/',
+    linkNote: 'Goes to Eight Sleep’s UK site. No affiliate code is configured, so this click is not commissioned.',
     image: '/images/eight-sleep-pod.jpg',
     inStock: true,
   },
@@ -498,6 +507,7 @@ export const allProducts: Product[] = [
       'Adjust temperature via the Eight Sleep app.',
     ],
     affiliateLink: 'https://www.eightsleep.com/uk/product/the-pillow-cover/',
+    linkNote: 'Goes to Eight Sleep’s UK site. No affiliate code is configured, so this click is not commissioned.',
     image: '/images/eight-sleep-pod.jpg',
     inStock: true,
   },
@@ -520,7 +530,7 @@ export const allProducts: Product[] = [
     safetyNotes: ['Off-gassing period of 24-72 hours recommended.'],
     howToUse: ['Use on solid foundation. Allow full expansion before first sleep.'],
     affiliateLink: 'https://www.amazon.co.uk/s?k=tempur+pedic+adapt&tag=stewraw25-21',
-    // Large ticket item, best via brand direct affiliate program if available (set NEXT_PUBLIC_AFF_TEMPUR_PEDIC). Fallback Amazon search with your tag.
+    linkNote: 'Tempur sells most mattresses on its own site. This button opens Amazon UK search results for the TEMPUR-Adapt, with our Associates tag, rather than one mattress ASIN.',
     image: '/images/mattress.jpg',
     inStock: true,
   },
@@ -542,8 +552,8 @@ export const allProducts: Product[] = [
     longDescription: 'Magnesium glycinate is gentle on the stomach and has excellent absorption. It supports GABA activity and muscle relaxation, helping you fall asleep faster and deeper.',
     safetyNotes: ['Consult doctor if on medications. Start with lower dose.'],
     howToUse: ['Take 30-60 min before bed. 200-400mg elemental magnesium.'],
-    affiliateLink: 'https://www.amazon.co.uk/s?k=magnesium+glycinate+400mg&tag=stewraw25-21',
-    // Thorne often best via direct (set NEXT_PUBLIC_AFF_MAGNESIUM). Fallback broad search for glycinate 400mg with tag. Popular generics widely available.
+    affiliateLink: 'https://www.amazon.co.uk/s?k=magnesium+glycinate+capsules&tag=stewraw25-21',
+    linkNote: 'Thorne magnesium glycinate does not have a stable Amazon UK product page. This opens Amazon UK search results for magnesium glycinate capsules, with our Associates tag. It is not a Thorne listing.',
     image: '/images/magnesium-supplement.jpg',
     inStock: true,
   },
@@ -564,8 +574,8 @@ export const allProducts: Product[] = [
     longDescription: 'Apigenin binds to GABA receptors similarly to benzodiazepines but much milder. Many biohackers stack 50mg Apigenin + 300-400mg Magnesium Glycinate + optional L-Theanine 30-60 min before bed.',
     safetyNotes: ['Do not combine with sedatives without medical advice.'],
     howToUse: ['Take with magnesium 45 minutes before desired bedtime.'],
-    affiliateLink: 'https://www.amazon.com/s?k=apigenin+50mg&tag=stewraw25-21',
-    // Many good generic 50mg options; set NEXT_PUBLIC_AFF_APIGENIN for specific brand program if you join one.
+    affiliateLink: 'https://www.amazon.co.uk/s?k=apigenin+50mg+capsules&tag=stewraw25-21',
+    linkNote: 'Momentous Apigenin is not a stable Amazon UK listing. This opens Amazon UK search results for 50mg apigenin capsules, with our Associates tag.',
     image: '/images/apigenin-supplement.jpg',
     inStock: true,
   },
@@ -598,8 +608,8 @@ export const allProducts: Product[] = [
     howToUse: [
       'Take 200mg 30-60 minutes before bed, ideally with magnesium.',
     ],
-    affiliateLink: 'https://www.amazon.com/s?k=l-theanine+200mg&tag=stewraw25-21',
-    amazonAsin: 'B00J2J4N3C',
+    affiliateLink: 'https://www.amazon.co.uk/s?k=l-theanine+200mg+capsules&tag=stewraw25-21',
+    linkNote: 'Sports Research L-Theanine is not the Amazon UK page. This opens Amazon UK search results for 200mg L-theanine capsules, with our Associates tag.',
     image: '/images/magnesium-supplement.jpg',
     inStock: true,
   },

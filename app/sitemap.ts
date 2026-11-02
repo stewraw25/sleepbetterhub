@@ -1,48 +1,40 @@
 import { MetadataRoute } from 'next';
 import { allProducts } from '@/lib/products';
 import { getPublishedPosts } from '@/lib/blog';
+import { getSiteUrl } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech');
+  const baseUrl = getSiteUrl();
 
-  const staticPages = [
-    '',
-    '/mouth-tape',
-    '/quiz',
-    '/about',
-    '/blog',
-    '/blog/how-to-fall-asleep-fast-naturally',
-    '/blog/sleep-anxiety-remedies',
-    '/blog/how-to-stop-mouth-breathing-at-night',
-    '/categories',
-    '/categories/nasal',
-    '/categories/gadgets',
-    '/categories/supplements',
-    '/categories/mattresses',
-    '/reviews/oura-ring-gen3',
-    '/reviews/eight-sleep-pod-6',
-    '/guides/eight-sleep-f1',
-  ].map((path) => ({
+  const staticPages: MetadataRoute.Sitemap = [
+    { path: '', priority: 1, changeFrequency: 'weekly' as const },
+    { path: '/mouth-tape', priority: 0.95, changeFrequency: 'weekly' as const },
+    { path: '/blog', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/quiz', priority: 0.6, changeFrequency: 'monthly' as const },
+    { path: '/about', priority: 0.4, changeFrequency: 'yearly' as const },
+    { path: '/categories', priority: 0.6, changeFrequency: 'weekly' as const },
+    { path: '/categories/nasal', priority: 0.75, changeFrequency: 'weekly' as const },
+    { path: '/categories/gadgets', priority: 0.7, changeFrequency: 'weekly' as const },
+    { path: '/categories/supplements', priority: 0.7, changeFrequency: 'weekly' as const },
+    { path: '/categories/mattresses', priority: 0.6, changeFrequency: 'monthly' as const },
+    { path: '/guides/eight-sleep-f1', priority: 0.55, changeFrequency: 'monthly' as const },
+  ].map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date(),
-    changeFrequency: (path === '' || path === '/mouth-tape' || path.includes('eight-sleep')) ? 'daily' as const : 'weekly' as const,
-    priority: path === '' ? 1 : (path === '/mouth-tape' || path.includes('mouth') || path.includes('eight-sleep')) ? 0.95 : 0.85,
+    changeFrequency,
+    priority,
   }));
 
-  const productPages = allProducts.map((product) => ({
+  const productPages: MetadataRoute.Sitemap = allProducts.map((product) => ({
     url: `${baseUrl}/reviews/${product.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.9,
+    changeFrequency: 'monthly',
+    priority: 0.8,
   }));
 
-  const publishedBlogPosts = getPublishedPosts();
-  const blogPages = publishedBlogPosts.map((post) => ({
+  const blogPages: MetadataRoute.Sitemap = getPublishedPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
-    changeFrequency: 'monthly' as const,
-    priority: (post.slug.includes('fall-asleep') || post.slug.includes('sleep-anxiety') || post.slug.includes('mouth-breathing')) ? 0.85 : 0.7,
+    changeFrequency: 'monthly',
+    priority: post.slug === 'mouth-tape-vs-nasal-strips-for-snoring' ? 0.9 : 0.7,
   }));
 
   return [...staticPages, ...productPages, ...blogPages];

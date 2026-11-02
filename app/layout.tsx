@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Toaster } from 'sonner';
-import { AIChat } from '@/components/AIChat';
-import Script from 'next/script';
+import { JsonLd } from '@/components/JsonLd';
+import { AIChatLoader } from '@/components/AIChatLoader';
+import { getSiteUrl, SITE_NAME } from '@/lib/site';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -14,39 +15,33 @@ const geistSans = Geist({
   weight: ['400', '500', '600', '700'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-});
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  // Uses your final domain in production, falls back gracefully on Vercel preview URLs
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sleepmask.tech')
-  ),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: 'SleepBetterHub | Best Mouth Tape 2026, Nasal Strips & Natural Sleep Aids for Insomnia & Sleep Problems',
+    default: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
     template: '%s | SleepBetterHub',
   },
-  description: 'Science-backed mouth tape, nasal strips, sleep trackers & natural sleep aids to help with insomnia, sleep anxiety, mouth breathing & snoring. Honest 2026 reviews & guides for better sleep worldwide.',
-  keywords: ['mouth tape for sleep', 'best mouth tape 2026', 'how to stop mouth breathing', 'insomnia remedies', 'natural sleep aids', 'nasal strips', 'sleep anxiety', 'how to fall asleep fast', 'sleep optimization', 'sleep problems'],
+  description: 'Independent UK and US reviews of mouth tape, nasal strips, sleep trackers and supplements, plus practical guides on snoring and night breathing.',
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'SleepBetterHub — Best Mouth Tape, Nasal Strips & Natural Sleep Aids 2026',
-    description: 'Independent reviews of the best mouth tape, sleep strips, nasal dilators & sleep tools. Evidence-based guides for insomnia, sleep anxiety, mouth breathing and deeper sleep — for sleepers worldwide.',
-    images: [{ url: '/images/hero-bedroom.jpg' }],
-    locale: 'en_US',
+    title: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
+    description: 'Independent UK and US reviews of mouth tape, nasal strips, sleep trackers and supplements, plus practical guides on snoring and night breathing.',
+    siteName: SITE_NAME,
+    type: 'website',
+    locale: 'en_GB',
+    url: siteUrl,
+    images: [{ url: '/images/hero-bedroom.jpg', width: 1200, height: 630, alt: 'A calm bedroom' }],
   },
   twitter: {
     card: 'summary_large_image',
-  },
-  alternates: {
-    canonical: '/',
+    title: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
+    description: 'Independent UK and US reviews of mouth tape, nasal strips, sleep trackers and supplements.',
+    images: ['/images/hero-bedroom.jpg'],
   },
 };
 
@@ -57,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased min-h-screen flex flex-col bg-background text-foreground`}>
+      <body className={`${geistSans.variable} font-sans antialiased min-h-screen flex flex-col bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar />
           <main className="flex-1">{children}</main>
@@ -65,31 +60,25 @@ export default function RootLayout({
           <Toaster position="top-center" richColors closeButton />
         </ThemeProvider>
 
-        {/* Global SEO / E-E-A-T structured data for sleep products and site */}
-        <Script id="org-schema" type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+        <JsonLd
+          data={{
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'SleepBetterHub',
-            url: 'https://sleepmask.tech',
-            description: 'Independent reviews and guides for mouth tape, nasal strips, sleep aids and insomnia remedies worldwide.',
-            sameAs: ['https://twitter.com', 'https://www.youtube.com'],
-          })
-        }} />
-        <Script id="website-schema" type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+            name: SITE_NAME,
+            url: siteUrl,
+            logo: `${siteUrl}/images/logo.jpg`,
+            description: 'Independent reviews and guides for mouth tape, nasal strips, and other sleep products.',
+          }}
+        />
+        <JsonLd
+          data={{
             '@context': 'https://schema.org',
             '@type': 'WebSite',
-            name: 'SleepBetterHub',
-            url: 'https://sleepmask.tech',
-            potentialAction: {
-              '@type': 'SearchAction',
-              target: 'https://sleepmask.tech/search?q={search_term_string}',
-              'query-input': 'required name=search_term_string'
-            }
-          })
-        }} />
-        <AIChat />
+            name: SITE_NAME,
+            url: siteUrl,
+          }}
+        />
+        <AIChatLoader />
       </body>
     </html>
   );
