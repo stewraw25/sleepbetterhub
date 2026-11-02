@@ -119,7 +119,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.35);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 @layer base {

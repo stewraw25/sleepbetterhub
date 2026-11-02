@@ -36,10 +36,15 @@ export async function GET(
   // Get the final destination (respects env var overrides)
   const destination = getAffiliateUrl(slug);
 
-  // Optional: append consistent tracking parameters
-  // You can customize this per program if needed
-  const url = new URL(destination);
-  if (!url.searchParams.has('ref')) {
+  let url: URL;
+  try {
+    url = new URL(destination);
+  } catch {
+    return NextResponse.redirect(new URL('/', request.url), 302);
+  }
+
+  // Amazon credits the `tag` parameter. An extra ref on an Associates URL is not needed.
+  if (!url.hostname.includes('amazon.') && !url.searchParams.has('ref')) {
     url.searchParams.set('ref', 'sleepbetterhub');
   }
   // Example UTM (uncomment if you want consistent tracking)

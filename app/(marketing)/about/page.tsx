@@ -1,5 +1,12 @@
-
+import type { Metadata } from 'next';
 import { Newsletter } from '@/components/Newsletter';
+import { pageMeta } from '@/lib/seo';
+
+export const metadata: Metadata = pageMeta({
+  title: 'About and Affiliate Disclosure',
+  description: 'Who writes SleepBetterHub, how affiliate links work, and the medical disclaimer for mouth tape and other sleep products.',
+  path: '/about',
+});
 
 export default function AboutPage() {
   return (

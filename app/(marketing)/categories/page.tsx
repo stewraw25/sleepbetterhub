@@ -1,5 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getProductsByCategory, categoryLabels } from '@/lib/products';
+import { pageMeta } from '@/lib/seo';
+
+export const metadata: Metadata = pageMeta({
+  title: 'Sleep Product Categories',
+  description: 'Browse reviews of nasal strips, sleep trackers, supplements, and mattresses, with links through to the mouth tape comparison.',
+  path: '/categories',
+});
 
 const categorySlugs = ['nasal', 'gadgets', 'mattresses', 'supplements'] as const;
 

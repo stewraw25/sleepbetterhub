@@ -18,14 +18,33 @@
 
 import { getProductBySlug } from './products';
 
-const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG || 'stewraw25-21';
-const AMAZON_DOMAIN = process.env.NEXT_PUBLIC_AMAZON_DOMAIN || 'www.amazon.com'; // Global default to .com for worldwide reach (update tag/domain per region if needed)
+/** UK Associates tag already used across the site. Do not invent a second tag. */
+export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG || 'stewraw25-21';
+
+/**
+ * The -21 tag is an Amazon.co.uk Associates tag. It does not credit clicks on amazon.com.
+ * Default the storefront to Amazon UK so the tag and the domain match.
+ */
+export const AMAZON_DOMAIN = process.env.NEXT_PUBLIC_AMAZON_DOMAIN || 'www.amazon.co.uk';
+
+export const SPONSORED_REL = 'sponsored nofollow noopener noreferrer';
+
+export function isCommissionedAffiliate(url: string): boolean {
+  try {
+    return new URL(url).searchParams.get('tag') === AMAZON_TAG;
+  } catch {
+    return false;
+  }
+}
+
+export function shopLabel(url: string): string {
+  return isCommissionedAffiliate(url) ? 'View on Amazon' : 'View on brand site';
+}
 
 function getAmazonUrl(asin: string): string {
   if (!AMAZON_TAG) {
-    return `https://${AMAZON_DOMAIN}/dp/${asin}`; // fallback without tag
+    return `https://${AMAZON_DOMAIN}/dp/${asin}`;
   }
-  // Standard Amazon Associates link format - domain + tag must match your Associates account region for proper crediting
   return `https://${AMAZON_DOMAIN}/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
 }
 

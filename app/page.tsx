@@ -1,6 +1,16 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Award, Users, Star, Shield } from 'lucide-react';
+import { ArrowRight, Award, Users, Shield } from 'lucide-react';
+import { pageMeta } from '@/lib/seo';
+import { SPONSORED_REL } from '@/lib/affiliates';
+
+export const metadata: Metadata = pageMeta({
+  title: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
+  description: 'Independent UK and US reviews of mouth tape, nasal strips, sleep trackers and supplements, plus practical guides on snoring and night breathing.',
+  path: '/',
+  absoluteTitle: true,
+});
 import { Button } from '@/components/ui/button';
 import { ProductCard } from '@/components/ProductCard';
 import { Newsletter } from '@/components/Newsletter';
@@ -180,12 +190,13 @@ export default function Home() {
                 <Link href="/reviews/eight-sleep-pod-6">
                   <Button size="lg">Read Full Review</Button>
                 </Link>
-                <Link href="/go/eight-sleep-pod-6" target="_blank" rel="noopener noreferrer sponsored">
+                <Link href="/go/eight-sleep-pod-6" target="_blank" rel={SPONSORED_REL}>
                   <Button size="lg" variant="outline">Shop Eight Sleep UK</Button>
                 </Link>
               </div>
               <p className="mt-3 text-xs text-muted-foreground">
-                Affiliate link. <Link href="/guides/eight-sleep-f1" className="underline hover:text-foreground">Why F1 teams use Eight Sleep →</Link>
+                Link to Eight Sleep. No affiliate code is attached yet.{' '}
+                <Link href="/guides/eight-sleep-f1" className="underline hover:text-foreground">Why F1 teams use Eight Sleep →</Link>
               </p>
             </div>
           </div>
@@ -197,23 +208,23 @@ export default function Home() {
               <Link href="/reviews/eight-sleep-pod-6#accessories" className="text-xs text-primary hover:underline">View all →</Link>
             </div>
             <div className="grid grid-cols-3 gap-3">
-              <Link href="/go/eight-sleep-base" target="_blank" rel="noopener noreferrer sponsored" className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
+              <Link href="/go/eight-sleep-base" target="_blank" rel={SPONSORED_REL} className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
                 <div className="text-sm font-medium">Base</div>
                 <div className="text-lg font-semibold tracking-tight">£1,699</div>
                 <div className="text-[10px] text-muted-foreground">Pod bed frame</div>
               </Link>
-              <Link href="/go/eight-sleep-blanket" target="_blank" rel="noopener noreferrer sponsored" className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
+              <Link href="/go/eight-sleep-blanket" target="_blank" rel={SPONSORED_REL} className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
                 <div className="text-sm font-medium">Blanket</div>
                 <div className="text-lg font-semibold tracking-tight">£799</div>
                 <div className="text-[10px] text-muted-foreground">Pod 5/6 only</div>
               </Link>
-              <Link href="/go/eight-sleep-pillow-cover" target="_blank" rel="noopener noreferrer sponsored" className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
+              <Link href="/go/eight-sleep-pillow-cover" target="_blank" rel={SPONSORED_REL} className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
                 <div className="text-sm font-medium">Pillow Cover</div>
                 <div className="text-lg font-semibold tracking-tight">£999</div>
                 <div className="text-[10px] text-muted-foreground">Head cooling</div>
               </Link>
             </div>
-            <p className="text-[10px] text-muted-foreground mt-2 text-center">Affiliate links. Accessories require a Pod system.</p>
+            <p className="text-xs text-muted-foreground mt-2 text-center">Brand-site links with no affiliate code yet. Accessories require a Pod system.</p>
           </div>
         </div>
       </section>
@@ -301,7 +312,7 @@ export default function Home() {
 
           {/* Targeted internal links for high-volume global searches */}
           <div className="mt-6 text-sm text-muted-foreground">
-            Popular searches we cover: <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/reviews/eight-sleep-pod-6" className="text-primary hover:underline">eight sleep review UK</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">how to stop mouth breathing at night</Link> · <Link href="/categories/supplements" className="text-primary hover:underline">best natural sleep aids</Link> · <Link href="/quiz" className="text-primary hover:underline">insomnia remedies</Link> · <Link href="/categories/nasal" className="text-primary hover:underline">nasal strips for snoring</Link>
+            Popular guides: <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary hover:underline">mouth tape vs nasal strips for snoring</Link> · <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/reviews/eight-sleep-pod-6" className="text-primary hover:underline">Eight Sleep Pod 6 review</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">stop mouth breathing at night</Link> · <Link href="/categories/nasal" className="text-primary hover:underline">nasal strips</Link>
           </div>
         </div>
       </section>

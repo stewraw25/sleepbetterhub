@@ -29,6 +29,7 @@ export function Footer() {
             <li><Link href="/mouth-tape" className="hover:text-foreground">Mouth Tape Hub</Link></li>
             <li><Link href="/quiz" className="hover:text-foreground">Sleep Assessment Quiz</Link></li>
             <li><Link href="/blog" className="hover:text-foreground">Sleep Guides &amp; Research</Link></li>
+            <li><Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="hover:text-foreground">Tape vs Nasal Strips</Link></li>
             <li><Link href="/about" className="hover:text-foreground">About Us</Link></li>
           </ul>
         </div>
@@ -41,6 +42,7 @@ export function Footer() {
             <li><Link href="/categories/nasal" className="hover:text-foreground">Nasal Strips &amp; Dilators</Link></li>
             <li><Link href="/categories/gadgets" className="hover:text-foreground">Sleep Trackers &amp; Tech</Link></li>
             <li><Link href="/categories/supplements" className="hover:text-foreground">Supplements</Link></li>
+            <li><Link href="/categories/mattresses" className="hover:text-foreground">Mattresses</Link></li>
           </ul>
         </div>
 
@@ -60,10 +62,11 @@ export function Footer() {
 
       <div className="border-t py-4">
         <div className="container text-[10px] text-muted-foreground flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
-          <div className="flex items-center gap-2">
-            <Image src="/images/logo.jpg" alt="" width={16} height={16} className="h-4 w-4 rounded-full object-cover opacity-60" />
-            This site contains affiliate links. We may earn a commission at no extra cost to you. 
-            We only recommend products we would (and do) personally use.
+          <div className="flex items-start gap-2 text-xs leading-relaxed">
+            <Image src="/images/logo.jpg" alt="" width={16} height={16} className="mt-0.5 h-4 w-4 rounded-full object-cover opacity-60" />
+            <span>
+              Some product links are affiliate links. Amazon links use our Associates tag. Brand links earn a commission only when that brand has given us a code. You should not pay more because you clicked. See the <Link href="/about" className="underline hover:text-foreground">affiliate disclosure</Link>.
+            </span>
           </div>
           <div className="hidden md:block">Made for better sleepers, everywhere.</div>
         </div>

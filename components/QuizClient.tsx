@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { mouthTapeProducts, Product } from '@/lib/products';
-import { getInternalAffiliateLink } from '@/lib/affiliates';
+import { getAffiliateUrl, getInternalAffiliateLink, shopLabel, SPONSORED_REL } from '@/lib/affiliates';
 import { ArrowRight, RotateCcw, CheckCircle } from 'lucide-react';
 
 type Answer = {
@@ -188,7 +188,7 @@ export default function QuizClient() {
           {top.map((product, index) => (
             <div key={product.id} className="flex flex-col md:flex-row gap-5 rounded-2xl border bg-card p-6">
               <div className="md:w-48 shrink-0">
-                <Image src={product.image} alt={`${product.name} recommended by sleep quiz`} width={300} height={120} className="rounded-xl w-full aspect-video object-cover" style={{ height: 'auto', width: 'auto' }} />
+                <Image src={product.image} alt={`${product.name} by ${product.brand}`} width={300} height={168} className="rounded-xl w-full h-auto aspect-video object-cover" />
               </div>
               <div className="flex-1">
                 <div className="flex items-start justify-between">
@@ -214,8 +214,8 @@ export default function QuizClient() {
                   <Link href={`/reviews/${product.slug}`}>
                     <Button variant="outline">Read Full Review</Button>
                   </Link>
-                  <a href={getInternalAffiliateLink(product.slug)} target="_blank" rel="noopener noreferrer sponsored">
-                    <Button>Buy Now (Affiliate • UK Amazon)</Button>
+                  <a href={getInternalAffiliateLink(product.slug)} target="_blank" rel={SPONSORED_REL}>
+                    <Button>{shopLabel(getAffiliateUrl(product.slug))}</Button>
                   </a>
                 </div>
               </div>
@@ -232,8 +232,8 @@ export default function QuizClient() {
           </Link>
         </div>
 
-        <p className="text-center text-xs text-muted-foreground mt-8 max-w-sm mx-auto">
-          These are suggestions, not medical advice. Please review the full safety information on each product page and consult a healthcare professional if you have any concerns.
+        <p className="text-center text-xs text-muted-foreground mt-8 max-w-lg mx-auto">
+          Affiliate disclosure: Amazon buttons use our Associates tag. Brand-site buttons earn a commission only when an affiliate code is configured. These suggestions are not medical advice. Read the safety notes on each review before you buy.
         </p>
       </div>
     );

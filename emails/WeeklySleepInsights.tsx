@@ -47,13 +47,13 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
               <div key={post.slug} style={{ marginBottom: '32px' }}>
                 <Text style={articleCategory}>{post.category} • {post.readTime}</Text>
                 <Heading as="h2" style={articleTitle}>
-                  <Link href={`https://sleepmask.tech/blog/${post.slug}`} style={articleLink}>
+                  <Link href={`https://sleepbetterhub.vercel.app/blog/${post.slug}`} style={articleLink}>
                     {post.title}
                   </Link>
                 </Heading>
                 <Text style={articleExcerpt}>{post.excerpt}</Text>
                 <Button
-                  href={`https://sleepmask.tech/blog/${post.slug}`}
+                  href={`https://sleepbetterhub.vercel.app/blog/${post.slug}`}
                   style={readButton}
                 >
                   Read the full guide →
@@ -71,7 +71,7 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
               Take our 90-second personalized quiz. Thousands of readers have used it to find their best match.
             </Text>
             <Button
-              href="https://sleepmask.tech/quiz"
+              href="https://sleepbetterhub.vercel.app/quiz"
               style={primaryButton}
             >
               Take the Sleep Quiz
@@ -84,8 +84,8 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
           <Text style={footer}>
             You&apos;re receiving this because you subscribed to SleepBetterHub Weekly Sleep Insights.
             <br />
-            <Link href="https://sleepmask.tech" style={footerLink}>sleepmask.tech</Link> · 
-            <Link href="https://sleepmask.tech/about" style={footerLink}> Unsubscribe</Link>
+            <Link href="https://sleepbetterhub.vercel.app" style={footerLink}>SleepBetterHub</Link> · 
+            <Link href="https://sleepbetterhub.vercel.app/about" style={footerLink}> Unsubscribe</Link>
           </Text>
 
           <Text style={tiny}>

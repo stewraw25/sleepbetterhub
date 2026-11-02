@@ -1,7 +1,16 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getProductsByCategory } from '@/lib/products';
 import { ProductCard } from '@/components/ProductCard';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
+import { pageMeta } from '@/lib/seo';
+
+export const metadata: Metadata = pageMeta({
+  title: 'Sleep Trackers and Gadgets',
+  description: 'Oura Ring and Eight Sleep Pod reviews for people comparing sleep trackers and bed cooling in the UK.',
+  path: '/categories/gadgets',
+  image: '/images/gadget-tracker.jpg',
+});
 
 export default function GadgetsCategory() {
   const products = getProductsByCategory('gadgets');
