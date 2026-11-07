@@ -73,12 +73,15 @@ export default async function BlogPost({ params }: Props) {
       <header className="mt-6 mb-8">
         <div className="text-xs uppercase tracking-widest text-primary">{post.category} • {post.readTime} read</div>
         <h1 className="mt-3 text-4xl md:text-5xl font-semibold tracking-tighter leading-none">{post.title}</h1>
-        <div className="mt-4 text-muted-foreground">{post.author} • {new Date(post.date).toLocaleDateString('en-GB', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
+        <div className="mt-4 text-muted-foreground">
+          {post.author} • {new Date(post.date).toLocaleDateString('en-GB', { month: 'long', day: 'numeric', year: 'numeric' })}
+          {post.updated && post.updated !== post.date ? ` • Updated ${new Date(post.updated).toLocaleDateString('en-GB', { month: 'long', day: 'numeric', year: 'numeric' })}` : ''}
+        </div>
       </header>
 
       {post.image && (
         <div className="mb-10 rounded-2xl overflow-hidden border relative aspect-[1200/630]">
-          <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 768px" className="object-cover" priority />
+          <Image src={post.image} alt={post.imageAlt || post.title} fill sizes="(max-width: 768px) 100vw, 768px" className="object-cover" priority />
         </div>
       )}
 

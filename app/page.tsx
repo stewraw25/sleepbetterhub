@@ -33,12 +33,11 @@ export default function Home() {
                 <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" /> UPDATED FOR 2026
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-[1.05] mb-6">
-                Best mouth tape, nasal strips &amp; natural sleep aids 2026<br />for <span className="text-primary">better sleep worldwide</span>.
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-[1.05] mb-6">
+                Mouth tape, nasal strips, and sleep guides<br />for <span className="text-primary">better nights</span>.
               </h1>
               <p className="max-w-xl text-xl text-muted-foreground mb-8">
-                Expert reviews and science-backed guides for insomnia remedies, sleep anxiety, how to fall asleep fast, 
-                stop mouth breathing at night, and proven tools that help people sleep better globally. Tested for real results.
+                Practical UK guides on snoring, mouth breathing, and side-sleeper pillows. Prices are taken from the live listing, and safety notes sit on every mouth-tape page.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
@@ -61,7 +60,7 @@ export default function Home() {
               <div className="relative aspect-[5/4] w-full">
                 <Image 
                   src="/images/hero-bedroom.jpg" 
-                  alt="Calming modern bedroom setup for deeper sleep and insomnia relief" 
+                  alt="A calm bedroom" 
                   fill
                   className="rounded-3xl object-cover shadow-2xl" 
                   priority
@@ -75,20 +74,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUST / STATS BAR */}
+      {/* TRUST BAR — only claims the site can stand behind */}
       <section className="border-b bg-background py-5">
-        <div className="container flex flex-wrap items-center justify-between gap-x-8 gap-y-4 text-sm">
-          <div className="flex items-center gap-3">
-            <div className="flex -space-x-1">
-              {[1,2,3].map(i => <div key={i} className="h-6 w-6 rounded-full border-2 border-background bg-muted" />)}
-            </div>
-            <span className="text-muted-foreground"><span className="font-medium text-foreground">12,400+</span> readers improved their sleep</span>
-          </div>
-          <div className="flex items-center gap-x-8 text-muted-foreground">
-            <div className="flex items-center gap-1.5"><Shield className="h-4 w-4" /> Evidence-first reviews</div>
-            <div className="flex items-center gap-1.5"><Award className="h-4 w-4" /> 47 products tested in 2025-26</div>
-            <div className="flex items-center gap-1.5"><Users className="h-4 w-4" /> Real human testers</div>
-          </div>
+        <div className="container flex flex-wrap items-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
+          <div className="flex items-center gap-1.5"><Shield className="h-4 w-4" /> Safety notes on every mouth-tape page</div>
+          <div className="flex items-center gap-1.5"><Award className="h-4 w-4" /> Prices checked against the live listing</div>
+          <div className="flex items-center gap-1.5"><Users className="h-4 w-4" /> Amazon links use our Associates tag</div>
         </div>
       </section>
 
@@ -126,11 +117,10 @@ export default function Home() {
             <div className="md:col-span-7">
               <div className="uppercase tracking-[2px] text-xs text-primary mb-3 font-medium">THE #1 TREND FOR 2026</div>
               <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter mb-4 leading-none">
-                Best mouth tape for sleep.<br />Tested for side sleepers, beards &amp; CPAP.
+                Mouth tape for sleep.<br />Beards, sensitive skin, and CPAP.
               </h2>
               <p className="max-w-lg text-lg text-muted-foreground mb-6">
-                Independent 2026 comparison of every major sleep strip. Real testing for insomnia relief, 
-                sleep anxiety, and switching from mouth breathing to nasal breathing — with full safety info.
+                A comparison of the strips people actually ask about, with safety notes and a clear label when a shop button is not an affiliate link.
               </p>
               <div className="flex gap-3">
                 <Link href="/mouth-tape">
@@ -147,7 +137,7 @@ export default function Home() {
               <div className="rounded-3xl bg-card border p-2 shadow-sm relative aspect-[3/2]">
                 <Image 
                   src="/images/value-mouth-tape.jpg" 
-                  alt="Affordable high-volume mouth tape sleep strips for beginners and value seekers - how to stop mouth breathing at night" 
+                  alt="Mouth tape strips on a flat surface" 
                   fill
                   className="rounded-2xl object-cover" 
                   sizes="(min-width: 768px) 40vw, 100vw"
@@ -233,16 +223,16 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-semibold tracking-tight">Why thousands trust SleepBetterHub for insomnia relief &amp; better sleep</h2>
-            <p className="text-muted-foreground mt-2">We test products ourselves with real side sleepers, beard owners and CPAP users. No sponsored &quot;best of&quot; lists. Evidence-based guides for sleep anxiety, mouth breathing &amp; more.</p>
+            <h2 className="text-3xl font-semibold tracking-tight">How these pages are written</h2>
+            <p className="text-muted-foreground mt-2">Guides use the product listing and published sources. Older star labels are editorial shorthand, not a counted test panel.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { label: "4.6+ avg rating", desc: "Across every reviewed product" },
-              { label: "Safety first", desc: "Every review includes clear warnings" },
-              { label: "Real-world testing", desc: "Side sleepers, beards, CPAP users" },
-              { label: "Independent", desc: "We buy products. We tell the truth." },
+              { label: "Safety notes", desc: "Mouth-tape pages say who should not use it" },
+              { label: "Live prices", desc: "A price on the page was read off the listing" },
+              { label: "No fake clinic", desc: "We do not invent doctors or tester panels" },
+              { label: "Affiliate labels", desc: "Amazon links carry the Associates tag" },
             ].map((stat, i) => (
               <div key={i} className="rounded-2xl border bg-card p-6 flex gap-4">
                 <div className="mt-1 shrink-0">
@@ -277,7 +267,7 @@ export default function Home() {
             <Link href="/quiz">
               <Button size="lg" variant="secondary" className="px-10 h-12 text-base">Start the Free Sleep Quiz →</Button>
             </Link>
-            <p className="text-xs opacity-70 mt-4">Used by 8,200+ people this month • Takes ~90 seconds</p>
+            <p className="text-xs opacity-70 mt-4">Takes about two minutes. No email.</p>
           </div>
         </div>
       </section>
@@ -312,7 +302,7 @@ export default function Home() {
 
           {/* Targeted internal links for high-volume global searches */}
           <div className="mt-6 text-sm text-muted-foreground">
-            Popular guides: <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary hover:underline">mouth tape vs nasal strips for snoring</Link> · <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/reviews/eight-sleep-pod-6" className="text-primary hover:underline">Eight Sleep Pod 6 review</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">stop mouth breathing at night</Link> · <Link href="/categories/nasal" className="text-primary hover:underline">nasal strips</Link>
+            Popular guides: <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary hover:underline">best pillow for side sleepers</Link> · <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary hover:underline">mouth tape vs nasal strips for snoring</Link> · <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/reviews/eight-sleep-pod-6" className="text-primary hover:underline">Eight Sleep Pod 6 review</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">stop mouth breathing at night</Link>
           </div>
         </div>
       </section>

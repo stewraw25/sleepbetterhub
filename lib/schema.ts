@@ -33,8 +33,7 @@ export function productJsonLd(product: Product) {
     offers: {
       '@type': 'Offer',
       url: getAffiliateUrl(product.slug),
-      priceCurrency: currency,
-      price: product.priceValue,
+      ...(product.priceValue > 0 ? { priceCurrency: currency, price: product.priceValue } : {}),
       availability: product.inStock === false
         ? 'https://schema.org/OutOfStock'
         : 'https://schema.org/InStock',
@@ -79,7 +78,7 @@ export function articleJsonLd(post: BlogPost) {
     headline: post.title,
     description: post.seoDescription || post.excerpt,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated || post.date,
     author: authorIsOrg
       ? { '@type': 'Organization', name: post.author }
       : { '@type': 'Person', name: post.author },

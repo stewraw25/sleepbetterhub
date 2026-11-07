@@ -16,6 +16,7 @@ export default function NotFound() {
       <ul className="mt-6 space-y-2 text-primary">
         <li><Link href="/" className="underline underline-offset-2">Home</Link></li>
         <li><Link href="/mouth-tape" className="underline underline-offset-2">Mouth tape comparison</Link></li>
+        <li><Link href="/blog/best-pillow-for-side-sleepers" className="underline underline-offset-2">Best pillow for side sleepers</Link></li>
         <li><Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="underline underline-offset-2">Mouth tape vs nasal strips for snoring</Link></li>
         <li><Link href="/blog" className="underline underline-offset-2">All guides</Link></li>
       </ul>

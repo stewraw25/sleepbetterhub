@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props) {
   const description = `${product.name}: ${product.description}`.slice(0, 160);
 
   return pageMeta({
-    title: `${product.name} Review`,
+    title: product.rating > 0 ? `${product.name} Review` : product.name,
     description,
     path: `/reviews/${product.slug}`,
     image: product.image,
@@ -79,7 +79,7 @@ export default async function ProductReviewPage({ params }: Props) {
         ])}
       />
       <JsonLd data={productJsonLd(product)} />
-      <JsonLd data={editorialReviewJsonLd(product)} />
+      {product.rating > 0 ? <JsonLd data={editorialReviewJsonLd(product)} /> : null}
       <div className="container py-8">
         <Link href={catInfo.backLink} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> {catInfo.backText}
@@ -93,10 +93,16 @@ export default async function ProductReviewPage({ params }: Props) {
                 <Badge variant="secondary" className="mb-2">{product.brand}</Badge>
                 <h1 className="text-4xl md:text-5xl font-semibold tracking-tighter leading-none">{product.name}</h1>
                 <div className="mt-3 flex items-center gap-3">
-                  <div className="flex items-center text-xl font-semibold">
-                    <Star className="h-5 w-5 fill-yellow-500 text-yellow-500 mr-1.5" /> {product.rating}
-                  </div>
-                  <div className="text-muted-foreground">• Editorial score</div>
+                  {product.rating > 0 ? (
+                    <>
+                      <div className="flex items-center text-xl font-semibold">
+                        <Star className="h-5 w-5 fill-yellow-500 text-yellow-500 mr-1.5" /> {product.rating}
+                      </div>
+                      <div className="text-muted-foreground">• Editorial score</div>
+                    </>
+                  ) : (
+                    <div className="text-muted-foreground">Listing notes, not a scored review</div>
+                  )}
                   <div className="text-muted-foreground">• {product.price}</div>
                 </div>
               </div>
@@ -109,11 +115,21 @@ export default async function ProductReviewPage({ params }: Props) {
             </div>
 
             <div className="mt-6 rounded-3xl overflow-hidden border bg-card aspect-[16/9] md:aspect-[16/8.5] relative">
-              <Image src={product.image} alt={`${product.name} by ${product.brand}`} fill sizes="(max-width: 1024px) 100vw, 800px" className="object-cover" priority />
+              <Image src={product.image} alt={product.imageAlt || `${product.name} by ${product.brand}`} fill sizes="(max-width: 1024px) 100vw, 800px" className="object-cover" priority />
             </div>
 
             <div className="prose review-prose mt-8 max-w-none">
               <p className="text-lg text-foreground">{product.longDescription}</p>
+              {product.category === 'mattresses' && (
+                <p>
+                  Pillow height and the mattress are separate choices. The buying guide is <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary underline underline-offset-2">best pillow for side sleepers</Link>.
+                </p>
+              )}
+              {product.slug === 'eight-sleep-pillow-cover' && (
+                <p>
+                  This cover only works with an Eight Sleep Pod. For an ordinary pillow, read <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary underline underline-offset-2">best pillow for side sleepers</Link>.
+                </p>
+              )}
 
               <h2>Pros</h2>
               <ul>
@@ -165,7 +181,7 @@ export default async function ProductReviewPage({ params }: Props) {
             <div className="sticky top-20 space-y-6">
               <div className="rounded-2xl border bg-card p-6">
                 <div className="text-sm uppercase tracking-widest text-muted-foreground">Current best price</div>
-                <div className="text-4xl font-semibold tabular-nums mt-1 tracking-tighter">{product.price}</div>
+                <div className={`${product.price.length > 18 ? 'text-2xl' : 'text-4xl'} font-semibold tabular-nums mt-1 tracking-tighter`}>{product.price}</div>
 
                 <a
                   href={getInternalAffiliateLink(product.slug)}
@@ -185,8 +201,11 @@ export default async function ProductReviewPage({ params }: Props) {
                 <Separator className="my-5" />
 
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between"><span className="text-muted-foreground">Rating</span> <span className="font-medium">{product.rating} / 5</span></div>
-                  <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Editorial</span></div>
+                  {product.rating > 0 ? (
+                    <div className="flex justify-between"><span className="text-muted-foreground">Rating</span> <span className="font-medium">{product.rating} / 5 editorial</span></div>
+                  ) : (
+                    <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Not scored</span></div>
+                  )}
                   <div className="flex justify-between"><span className="text-muted-foreground">Best For</span> <span className="font-medium text-right">{product.bestFor.join(', ')}</span></div>
                 </div>
               </div>
@@ -213,7 +232,7 @@ export default async function ProductReviewPage({ params }: Props) {
               {related.map((r) => (
                 <Link key={r.id} href={`/reviews/${r.slug}`} className="block rounded-xl border p-4 hover:bg-muted/40 transition">
                   <div className="font-medium">{r.name}</div>
-                  <div className="text-sm text-muted-foreground">{r.price} • {r.rating}★</div>
+                  <div className="text-sm text-muted-foreground">{r.price}{r.rating > 0 ? ` • ${r.rating}★` : ''}</div>
                 </Link>
               ))}
             </div>

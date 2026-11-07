@@ -2,6 +2,50 @@
 
 Weekly log for Sleep Better Hub (https://sleepbetterhub.vercel.app). Newest week first.
 
+## Week of 7 November 2026
+
+### Search phrase
+
+**best pillow for side sleepers**
+
+Google UK autocomplete puts that first when you type “best pillow for”, and the next suggestions are “best pillow for side sleepers uk”, neck pain, and shoulder pain. The site had no pillow guide. The mattress category was one Tempur search link. The only pillow product was the £999 Eight Sleep cover, which needs a Pod.
+
+Hostage Tape vs MyoTape was last week’s idea. Autocomplete for “hostage tape vs” does not suggest MyoTape (it suggests Respire, CPAP, Intake, Breathe Right). Pillow demand is the clearer gap.
+
+No Google Search Console export, property file, or API credentials are in the repo or the environment. The phrase was chosen from public autocomplete and from what the site was missing.
+
+### What changed
+
+- New guide: `/blog/best-pillow-for-side-sleepers`, plus three listing pages for pillows that were in stock on Amazon UK on 7 November 2026. No editorial star scores. The photos are bedroom pictures, and the alt text says so.
+- Prices on that guide: Silentnight adjustable £32.98 (B0DJW5XZSR), Silentnight Ultragel £29.14 (B00U8WJM8Q), Slumberdown 2-pack £31.90 (B01N46GW3H). The Slumberdown page gives two different sizes. The guide tells people to check.
+- Homepage no longer says “12,400+ readers”, “47 products tested”, or “8,200+ people”. The about page no longer claims a tester panel or a doctor on staff. Guide bylines that used invented clinician names now say SleepBetterHub Editorial Team.
+- The “best mouth tape” and “mouth tape for side sleepers” posts no longer describe a test this site did not run.
+- `lang` is `en-GB`. Pillow pages skip Review star schema. Product schema omits a price when we do not have one.
+
+### Affiliate links checked on 7 November 2026
+
+Tag on every Amazon URL: `stewraw25-21`. Nine previous Amazon destinations, the SomniFix ASIN the button already avoids, and three new pillow ASINs.
+
+| Destination | Result |
+| --- | --- |
+| Hostage Tape `B0C9B492LN` | In stock, £12.90 for 30 strips. Unchanged. |
+| MyoTape `B08JZF6YK5` | The product page was out of stock. Button now opens a tagged search for MyoTape. |
+| Breathe Right `B0CPY7QDWV` | In stock. Price on the site updated from £9.90 to £8.98. |
+| Mute `B011LR52UI` | In stock, £19.99 for the small 3-pack. Unchanged. |
+| Oura size 11 `B0CSRFCBJH` | Right product, but no featured offer. New offers from £212.86. Price and note updated. Sizing kit `B0CSRF8JG7` is the thing to buy first. It is named in the note, not swapped in as if it were the ring. |
+| SomniFix `B076CQ1NR8` | Still unavailable. Button stays on the brand’s UK shop. No tag, because it is not Amazon. |
+| Tempur search | Resolves, tag present. Query tightened to TEMPUR-Adapt mattress. Results still include toppers and sheets. The note says so. |
+| Magnesium, apigenin, L-theanine searches | All resolve with the tag. L-theanine’s first result that day was 300mg, not 200mg. The note says to read the label. |
+| Dream Recovery, ZzzTape, SayLess, four Eight Sleep URLs | Brand sites returned OK. Still no affiliate code. |
+| Three new pillow ASINs | In stock at the prices above. Tag added by the existing Amazon link builder. |
+
+### Still open
+
+- No Search Console data. Submit `https://sleepbetterhub.vercel.app/sitemap.xml` if it is not already there.
+- Contact address is still `hello@sleepmask.tech`. No replacement mailbox was in the repo, so it was left alone.
+- Dream Recovery, SomniFix, ZzzTape, SayLess, and Eight Sleep still earn nothing until Stewart adds real affiliate URLs.
+- Older product cards still show editorial star labels. They are marked as editorial. They are not a documented test.
+
 ## Week of 2 November 2026
 
 ### What changed
