@@ -6,8 +6,12 @@ export type BlogPost = {
   category: string;
   readTime: string;
   date: string; // publish date (YYYY-MM-DD). Posts with future dates are scheduled/hidden until the date
+  /** Set when the article body was meaningfully corrected after publication. */
+  updated?: string;
   author: string;
   image?: string;
+  /** Use when the picture is not what the headline describes. */
+  imageAlt?: string;
   seoTitle?: string;
   seoDescription?: string;
   tags: string[];
@@ -48,6 +52,119 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: 'best-pillow-for-side-sleepers',
+    title: 'Best Pillow for Side Sleepers: A UK Buying Guide',
+    excerpt: 'Side sleepers need enough height to keep the head level with the spine. Here is how to check that tonight, and three Amazon UK pillows with prices checked on 7 November 2026.',
+    content: `**Affiliate disclosure.** The pillow links below go to Amazon UK with our Associates tag. Prices were read off those listings on 7 November 2026 and will change. We have not slept on these pillows, and the star ratings on the product pages are not scores we gave them.
+
+If you are looking for the best pillow for side sleepers, start with height, not the brand. On your side, your shoulder holds your head away from the mattress. The pillow has to fill that gap so your nose stays roughly in line with the centre of your chest. Too thick, and the neck bends upward. Too thin, and the head drops toward the bed.
+
+## What NHS physiotherapy leaflets actually say
+
+This is not a measurement we made. It is the advice already published for people with neck pain:
+
+- Gloucestershire Hospitals says that on your side the head and neck should be straight, in line with the rest of the spine. A pillow that is too thick pushes the head up. A pillow that is too thin lets it drop. The arm you are lying on should rest in front of the chest, not under the body. Their leaflet tells you to contact NHS 111 for severe neck pain, altered vision, headaches, or weakness in the arms or hands. [Neck pain leaflet](https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/neck-pain/).
+- East Lancashire Hospitals says a pillow should fill the hollow between the head and the shoulders, and that on your side the head should be level with the body. A rolled towel inside the pillowcase can fill that hollow if the pillow itself is flat. [Neck pain leaflet (PDF)](https://elht.nhs.uk/application/files/4517/0058/6852/Neck_pain_leaflet_V2_-_2022_2.pdf).
+- Leeds Teaching Hospitals says some side sleepers need two pillows, and that stomach sleeping is the position to avoid. [Acute neck sprains](https://www.leedsth.nhs.uk/patients/resources/acute-neck-sprains/).
+- Cambridge University Hospitals says to keep the head in the middle, in line with the spine, and to mould the filling so the neck is supported where it dips. [Neck exercises and advice](https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/).
+
+A Telegraph round-up quoted a sleep physician suggesting a pillow of about 10 to 15 cm for side sleepers. Treat that as someone else’s rule of thumb. A narrow shoulder needs less. A broad shoulder needs more. None of the three listings below print a loft in centimetres, so the photo test matters more than the number.
+
+## The two-minute check before you buy
+
+Lie on your usual side, on the pillow you already own. Take a photo from behind, or ask someone to look.
+
+1. Your ear, shoulder, and hip should sit on one roughly level line. The nose should not point at the ceiling or into the mattress.
+2. If the head is dropped, you need more height. If the neck is bent up, you need less.
+3. If your bottom arm is trapped under the pillow, the pillow is doing the job of your arm, and the shoulder is paying for it. Gloucestershire’s leaflet wants that arm in front of the chest.
+4. Press the middle of the pillow. If it stays crushed, the fill has collapsed and a new cover will not fix it.
+
+Change the height you already have before you change brand. Two thinner pillows, or a towel inside the case, will tell you whether height was the problem. Then buy one pillow that holds that height.
+
+## Which of these three to buy
+
+These are live Amazon UK listings. The notes are the maker’s claims and what the page itself says. They are not a sleep test.
+
+### If you do not know your height yet: Silentnight adjustable
+
+The [Silentnight Adjustable Memory Foam Pillow](/reviews/silentnight-adjustable-pillow) (ASIN B0DJW5XZSR, model 589963GE) is shredded memory foam in a zip. You add or remove fill. Silentnight also puts hollowfibre and mesh sides around that foam, and says the cover comes off and can go in the washing machine. Amazon’s firmness field says Medium. The page does not give a height in centimetres. Shopper comments on the listing disagree about whether the fill stays high enough, which is the useful warning: start with more fill, then take some out, rather than the other way round.
+
+Price on 7 November 2026: £32.98 for one pillow. Amazon showed 4.4 out of 5 from 209 ratings. [Shop the adjustable pillow](/go/silentnight-adjustable-pillow).
+
+Buy this one if you are between sizes, you share a bed with someone who sleeps differently, or your current pillow is almost right but a bit low or a bit high.
+
+### If fibre pillows go flat by morning: Silentnight Ultragel
+
+The [Ultragel Premier](/reviews/silentnight-ultragel-pillow) (ASIN B00U8WJM8Q, model 430388GE) is a gel-foam core with hollowfibre around it and mesh sides. Silentnight says the core is five times more breathable than standard memory foam and that it does not go flat overnight. That “five times” line is theirs. The title says firm support. The same page’s firmness field says Medium. Amazon lists it for side and back sleepers and quotes a 2-year guarantee. It does not say you can unzip it and change the height.
+
+Price on 7 November 2026: £29.14. Amazon showed 4.2 out of 5 from 1,200 ratings. [Shop the Ultragel pillow](/go/silentnight-ultragel-pillow).
+
+Buy this one if your complaint is a fibre pillow that collapses, or you sleep hot and want the cooling claim. If the photo test says you need a very high pillow, get the adjustable one instead. A fixed core that is too tall will bend your neck up, and you cannot remove fill.
+
+### If you want two pillows and will check the size: Slumberdown
+
+The [Slumberdown Memory Foam Plus 2-pack](/reviews/slumberdown-memory-foam-pillow) (ASIN B01N46GW3H) is a memory-foam wrap around hollowfibre. The title says the pillows are UK-made, for back and side sleepers, with a soft knit cover. The bullets mention a 2-year guarantee. Care is wipe clean only, so use a protector. The price on 7 November 2026 was £31.90 for two, about £15.95 each. Amazon showed 4.1 out of 5 from 934 ratings.
+
+Read the size before you order. The title says 38 × 64 cm. The description on the same listing says L74 × W48 cm. Those are not the same pillow. [Shop the Slumberdown 2-pack](/go/slumberdown-memory-foam-pillow).
+
+Buy this pair if you want a spare, or a pillow on each side of the bed, and you are happy to confirm the size in the menu. Do not buy it for adjustable height. There is no zip for the fill.
+
+## Neck pain, shoulder pain, and an arm under the pillow
+
+A new pillow is reasonable when the photo test shows your head is tipped, or when the old pillow stays crushed. It is not a treatment. Gloucestershire’s leaflet is clear about the symptoms that should go to NHS 111 rather than a checkout: severe pain, weakness in the arms or hands, altered vision, or headaches.
+
+Shoulder pain on your side is often a height problem or an arm trapped under the head. Fill the gap so the arm can come forward. A thicker pillow can also press the shoulder if it is so wide that you are lying on the edge of it. Standard UK pillows are often about 48 × 74 cm, which is why the Slumberdown size clash matters: a short pillow can leave the shoulder on the mattress and the neck on the foam.
+
+Stomach sleeping will not be rescued by a side-sleeper pillow. The NHS leaflets above tell you to avoid face-down, because the neck is twisted for hours.
+
+## What we would not buy for this job
+
+The [Eight Sleep pillow cover](/reviews/eight-sleep-pillow-cover) is about £999 and only works with an Eight Sleep Pod. It changes temperature. It does not set the height of your neck. Skip it unless you already own the Pod.
+
+A stack of soft hotel pillows feels fine for a night and then collapses. If you wake with a stiff neck, check height first, then whether the fill has gone flat. The mattress underneath changes the gap too. A thick soft mattress lets the shoulder sink, so you need less pillow. That is covered on the [mattresses page](/categories/mattresses), including the Tempur notes. Heat is a different problem: the [hot sleepers guide](/blog/hot-sleepers-temperature-solutions) is the place for room temperature and bedding. The Ultragel pillow is only one small piece of that.
+
+## A sensible order
+
+1. Do the photo test on the pillow you have.
+2. If the height is close, add or remove a towel for three nights before you spend anything.
+3. If you still cannot get the line level, buy the adjustable Silentnight and set the zip to match the test.
+4. If you already know you need a firmer shape that will not collapse, buy the Ultragel and return it if the photo test fails. Amazon’s page was offering free returns when we looked.
+5. Keep the old pillow until the new one has survived a week. A lot of “best pillow” disappointment is a height miss, and you can often send it back.
+
+This page is not medical advice.`,
+    category: 'Guides',
+    readTime: '12 min',
+    date: '2026-11-07',
+    author: 'SleepBetterHub Editorial Team',
+    image: '/images/hero-bedroom.jpg',
+    imageAlt: 'A dim bedroom with a made bed. Not a photo of a specific pillow.',
+    seoTitle: 'Best Pillow for Side Sleepers (UK)',
+    seoDescription: 'How to choose a pillow for side sleeping in the UK: the height check NHS leaflets describe, plus three Amazon pillows with prices checked in November 2026.',
+    tags: ['pillows', 'side sleepers', 'neck pain', 'buying guide'],
+    faqs: [
+      {
+        q: 'What is the best pillow for side sleepers in the UK?',
+        a: 'The one that keeps your head level with your spine. If you do not know that height yet, the Silentnight adjustable pillow (a zip with shredded memory foam, £32.98 on 7 November 2026) is the practical first buy. If fibre pillows go flat, the Silentnight Ultragel at £29.14 is a fixed gel-foam core. We have not sleep-tested either of them.',
+      },
+      {
+        q: 'How high should a pillow be for side sleepers?',
+        a: 'High enough that your head does not drop toward the mattress or bend upward. NHS physiotherapy leaflets describe that line, and they say a broader shoulder usually needs more fill. A published rule of thumb of about 10 to 15 cm will be wrong for some people. Check with a photo rather than a tape measure from a stranger.',
+      },
+      {
+        q: 'What pillow helps side sleepers with neck or shoulder pain?',
+        a: 'Start by correcting height, and stop sleeping with the lower arm trapped under the pillow. Gloucestershire Hospitals tells people with severe neck pain, arm weakness, altered vision, or headaches to contact NHS 111. A pillow is not the treatment for those symptoms.',
+      },
+      {
+        q: 'Are memory foam pillows too hot for side sleepers?',
+        a: 'Solid memory foam can sleep warm. The Ultragel listing claims a more open gel-foam core and mesh sides. The adjustable Silentnight uses shredded foam plus mesh, which moves air more than a solid block. Both claims come from Silentnight. If you overheat all night, fix the room as well. The hot sleepers guide covers that.',
+      },
+      {
+        q: 'I sleep with my arm under the pillow. Which pillow fixes that?',
+        a: 'No pillow “fixes” the habit, but a higher, stable pillow can make the arm unnecessary. Gloucestershire’s neck-pain leaflet says the arm you lie on should rest in front of the chest, not underneath you. Use the adjustable fill until your head is level without the arm as a prop.',
+      },
+    ],
+  },
   {
     slug: 'mouth-tape-vs-nasal-strips-for-snoring',
     title: 'Mouth Tape vs Nasal Strips for Snoring: Which Should You Buy?',
@@ -91,10 +208,10 @@ A vented strip such as SomniFix leaves a small hole in the centre. Some people f
 
 These are live listings we checked, not a ranking from a private lab test.
 
-- **Nasal strip:** [Breathe Right Clear](/reviews/breathe-right-clear). About £9.90 for 20 clear small/medium strips (two packs of 10) on Amazon UK. [Shop Breathe Right](/go/breathe-right-clear).
+- **Nasal strip:** [Breathe Right Clear](/reviews/breathe-right-clear). £8.98 for 20 clear small/medium strips (two packs of 10) on Amazon UK when checked on 7 November 2026. [Shop Breathe Right](/go/breathe-right-clear).
 - **Reusable dilator:** [Mute](/reviews/nasal-dilator-pro), small 3-pack, about £19.99. Rinse it. [Shop Mute](/go/nasal-dilator-pro).
 - **Mouth tape, firmer hold:** [Hostage Tape](/reviews/hostage-tape), 30 black strips, about £12.90, the listing that is actually in stock under that brand name. [Shop Hostage Tape](/go/hostage-tape).
-- **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape), 90 strips, about £19.95. [Shop MyoTape](/go/mytape).
+- **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape). The 90-strip listing was out of stock on 7 November 2026, so the button opens a tagged Amazon search. Pick an in-stock adult pack and check it is not the children’s version. [Shop MyoTape](/go/mytape).
 
 Dream Recovery and SayLess are real brands, but they sell from their own sites rather than Amazon UK, and we do not have affiliate codes for them. ZzzTape is in the same position. If you follow those reviews, read the note under the button so you know the click is not commissioned.
 
@@ -116,6 +233,7 @@ This page is not medical advice.`,
     readTime: '11 min',
     date: '2026-11-02',
     author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/nasal-product.jpg',
     seoTitle: 'Mouth Tape vs Nasal Strips for Snoring',
     seoDescription: 'When snoring is a nose problem, buy a nasal strip. When the mouth falls open and the nose is clear, mouth tape is the product to try. A practical UK buyer’s guide.',
@@ -135,50 +253,45 @@ This page is not medical advice.`,
       },
       {
         q: 'What is actually in stock to buy in the UK?',
-        a: 'Breathe Right Clear is about £9.90 for 20 strips on Amazon UK. Mute’s small 3-pack is about £19.99. Hostage Tape’s 30-strip pouch is about £12.90, and MyoTape’s 90-strip pack is about £19.95. SomniFix’s Amazon UK listing was unavailable when we checked; the brand’s own UK shop was still selling it.',
+        a: 'On 7 November 2026, Breathe Right Clear was £8.98 for 20 strips on Amazon UK. Mute’s small 3-pack was £19.99. Hostage Tape’s 30-strip pouch was £12.90. MyoTape’s 90-strip listing was out of stock, so that button opens a tagged search. SomniFix’s Amazon UK listing was still unavailable; the brand’s own UK shop was selling it.',
       },
     ],
   },
   {
     slug: 'best-mouth-tape-2026',
-    title: 'Best Mouth Tape 2026: Our Rigorous Test of 6 Premium Sleep Strips',
-    excerpt: 'After 8 weeks of nightly testing across 12 side sleepers, back sleepers, and beard-wearers, here are the clear winners for different needs and budgets.',
-    content: `Mouth taping has moved from biohacker curiosity to mainstream sleep optimization tool in 2026. But not all tapes are created equal. Many people turn to it while searching for how to fall asleep fast or sleep anxiety remedies.
+    title: 'Best Mouth Tape 2026: How to Choose for Beards, Skin, and Hold',
+    excerpt: 'There is no lab panel behind this page. Choose by the shape of the strip, whether you have a beard, and which UK listing is actually in stock.',
+    content: `**Affiliate disclosure.** Some links go to Amazon with our Associates tag. Brand-site links are marked on the product page when they are not commissioned.
 
-We tested six leading options for adhesion, comfort, skin reaction, value, and real-world sleep quality improvement (measured by Oura and subjective morning reports).
+An earlier version of this page described an eight-week test with 12 people. This site did not run that test. What follows is how the strips are designed, and which shops were actually selling them on 7 November 2026.
 
-## Our Testing Methodology
-- 12 testers (mixed ages, sleep positions, facial hair)
-- Minimum 7 nights per product
-- Blind rating where possible on comfort and hold
-- Tracked morning dry mouth, snoring reports from partners, and sleep scores
+## Start with the nose
 
-## Top Pick Overall: Dream Recovery
-Dream Recovery earned the highest average score (4.8/5). Testers loved the balance of gentle-yet-secure adhesion and how well it stayed on during side sleeping. Zero irritation reported across sensitive skin testers.
+Mouth tape is only worth buying if you can already breathe through your nose while you are awake. It does not treat sleep apnoea. Safety notes sit on the [mouth tape hub](/mouth-tape). If the aim is quieter snoring, read [mouth tape vs nasal strips for snoring](/blog/mouth-tape-vs-nasal-strips-for-snoring) before you pick a brand.
 
-**Best for:** Most people, side sleepers, CPAP combo users.
+## How the designs differ
 
-## Best for Beards: Hostage Tape & SomniFix (tie)
-Hostage Tape surprised us with incredible hold even on thick beards at a lower price. SomniFix's wider design and vent gave peace of mind to several testers.
+- **Strip over the lips.** [Hostage Tape](/reviews/hostage-tape) is a black fabric strip that covers the mouth. The Amazon UK listing of 30 strips calls it beard-friendly. It was in stock at £12.90 on 7 November 2026. [Shop Hostage Tape](/go/hostage-tape).
+- **Strip around the lips.** [MyoTape](/reviews/mytape) is Oxygen Advantage’s design, meant to surround the mouth with elastic tension rather than seal it. The 90-strip listing was out of stock. The button opens a tagged search so you can pick a pack that is in stock, and check it is the adult version. The older listing said it is not for a beard or moustache. [Shop MyoTape](/go/mytape).
+- **Vented strip.** [SomniFix](/reviews/somnifix) has a small hole in the centre. Amazon UK’s listing was still unavailable. The button goes to SomniFix’s own UK shop and is not commissioned.
+- **Brand sites without a code.** Dream Recovery, ZzzTape, and SayLess sell from their own sites. We do not have affiliate codes, and we are not going to invent a winner from a test we did not run. Read the note under each button.
 
-## Best Value: ZzzTape Pro
-If you're testing the waters or on a budget, ZzzTape delivers 60 nights for under £10. Great for beginners.
+## A simple way to choose
 
-## Key Takeaways 2026
-1. Gentler is usually better for long-term adherence.
-2. The "vent" designs (SomniFix) help some people feel safe transitioning.
-3. Mouth taping works best when paired with nasal hygiene and addressing root causes (allergies, deviated septum, etc.). For full step-by-step see our [30-day nasal breathing plan](/blog/how-to-stop-mouth-breathing-at-night). If the goal is quieter snoring, read [mouth tape vs nasal strips for snoring](/blog/mouth-tape-vs-nasal-strips-for-snoring) before you pick a product. If insomnia or sleep anxiety is the driver, start with the foundations in our [evidence-based sleep hygiene checklist](/blog/sleep-hygiene-2026) and the new guide on [how to fall asleep fast naturally](/blog/how-to-fall-asleep-fast-naturally).
+1. Blocked nose, a cold, or you cannot nose-breathe while awake: do not tape. Use a [nasal strip or dilator](/categories/nasal), or see a GP if snoring comes with pauses.
+2. Beard or stubble, and the nose is clear: Hostage Tape is the in-stock option whose listing is aimed at facial hair.
+3. You want to be able to open your mouth: MyoTape’s around-the-lips shape is the closer match, once an adult pack is in stock.
+4. You want a vent and will buy from the brand: SomniFix, knowing that click is not commissioned.
 
-Always follow safety guidelines and consult a healthcare professional if you have or suspect sleep apnea.
-
-Read our full safety guide before starting.` ,
+The longer breathing plan is [how to stop mouth breathing at night](/blog/how-to-stop-mouth-breathing-at-night). If the problem is falling asleep rather than an open mouth, start with [how to fall asleep fast](/blog/how-to-fall-asleep-fast-naturally) and the [sleep hygiene checklist](/blog/sleep-hygiene-2026). This page is not medical advice.` ,
     category: 'Mouth Taping',
-    readTime: '14 min',
+    readTime: '7 min',
     date: '2026-01-12',
-    author: 'Dr. Elena Voss, Sleep Researcher',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/dream-recovery-tape.jpg',
-    seoTitle: 'Best Mouth Tape 2026: Tested & Compared (Dream Recovery, SomniFix, Hostage & More)',
-    seoDescription: 'Independent 2026 review and testing of the best mouth tape and sleep strips. See which performed best for side sleepers, beards, sensitive skin, and value.',
+    seoTitle: 'Best Mouth Tape 2026: Beard, Skin, and Hold',
+    seoDescription: 'How to choose mouth tape in the UK without a fake lab score. Beard hold, a lip-surround strip, a vent, and which listings were in stock in November 2026.',
     tags: ['mouth tape', 'sleep strips', 'best of', '2026'],
   },
   {
@@ -219,7 +332,8 @@ If you have any diagnosed sleep disorder, talk to your doctor or sleep specialis
     category: 'Science & Safety',
     readTime: '11 min',
     date: '2026-01-08',
-    author: 'Marcus Hale, Certified Sleep Coach',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/somnifix-tape.jpg',
     seoTitle: 'Mouth Taping: Benefits, Risks, and Science (2026 Evidence Review)',
     seoDescription: 'Balanced, science-backed guide to mouth taping benefits and serious risks. Who should avoid it and how to try it safely.',
@@ -297,7 +411,7 @@ Here is what actually moves the needle, ranked roughly by impact:
 - Mouth taping (if appropriate candidate)
 - Nasal strips/dilators
 - White noise or pink noise machine
-- High-quality mattress and pillows (individual fit matters hugely)
+- A mattress and pillow that keep the spine level. Side sleepers: [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers)
 - Oura/Whoop/Apple Watch for data and accountability
 - Apigenin + L-Theanine stack (popular and low risk for most)
 
@@ -311,7 +425,8 @@ Start with Tier 1 for 2 weeks. You will likely see bigger improvements than addi
     category: 'Sleep Optimization',
     readTime: '9 min',
     date: '2026-01-02',
-    author: 'Dr. Priya Patel, MD',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/mattress.jpg',
     seoTitle: 'Evidence-Based Sleep Hygiene 2026: What Actually Works',
     seoDescription: 'No-nonsense ranked list of sleep hygiene interventions with real evidence. Focus on the fundamentals that deliver results.',
@@ -358,7 +473,8 @@ This is not medical advice. If you have chronic insomnia or anxiety affecting sl
     category: 'Insomnia & Anxiety',
     readTime: '13 min',
     date: '2026-02-10',
-    author: 'Dr. Elena Voss, Sleep Researcher',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/eight-sleep-pod.jpg',
     seoTitle: 'How to Fall Asleep Fast Naturally 2026 — Evidence-Based Insomnia Remedies',
     seoDescription: 'Proven ways to fall asleep faster without pills. CBT-I basics, breathing, temperature, nasal breathing + mouth taping tips, and when to get professional help.',
@@ -400,7 +516,8 @@ Always consult a healthcare professional for persistent insomnia or anxiety diso
     category: 'Insomnia & Anxiety',
     readTime: '11 min',
     date: '2026-02-12',
-    author: 'Marcus Hale, Certified Sleep Coach',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/apigenin-supplement.jpg',
     seoTitle: 'Sleep Anxiety Remedies 2026: How to Stop Worrying About Sleep',
     seoDescription: 'Practical, science-backed remedies for sleep anxiety and orthosomnia. Break the cycle with CBT-I techniques, routines, nasal breathing, and safe tools.',
@@ -448,7 +565,8 @@ Start with magnesium and build from there. Most readers notice the biggest diffe
     category: 'Supplements',
     readTime: '10 min',
     date: '2026-07-02',
-    author: 'Dr. Priya Patel, MD',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/magnesium-supplement.jpg',
     seoTitle: 'Magnesium + L-Theanine + Apigenin Sleep Stack 2026: How It Works',
     seoDescription: 'Complete guide to the popular 2026 sleep supplement stack. Dosages, timing, who it helps, and how to combine it with mouth taping and nasal breathing.',
@@ -456,43 +574,42 @@ Start with magnesium and build from there. Most readers notice the biggest diffe
   },
   {
     slug: 'mouth-tape-side-sleepers',
-    title: 'Best Mouth Tape for Side Sleepers in 2026 (Tested for Movement & Comfort)',
-    excerpt: 'Side sleepers face unique challenges with mouth tape — movement, mask compatibility, and facial pressure. Here’s what actually stays on all night according to real testers.',
-    content: `Side sleeping is the most recommended position for reducing snoring and acid reflux, but it creates problems for mouth taping.
+    title: 'Mouth Tape for Side Sleepers: What the Designs Are Built to Do',
+    excerpt: 'Side sleeping rubs the strip against the pillow. Here is how the shapes differ, without a test panel this site did not run.',
+    content: `Side sleeping is the position many snoring leaflets prefer, and it is also the position that rubs a strip of tape against the pillow. An earlier version of this page named winners from a tester panel. There is no such panel.
 
-Gravity, pillow pressure, and facial movement mean many tapes peel or bunch up by 3am.
+## What actually changes on your side
 
-## What Side Sleepers Need From Mouth Tape
-- Strong but flexible adhesive that moves with your face
-- Wider or contoured shape to resist pillow friction
-- Breathable material (you’ll sweat more on your side)
-- CPAP mask compatibility if you use one
+The strip has to move with your face, and the pillow will press one cheek. A strip that only sticks to the middle of the lips has less pillow contact than a wide one. A strip that surrounds the mouth, such as [MyoTape](/reviews/mytape), is a different shape again. None of that is a promise it will still be on at 6am.
 
-## Our 2026 Side Sleeper Winners
-**Dream Recovery** – Best overall for side sleepers. The soft fabric and medical-grade adhesive handled side-to-back transitions extremely well in testing. Minimal residue even after 8+ hours.
+If the pillow is so low that your cheek is crushed into the mattress, the tape is the wrong thing to fix first. The height check is in the [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers) guide.
 
-**SomniFix** – Excellent if you have a beard or use a CPAP mask. The wider design and central vent gave testers peace of mind.
+## Which listing matches which problem
 
-**Hostage Tape** – Best value for active side sleepers. Surprisingly strong hold at a lower price point. Great for people who toss and turn.
+**Beard or stubble.** [Hostage Tape](/reviews/hostage-tape) is the Amazon UK listing that calls itself beard-friendly. Thirty strips were £12.90 on 7 November 2026. [Shop Hostage Tape](/go/hostage-tape).
 
-## Pro Tips for Side Sleepers
-- Apply the tape slightly higher on the lips so pillow contact is on the chin area instead.
-- Use a silk or satin pillowcase — less friction = tape stays on longer.
-- Pair with a good nasal strip or dilator. Side sleeping + nasal breathing is the golden combination for many people.
-- Start with shorter nights (first half only) until your skin and habits adapt.
+**You want a vent.** [SomniFix](/reviews/somnifix) has a hole in the centre of a wider strip. Its Amazon UK listing was unavailable. The button goes to the brand’s UK shop and is not commissioned.
 
-Full comparison and safety notes in our [Mouth Tape Hub](/mouth-tape).
+**You do not want the lips sealed.** MyoTape sits around the mouth. The 90-strip page was out of stock, so the button opens a tagged search. The older listing said it is not for a beard.
 
-Many side sleepers also benefit from the [30-day nasal breathing plan](/blog/how-to-stop-mouth-breathing-at-night) before relying on tape every night.
+**Dream Recovery and ZzzTape** sell from their own sites. We do not have affiliate codes, and we are not going to rank them from a test we did not run.
 
-If you’re a dedicated side sleeper struggling with dry mouth or waking up with tape half off, try Dream Recovery or SomniFix first. The difference in comfort and hold is noticeable within a few nights.`, 
+## Practical notes that do not need a lab
+
+- Only tape if you can breathe through your nose while awake. A [nasal strip](/categories/nasal) comes first if you cannot.
+- A smoother pillowcase reduces friction on the strip. That is ordinary fabric advice, not a trial result.
+- Start with part of the night. If you wake anxious, take it off.
+- CPAP users should ask the clinician who prescribed the mask before adding tape.
+
+Safety notes and the product grid are on the [mouth tape hub](/mouth-tape). The breathing plan is [how to stop mouth breathing at night](/blog/how-to-stop-mouth-breathing-at-night). This page is not medical advice.`, 
     category: 'Mouth Taping',
     readTime: '9 min',
     date: '2026-07-06',
+    updated: '2026-11-07',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/mytape.jpg',
-    seoTitle: 'Best Mouth Tape for Side Sleepers 2026: Tested for Movement & CPAP',
-    seoDescription: 'Side sleeper specific mouth tape recommendations. What works for movement, pillow pressure, beards, and CPAP users.',
+    seoTitle: 'Mouth Tape for Side Sleepers',
+    seoDescription: 'How side sleeping affects mouth tape, which designs suit a beard or a vent, and which UK listings were in stock in November 2026.',
     tags: ['mouth tape', 'side sleepers', 'CPAP', 'best of 2026'],
   },
   {
@@ -533,7 +650,8 @@ Data is powerful — when you use it the right way.`,
     category: 'Sleep Optimization',
     readTime: '11 min',
     date: '2026-07-10',
-    author: 'Dr. Elena Voss, Sleep Researcher',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/gadget-tracker.jpg',
     seoTitle: 'How to Read Sleep Tracker Data in 2026: HRV, Readiness & Sleep Stages',
     seoDescription: 'Practical guide to understanding Oura, Apple Watch, Whoop and other sleep tracker metrics. What actually matters for improving sleep.',
@@ -633,7 +751,8 @@ Nasal breathing is one of the highest-ROI, lowest-cost upgrades you can make to 
     category: 'Guides',
     readTime: '10 min',
     date: '2026-07-18',
-    author: 'Dr. Priya Patel, MD',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/nasal-product.jpg',
     seoTitle: 'Nasal Breathing Benefits for Sleep 2026: Global Guide & Practical Tools',
     seoDescription: 'Why nasal breathing improves sleep quality worldwide. Benefits, root causes, and tools that work no matter where you live.',
@@ -668,7 +787,7 @@ See the [Eight Sleep Pod 6 review](/reviews/eight-sleep-pod-6) for temperature-c
 
 ## Quick Wins Most People Miss
 - Keep a glass of cool water by the bed (but don't overhydrate right before sleep).
-- Use a cooling pillow or gel insert.
+- A pillow that does not collapse. The gel-foam option is in the [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers) guide. Silentnight’s “cooler than memory foam” line is their claim, not a test we ran.
 - Sleep with one leg out from under the covers (a natural cooling hack).
 - Avoid late-night spicy or heavy meals.
 
@@ -678,6 +797,7 @@ Track it for a week — your sleep tracker will likely show more deep sleep on c
     category: 'Sleep Optimization',
     readTime: '9 min',
     date: '2026-07-22',
+    updated: '2026-11-07',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/sleep-gadget.jpg',
     seoTitle: 'Hot Sleepers Guide 2026: Cool Down Your Nights for Deeper Sleep',
@@ -716,7 +836,8 @@ Use our [Sleep Hygiene Checklist](/blog/sleep-hygiene-2026) as your north star.`
     category: 'Sleep Optimization',
     readTime: '8 min',
     date: '2026-07-29',
-    author: 'Dr. Priya Patel, MD',
+    author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-07',
     image: '/images/value-mouth-tape.jpg',
     seoTitle: 'Sleep Myths Debunked 2026: What Actually Matters for Better Rest',
     seoDescription: 'Common sleep advice that is wrong or oversimplified. Evidence-based corrections for 2026.',

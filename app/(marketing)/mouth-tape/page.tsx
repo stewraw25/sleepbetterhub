@@ -267,7 +267,7 @@ export default function MouthTapeHub() {
             {[
               {
                 q: "What is the best mouth tape for sleep in 2026?",
-                a: "The best mouth tape depends on your needs: Dream Recovery for most side sleepers and sensitive skin, Hostage Tape or SomniFix for beards and heavy mouth breathers, ZzzTape for best value. See our full tested comparison above."
+                a: "The best mouth tape depends on your needs: Dream Recovery for most side sleepers and sensitive skin, Hostage Tape or SomniFix for beards and heavy mouth breathers, ZzzTape for best value. See the comparison above."
               },
               {
                 q: "Is mouth taping safe? How to stop mouth breathing safely?",
@@ -310,7 +310,7 @@ export default function MouthTapeHub() {
               {
                 "@type": "Question",
                 "name": "What is the best mouth tape for sleep in 2026?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The best mouth tape depends on your needs: Dream Recovery for most side sleepers and sensitive skin, Hostage Tape or SomniFix for beards and heavy mouth breathers, ZzzTape for best value. See our full tested comparison above." }
+                "acceptedAnswer": { "@type": "Answer", "text": "The best mouth tape depends on your needs: Dream Recovery for most side sleepers and sensitive skin, Hostage Tape or SomniFix for beards and heavy mouth breathers, ZzzTape for best value. See the comparison above." }
               },
               {
                 "@type": "Question",

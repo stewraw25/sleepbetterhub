@@ -30,6 +30,7 @@ export function Footer() {
             <li><Link href="/quiz" className="hover:text-foreground">Sleep Assessment Quiz</Link></li>
             <li><Link href="/blog" className="hover:text-foreground">Sleep Guides &amp; Research</Link></li>
             <li><Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="hover:text-foreground">Tape vs Nasal Strips</Link></li>
+            <li><Link href="/blog/best-pillow-for-side-sleepers" className="hover:text-foreground">Pillow for Side Sleepers</Link></li>
             <li><Link href="/about" className="hover:text-foreground">About Us</Link></li>
           </ul>
         </div>

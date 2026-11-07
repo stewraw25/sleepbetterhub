@@ -32,9 +32,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogPages: MetadataRoute.Sitemap = getPublishedPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(post.updated || post.date),
     changeFrequency: 'monthly',
-    priority: post.slug === 'mouth-tape-vs-nasal-strips-for-snoring' ? 0.9 : 0.7,
+    priority: post.slug === 'mouth-tape-vs-nasal-strips-for-snoring' || post.slug === 'best-pillow-for-side-sleepers' ? 0.9 : 0.7,
   }));
 
   return [...staticPages, ...productPages, ...blogPages];

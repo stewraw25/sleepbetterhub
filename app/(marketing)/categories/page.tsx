@@ -23,7 +23,7 @@ export default function CategoriesIndex() {
           const label = categoryLabels[slug];
           return (
             <Link key={slug} href={`/categories/${slug}`} className="block rounded-2xl border bg-card p-7 hover:border-primary/50 transition group">
-              <div className="text-sm text-primary font-medium tracking-widest">{products.length} PRODUCTS REVIEWED</div>
+              <div className="text-sm text-primary font-medium tracking-widest">{products.length} PRODUCTS</div>
               <div className="text-3xl font-semibold tracking-tight mt-1 group-hover:text-primary transition">{label}</div>
               <div className="mt-3 text-muted-foreground">See full recommendations and buying guides →</div>
             </Link>

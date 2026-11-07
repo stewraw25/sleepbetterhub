@@ -16,7 +16,7 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
       <div className="relative h-44 bg-muted flex items-center justify-center overflow-hidden">
         <Image 
           src={product.image} 
-          alt={product.name} 
+          alt={product.imageAlt || product.name} 
           fill
           sizes="(max-width: 768px) 100vw, 320px"
           className="object-cover group-hover:scale-105 transition-transform duration-500" 
@@ -36,10 +36,12 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
               <h3 className="font-semibold text-lg leading-tight tracking-tight">{product.name}</h3>
               <p className="text-sm text-muted-foreground mt-0.5">{product.price}</p>
             </div>
-            <div className="flex items-center gap-1 text-sm font-medium tabular-nums shrink-0">
-              <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" /> 
-              {product.rating}
-            </div>
+            {product.rating > 0 ? (
+              <div className="flex items-center gap-1 text-sm font-medium tabular-nums shrink-0">
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                {product.rating}
+              </div>
+            ) : null}
           </div>
 
           {showBestFor && product.bestFor.length > 0 && (
@@ -59,7 +61,7 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
 
         <div className="mt-4 flex items-center justify-between pt-4 border-t gap-2">
           <div className="text-xs text-muted-foreground">
-            Editorial score
+            {product.rating > 0 ? 'Editorial score' : 'Listing notes'}
           </div>
           <div className="flex gap-2">
             <Link 

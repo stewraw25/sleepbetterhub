@@ -11,33 +11,25 @@ export const metadata: Metadata = pageMeta({
 export default function AboutPage() {
   return (
     <div className="container max-w-3xl py-12">
-      <h1 className="text-4xl font-semibold tracking-tighter">About SleepBetterHub — Honest Sleep Reviews &amp; Guides</h1>
-      <p className="mt-3 text-xl text-muted-foreground">Independent. Honest. Obsessed with better sleep. Real testing for insomnia relief, sleep anxiety, and nasal breathing tools since 2025.</p>
+      <h1 className="text-4xl font-semibold tracking-tighter">About SleepBetterHub</h1>
+      <p className="mt-3 text-xl text-muted-foreground">UK-focused guides to mouth tape, nasal strips, pillows, and other sleep products, with the shop link labelled.</p>
 
       <div className="prose prose-neutral dark:prose-invert mt-10 max-w-none text-[15px]">
         <p>
-          SleepBetterHub was started because the “best of” lists online are mostly affiliate spam. 
-          We buy the products, we test them on real humans (ourselves + a small panel of side sleepers, 
-          beard owners, CPAP users, and sensitive-skin testers), and we tell you exactly what we found — 
-          including what didn’t work.
+          SleepBetterHub is written by the site’s editorial team. Pages are based on the current product listing,
+          the maker’s own description, and public sources such as NHS physiotherapy leaflets. We do not run a sleep
+          clinic, and we do not have a tester panel. Older pages that named doctors or a 12-person trial were wrong.
+          Those bylines and those test claims have been removed.
         </p>
 
         <h2>Our Standards</h2>
         <ul>
-          <li>We disclose every affiliate relationship clearly.</li>
-          <li>We never accept payment for positive coverage. If a product is bad, we say so.</li>
-          <li>Every mouth tape review includes detailed safety information.</li>
-          <li>We update reviews when formulations or ownership change.</li>
-          <li>We are not doctors. All content is for informational purposes. See a qualified healthcare provider for personal advice.</li>
+          <li>We disclose affiliate links. Amazon buttons use the Associates tag already in the project. Some brand sites have no code, and the button says so.</li>
+          <li>A price on a page is a price we read on that listing, with the date. It will move.</li>
+          <li>We do not invent product specs, star ratings, or customer review counts. New pillow pages have no editorial score.</li>
+          <li>Every mouth tape page includes safety notes. Nothing here is medical advice.</li>
+          <li>Star labels that remain on older product cards are editorial shorthand, not a count of reviews collected on this site.</li>
         </ul>
-
-        <p className="text-xs text-muted-foreground mt-2">This site follows 2026 Google E-E-A-T guidelines for health/wellness content (Your Money or Your Life topics). We prioritize first-hand experience, balanced evidence, and clear sourcing.</p>
-
-        <h2>Our Testing Process (2026)</h2>
-        <p>
-          For mouth tape and sleep tools, we run multi-week tests with a rotating panel of real users (side sleepers, beard owners, CPAP users, sensitive skin, and light/heavy mouth breathers). We track:
-          adhesion through the night, morning skin reaction, ease of removal, partner-reported snoring reduction, subjective sleep quality, and objective sleep metrics via Oura Ring/compatible wearables where available. All reviews reflect hands-on 2025–2026 testing, not manufacturer claims. We update when products or formulations change.
-        </p>
 
         <h2>Affiliate Disclosure</h2>
         <p>
@@ -53,10 +45,10 @@ export default function AboutPage() {
           before making changes to your sleep routine, especially if you have or suspect a sleep disorder.
         </p>
 
-        <h2>Who We Are</h2>
+        <h2>Who writes this</h2>
         <p>
-          A small team of sleep enthusiasts, one former sleep tech, two side-sleeping engineers, and a rotating panel of testers. 
-          We’re not funded by any sleep brand. We’re funded by readers who value honest information.
+          The byline on every guide is the SleepBetterHub editorial team. There is no doctor on staff to name.
+          If a page describes a product, it should say whether that detail came from the listing or from a public leaflet.
         </p>
       </div>
 
