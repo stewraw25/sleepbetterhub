@@ -12,19 +12,21 @@ import {
   Button,
 } from '@react-email/components';
 import { getPublishedPosts } from '../lib/blog';
+import { getContactEmail, getSiteUrl } from '../lib/site';
 
 interface WeeklySleepInsightsProps {
   subscriberEmail?: string;
 }
 
 export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsightsProps) {
-  // Pick the 3 most recent *published* posts for the digest
   const featuredPosts = getPublishedPosts().slice(0, 3);
+  const site = getSiteUrl();
+  const contact = getContactEmail();
 
   return (
     <Html>
       <Head />
-      <Preview>This week in sleep: Mouth tape testing results, nasal breathing protocol, and the real data on sleep hygiene</Preview>
+      <Preview>This week in sleep: new guides and product notes. No lab-test results.</Preview>
       <Body style={main}>
         <Container style={container}>
           {/* Header */}
@@ -36,7 +38,7 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
           <Heading style={h1}>Weekly Sleep Insights</Heading>
 
           <Text style={subtitle}>
-            Evidence-based tips, new product tests, and practical research summaries — curated for you.
+            New guides and product notes. This site does not send lab-test results.
           </Text>
 
           <Hr style={hr} />
@@ -47,13 +49,13 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
               <div key={post.slug} style={{ marginBottom: '32px' }}>
                 <Text style={articleCategory}>{post.category} • {post.readTime}</Text>
                 <Heading as="h2" style={articleTitle}>
-                  <Link href={`https://sleepbetterhub.vercel.app/blog/${post.slug}`} style={articleLink}>
+                  <Link href={`${site}/blog/${post.slug}`} style={articleLink}>
                     {post.title}
                   </Link>
                 </Heading>
                 <Text style={articleExcerpt}>{post.excerpt}</Text>
                 <Button
-                  href={`https://sleepbetterhub.vercel.app/blog/${post.slug}`}
+                  href={`${site}/blog/${post.slug}`}
                   style={readButton}
                 >
                   Read the full guide →
@@ -68,10 +70,10 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
           <Section style={ctaSection}>
             <Heading as="h3" style={h3}>Not sure which mouth tape is right for you?</Heading>
             <Text style={text}>
-              Take our 90-second personalized quiz. Thousands of readers have used it to find their best match.
+              The quiz matches listing tags. It does not score products from a test, and it does not ask for an email.
             </Text>
             <Button
-              href="https://sleepbetterhub.vercel.app/quiz"
+              href={`${site}/quiz`}
               style={primaryButton}
             >
               Take the Sleep Quiz
@@ -84,8 +86,11 @@ export default function WeeklySleepInsights({ subscriberEmail }: WeeklySleepInsi
           <Text style={footer}>
             You&apos;re receiving this because you subscribed to SleepBetterHub Weekly Sleep Insights.
             <br />
-            <Link href="https://sleepbetterhub.vercel.app" style={footerLink}>SleepBetterHub</Link> · 
-            <Link href="https://sleepbetterhub.vercel.app/about" style={footerLink}> Unsubscribe</Link>
+            <Link href={site} style={footerLink}>SleepBetterHub</Link>
+            {' · '}
+            To be removed, email {contact}. There is no automatic unsubscribe button.
+            {' · '}
+            <Link href={`${site}/privacy`} style={footerLink}>Privacy</Link>
           </Text>
 
           <Text style={tiny}>

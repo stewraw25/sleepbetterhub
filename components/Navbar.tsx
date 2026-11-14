@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
 import { Menu, Moon, Sun, Search } from 'lucide-react';
@@ -9,23 +10,27 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useTheme } from 'next-themes';
 
 const navLinks = [
-  { href: '/mouth-tape', label: 'Mouth Tape Hub' },
-  { href: '/reviews/eight-sleep-pod-6', label: 'Eight Sleep Review' },
-  { href: '/quiz', label: 'Sleep Quiz' },
-  { href: '/blog', label: 'Learn' },
+  { href: '/mouth-tape', label: 'Mouth Tape' },
+  { href: '/blog/best-pillow-for-side-sleepers', label: 'Pillows' },
+  { href: '/categories/bedding', label: 'Accessories' },
+  { href: '/quiz', label: 'Quiz' },
+  { href: '/blog', label: 'Guides' },
   { href: '/about', label: 'About' },
 ];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchQuery.trim()) {
-      window.location.href = `/mouth-tape?search=${encodeURIComponent(searchQuery.trim())}`;
+    const term = searchQuery.trim();
+    if (term) {
+      router.push(`/search?q=${encodeURIComponent(term)}`);
+      setIsOpen(false);
       setSearchOpen(false);
       setSearchQuery('');
     }
@@ -63,7 +68,7 @@ export function Navbar() {
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search products..."
+                  placeholder="Search products and guides"
                   className="w-64 rounded-md border bg-background px-3 py-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                   autoFocus
                   onBlur={() => {
@@ -127,7 +132,7 @@ export function Navbar() {
                   <form onSubmit={handleSearch} className="flex gap-2">
                     <input
                       type="text"
-                      placeholder="Search mouth tape..."
+                      placeholder="Search products and guides"
                       className="flex-1 rounded-md border px-3 py-2 text-sm"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}

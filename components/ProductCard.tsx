@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, ArrowRight, ExternalLink } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Product } from '@/lib/products';
 import { getInternalAffiliateLink, SPONSORED_REL } from '@/lib/affiliates';
@@ -36,12 +36,6 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
               <h3 className="font-semibold text-lg leading-tight tracking-tight">{product.name}</h3>
               <p className="text-sm text-muted-foreground mt-0.5">{product.price}</p>
             </div>
-            {product.rating > 0 ? (
-              <div className="flex items-center gap-1 text-sm font-medium tabular-nums shrink-0">
-                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
-                {product.rating}
-              </div>
-            ) : null}
           </div>
 
           {showBestFor && product.bestFor.length > 0 && (
@@ -61,14 +55,14 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
 
         <div className="mt-4 flex items-center justify-between pt-4 border-t gap-2">
           <div className="text-xs text-muted-foreground">
-            {product.rating > 0 ? 'Editorial score' : 'Listing notes'}
+            Listing notes
           </div>
           <div className="flex gap-2">
             <Link 
               href={`/reviews/${product.slug}`}
               className="inline-flex items-center gap-1 rounded-lg px-2.5 py-1 text-xs font-medium text-foreground hover:bg-muted transition-all"
             >
-              Read review <ArrowRight className="h-3.5 w-3.5" />
+              Read notes <ArrowRight className="h-3.5 w-3.5" />
             </Link>
             <a 
               href={getInternalAffiliateLink(product.slug)} 

@@ -159,7 +159,7 @@ The mattress underneath is a separate purchase. Notes on that, and on these thre
     slug: 'best-pillow-for-side-sleepers',
     title: 'Best Pillow for Side Sleepers: A UK Buying Guide',
     excerpt: 'Side sleepers need enough height to keep the head level with the spine. Here is how to check that tonight, and three Amazon UK pillows with prices checked on 7 November 2026.',
-    content: `**Affiliate disclosure.** The pillow links below go to Amazon UK with our Associates tag. Prices were read off those listings on 7 November 2026 and will change. We have not slept on these pillows, and the star ratings on the product pages are not scores we gave them.
+    content: `**Affiliate disclosure.** The pillow links below go to Amazon UK with our Associates tag. Prices were read off those listings on 7 November 2026 and will change. We have not slept on these pillows. This site does not publish star ratings for them.
 
 If you are looking for the best pillow for side sleepers, start with height, not the brand. On your side, your shoulder holds your head away from the mattress. The pillow has to fill that gap so your nose stays roughly in line with the centre of your chest. Too thick, and the neck bends upward. Too thin, and the head drops toward the bed.
 
@@ -400,18 +400,22 @@ The longer breathing plan is [how to stop mouth breathing at night](/blog/how-to
   },
   {
     slug: 'mouth-taping-benefits-risks',
-    title: 'Mouth Taping Benefits and Risks: What the Science Actually Says in 2026',
-    excerpt: 'Mouth taping can dramatically improve sleep quality for some people — but it is not risk-free or appropriate for everyone. Here is the balanced, evidence-based view.',
-    content: `Mouth breathing during sleep is linked to poorer sleep quality, increased snoring, dry mouth, and in some cases worsened sleep apnea symptoms.
+    title: 'Mouth Taping: Benefits People Claim, and the Risks',
+    excerpt: 'What mouth taping is used for, who should skip it, and what this site has not checked. Not a treatment and not a lab result.',
+    content: `People use mouth tape to keep the lips together so they breathe through the nose. This page has not reviewed the trials, and it does not list benefits as results this site measured.
 
-Mouth taping aims to train nasal breathing.
+A separate buyer’s note cites one small 2022 study and the Sleep Foundation’s public summary. That note is not a reason to treat tape as safe for everyone.
 
-## Documented Benefits
-- Reduced snoring (partner-reported and some studies)
-- Improved sleep efficiency and deeper sleep stages (small studies + anecdotal + wearable data)
-- Less dry mouth and morning breath
-- Potential blood pressure and HRV improvements via better CO2/O2 balance (emerging)
-- May help mild positional apnea when combined with side sleeping
+## Claims you will see elsewhere
+These are claims, not findings from this site:
+
+- Less snoring
+- Changes in sleep stages
+- Less dry mouth in the morning
+- Changes in blood pressure or heart-rate variability
+- An effect on mild positional apnoea
+
+This site has not checked any of those.
 
 ## Important Risks & Contraindications
 **Do NOT mouth tape if:**
@@ -427,8 +431,8 @@ Mouth taping aims to train nasal breathing.
 - Waking with tape partially off (frustrating)
 - In rare cases, people have reported feeling short of breath upon waking
 
-## The Bottom Line
-Mouth taping is a low-cost, low-risk intervention with potentially high reward *for the right candidates*. It is not a cure-all and should be viewed as one tool in a broader sleep hygiene strategy.
+## The limit of this page
+Mouth tape is not a treatment, and this site does not call it low-risk. The safety list above is the part to read first.
 
 Start slow. Test during a low-stakes nap first. Have a plan B (nasal strips, dilators, or just removing the tape).
 
@@ -439,14 +443,14 @@ If you have any diagnosed sleep disorder, talk to your doctor or sleep specialis
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-07',
     image: '/images/somnifix-tape.jpg',
-    seoTitle: 'Mouth Taping: Benefits, Risks, and Science (2026 Evidence Review)',
-    seoDescription: 'Balanced, science-backed guide to mouth taping benefits and serious risks. Who should avoid it and how to try it safely.',
+    seoTitle: 'Mouth Taping: Benefits and Risks',
+    seoDescription: 'What mouth taping is used for, who should avoid it, and the limits of what this site has checked. Not a lab test and not medical advice.',
     tags: ['safety', 'science', 'mouth breathing', 'risks'],
   },
   {
     slug: 'how-to-stop-mouth-breathing-at-night',
     title: 'How to Stop Mouth Breathing at Night: A Practical 30-Day Plan',
-    excerpt: 'Mouth taping alone is rarely enough. Here is the complete step-by-step protocol our readers have used to successfully switch to nasal breathing for good.',
+    excerpt: 'Steps people try when they want to breathe through the nose at night. This site has not followed a reader group through them.',
     content: `Most chronic mouth breathers during sleep have underlying reasons: nasal congestion, weak oral posture, allergies, or simply habit from years of mouth breathing.
 
 Taping is a "forced practice" tool. Real lasting change comes from addressing the root and building the habit.
@@ -486,14 +490,14 @@ Mouth taping is training wheels. The goal is to not need them forever.` ,
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-14',
     image: '/images/nasal-dilator.jpg',
-    seoTitle: 'How to Stop Mouth Breathing at Night: 30-Day Nasal Breathing Protocol',
-    seoDescription: 'Complete practical plan to transition from mouth breathing to nasal breathing. Nasal hygiene, exercises, and safe mouth taping integration.',
+    seoTitle: 'Stop Mouth Breathing at Night',
+    seoDescription: 'Steps people try when they want to breathe through the nose at night, including nasal hygiene and when not to use tape. Not a reader trial.',
     tags: ['mouth breathing', 'nasal breathing', 'guide', 'habit change'],
   },
   {
     slug: 'sleep-hygiene-2026',
-    title: 'The 2026 Evidence-Based Sleep Hygiene Checklist (No Hacks, Just What Works)',
-    excerpt: 'We cut through the influencer noise. Here are the interventions with the strongest evidence for improving sleep quality and consistency.',
+    title: 'A 2026 Sleep Hygiene Checklist',
+    excerpt: 'Habits that often appear in sleep-hygiene lists. This site has not ranked them, and it has not measured an improvement.',
     content: `Sleep optimization has become a multi-billion pound industry filled with gadgets and supplements of varying value.
 
 Here is what actually moves the needle, ranked roughly by impact:
@@ -508,7 +512,7 @@ Here is what actually moves the needle, ranked roughly by impact:
 ## Tier 2: High-Impact Practices
 - Wind-down routine 60+ minutes before bed (no screens or very dim)
 - No alcohol (even one drink fragments sleep architecture)
-- Magnesium glycinate or threonate in evening (300-400mg)
+- A magnesium product, if a clinician says it is appropriate. This checklist does not set a dose. See the [magnesium notes](/reviews/magnesium-glycinate-sleep).
 - Exercise most days, preferably morning or afternoon
 - Address sleep apnea if suspected (get tested!)
 
@@ -518,7 +522,7 @@ Here is what actually moves the needle, ranked roughly by impact:
 - White noise or pink noise machine
 - A mattress and pillow that keep the spine level. Side sleepers: [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers). The duvet tog is separate: [what tog duvet do I need](/blog/what-tog-duvet)
 - Oura/Whoop/Apple Watch for data and accountability
-- Apigenin + L-Theanine stack (popular and low risk for most)
+- Apigenin and L-theanine are discussed online. This site has not called the combination low-risk. See the [supplement notes](/blog/sleep-supplements-stack-2026).
 
 ## What Usually Doesn't Move the Needle Much
 - Most "sleep teas"
@@ -526,22 +530,22 @@ Here is what actually moves the needle, ranked roughly by impact:
 - Weighted blankets for most people (some love them)
 - Fancy pillow sprays
 
-Start with Tier 1 for 2 weeks. You will likely see bigger improvements than adding five gadgets.` ,
+Start with the first group for two weeks before adding gadgets. This site has not measured which change helps more.` ,
     category: 'Sleep Optimization',
     readTime: '9 min',
     date: '2026-01-02',
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-14',
     image: '/images/mattress.jpg',
-    seoTitle: 'Evidence-Based Sleep Hygiene 2026: What Actually Works',
-    seoDescription: 'No-nonsense ranked list of sleep hygiene interventions with real evidence. Focus on the fundamentals that deliver results.',
+    seoTitle: 'Sleep Hygiene Checklist',
+    seoDescription: 'A checklist of sleep habits often discussed for insomnia, and when to speak to a GP. This site has not ranked them in a lab.',
     tags: ['sleep hygiene', 'evidence-based', 'checklist'],
   },
   {
     slug: 'how-to-fall-asleep-fast-naturally',
-    title: 'How to Fall Asleep Fast Naturally in 2026 (Evidence-Based, No Pills)',
-    excerpt: 'Struggling with insomnia or racing thoughts at 2am? Here are the proven, non-drug techniques that help most people fall asleep in under 20 minutes — including when to consider mouth taping.',
-    content: `Millions search "how to fall asleep fast" every night. The good news: the most effective methods are free or low-cost and backed by sleep science.
+    title: 'How to Fall Asleep Faster Without Pills',
+    excerpt: 'Habits people try when they want to fall asleep faster, including when mouth tape is the wrong next step. Not a timed result from this site.',
+    content: `People search for ways to fall asleep faster. The notes below are habits that come up often. This site has not tested them and does not promise a time to sleep.
 
 ## The 10-Minute Wind-Down That Works
 1. Dim lights 60 minutes before bed (or use warm red/orange bulbs).
@@ -568,11 +572,11 @@ See our full guide: [How to Stop Mouth Breathing at Night](/blog/how-to-stop-mou
 - Consistent wake time even after bad nights (protects circadian rhythm).
 
 ## What the Data Shows
-Studies on stimulus control and sleep restriction therapy (core CBT-I components) show 70-80% of insomnia sufferers improve without medication. Sleep hygiene alone helps many; for persistent issues, CBT-I or a sleep specialist is gold standard.
+For persistent insomnia, speak to a GP. CBT-I is a common talking treatment. This page does not quote a success rate.
 
 Mouth taping is a supportive tool for the breathing piece — not a standalone insomnia cure.
 
-Start with the Tier 1 foundations from our [2026 Sleep Hygiene Checklist](/blog/sleep-hygiene-2026). Most people see results in 3–7 nights.
+Start with the first group in the [sleep hygiene checklist](/blog/sleep-hygiene-2026). This site has not timed how long any of this takes.
 
 This is not medical advice. If you have chronic insomnia or anxiety affecting sleep, speak with a doctor or CBT-I provider.` ,
     category: 'Insomnia & Anxiety',
@@ -582,19 +586,19 @@ This is not medical advice. If you have chronic insomnia or anxiety affecting sl
     updated: '2026-11-14',
     image: '/images/eight-sleep-pod.jpg',
     imageAlt: 'A bed with a white cover. Not a photo of a sleep technique.',
-    seoTitle: 'How to Fall Asleep Fast Naturally 2026 — Evidence-Based Insomnia Remedies',
-    seoDescription: 'Proven ways to fall asleep faster without pills. CBT-I basics, breathing, temperature, nasal breathing + mouth taping tips, and when to get professional help.',
+    seoTitle: 'How to Fall Asleep Faster',
+    seoDescription: 'Ways people try to fall asleep faster without pills: schedule, light, temperature, and when to speak to a GP. Not a lab test.',
     tags: ['insomnia', 'how to fall asleep fast', 'sleep anxiety', 'natural remedies'],
   },
   {
     slug: 'sleep-anxiety-remedies',
-    title: 'Sleep Anxiety Remedies That Actually Work in 2026 (Practical & Research-Backed)',
-    excerpt: 'Sleep anxiety (or orthosomnia) makes the problem worse. Here is what helps: breaking the worry cycle, proven routines, and tools like mouth taping that reduce one common trigger — mouth breathing.',
+    title: 'Sleep Anxiety: Routines People Try',
+    excerpt: 'Notes on sleep anxiety and orthosomnia. These are routines people discuss. They are not a treatment, and this site has not tested them.',
     content: `Sleep anxiety — lying awake worrying about not sleeping — is incredibly common and self-reinforcing. The more you "try" to sleep, the more alert your nervous system becomes.
 
 ## First Principle: Reduce the Pressure to Sleep
 - Get out of bed after 20–25 minutes if not asleep. Do a calm activity in dim light (reading physical book, light stretching). Return when sleepy.
-- This is stimulus control — a core part of CBT for insomnia with strong evidence.
+- Getting out of bed when you are not sleepy is one part of CBT for insomnia. This page is not that treatment. Ask a GP if you want a referral.
 
 ## Daytime Levers That Reduce Night Anxiety
 - Morning sunlight within 30–60 min of waking (10+ minutes outdoors or bright window).
@@ -606,15 +610,15 @@ This is not medical advice. If you have chronic insomnia or anxiety affecting sl
 - 60-minute wind-down: no work email, no doomscrolling.
 - Light journaling or "done list" to close the day mentally.
 - Warm bath/shower + cool bedroom.
-- Optional: 200–400mg magnesium glycinate (many find it calming; evidence is mixed but low risk for most).
+- A magnesium product only if a clinician agrees. This page does not set a dose.
 
 ## Mouth Breathing as a Hidden Anxiety Amplifier
-Dry mouth, increased heart rate from poor CO2 balance, and frequent micro-arousals from mouth breathing can feed the "I can't sleep" loop. Readers who successfully switched to nasal breathing (nasal hygiene + mouth tape where appropriate) often report less nighttime panic and easier return to sleep.
+Some people connect a dry mouth and mouth breathing with waking up worried. This site has not tested whether switching to nasal breathing changes that.
 
 Start here: [How to Stop Mouth Breathing at Night: 30-Day Plan](/blog/how-to-stop-mouth-breathing-at-night). Use our [Sleep Quiz](/quiz) to see if mouth taping is a sensible next step for you.
 
 ## For Clinical-Level Sleep Anxiety
-CBT-I (cognitive behavioral therapy for insomnia) is first-line treatment and more effective long-term than sleeping pills for most. Apps like CBT-I Coach or working with a therapist deliver excellent results. Mouth taping and supplements are adjuncts at best.
+If sleep anxiety is ongoing, ask a GP about CBT for insomnia. This site has not compared it with sleeping pills, and it has not reviewed any app. Mouth tape and supplements are not a treatment for anxiety.
 
 Track patterns for 1–2 weeks (bed/wake times, caffeine, alcohol, exercise, screen cutoff) before adding tools.
 
@@ -625,57 +629,39 @@ Always consult a healthcare professional for persistent insomnia or anxiety diso
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-07',
     image: '/images/apigenin-supplement.jpg',
-    seoTitle: 'Sleep Anxiety Remedies 2026: How to Stop Worrying About Sleep',
-    seoDescription: 'Practical, science-backed remedies for sleep anxiety and orthosomnia. Break the cycle with CBT-I techniques, routines, nasal breathing, and safe tools.',
+    seoTitle: 'Sleep Anxiety Remedies',
+    seoDescription: 'Notes on sleep anxiety and orthosomnia: routines, when to ask about CBT-I, and tools that are not a treatment.',
     tags: ['sleep anxiety', 'insomnia', 'orthosomnia', 'CBT-I', 'anxiety remedies'],
   },
   {
     slug: 'sleep-supplements-stack-2026',
     title: 'The 2026 Sleep Supplements Stack: Magnesium, L-Theanine & Apigenin Explained',
-    excerpt: 'The combination backed by researchers and biohackers worldwide. Here’s exactly how to use magnesium glycinate, L-theanine, and apigenin for deeper sleep without grogginess.',
-    content: `The "sleep stack" of Magnesium Glycinate + L-Theanine + Apigenin has become one of the most discussed evidence-based approaches for people struggling with sleep onset and middle-of-the-night awakenings.
+    excerpt: 'What people repeat about magnesium glycinate, L-theanine, and apigenin. This site has not tested the combination and does not set a dose.',
+    content: `People often mention magnesium glycinate, L-theanine, and apigenin together. This page is not a test of that combination, and it is not a dose you should follow without your own clinician.
 
-Unlike prescription sleep aids, this combination supports your body’s natural pathways rather than forcing sedation.
+The shop buttons on the product pages open Amazon UK searches, not a Thorne, Momentous, or Sports Research bottle.
 
-## Why This Stack Works
-- **Magnesium Glycinate (300–400mg elemental)**: Calms the nervous system, supports GABA, and helps relax muscles. Most people are deficient.
-- **L-Theanine (200mg)**: The amino acid from green tea that increases alpha brain waves and promotes calm focus without drowsiness. Excellent for racing thoughts.
-- **Apigenin (50mg)**: A flavonoid from chamomile that binds to GABA receptors gently. Popularized by Andrew Huberman’s protocol.
+## What is often repeated
+These lines are claims you will see elsewhere. This site has not checked them:
 
-Taken together 45–60 minutes before bed, many people report falling asleep faster and staying asleep with fewer awakenings.
+- **Magnesium glycinate**: often described as a gentler magnesium salt. Doses you see online vary. Read the bottle.
+- **L-theanine**: an amino acid in tea, often described as calming. This page does not review those studies.
+- **Apigenin**: a flavonoid in chamomile. This page does not review trials of it for sleep.
 
-## How to Use It (Global Recommendations)
-Start simple:
-1. Magnesium glycinate first for 7–10 nights.
-2. Add L-Theanine if you have trouble winding down.
-3. Add Apigenin if you still wake up between 2–4am.
+Do not treat a timing you read online as a prescription.
 
-Take on an empty stomach or with a small snack. Stay consistent for at least two weeks.
+## What this page will not claim
+This site has not reviewed the trials, and it does not say the three ingredients have been shown to work together. A step-by-step dose that used to sit here has been removed. Ask a doctor or pharmacist before you start a supplement, especially if you take other medicines.
 
-**Important for international readers**: Quality varies wildly. Look for third-party tested brands (NSF, USP, or Informed-Sport). Thorne, Momentous, and Sports Research are popular choices available in most countries.
-
-## Who Benefits Most
-- People with sleep anxiety or difficulty "turning off" their brain
-- Side sleepers and mouth breathers (pair with nasal hygiene)
-- Anyone avoiding melatonin long-term
-- Shift workers or frequent travelers adjusting to new time zones
-
-See our reviews of [Magnesium Glycinate](/reviews/magnesium-glycinate-sleep), [L-Theanine 200mg](/reviews/l-theanine-200mg), and [Apigenin 50mg](/reviews/apigenin-50mg).
-
-## What the Research Says
-While large trials on the exact three-ingredient stack are limited, each component has solid individual data for sleep quality, anxiety reduction, and GABA support. The synergy is why it has stayed popular through 2026.
-
-Always consult a doctor before starting supplements, especially if you’re on medication or have health conditions.
-
-Start with magnesium and build from there. Most readers notice the biggest difference from consistent magnesium + better sleep hygiene rather than adding every new supplement.`, 
+The notes on this site are [Magnesium Glycinate](/reviews/magnesium-glycinate-sleep), [L-Theanine 200mg](/reviews/l-theanine-200mg), and [Apigenin 50mg](/reviews/apigenin-50mg). Each shop button is an Amazon UK search, not a confirmed brand bottle.`, 
     category: 'Supplements',
     readTime: '10 min',
     date: '2026-07-02',
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-07',
     image: '/images/magnesium-supplement.jpg',
-    seoTitle: 'Magnesium + L-Theanine + Apigenin Sleep Stack 2026: How It Works',
-    seoDescription: 'Complete guide to the popular 2026 sleep supplement stack. Dosages, timing, who it helps, and how to combine it with mouth taping and nasal breathing.',
+    seoTitle: 'Magnesium, Theanine, Apigenin',
+    seoDescription: 'Notes on magnesium, L-theanine, and apigenin as they are sold. Not a dose chart from this site, and not a lab test.',
     tags: ['supplements', 'magnesium', 'l-theanine', 'apigenin', 'natural sleep aids'],
   },
   {
@@ -721,7 +707,7 @@ Safety notes and the product grid are on the [mouth tape hub](/mouth-tape). The 
   {
     slug: 'sleep-trackers-what-they-mean',
     title: 'What Your Sleep Tracker Is Actually Telling You (and What to Ignore)',
-    excerpt: 'Oura, Eight Sleep, Apple Watch, and others give you numbers every morning. Here’s how to interpret readiness scores, sleep stages, and HRV so you actually improve your rest.',
+    excerpt: 'What the numbers on a sleep tracker are called, and what this site will not tell you to change because of them.',
     content: `Sleep trackers are incredibly popular in 2026, but many people obsess over the wrong metrics and miss the real signals.
 
 ## The Metrics That Matter Most
@@ -759,17 +745,17 @@ Data is powerful — when you use it the right way.`,
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-07',
     image: '/images/gadget-tracker.jpg',
-    seoTitle: 'How to Read Sleep Tracker Data in 2026: HRV, Readiness & Sleep Stages',
-    seoDescription: 'Practical guide to understanding Oura, Apple Watch, Whoop and other sleep tracker metrics. What actually matters for improving sleep.',
+    seoTitle: 'How to Read a Sleep Tracker',
+    seoDescription: 'What sleep-tracker numbers are called, including readiness, stages, and HRV. This site does not say which number to chase.',
     tags: ['sleep tracking', 'oura', 'HRV', 'sleep data', 'recovery'],
   },
   {
     slug: 'mouth-taping-mistakes-2026',
     title: '5 Common Mouth Taping Mistakes (and How to Avoid Them in 2026)',
-    excerpt: 'Most people give up on mouth taping too early because of these preventable errors. Here’s what actually causes failure and how to fix it fast.',
-    content: `Mouth taping has helped thousands of people reduce snoring, dry mouth, and fragmented sleep — but only when done correctly.
+    excerpt: 'Problems people run into with mouth tape, such as a blocked nose or a strip that is too wide. Not a count of how often people stop.',
+    content: `Mouth tape is easy to use badly. These are common mistakes described in mouth-taping guides, not a count of readers this site has watched.
 
-Here are the mistakes we see most often (and the fixes).
+Here are the mistakes that come up most often (and the fixes).
 
 ## 1. Starting With the Wrong Tape
 Using cheap medical tape or the first thing on Amazon often leads to skin irritation, poor hold, or panic.
@@ -794,11 +780,11 @@ Jumping straight to full-night taping when you’re not used to it often causes 
 **Fix**: Start with 1–2 hours or the first half of the night. Build the habit gradually over 1–2 weeks.
 
 ## 5. Ignoring Other Sleep Fundamentals
-Mouth taping helps breathing but won’t fix terrible sleep hygiene, alcohol use, or an inconsistent schedule.
+Tape does not change alcohol use or an inconsistent schedule. This site has not measured what it does to breathing.
 
-**Fix**: Combine taping with the basics from our [2026 Sleep Hygiene Checklist](/blog/sleep-hygiene-2026). The combination is dramatically more powerful than tape alone.
+**Fix**: The [sleep hygiene checklist](/blog/sleep-hygiene-2026) covers schedule, light, and the room. This site has not compared tape on its own with tape plus those habits.
 
-Mouth taping is a tool, not magic. When you avoid these five mistakes, most people see noticeable improvement in 3–7 nights.
+This site has not timed how long people take to get used to tape.
 
 Always follow the safety guidelines on every product page and consult a doctor if you have or suspect sleep apnea.`, 
     category: 'Mouth Taping',
@@ -806,26 +792,26 @@ Always follow the safety guidelines on every product page and consult a doctor i
     date: '2026-07-14',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/hostage-tape.jpg',
-    seoTitle: 'Common Mouth Taping Mistakes 2026 and How to Fix Them',
-    seoDescription: 'Avoid these 5 frequent mouth taping errors that cause failure or discomfort. Practical fixes for beginners and experienced users.',
+    seoTitle: 'Mouth Taping Mistakes',
+    seoDescription: 'Problems people run into with mouth tape, including a blocked nose and a strip that feels too wide. Not a failure-rate study.',
     tags: ['mouth tape', 'common mistakes', 'how to use mouth tape', 'sleep tips'],
   },
   {
     slug: 'nasal-breathing-global-benefits',
     title: 'Nasal Breathing for Better Sleep: Why It Matters No Matter Where You Live',
-    excerpt: 'Mouth breathing during sleep is a global issue. Here’s what the research shows about nasal breathing benefits for sleep quality, recovery, and long-term health — plus practical tools that work worldwide.',
-    content: `Whether you’re in London, Sydney, Toronto, or Singapore, chronic mouth breathing during sleep is surprisingly common and carries real consequences.
+    excerpt: 'Why people talk about nasal breathing at night, and the tools listed on this site. Not a review of the research, and not a result we measured.',
+    content: `People in many countries talk about mouth breathing at night. This page does not review the physiology papers, and it has not measured a result.
 
-Nasal breathing isn’t just “better” — it changes how your body processes air, regulates CO2, and recovers overnight.
+## Claims you will see elsewhere
+These lines are repeated online. This site has not checked them:
 
-## Documented Benefits of Nasal Breathing at Night
-- Better oxygenation and CO2 balance (improves sleep stability)
-- Reduced snoring (often dramatically)
-- Less dry mouth and morning throat irritation
-- Better nitric oxide production (supports circulation and immune function)
-- Fewer micro-arousals that fragment deep and REM sleep
+- A change in oxygen or carbon dioxide
+- Less snoring
+- Less dry mouth in the morning
+- Nitric oxide and circulation
+- Fewer brief awakenings
 
-Many people who successfully switch report waking with more energy and less sleep anxiety.
+This site has not measured any of those.
 
 ## Why Mouth Breathing Happens (It’s Not Just Habit)
 - Nasal congestion / allergies (very common globally)
@@ -834,12 +820,12 @@ Many people who successfully switch report waking with more energy and less slee
 - Deviated septum or nasal valve collapse
 - Simply learned behavior over years
 
-## Practical Tools That Work Almost Anywhere
-1. **Daily nasal hygiene** — Saline rinse or spray (cheap and effective worldwide)
-2. **External nasal strips** (Breathe Right and generics are widely available)
-3. **Internal nasal dilators** (reusable, no adhesive)
-4. **Gentle mouth tape** (once nasal breathing is possible) — see our recommendations for different needs
-5. **Myofunctional exercises** — free on YouTube and very effective over time
+## Tools listed on this site
+1. **Saline rinse or spray** — sold widely. This site has not tested one.
+2. **External nasal strips** — Breathe Right and similar strips are widely available.
+3. **Internal nasal dilators** — reusable, no adhesive.
+4. **Mouth tape** — only if you can already breathe through your nose. See the listings.
+5. **Myofunctional exercises** — videos exist online. This site has not tested them.
 
 If you are choosing between a strip and tape because of snoring, use [mouth tape vs nasal strips for snoring](/blog/mouth-tape-vs-nasal-strips-for-snoring).
 
@@ -860,14 +846,14 @@ Nasal breathing is one of the highest-ROI, lowest-cost upgrades you can make to 
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-07',
     image: '/images/nasal-product.jpg',
-    seoTitle: 'Nasal Breathing Benefits for Sleep 2026: Global Guide & Practical Tools',
-    seoDescription: 'Why nasal breathing improves sleep quality worldwide. Benefits, root causes, and tools that work no matter where you live.',
+    seoTitle: 'Nasal Breathing for Sleep',
+    seoDescription: 'Notes on nasal breathing at night and the strips and tape listed on this site. Not a research review and not a measured result.',
     tags: ['nasal breathing', 'mouth breathing', 'global sleep', 'sleep quality'],
   },
   {
     slug: 'hot-sleepers-temperature-solutions',
     title: 'Hot Sleepers: Why You Wake Up Overheated and How to Fix It in 2026',
-    excerpt: 'If you wake up sweaty or throw off the covers, temperature dysregulation is likely the culprit. Here are the most effective fixes, from simple habits to tech like the Eight Sleep Pod.',
+    excerpt: 'Notes for people who wake up hot: room habits, bedding, and the Eight Sleep Pod page. Not a ranking of what works best.',
     content: `Hot sleeping is one of the most common complaints worldwide and a major disruptor of deep sleep.
 
 When core body temperature doesn't drop properly at night, you get fragmented sleep, more awakenings, and feel unrested even after 7-8 hours.
@@ -906,35 +892,35 @@ Track it for a week — your sleep tracker will likely show more deep sleep on c
     updated: '2026-11-14',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/sleep-gadget.jpg',
-    seoTitle: 'Hot Sleepers Guide 2026: Cool Down Your Nights for Deeper Sleep',
-    seoDescription: 'Solutions for hot sleepers and night sweats. Temperature hacks, cooling products, and why nasal breathing helps.',
+    seoTitle: 'Guide for Hot Sleepers',
+    seoDescription: 'Notes for people who wake up hot: room temperature, bedding, and the Eight Sleep Pod page. Not a ranking of fixes.',
     tags: ['hot sleeper', 'temperature', 'night sweats', 'cooling', 'sleep quality'],
   },
   {
     slug: 'sleep-myths-debunked-2026',
     title: 'Sleep Myths Debunked in 2026: What You Can Safely Ignore',
-    excerpt: 'From "you need exactly 8 hours" to "never eat before bed," here are the most common sleep myths still circulating — and what the current evidence actually says.',
+    excerpt: 'Sleep advice this site treats as oversimplified, including a fixed eight hours and a blanket ban on food before bed. Not a new set of lab results.',
     content: `Sleep advice is everywhere, and a lot of it is outdated or oversimplified.
 
 Here are the myths we see most often in 2026 and what you should actually do.
 
 ## Myth 1: "Everyone needs exactly 8 hours"
-Reality: Most adults do best between 7-9 hours, but individual needs vary. Some people thrive on 6.5-7 with excellent consistency and quality. Focus on how you feel and your daytime function more than the exact number.
+Reality: Public guidance often quotes a range rather than one number. This site has not measured how much sleep a person needs. How you feel the next day is a question for you and, if it is a problem, a GP.
 
 ## Myth 2: "Never eat after 8pm"
-Reality: A small, balanced snack 1-2 hours before bed can actually help some people (especially those with blood sugar issues or who wake hungry). Large heavy or spicy meals are the real problem.
+Reality: A blanket ban is too broad. A large or spicy meal close to bed is the complaint people usually mean. This site does not give advice about blood sugar.
 
 ## Myth 3: "If you can't sleep, just stay in bed and try harder"
-Reality: This often increases anxiety. The evidence-based approach (stimulus control) is: get out of bed after ~20 minutes, do something calm in dim light, and return only when sleepy.
+Reality: Staying in bed while you are awake can make the worry worse. One part of CBT for insomnia is to get up, do something calm in dim light, and return when you are sleepy. This site has not tested that, and it is not a course of CBT.
 
 ## Myth 4: "Mouth tape is dangerous for everyone"
-Reality: It's contraindicated for certain people (untreated sleep apnea, nasal blockage, etc.), but for appropriate candidates with proper nasal breathing, it's low-risk and often very helpful. Always start slow and follow safety rules.
+Reality: It is the wrong product if you cannot breathe through your nose, or if you have untreated sleep apnoea. This site does not call it low-risk for everyone else. Read the safety notes before you try it.
 
 ## Myth 5: "Supplements will fix bad sleep habits"
-Reality: Magnesium, L-theanine, and apigenin are supportive tools, but they work best on top of solid foundations (consistent schedule, morning light, cool dark room, nasal breathing). They are not magic.
+Reality: This site has not tested magnesium, L-theanine, or apigenin, and it does not say they fix a schedule, morning light, or a hot room.
 
 ## Myth 6: "Catching up on weekends fixes sleep debt"
-Reality: It helps a little but doesn't fully repay the debt and can disrupt your circadian rhythm further. Consistency beats binge sleeping.
+Reality: A long lie-in is not the same as a regular schedule. This site has not measured sleep debt.
 
 The biggest wins almost always come from boring fundamentals done consistently rather than chasing the latest hack.
 
@@ -945,14 +931,14 @@ Use our [Sleep Hygiene Checklist](/blog/sleep-hygiene-2026) as your north star.`
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-07',
     image: '/images/value-mouth-tape.jpg',
-    seoTitle: 'Sleep Myths Debunked 2026: What Actually Matters for Better Rest',
-    seoDescription: 'Common sleep advice that is wrong or oversimplified. Evidence-based corrections for 2026.',
+    seoTitle: 'Sleep Myths Worth Ignoring',
+    seoDescription: 'Common sleep advice this site treats as oversimplified, and what to check instead. Not a new set of lab results.',
     tags: ['sleep myths', 'evidence-based', 'sleep tips', 'debunked'],
   },
   {
     slug: 'building-sleep-habits-that-stick',
     title: 'How to Build Sleep Habits That Actually Stick (Even If You Travel or Have Kids)',
-    excerpt: 'Most people know what to do for better sleep. The hard part is consistency. Here are practical systems that work for real life — including shift workers, parents, and frequent travelers.',
+    excerpt: 'Ideas for keeping a sleep schedule around travel, children, and shift work. This site has not tested whether they stick.',
     content: `Knowledge is easy. Consistent execution is where most people fail.
 
 The secret to better sleep isn't finding one more perfect hack — it's building repeatable systems that survive real life.
@@ -988,8 +974,8 @@ Start ridiculously small. One consistent wake time for 14 days will move the nee
     date: '2026-08-05',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/hero-bedroom.jpg',
-    seoTitle: 'Building Consistent Sleep Habits 2026: Systems for Real Life',
-    seoDescription: 'Practical advice for creating sleep routines that survive travel, kids, shift work, and stress. Focus on what actually sticks.',
+    seoTitle: 'Sleep Habits That Stick',
+    seoDescription: 'Ideas for a sleep schedule around travel, children, and shift work. This site has not tested whether they stick.',
     tags: ['sleep habits', 'consistency', 'routine', 'jet lag', 'shift work'],
   },
 ];

@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getProductsByCategory } from '@/lib/products';
 import { ProductCard } from '@/components/ProductCard';
-import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 import { pageMeta } from '@/lib/seo';
 
@@ -32,16 +31,12 @@ export default function NasalCategory() {
         {products.map((p) => <ProductCard key={p.id} product={p} />)}
       </div>
 
-      <div className="mt-10">
-        <AdPlaceholder label="Category Page Ad" />
-      </div>
-
       <div className="mt-8 max-w-prose">
         <AffiliateDisclosure />
       </div>
 
       <div className="mt-8 text-sm text-muted-foreground max-w-prose">
-        Pro tip: Many people use nasal strips + mouth tape together for the best results. Start with nasal hygiene (saline rinses) if congestion is an issue.
+        Some people use a nasal strip and mouth tape together. This site has not tested that combination. If your nose is blocked, sort that out before tape.
       </div>
     </div>
   );

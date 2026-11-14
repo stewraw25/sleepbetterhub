@@ -116,26 +116,19 @@ export default function QuizClient() {
   const getRecommendations = (): { top: Product[]; reason: string; warning?: string } => {
     const a = answers as Answer;
 
-    const scored = mouthTapeProducts.map((p) => {
-      let score = p.rating * 10; // base on rating
+    const scored = mouthTapeProducts.map((p, index) => {
+      let score = 0;
 
-      // Strong signals
       if (a.hasBeard && p.bestFor.includes('Beards')) score += 22;
       if (a.sideSleeper && p.bestFor.includes('Side Sleepers')) score += 16;
       if (a.sensitiveSkin && p.bestFor.includes('Sensitive Skin')) score += 20;
       if (a.usesCPAP && p.bestFor.includes('CPAP Users')) score += 18;
+      if (!a.sensitiveSkin && p.name.includes('Hostage')) score += 6;
 
-      if (a.nasalIssues) score -= 15; // caution
-
-      if (a.triedTaping && p.rating > 4.6) score += 8; // prefer proven for experienced
-
-      if (!a.sensitiveSkin && p.name.includes('Hostage')) score += 6; // strong hold
-
-      return { product: p, score };
+      return { product: p, score, index };
     });
 
-    // Sort by score
-    scored.sort((x, y) => y.score - x.score);
+    scored.sort((x, y) => y.score - x.score || x.index - y.index);
 
     const top = scored.slice(0, 3).map((s) => s.product);
 
@@ -147,15 +140,15 @@ export default function QuizClient() {
     }
 
     if (a.sensitiveSkin) {
-      reason = 'We prioritized the gentlest options with excellent sensitive-skin feedback.';
+      reason = 'These listings are tagged for sensitive skin. That is not a test result.';
     } else if (a.hasBeard) {
-      reason = 'We focused on products proven to hold through facial hair.';
+      reason = 'These listings are tagged for beards. That is not a test of hold.';
     } else if (a.usesCPAP) {
-      reason = 'We selected options that work well alongside CPAP masks according to user reports.';
+      reason = 'These listings are tagged for CPAP users. Ask your sleep clinic before using tape with CPAP.';
     } else if (a.sideSleeper) {
-      reason = 'Side sleepers need reliable hold and flexible material — these scored highest.';
+      reason = 'These listings are tagged for side sleepers. That is not a test of whether they stay on.';
     } else {
-      reason = 'Top overall performers based on rating, value, and broad compatibility.';
+      reason = 'These are mouth tapes on the site. The tags did not point to a narrower match.';
     }
 
     return { top, reason, warning };
@@ -168,8 +161,8 @@ export default function QuizClient() {
       <div className="container max-w-3xl py-12">
         <div className="text-center mb-8">
           <CheckCircle className="mx-auto h-10 w-10 text-primary mb-3" />
-          <h1 className="text-4xl font-semibold tracking-tighter">Your Personalized Recommendations</h1>
-          <p className="mt-2 text-muted-foreground">Based on your answers, here are the best mouth tape options for you right now.</p>
+          <h1 className="text-4xl font-semibold tracking-tighter">Listings that match your answers</h1>
+          <p className="mt-2 text-muted-foreground">Matched from the tags on each listing, not from a test or a star score.</p>
         </div>
 
         <Card className="mb-6">
@@ -188,7 +181,7 @@ export default function QuizClient() {
           {top.map((product, index) => (
             <div key={product.id} className="flex flex-col md:flex-row gap-5 rounded-2xl border bg-card p-6">
               <div className="md:w-48 shrink-0">
-                <Image src={product.image} alt={`${product.name} by ${product.brand}`} width={300} height={168} className="rounded-xl w-full h-auto aspect-video object-cover" />
+                <Image src={product.image} alt={product.imageAlt || `${product.name} by ${product.brand}`} width={300} height={168} className="rounded-xl w-full h-auto aspect-video object-cover" />
               </div>
               <div className="flex-1">
                 <div className="flex items-start justify-between">
@@ -198,9 +191,6 @@ export default function QuizClient() {
                       <span className="font-semibold text-lg tracking-tight">{product.name}</span>
                     </div>
                     <div className="text-sm text-muted-foreground">{product.brand} • {product.price}</div>
-                  </div>
-                  <div className="flex items-center gap-1 font-semibold">
-                    <span>{product.rating}</span> <span className="text-yellow-500">★</span>
                   </div>
                 </div>
 
@@ -212,7 +202,7 @@ export default function QuizClient() {
 
                 <div className="mt-4 flex gap-3">
                   <Link href={`/reviews/${product.slug}`}>
-                    <Button variant="outline">Read Full Review</Button>
+                    <Button variant="outline">Read notes</Button>
                   </Link>
                   <a href={getInternalAffiliateLink(product.slug)} target="_blank" rel={SPONSORED_REL}>
                     <Button>{shopLabel(getAffiliateUrl(product.slug))}</Button>

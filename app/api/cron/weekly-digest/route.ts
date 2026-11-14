@@ -1,8 +1,9 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 import WeeklySleepInsights from '../../../../emails/WeeklySleepInsights';
+import { getContactEmail, isRealEmail } from '@/lib/site';
 
-const FROM_EMAIL = process.env.NEXT_PUBLIC_FROM_EMAIL || 'hello@sleepmask.tech';
+const FROM_EMAIL = getContactEmail();
 const CRON_SECRET = process.env.CRON_SECRET;
 
 export async function GET(request: Request) {
@@ -22,8 +23,16 @@ export async function GET(request: Request) {
   }
 
   if (!process.env.RESEND_API_KEY) {
-    return NextResponse.json({ 
-      error: 'RESEND_API_KEY not configured. Add it to test the weekly digest.' 
+    console.error('[weekly-digest] RESEND_API_KEY is not configured. No email was sent.');
+    return NextResponse.json({
+      error: 'RESEND_API_KEY is not configured. No email was sent.',
+    }, { status: 500 });
+  }
+
+  if (!isRealEmail(FROM_EMAIL)) {
+    console.error('[weekly-digest] NEXT_PUBLIC_CONTACT_EMAIL is not a real address. No email was sent.');
+    return NextResponse.json({
+      error: 'NEXT_PUBLIC_CONTACT_EMAIL is not set to a real address. No email was sent.',
     }, { status: 500 });
   }
 

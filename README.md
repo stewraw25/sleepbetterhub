@@ -492,7 +492,7 @@ components/
    - Go to https://vercel.com/new
    - Import your GitHub repo (search for `sleepbetterhub`).
    - Vercel auto-detects it as a Next.js project.
-   - Click **Deploy**. It will build and give you a live URL like `https://sleepbetterhub-abc123.vercel.app`.
+   - Click **Deploy**. Production is [https://sleepmask.tech](https://sleepmask.tech).
 
 3. **Add your critical environment variables (do this right after first deploy)**
    - In Vercel dashboard → your project → **Settings → Environment Variables**.

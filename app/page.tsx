@@ -7,19 +7,18 @@ import { SPONSORED_REL } from '@/lib/affiliates';
 
 export const metadata: Metadata = pageMeta({
   title: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
-  description: 'Independent UK and US reviews of mouth tape, nasal strips, sleep trackers and supplements, plus practical guides on snoring and night breathing.',
+  description: 'UK notes and guides on mouth tape, nasal strips, sleep trackers, and supplements. Prices come from the listings. This site has not tested the products.',
   path: '/',
   absoluteTitle: true,
 });
 import { Button } from '@/components/ui/button';
 import { ProductCard } from '@/components/ProductCard';
 import { Newsletter } from '@/components/Newsletter';
-import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { allProducts } from '@/lib/products';
 import { getPublishedPosts } from '@/lib/blog';
 
 export default function Home() {
-  const trending = allProducts.filter(p => p.featured || p.rating > 4.5).slice(0, 6);
+  const trending = allProducts.filter((p) => p.featured).slice(0, 6);
   const latestPosts = getPublishedPosts().slice(0, 3);
 
   return (
@@ -88,7 +87,7 @@ export default function Home() {
           <div className="flex items-end justify-between mb-8">
             <div>
               <div className="uppercase tracking-[2px] text-xs font-medium text-primary mb-1">TRENDING IN 2026</div>
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tighter">Top-rated sleep solutions right now</h2>
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tighter">Featured products</h2>
             </div>
             <Link href="/mouth-tape" className="hidden md:flex items-center gap-1 text-sm font-medium text-primary hover:underline">
               View full Mouth Tape Hub <ArrowRight className="h-4 w-4" />
@@ -114,7 +113,7 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-12 gap-8 md:gap-10 items-center">
             <div className="md:col-span-7">
-              <div className="uppercase tracking-[2px] text-xs text-primary mb-3 font-medium">THE #1 TREND FOR 2026</div>
+              <div className="uppercase tracking-[2px] text-xs text-primary mb-3 font-medium">MOUTH TAPE</div>
               <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter mb-4 leading-none">
                 Mouth tape for sleep.<br />Beards, sensitive skin, and CPAP.
               </h2>
@@ -169,11 +168,10 @@ export default function Home() {
                 Eight Sleep Pod 6<br />UK Review 2026
               </h2>
               <p className="max-w-lg text-lg text-muted-foreground mb-4">
-                The temperature-controlled sleep system used by F1 teams and elite athletes. 
-                Active cooling from 12°C to 43°C, dual-zone for couples, and sleep tracking without a wearable.
+                Eight Sleep’s temperature-controlled cover. The product note repeats a stated range of 12°C to 43°C and dual-zone control. This site has not tested it, and it has not verified athlete or Formula 1 use.
               </p>
               <p className="text-muted-foreground mb-6">
-                <span className="font-medium text-foreground">From £2,295</span> • 30-night trial • Used by professional athletes
+                <span className="font-medium text-foreground">Listed from £2,295</span> • Confirm the current price on Eight Sleep’s site
               </p>
               <div className="flex gap-3">
                 <Link href="/reviews/eight-sleep-pod-6">
@@ -185,7 +183,7 @@ export default function Home() {
               </div>
               <p className="mt-3 text-xs text-muted-foreground">
                 Link to Eight Sleep. No affiliate code is attached yet.{' '}
-                <Link href="/guides/eight-sleep-f1" className="underline hover:text-foreground">Why F1 teams use Eight Sleep →</Link>
+                <Link href="/guides/eight-sleep-f1" className="underline hover:text-foreground">Eight Sleep and Formula 1 notes →</Link>
               </p>
             </div>
           </div>
@@ -194,7 +192,7 @@ export default function Home() {
           <div className="mt-10 pt-8 border-t">
             <div className="flex items-center justify-between mb-4">
               <div className="text-sm font-medium">Eight Sleep Accessories</div>
-              <Link href="/reviews/eight-sleep-pod-6#accessories" className="text-xs text-primary hover:underline">View all →</Link>
+              <Link href="/categories/bedding" className="text-xs text-primary hover:underline">View all →</Link>
             </div>
             <div className="grid grid-cols-3 gap-3">
               <Link href="/go/eight-sleep-base" target="_blank" rel={SPONSORED_REL} className="rounded-lg border bg-card p-3 hover:bg-muted/40 transition text-center">
@@ -223,7 +221,7 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-semibold tracking-tight">How these pages are written</h2>
-            <p className="text-muted-foreground mt-2">Guides use the product listing and published sources. Older star labels are editorial shorthand, not a counted test panel.</p>
+            <p className="text-muted-foreground mt-2">Guides use the product listing and published sources. This site does not publish star ratings or review counts.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -237,7 +235,7 @@ export default function Home() {
                 <div className="mt-1 shrink-0">
                   <Image 
                     src="/images/logo.jpg" 
-                    alt="" 
+                    alt="SleepBetterHub logo" 
                     width={22} 
                     height={22} 
                     className="h-[22px] w-[22px] rounded-full object-cover ring-1 ring-border/50" 
@@ -257,7 +255,7 @@ export default function Home() {
       <section className="section border-y bg-primary text-primary-foreground">
         <div className="container text-center">
           <div className="max-w-xl mx-auto">
-            <div className="uppercase text-xs tracking-[3px] opacity-75 mb-3">2 MINUTES TO BETTER SLEEP</div>
+            <div className="uppercase text-xs tracking-[3px] opacity-75 mb-3">TWO-MINUTE QUIZ</div>
             <h2 className="text-4xl font-semibold tracking-tighter mb-4">Is mouth taping right for you?</h2>
             <p className="text-primary-foreground/90 text-lg mb-8">
               Answer a few honest questions about your sleep, breathing, and lifestyle. 
@@ -277,7 +275,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-8">
             <div>
               <div className="text-xs uppercase tracking-widest text-primary mb-1">LEARN</div>
-              <h3 className="text-3xl font-semibold tracking-tight">Latest sleep research &amp; guides (new articles 1–2× per week)</h3>
+              <h3 className="text-3xl font-semibold tracking-tight">Latest guides</h3>
             </div>
             <Link href="/blog" className="text-sm hidden md:block text-primary hover:underline">All articles →</Link>
           </div>
@@ -309,14 +307,7 @@ export default function Home() {
       {/* NEWSLETTER + ADSENSE SPOT */}
       <section className="section border-t bg-muted/20">
         <div className="container">
-          <div className="grid lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-7">
-              <Newsletter />
-            </div>
-            <div className="lg:col-span-5">
-              <AdPlaceholder label="Display Ad / Newsletter Partner" className="h-[178px]" />
-            </div>
-          </div>
+          <Newsletter />
         </div>
       </section>
     </div>

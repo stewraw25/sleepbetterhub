@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { allProducts } from '@/lib/products';
 import { getPublishedPosts } from '@/lib/blog';
 
+type Suggestion = { slug: string; name: string; link: string };
+
 export async function POST(req: NextRequest) {
   const { message } = await req.json();
 
@@ -12,42 +14,60 @@ export async function POST(req: NextRequest) {
   const lower = message.toLowerCase().trim();
 
   let reply = '';
-  let suggestions: any[] = [];
+  let suggestions: Suggestion[] = [];
+
+  const productLink = (slug: string, name: string): Suggestion => ({
+    slug,
+    name,
+    link: `/reviews/${slug}`,
+  });
 
   if (lower.includes('mouth tape') || lower.includes('tape')) {
-    const mouthTapes = allProducts.filter(p => p.category === 'mouth-tape').slice(0, 3);
-    reply = "Mouth taping is great for stopping mouth breathing and improving sleep quality. Our top recommendations right now are Dream Recovery (gentle for most), SomniFix (great for beards and CPAP), and Hostage Tape (strong hold, great value).";
-    suggestions = mouthTapes.map(p => ({ slug: p.slug, name: p.name, link: `/reviews/${p.slug}` }));
-  } 
-  else if (lower.includes('side sleep') || lower.includes('side sleeper')) {
-    reply = "For side sleepers, we recommend tapes with flexible material and strong but comfortable hold. Dream Recovery and SomniFix tend to perform best in our tests for side sleepers.";
-    suggestions = allProducts.filter(p => p.bestFor.includes('Side Sleepers')).slice(0, 2).map(p => ({ slug: p.slug, name: p.name }));
-  } 
-  else if (lower.includes('supplement') || lower.includes('magnesium') || lower.includes('theanine') || lower.includes('apigenin')) {
-    reply = "Our favorite evidence-based sleep stack is Magnesium Glycinate + L-Theanine + Apigenin. It helps with relaxation without grogginess. Take 45-60 mins before bed.";
-    suggestions = allProducts.filter(p => p.category === 'supplements').slice(0, 3).map(p => ({ slug: p.slug, name: p.name }));
-  } 
-  else if (lower.includes('insomnia') || lower.includes('can\'t sleep') || lower.includes('fall asleep')) {
-    reply = "For falling asleep faster: consistent schedule, morning sunlight, cool room (60-67°F), and nasal breathing. Mouth taping helps many once nasal issues are addressed. Try our free Sleep Quiz for personalized tips!";
-    suggestions = [{ slug: 'quiz', name: 'Take the Sleep Quiz', link: '/quiz' }];
-  } 
-  else if (lower.includes('nasal') || lower.includes('strips') || lower.includes('breathing')) {
-    reply = "Nasal strips (like Breathe Right) or internal dilators can make a huge difference. Many people combine them with mouth tape for the best results.";
-    suggestions = allProducts.filter(p => p.category === 'nasal').map(p => ({ slug: p.slug, name: p.name }));
-  } 
-  else if (lower.includes('tracker') || lower.includes('oura') || lower.includes('eight sleep')) {
-    reply = "The Oura Ring and Eight Sleep Pod are excellent for data-driven sleep improvement. Oura for insights, Eight Sleep for active temperature control (game changer for hot sleepers).";
-    suggestions = allProducts.filter(p => p.category === 'gadgets').slice(0, 2).map(p => ({ slug: p.slug, name: p.name }));
-  } 
-  else {
+    const mouthTapes = allProducts.filter((p) => p.category === 'mouth-tape').slice(0, 3);
+    reply = 'The mouth-tape hub compares strips listed for side sleepers, beards, CPAP users, and sensitive skin. Read the safety notes before you try one. This site has not tested the tapes, and mouth tape is not a treatment.';
+    suggestions = mouthTapes.map((p) => productLink(p.slug, p.name));
+  } else if (lower.includes('side sleep') || lower.includes('side sleeper') || lower.includes('pillow')) {
+    reply = 'For side sleeping, start with the pillow-height guide. Mouth tapes tagged for side sleepers are on the comparison page. This site has not tested those products.';
+    suggestions = [
+      { slug: 'best-pillow-for-side-sleepers', name: 'Pillow guide', link: '/blog/best-pillow-for-side-sleepers' },
+      ...allProducts
+        .filter((p) => p.bestFor.includes('Side Sleepers'))
+        .slice(0, 2)
+        .map((p) => productLink(p.slug, p.name)),
+    ];
+  } else if (lower.includes('supplement') || lower.includes('magnesium') || lower.includes('theanine') || lower.includes('apigenin')) {
+    reply = 'The supplement pages describe magnesium glycinate, L-theanine, and apigenin as they are sold. The shop buttons open Amazon UK searches, not a named bottle this site has checked. This is not a dose and not a test.';
+    suggestions = allProducts
+      .filter((p) => p.category === 'supplements')
+      .slice(0, 3)
+      .map((p) => productLink(p.slug, p.name));
+  } else if (lower.includes('insomnia') || lower.includes("can't sleep") || lower.includes('cant sleep') || lower.includes('fall asleep')) {
+    reply = 'The guides cover schedule, light, and a cool room. Mouth tape is not a treatment for insomnia. The quiz can point at listings. This is not medical advice.';
+    suggestions = [{ slug: 'quiz', name: 'Sleep quiz', link: '/quiz' }];
+  } else if (lower.includes('nasal') || lower.includes('strips') || lower.includes('breathing')) {
+    reply = 'Nasal strips and the Mute dilator have their own pages. The snoring guide explains when a nose strip is the first thing to look at. This site has not tested them.';
+    suggestions = allProducts
+      .filter((p) => p.category === 'nasal')
+      .map((p) => productLink(p.slug, p.name));
+  } else if (lower.includes('tracker') || lower.includes('oura') || lower.includes('eight sleep') || lower.includes('pod')) {
+    reply = 'Oura and the Eight Sleep Pod have their own pages. This site has not tested them and has not verified any athlete or Formula 1 use. Confirm the price and membership on the brand or Amazon page.';
+    suggestions = [
+      productLink('eight-sleep-pod-6', 'Eight Sleep Pod 6'),
+      productLink('oura-ring-gen3', 'Oura Ring Gen3'),
+      { slug: 'bedding', name: 'Eight Sleep accessories', link: '/categories/bedding' },
+    ];
+  } else if (lower.includes('duvet') || lower.includes('tog')) {
+    reply = 'The duvet guide matches tog to the bedroom, using Which? and The Sleep Charity, plus three Silentnight prices checked on 14 November 2026. This site has not slept under them.';
+    suggestions = [{ slug: 'what-tog-duvet', name: 'What tog duvet', link: '/blog/what-tog-duvet' }];
+  } else {
     const recentPosts = getPublishedPosts().slice(0, 2);
-    reply = "I'm here to help with better sleep! Common wins: nasal breathing, good sleep hygiene, and the right tools. What specific sleep issue are you dealing with?";
-    suggestions = recentPosts.map(p => ({ slug: p.slug, name: p.title, link: `/blog/${p.slug}` }));
+    reply = 'Try a product name or a guide title, or say mouth tape, pillow, duvet, or supplements. This assistant only points at pages on the site. It is not medical advice and it has not tested products.';
+    suggestions = recentPosts.map((p) => ({ slug: p.slug, name: p.title, link: `/blog/${p.slug}` }));
   }
 
-  return NextResponse.json({ 
+  return NextResponse.json({
     reply,
     suggestions,
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
   });
 }

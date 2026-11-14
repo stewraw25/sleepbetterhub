@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     default: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
     template: '%s | SleepBetterHub',
   },
-  description: 'Independent UK and US reviews of mouth tape, nasal strips, sleep trackers and supplements, plus practical guides on snoring and night breathing.',
+  description: 'UK notes and guides on mouth tape, nasal strips, sleep trackers, and supplements. Prices come from the listings. This site has not tested the products.',
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
     title: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
-    description: 'Independent UK and US reviews of mouth tape, nasal strips, sleep trackers and supplements, plus practical guides on snoring and night breathing.',
+    description: 'UK notes and guides on mouth tape, nasal strips, sleep trackers, and supplements. Prices come from the listings. This site has not tested the products.',
     siteName: SITE_NAME,
     type: 'website',
     locale: 'en_GB',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
-    description: 'Independent UK and US reviews of mouth tape, nasal strips, sleep trackers and supplements.',
+    description: 'UK notes and guides on mouth tape, nasal strips, sleep trackers, and supplements. This site has not tested the products.',
     images: ['/images/hero-bedroom.jpg'],
   },
 };
@@ -67,7 +67,7 @@ export default function RootLayout({
             name: SITE_NAME,
             url: siteUrl,
             logo: `${siteUrl}/images/logo.jpg`,
-            description: 'Independent reviews and guides for mouth tape, nasal strips, and other sleep products.',
+            description: 'UK notes and guides on mouth tape, nasal strips, and other sleep products. This site has not tested them.',
           }}
         />
         <JsonLd

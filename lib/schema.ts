@@ -65,34 +65,6 @@ export function productJsonLd(product: Product) {
   };
 }
 
-export function editorialReviewJsonLd(product: Product) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Review',
-    reviewBody: product.longDescription,
-    reviewRating: {
-      '@type': 'Rating',
-      ratingValue: product.rating,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    author: {
-      '@type': 'Organization',
-      name: `${SITE_NAME} Editorial Team`,
-    },
-    itemReviewed: {
-      '@type': 'Product',
-      name: product.name,
-      brand: { '@type': 'Brand', name: product.brand },
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: getSiteUrl(),
-    },
-  };
-}
-
 export function articleJsonLd(post: BlogPost) {
   const site = getSiteUrl();
   const authorIsOrg = /editorial team/i.test(post.author);

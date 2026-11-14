@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Newsletter } from '@/components/Newsletter';
+import { ContactEmail } from '@/components/ContactEmail';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
@@ -26,19 +28,19 @@ export default function AboutPage() {
         <ul>
           <li>We disclose affiliate links. Amazon buttons use the Associates tag already in the project. Some brand sites have no code, and the button says so.</li>
           <li>A price on a page is a price we read on that listing, with the date. It will move.</li>
-          <li>We do not invent product specs, star ratings, or customer review counts. New pillow pages have no editorial score.</li>
+          <li>We do not publish star ratings or customer review counts. Older numbers have been taken off the pages and out of the structured data.</li>
           <li>Every mouth tape page includes safety notes. Nothing here is medical advice.</li>
-          <li>Star labels that remain on older product cards are editorial shorthand, not a count of reviews collected on this site.</li>
+          <li>This site has not run product tests. Sentences that said we had have been removed.</li>
         </ul>
 
-        <h2>Affiliate Disclosure</h2>
+        <h2 id="affiliate-disclosure">Affiliate Disclosure</h2>
         <p>
-          SleepBetterHub participates in affiliate programs (Amazon Associates and direct brand programs). 
-          When you click an affiliate link and make a purchase, we may earn a commission at no additional cost to you. 
-          This helps keep the site running and the testing independent. We only link to products we genuinely believe in.
+          SleepBetterHub participates in affiliate programs, including Amazon Associates (tag stewraw25-21) and, where a brand has provided a code, that brand’s program.
+          When you click an affiliate link and make a purchase, we may earn a commission. You should not pay more because you clicked.
+          Some buttons go to a brand site with no code, and the page says so.
         </p>
 
-        <h2>Medical &amp; Safety Disclaimer</h2>
+        <h2 id="medical-disclaimer">Medical &amp; Safety Disclaimer</h2>
         <p className="rounded bg-amber-50 dark:bg-amber-950 p-4 text-sm border border-amber-200 dark:border-amber-900">
           Nothing on this site is medical advice. Mouth taping can be dangerous for people with certain conditions 
           (untreated sleep apnea, nasal obstruction, COPD, etc.). Always consult a physician or sleep specialist 
@@ -53,13 +55,13 @@ export default function AboutPage() {
       </div>
 
       <div className="mt-12 border-t pt-10">
-        <h3 className="font-semibold mb-3">Get the latest research summaries</h3>
+        <h3 className="font-semibold mb-3">Get the notes by email</h3>
         <Newsletter />
       </div>
 
       <div className="mt-12 text-xs text-muted-foreground">
-        Questions? Reach us at <a href="mailto:hello@sleepmask.tech" className="underline">hello@sleepmask.tech</a>. 
-        We read every email.
+        Questions? <ContactEmail className="underline" />.
+        Privacy, cookies, and terms: <Link href="/privacy" className="underline">privacy</Link>, <Link href="/cookies" className="underline">cookies</Link>, <Link href="/terms" className="underline">terms</Link>.
       </div>
     </div>
   );
