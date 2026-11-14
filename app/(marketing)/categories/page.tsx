@@ -9,13 +9,13 @@ export const metadata: Metadata = pageMeta({
   path: '/categories',
 });
 
-const categorySlugs = ['nasal', 'gadgets', 'mattresses', 'supplements'] as const;
+const categorySlugs = ['nasal', 'gadgets', 'mattresses', 'supplements', 'bedding'] as const;
 
 export default function CategoriesIndex() {
   return (
     <div className="container py-12">
       <h1 className="text-4xl font-semibold tracking-tighter mb-3">All Sleep Categories</h1>
-      <p className="text-muted-foreground max-w-prose mb-10">Browse our researched recommendations across every area that impacts sleep quality.</p>
+      <p className="text-muted-foreground max-w-prose mb-10">Product notes by category. Mouth tape, pillows, and duvet tog have their own guides.</p>
 
       <div className="grid md:grid-cols-2 gap-5">
         {categorySlugs.map((slug) => {
@@ -25,11 +25,18 @@ export default function CategoriesIndex() {
             <Link key={slug} href={`/categories/${slug}`} className="block rounded-2xl border bg-card p-7 hover:border-primary/50 transition group">
               <div className="text-sm text-primary font-medium tracking-widest">{products.length} PRODUCTS</div>
               <div className="text-3xl font-semibold tracking-tight mt-1 group-hover:text-primary transition">{label}</div>
-              <div className="mt-3 text-muted-foreground">See full recommendations and buying guides →</div>
+              <div className="mt-3 text-muted-foreground">See the notes →</div>
             </Link>
           );
         })}
       </div>
+      <p className="mt-8 text-sm text-muted-foreground">
+        Also: <Link href="/mouth-tape" className="text-primary underline underline-offset-2">mouth tape comparison</Link>
+        {' · '}
+        <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary underline underline-offset-2">pillow guide</Link>
+        {' · '}
+        <Link href="/blog/what-tog-duvet" className="text-primary underline underline-offset-2">duvet tog guide</Link>
+      </p>
     </div>
   );
 }

@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getProductsByCategory } from '@/lib/products';
 import { ProductCard } from '@/components/ProductCard';
-import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
@@ -32,9 +31,6 @@ export default function MattressesCategory() {
         {products.map((p) => <ProductCard key={p.id} product={p} />)}
       </div>
 
-      <div className="mt-10">
-        <AdPlaceholder label="Mattress Category Ad" />
-      </div>
     </div>
   );
 }

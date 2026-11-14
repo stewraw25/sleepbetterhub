@@ -1,26 +1,62 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
-import { Star } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ProductCard } from '@/components/ProductCard';
-import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { mouthTapeProducts, bestForOptions } from '@/lib/products';
 import { SafetyAlert } from '@/components/SafetyAlert';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 
-type SortOption = 'rating' | 'price-low' | 'price-high' | 'reviews';
+type SortOption = 'listed' | 'price-low' | 'price-high';
+
+const faqs = [
+  {
+    q: 'What is the best mouth tape for sleep in 2026?',
+    a: 'This site does not rank a single best tape. The table shows who each product is listed for: side sleepers, beards, CPAP, and sensitive skin. That is not a test score. Read the safety notes before you try one.',
+  },
+  {
+    q: 'Is mouth taping safe?',
+    a: 'It is not safe for everyone. Do not use it if you cannot breathe through your nose, or if you have untreated sleep apnoea or another breathing disorder. This is not medical advice. Read the safety notes on each product page.',
+  },
+  {
+    q: 'Does mouth taping help with insomnia or sleep anxiety?',
+    a: 'This site has not tested that. Mouth tape is not a treatment for insomnia or anxiety. The guides cover sleep habits separately.',
+  },
+  {
+    q: 'Can I use mouth tape with CPAP or if I have a beard?',
+    a: 'SomniFix, Dream Recovery, and Hostage Tape are listed for CPAP users or beards. That is a label on the page, not a test result. Ask your sleep specialist before using tape with CPAP.',
+  },
+  {
+    q: 'How long does it take to get used to mouth taping?',
+    a: 'This site has not measured an adaptation period. Only try it when you can breathe through your nose while awake, and stop if it feels wrong.',
+  },
+  {
+    q: 'Best mouth tape for side sleepers 2026?',
+    a: 'Dream Recovery is listed for side sleepers and sensitive skin. We have not tested whether it stays on. See the side-sleeper mouth-tape guide.',
+  },
+  {
+    q: 'Best beard friendly mouth tape UK?',
+    a: 'Hostage Tape and SomniFix are the listings tagged for beards. We have not tested hold on facial hair.',
+  },
+];
 
 export default function MouthTapeHub() {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortBy, setSortBy] = useState<SortOption>('rating');
+  const [sortBy, setSortBy] = useState<SortOption>('listed');
   const [view, setView] = useState<'cards' | 'table'>('cards');
+  const params = useSearchParams();
+
+  useEffect(() => {
+    const incoming = params.get('q') || params.get('search');
+    if (incoming) setSearchQuery(incoming);
+  }, [params]);
 
   // Filter + search + sort logic
   const filteredProducts = useMemo(() => {
@@ -47,17 +83,13 @@ export default function MouthTapeHub() {
 
     // Sort
     switch (sortBy) {
-      case 'rating':
-        result.sort((a, b) => b.rating - a.rating);
-        break;
       case 'price-low':
         result.sort((a, b) => a.priceValue - b.priceValue);
         break;
       case 'price-high':
         result.sort((a, b) => b.priceValue - a.priceValue);
         break;
-      case 'reviews':
-        result.sort((a, b) => b.reviewCount - a.reviewCount);
+      default:
         break;
     }
 
@@ -77,23 +109,6 @@ export default function MouthTapeHub() {
 
   return (
     <div className="bg-background">
-      {/* HEADER */}
-      <div className="border-b bg-muted/30">
-        <div className="container py-12 md:py-16">
-          <div className="max-w-3xl">
-            <div className="uppercase text-xs tracking-[2.5px] text-primary mb-2 font-medium">PREMIUM COMPARISON • 2026</div>
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tighter">Best Mouth Tape 2026: Sleep Strips Comparison &amp; Reviews</h1>
-            <p className="mt-3 text-lg text-muted-foreground">
-              A comparison of mouth tapes for side sleepers, beards, CPAP users, and sensitive skin, with the safety limits up front.
-            </p>
-            <p className="mt-3 text-sm text-muted-foreground">
-              Choosing between tape and a nose strip for snoring? Read{' '}
-              <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary underline underline-offset-2">mouth tape vs nasal strips for snoring</Link>.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className="container py-8">
         <AffiliateDisclosure />
         <div className="mt-4">
@@ -144,8 +159,7 @@ export default function MouthTapeHub() {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="rating">Highest Rated</SelectItem>
-                  <SelectItem value="reviews">Most Reviewed</SelectItem>
+                  <SelectItem value="listed">As listed</SelectItem>
                   <SelectItem value="price-low">Price: Low to High</SelectItem>
                   <SelectItem value="price-high">Price: High to Low</SelectItem>
                 </SelectContent>
@@ -172,11 +186,6 @@ export default function MouthTapeHub() {
           <Link href="#table" className="text-primary hidden md:block">Jump to full comparison table ↓</Link>
         </div>
 
-        {/* ADS */}
-        <div className="mb-6">
-          <AdPlaceholder label="Leaderboard / Top of Hub Ad" />
-        </div>
-
         {/* CARDS VIEW */}
         {view === 'cards' && (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
@@ -195,7 +204,6 @@ export default function MouthTapeHub() {
               <thead>
                 <tr>
                   <th className="text-left w-56">Product</th>
-                  <th>Rating</th>
                   <th>Price</th>
                   <th className="text-left">Best For</th>
                   <th className="text-left">Key Pros</th>
@@ -209,11 +217,6 @@ export default function MouthTapeHub() {
                     <td>
                       <div className="font-medium leading-tight">{p.name}</div>
                       <div className="text-xs text-muted-foreground">{p.brand}</div>
-                    </td>
-                    <td>
-                      <div className="flex items-center gap-1 font-medium">
-                        <Star className="h-3.5 w-3.5 fill-yellow-500 text-yellow-500" /> {p.rating}
-                      </div>
                     </td>
                     <td className="font-medium tabular-nums">{p.price}</td>
                     <td>
@@ -249,52 +252,22 @@ export default function MouthTapeHub() {
         )}
 
         {/* BOTTOM CTA + AD */}
-        <div className="mt-10 grid md:grid-cols-2 gap-6">
+        <div className="mt-10 max-w-xl">
           <div className="rounded-2xl border bg-card p-7">
             <h3 className="font-semibold text-xl tracking-tight">Still not sure which to try?</h3>
-            <p className="text-muted-foreground mt-1.5">Take our quick quiz. We’ll match you to the best 1–2 options based on your sleep style, skin, and breathing.</p>
+            <p className="text-muted-foreground mt-1.5">The quiz matches listing tags such as beard, side sleeper, or sensitive skin. It is not a test result.</p>
             <Link href="/quiz" className="inline-block mt-4">
               <Button>Take the Sleep Quiz →</Button>
             </Link>
           </div>
-          <AdPlaceholder label="In-content / Mid-page Ad" className="h-auto min-h-[138px]" />
         </div>
 
         {/* FAQ SECTION — for featured snippets & E-E-A-T (2026 SEO) */}
         <div className="mt-14 border-t pt-10">
           <h2 className="text-2xl font-semibold tracking-tight mb-6 text-center">Frequently Asked Questions About Mouth Taping for Sleep</h2>
           <div className="max-w-3xl mx-auto space-y-6 text-sm">
-            {[
-              {
-                q: "What is the best mouth tape for sleep in 2026?",
-                a: "The best mouth tape depends on your needs: Dream Recovery for most side sleepers and sensitive skin, Hostage Tape or SomniFix for beards and heavy mouth breathers, ZzzTape for best value. See the comparison above."
-              },
-              {
-                q: "Is mouth taping safe? How to stop mouth breathing safely?",
-                a: "Mouth taping is safe for most healthy nasal breathers but not for everyone. Never use if you have untreated sleep apnea, nasal congestion, or breathing disorders. Always start with nasal hygiene and consult a doctor. Full safety details on every review."
-              },
-              {
-                q: "Does mouth taping help with insomnia or sleep anxiety?",
-                a: "Many users report falling asleep faster and deeper sleep once nasal breathing is established, which can reduce dry mouth and fragmented sleep linked to insomnia. It is not a cure for clinical insomnia or anxiety — pair with good sleep hygiene (see our evidence-based checklist)."
-              },
-              {
-                q: "Can I use mouth tape with CPAP or if I have a beard?",
-                a: "Yes — several options (SomniFix, Dream Recovery, Hostage) are popular with CPAP users and beard wearers. The vented designs and strong-hold tapes perform best. Test carefully and follow your sleep specialist's advice."
-              },
-              {
-                q: "How long does it take to get used to mouth taping?",
-                a: "Most people adapt in 3–7 nights. Start with shorter periods (first half of night or naps), use the gentlest tape, and combine with nasal strips or saline rinses for best results."
-              },
-              {
-                q: "Best mouth tape for side sleepers 2026?",
-                a: "Dream Recovery and similar gentle wide tapes excel for side sleepers because they stay put without shifting. Look for medical-grade low-tack adhesive and breathable fabric."
-              },
-              {
-                q: "Best beard friendly mouth tape UK?",
-                a: "Hostage Tape and SomniFix-style vented strips are favorites for beards. Strong hold without residue is key; many beard owners report only these stay all night."
-              }
-            ].map((item, i) => (
-              <div key={i} className="border rounded-xl p-5 bg-card">
+            {faqs.map((item) => (
+              <div key={item.q} className="border rounded-xl p-5 bg-card">
                 <h3 className="font-semibold mb-1.5">{item.q}</h3>
                 <div className="text-muted-foreground">{item.a}</div>
               </div>
@@ -304,52 +277,19 @@ export default function MouthTapeHub() {
 
         <Script id="mouth-tape-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is the best mouth tape for sleep in 2026?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The best mouth tape depends on your needs: Dream Recovery for most side sleepers and sensitive skin, Hostage Tape or SomniFix for beards and heavy mouth breathers, ZzzTape for best value. See the comparison above." }
-              },
-              {
-                "@type": "Question",
-                "name": "Is mouth taping safe? How to stop mouth breathing safely?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Mouth taping is safe for most healthy nasal breathers but not for everyone. Never use if you have untreated sleep apnea, nasal congestion, or breathing disorders. Always start with nasal hygiene and consult a doctor. Full safety details on every review." }
-              },
-              {
-                "@type": "Question",
-                "name": "Does mouth taping help with insomnia or sleep anxiety?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Many users report falling asleep faster and deeper sleep once nasal breathing is established, which can reduce dry mouth and fragmented sleep linked to insomnia. It is not a cure for clinical insomnia or anxiety — pair with good sleep hygiene (see our evidence-based checklist)." }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I use mouth tape with CPAP or if I have a beard?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes — several options (SomniFix, Dream Recovery, Hostage) are popular with CPAP users and beard wearers. The vented designs and strong-hold tapes perform best. Test carefully and follow your sleep specialist's advice." }
-              },
-              {
-                "@type": "Question",
-                "name": "How long does it take to get used to mouth taping?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most people adapt in 3–7 nights. Start with shorter periods (first half of night or naps), use the gentlest tape, and combine with nasal strips or saline rinses for best results." }
-              },
-              {
-                "@type": "Question",
-                "name": "Best mouth tape for side sleepers 2026?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Dream Recovery and similar gentle wide tapes excel for side sleepers because they stay put without shifting. Look for medical-grade low-tack adhesive and breathable fabric." }
-              },
-              {
-                "@type": "Question",
-                "name": "Best beard friendly mouth tape UK?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Hostage Tape and SomniFix-style vented strips are favorites for beards. Strong hold without residue is key; many beard owners report only these stay all night." }
-              }
-            ]
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((item) => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
           })
         }} />
 
-        {/* QUICK SAFETY REMINDER */}
         <div className="mt-10 text-xs text-center text-muted-foreground max-w-prose mx-auto">
-          Mouth taping is powerful but not risk-free. Always read the full safety information on each product page. 
-          If you have any diagnosed breathing or sleep disorder, speak with a doctor first.
+          Mouth taping is not risk-free. Read the safety notes on each product page.
+          If you have a breathing or sleep disorder, speak with a doctor first.
         </div>
       </div>
     </div>

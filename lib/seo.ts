@@ -11,6 +11,18 @@ type PageMetaInput = {
   absoluteTitle?: boolean;
 };
 
+const TITLE_SUFFIX = ' | SleepBetterHub';
+const TITLE_LIMIT = 60;
+
+/** Keep the rendered `<title>` (including the layout suffix) within a sensible length. */
+export function fitTitle(title: string): string {
+  if (title.length + TITLE_SUFFIX.length <= TITLE_LIMIT) return title;
+  const max = TITLE_LIMIT - TITLE_SUFFIX.length;
+  const cut = title.slice(0, max);
+  const space = cut.lastIndexOf(' ');
+  return (space > 18 ? cut.slice(0, space) : cut).replace(/[|:—–\-]+$/, '').trim();
+}
+
 /** Unique title, description, canonical, Open Graph, and Twitter tags for one URL. */
 export function pageMeta({
   title,
@@ -22,21 +34,21 @@ export function pageMeta({
 }: PageMetaInput): Metadata {
   const site = getSiteUrl();
   const url = `${site}${path === '/' ? '' : path}`;
-  const imageAlt = title;
+  const visibleTitle = absoluteTitle ? title : fitTitle(title);
+  const imageAlt = visibleTitle;
 
   return {
-    title: absoluteTitle ? { absolute: title } : title,
+    title: absoluteTitle ? { absolute: visibleTitle } : visibleTitle,
     description,
     alternates: {
-      canonical: path,
+      canonical: url,
       languages: {
         'en-GB': url,
-        'en-US': url,
         'x-default': url,
       },
     },
     openGraph: {
-      title,
+      title: visibleTitle,
       description,
       url,
       siteName: SITE_NAME,
@@ -46,7 +58,7 @@ export function pageMeta({
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: visibleTitle,
       description,
       images: [image],
     },

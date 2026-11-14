@@ -1,6 +1,6 @@
 # SEO notes
 
-Weekly log for Sleep Better Hub (https://sleepbetterhub.vercel.app). Newest week first.
+Weekly log for Sleep Better Hub (https://sleepmask.tech). Newest week first.
 
 ## Week of 14 November 2026
 
@@ -45,7 +45,7 @@ Tag on every Amazon URL: `stewraw25-21`. From this VM, a normal UK product URL 3
 
 ### Still open
 
-- No Search Console data. Submit `https://sleepbetterhub.vercel.app/sitemap.xml` if it is not already there.
+- No Search Console data. Submit `https://sleepmask.tech/sitemap.xml` if it is not already there.
 - Contact address is still `hello@sleepmask.tech`.
 - Dream Recovery, SomniFix, ZzzTape, SayLess, and Eight Sleep still earn nothing until Stewart adds real affiliate URLs.
 - Pillow, Hostage Tape, Breathe Right, and Mute buy-box prices could not be re-read from the static HTML on this VM. The November 7 figures are still on those pages.
@@ -90,7 +90,7 @@ Tag on every Amazon URL: `stewraw25-21`. Nine previous Amazon destinations, the 
 
 ### Still open
 
-- No Search Console data. Submit `https://sleepbetterhub.vercel.app/sitemap.xml` if it is not already there.
+- No Search Console data. Submit `https://sleepmask.tech/sitemap.xml` if it is not already there.
 - Contact address is still `hello@sleepmask.tech`. No replacement mailbox was in the repo, so it was left alone.
 - Dream Recovery, SomniFix, ZzzTape, SayLess, and Eight Sleep still earn nothing until Stewart adds real affiliate URLs.
 - Older product cards still show editorial star labels. They are marked as editorial. They are not a documented test.
@@ -99,7 +99,7 @@ Tag on every Amazon URL: `stewraw25-21`. Nine previous Amazon destinations, the 
 
 ### What changed
 
-- Canonical tags were all pointing at the homepage, because the root layout set `canonical: /` and most pages never overrode it. Every indexable page now has its own canonical on `https://sleepbetterhub.vercel.app`. Set `NEXT_PUBLIC_SITE_URL` if a custom domain replaces the Vercel alias. Do not rely on `VERCEL_URL` for this; that hostname changes per deployment.
+- Canonical tags were all pointing at the homepage, because the root layout set `canonical: /` and most pages never overrode it. Every indexable page now has its own canonical on `https://sleepmask.tech` (the default of `NEXT_PUBLIC_SITE_URL`). Do not rely on `VERCEL_URL` for this; that hostname changes per deployment. Requests to `sleepbetterhub.vercel.app` redirect to the same path on `https://sleepmask.tech`.
 - Unique titles and meta descriptions were added for the homepage, about, blog index, quiz, category pages, the mouth-tape hub, reviews, and the Eight Sleep guide. Titles are shorter so Google is less likely to rewrite them.
 - Open Graph and Twitter cards now include a title, description, and image per page. The locale is `en_GB`, with `en-GB`, `en-US`, and `x-default` hreflang all pointing at the same URL (there are not separate UK and US pages).
 - Removed a fake sitelinks search box (`/search` does not exist) and fake Twitter/YouTube `sameAs` links from the sitewide structured data. Organization and WebSite schema now use the live URL.
@@ -139,7 +139,7 @@ There is no US Associates tag in the repo. US readers who click Amazon are sent 
 - Contact mail and the newsletter “from” address still use `hello@sleepmask.tech`. That domain is not the live site.
 - Older articles still talk about hands-on tests and named clinicians. This week’s guide does not add new test claims. Next week should either document a real test or tone those claims down. Health pages get extra scrutiny.
 - The homepage still says things like “12,400+ readers” and “47 products tested”. Replace those with numbers Stewart can stand behind.
-- No Google Search Console proof in the repo. Submit `https://sleepbetterhub.vercel.app/sitemap.xml` if it is not already submitted.
+- No Google Search Console proof in the repo. Submit `https://sleepmask.tech/sitemap.xml` if it is not already submitted.
 - Core Web Vitals were not measured in the field (no CrUX access). Lab checks should be done on the deployed URL after this ships. Images are already modest (about 110–330 KB) and served through `next/image`.
 
 ### Best ideas for next week

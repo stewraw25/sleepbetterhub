@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getProductsByCategory } from '@/lib/products';
 import { ProductCard } from '@/components/ProductCard';
-import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
@@ -20,16 +19,16 @@ export default function GadgetsCategory() {
       <div className="mb-8">
         <Link href="/categories" className="text-sm text-muted-foreground">← All Categories</Link>
         <h1 className="text-4xl tracking-tighter font-semibold mt-2">Sleep Trackers &amp; Gadgets</h1>
-        <p className="text-muted-foreground mt-2 max-w-prose">Hardware that gives you data and improves the sleep environment: wearables, temperature systems, sound machines, and more.</p>
+        <p className="text-muted-foreground mt-2 max-w-prose">Oura Ring and the Eight Sleep Pod are the gadgets listed here. This site has not tested them. Eight Sleep accessories are on their own page.</p>
       </div>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
         {products.map((p) => <ProductCard key={p.id} product={p} />)}
       </div>
 
-      <div className="mt-10">
-        <AdPlaceholder label="Gadgets Mid-page Ad" />
-      </div>
+      <p className="mt-8 text-sm">
+        <Link href="/categories/bedding" className="text-primary underline underline-offset-2">Eight Sleep Base, Blanket, and Pillow Cover</Link>
+      </p>
     </div>
   );
 }

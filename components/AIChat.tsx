@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 interface Message {
   role: 'user' | 'assistant';
   content: string;
-  suggestions?: Array<{ slug: string; name: string; link: string }>;
+  suggestions?: Array<{ slug: string; name: string; link?: string }>;
 }
 
 export function AIChat() {
@@ -107,17 +107,23 @@ export function AIChat() {
 
                   {msg.suggestions && msg.suggestions.length > 0 && (
                     <div className="mt-2 flex flex-wrap gap-1.5">
-                      {msg.suggestions.slice(0, 3).map((s, i) => (
-                        <a 
-                          key={i} 
-                          href={s.link} 
-                          target={s.link.startsWith('http') ? '_blank' : '_self'}
-                          className="inline-block rounded-md bg-background/80 px-2 py-0.5 text-[11px] hover:bg-background transition-colors border border-border/50"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {s.name}
-                        </a>
-                      ))}
+                      {msg.suggestions.slice(0, 3).map((s, i) => {
+                        const href = s.link || (s.slug ? `/reviews/${s.slug}` : '');
+                        if (!href) return null;
+                        const external = href.startsWith('http');
+                        return (
+                          <a
+                            key={i}
+                            href={href}
+                            target={external ? '_blank' : undefined}
+                            rel={external ? 'noopener noreferrer' : undefined}
+                            className="inline-block rounded-md bg-background/80 px-2 py-0.5 text-[11px] hover:bg-background transition-colors border border-border/50"
+                            onClick={() => setIsOpen(false)}
+                          >
+                            {s.name}
+                          </a>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
@@ -152,7 +158,7 @@ export function AIChat() {
               </Button>
             </div>
             <p className="mt-1.5 text-[10px] text-center text-muted-foreground">
-              AI recommendations • Not medical advice
+              Points at pages on this site • Not medical advice • Not a product test
             </p>
           </div>
         </div>

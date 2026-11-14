@@ -1,20 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Check, X, ArrowLeft, Thermometer, Moon, Users, Zap, AlertCircle } from 'lucide-react';
+import { Check, X, ArrowLeft, Thermometer, Moon, Users, Zap, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { getProductBySlug } from '@/lib/products';
 import { getInternalAffiliateLink, SPONSORED_REL } from '@/lib/affiliates';
 import { JsonLd } from '@/components/JsonLd';
 import { pageMeta } from '@/lib/seo';
-import { breadcrumbJsonLd, editorialReviewJsonLd, productJsonLd } from '@/lib/schema';
+import { breadcrumbJsonLd, productJsonLd } from '@/lib/schema';
 
 export const metadata = pageMeta({
-  title: 'Eight Sleep Pod 6 Review (UK)',
-  description: 'What the Eight Sleep Pod 6 cover does, what it costs from £2,295, the membership fee, and who should skip it.',
+  title: 'Eight Sleep Pod 6 (UK)',
+  description: 'What Eight Sleep says the Pod 6 cover does, the price previously listed from £2,295, and that this site has not tested it.',
   path: '/reviews/eight-sleep-pod-6',
   image: '/images/eight-sleep-pod.jpg',
 });
@@ -38,7 +37,6 @@ export default function EightSleepPod6Review() {
         ])}
       />
       <JsonLd data={productJsonLd(product)} />
-      <JsonLd data={editorialReviewJsonLd(product)} />
       <div className="container py-8">
         <Link href="/categories/gadgets" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> Back to Sleep Tech
@@ -50,14 +48,9 @@ export default function EightSleepPod6Review() {
             <div className="flex items-start gap-4">
               <div>
                 <Badge variant="secondary" className="mb-2">{product.brand}</Badge>
-                <h1 className="text-4xl md:text-5xl font-semibold tracking-tighter leading-none">Eight Sleep Pod 6 Review UK</h1>
-                <p className="text-xl text-muted-foreground mt-2">Is the ultimate temperature-controlled sleep system worth £2,295+?</p>
-                <div className="mt-3 flex items-center gap-3">
-                  <div className="flex items-center text-xl font-semibold">
-                    <Star className="h-5 w-5 fill-yellow-500 text-yellow-500 mr-1.5" /> {product.rating}
-                  </div>
-                  <div className="text-muted-foreground">• Editorial score</div>
-                </div>
+                <h1 className="text-4xl md:text-5xl font-semibold tracking-tighter leading-none">Eight Sleep Pod 6</h1>
+                <p className="text-xl text-muted-foreground mt-2">Listing notes for the UK cover. Not a scored review, and not a test.</p>
+                <div className="mt-3 text-muted-foreground">Listed from {product.price}. Confirm the current price on Eight Sleep’s site.</div>
               </div>
             </div>
 
@@ -101,7 +94,7 @@ export default function EightSleepPod6Review() {
                     <li>• Wake up hot or throw off covers at night</li>
                     <li>• Share a bed with someone who prefers different temperatures</li>
                     <li>• Want data-driven sleep optimisation without a wearable</li>
-                    <li>• Prioritise recovery (athletes, high performers)</li>
+                    <li>• Want the temperature features the maker describes</li>
                     <li>• Have tried cheaper cooling solutions without success</li>
                   </ul>
                 </div>
@@ -162,9 +155,7 @@ export default function EightSleepPod6Review() {
                 </table>
               </div>
               <p>
-                <strong>The subscription question:</strong> Without the membership, the Pod still heats and cools, but you lose Autopilot 
-                (automatic temperature adjustments), sleep analytics, and the alarm features. Most buyers consider the membership essential — 
-                factor it into your total cost of ownership.
+                <strong>The subscription question:</strong> Eight Sleep’s own pages describe Autopilot, sleep numbers, and the alarm as membership features. Confirm what still works without it, and the current fee, before you buy.
               </p>
 
               {/* AUTOPILOT / FEATURES */}
@@ -175,13 +166,10 @@ export default function EightSleepPod6Review() {
                 warms as you approach your wake time.
               </p>
               <p>
-                The sleep tracking is genuinely comprehensive: you get detailed breakdowns of sleep stages, HRV trends, respiratory rate, 
-                and a daily sleep score. For data enthusiasts, it rivals dedicated trackers like Oura — with the advantage that you don't 
-                wear anything.
+                Eight Sleep says the cover tracks sleep stages, HRV, and respiratory rate without a wearable. This site has not compared that with an Oura ring.
               </p>
               <p>
-                The vibrating alarm is a standout feature. Instead of a jarring sound, the Pod gently vibrates to wake you during a light 
-                sleep phase within your alarm window. Many users report this as one of the best parts of the system.
+                Eight Sleep describes a vibrating alarm. This site has not used it.
               </p>
 
               {/* COMMON CONCERNS */}
@@ -190,7 +178,7 @@ export default function EightSleepPod6Review() {
               <h3>Noise</h3>
               <p>
                 The Hub unit makes some noise — it's not silent. Eight Sleep rates it at around 25-30 dB when actively cooling, 
-                similar to a quiet fan. Most users adapt quickly, but if you're extremely sensitive to any noise, this is worth considering.
+                similar to a quiet fan. This site has not measured that. If you are very sensitive to noise, treat it as an open question.
               </p>
 
               <h3>Leaks and Reliability</h3>
@@ -202,21 +190,16 @@ export default function EightSleepPod6Review() {
 
               <h3>Warranty and Returns (UK)</h3>
               <p>
-                Eight Sleep offers a 30-night trial for UK customers (check current terms) and a 2-year limited warranty on the hardware. 
-                Returns require the product to be in good condition. Given the price, understand the return policy before purchasing.
+                Earlier copy on this page stated a 30-night UK trial and a 2-year limited warranty. Confirm both on Eight Sleep’s site. This site has not re-checked those terms and has not run a trial.
               </p>
 
               {/* F1 ANGLE */}
               <h2>The Formula 1 Connection</h2>
               <p>
-                Eight Sleep has partnerships with Formula 1 and professional athletes who use the Pod for recovery. While we can't verify 
-                every endorsement, the F1 connection is genuine — teams and drivers have publicly discussed using temperature-controlled 
-                sleep for performance recovery.
+                This site has not verified an Eight Sleep partnership with Formula 1 teams or with professional athletes. Do not treat that story as a reason to buy.
               </p>
               <p>
-                Does this matter for regular buyers? It suggests the technology has serious backing and isn't just consumer marketing. 
-                However, elite athlete results don't automatically translate to everyone. The core benefit — temperature control for 
-                better sleep — is what most people will actually experience.
+                The useful question is the one on this page: do you want a cover that heats and cools, at the price Eight Sleep is charging, after you have read what the membership includes.
               </p>
               <p className="text-sm">
                 <Link href="/guides/eight-sleep-f1" className="text-primary hover:underline">
@@ -249,19 +232,13 @@ export default function EightSleepPod6Review() {
               {/* VERDICT */}
               <h2>The Verdict: Is Eight Sleep Pod 6 Worth It?</h2>
               <p>
-                The Eight Sleep Pod 6 is a genuine innovation in sleep technology, not a gimmick. If you consistently wake up hot, 
-                share a bed with someone who has different temperature preferences, or want comprehensive sleep data without a wearable, 
-                it delivers on its promises.
+                If you wake hot, or you share a bed with someone who wants a different temperature, the maker’s pitch is a cover that heats and cools. This site has not tested whether it does that for you.
               </p>
               <p>
-                The price is the main barrier. At £2,295+ plus an ongoing subscription, this is a serious investment. For hot sleepers 
-                who've tried fans, lighter bedding, and room temperature adjustments without success, the Pod can be transformative. 
-                For everyone else, it's a luxury — a very effective one, but a luxury nonetheless.
+                The price is the main barrier. The figure on this page is from £2,295 plus a membership. Confirm both before you buy.
               </p>
               <p>
-                <strong>Our recommendation:</strong> If temperature issues genuinely affect your sleep quality and you have the budget, 
-                the Pod 6 is the most advanced solution available. Take advantage of the trial period to confirm it works for you before 
-                committing long-term.
+                There is no recommendation from a test. If you buy, confirm the current trial terms on Eight Sleep’s site first.
               </p>
             </div>
 
@@ -294,7 +271,7 @@ export default function EightSleepPod6Review() {
               <div className="rounded-2xl border bg-card p-6">
                 <div className="text-sm uppercase tracking-widest text-muted-foreground">UK Price</div>
                 <div className="text-4xl font-semibold tabular-nums mt-1 tracking-tighter">{product.price}</div>
-                <p className="text-xs text-muted-foreground mt-1">+ £15/mo or £190/yr membership</p>
+                <p className="text-xs text-muted-foreground mt-1">A membership fee is listed in the notes below. Confirm it on Eight Sleep’s site.</p>
 
                 <a
                   href={affiliateLink}
@@ -311,14 +288,10 @@ export default function EightSleepPod6Review() {
                 <Separator className="my-5" />
 
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between"><span className="text-muted-foreground">Rating</span> <span className="font-medium">{product.rating} / 5</span></div>
-                  <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Editorial</span></div>
-                  <div className="flex justify-between"><span className="text-muted-foreground">Trial Period</span> <span className="font-medium">30 nights (check terms)</span></div>
-                  <div className="flex justify-between"><span className="text-muted-foreground">Warranty</span> <span className="font-medium">2 years limited</span></div>
+                  <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Not scored</span></div>
+                  <div className="flex justify-between"><span className="text-muted-foreground">Trial and warranty</span> <span className="font-medium text-right">Confirm on the brand site</span></div>
                 </div>
               </div>
-
-              <AdPlaceholder label="Sidebar Display Ad" className="h-52" />
 
               {/* KEY FEATURES */}
               <div className="rounded-2xl border bg-card p-5">
@@ -345,9 +318,7 @@ export default function EightSleepPod6Review() {
 
               {/* TRUST NOTE */}
               <div className="text-xs bg-muted/60 border rounded-xl p-4 text-muted-foreground">
-                This review is based on publicly available information, manufacturer specifications, and aggregated user feedback. 
-                We have not conducted overnight testing with the Pod 6. Claims about performance and features reflect Eight Sleep's 
-                marketing and verified user reports, not our own lab testing.
+                These notes repeat Eight Sleep’s published description and prices that were already on this site. We have not slept on the Pod 6, and we have not verified user reports or athlete use.
               </div>
 
               <div>
@@ -365,7 +336,7 @@ export default function EightSleepPod6Review() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <h3 className="font-semibold text-xl tracking-tight">Eight Sleep Accessories</h3>
-              <p className="text-sm text-muted-foreground mt-1">Expand your Eight Sleep setup with official accessories</p>
+              <p className="text-sm text-muted-foreground mt-1">Base, blanket, and pillow cover. <Link href="/categories/bedding" className="text-primary underline underline-offset-2">All three notes</Link>.</p>
             </div>
             <Badge variant="outline">UK Shop</Badge>
           </div>
@@ -431,7 +402,7 @@ export default function EightSleepPod6Review() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link href="/reviews/oura-ring-gen3" className="block rounded-xl border p-4 hover:bg-muted/40 transition">
               <div className="font-medium">Oura Ring Gen3</div>
-              <div className="text-sm text-muted-foreground">£239–£439 • 4.7★</div>
+              <div className="text-sm text-muted-foreground">Sleep-tracking ring. Not scored here.</div>
             </Link>
             <Link href="/blog/hot-sleepers-temperature-solutions" className="block rounded-xl border p-4 hover:bg-muted/40 transition">
               <div className="font-medium">Hot Sleepers Guide</div>
@@ -439,13 +410,9 @@ export default function EightSleepPod6Review() {
             </Link>
             <Link href="/guides/eight-sleep-f1" className="block rounded-xl border p-4 hover:bg-muted/40 transition">
               <div className="font-medium">Eight Sleep & F1</div>
-              <div className="text-sm text-muted-foreground">The Formula 1 connection explained</div>
+              <div className="text-sm text-muted-foreground">What this site has not verified</div>
             </Link>
           </div>
-        </div>
-
-        <div className="mt-10">
-          <AdPlaceholder label="Bottom of Review Ad" />
         </div>
 
       </div>

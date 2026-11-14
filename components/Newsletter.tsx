@@ -32,9 +32,7 @@ export function Newsletter() {
         throw new Error(data.error || 'Subscription failed');
       }
 
-      toast.success('Thank you! You\'re now subscribed to our weekly sleep science digest.', {
-        description: 'Check your inbox for the latest research + product updates.',
-      });
+      toast.success(data.message || 'Saved.');
       setEmail('');
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Something went wrong. Please try again.';
@@ -53,7 +51,7 @@ export function Newsletter() {
         </div>
         <h3 className="text-2xl font-semibold tracking-tight mb-2">Weekly Sleep Insights</h3>
         <p className="text-muted-foreground mb-6">
-          Evidence-based tips, new product tests, and sleep science summaries. No spam, ever. Unsubscribe anytime.
+          Guides and product notes. No lab-test emails. Ask to be removed any time.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
@@ -70,7 +68,7 @@ export function Newsletter() {
           </Button>
         </form>
         <p className="text-[10px] text-muted-foreground mt-3">
-          We respect your inbox. Read our <a href="/about" className="underline">privacy policy</a>.
+          We store the address only if the mailing list is set up. Read the <a href="/privacy" className="underline">privacy page</a>.
         </p>
       </div>
     </div>

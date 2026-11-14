@@ -1,19 +1,18 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Check, X, ArrowLeft } from 'lucide-react';
+import { Check, X, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 
-import { AdPlaceholder } from '@/components/AdPlaceholder';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 import { SafetyAlert } from '@/components/SafetyAlert';
 import { JsonLd } from '@/components/JsonLd';
 import { getProductBySlug, allProducts, categoryLabels } from '@/lib/products';
 import { getAffiliateUrl, getInternalAffiliateLink, shopLabel, SPONSORED_REL } from '@/lib/affiliates';
 import { pageMeta } from '@/lib/seo';
-import { breadcrumbJsonLd, editorialReviewJsonLd, productJsonLd } from '@/lib/schema';
+import { breadcrumbJsonLd, productJsonLd } from '@/lib/schema';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -31,7 +30,7 @@ const categoryMeta: Record<string, { label: string; backLink: string; backText: 
   'gadgets': { label: 'Sleep Tech', backLink: '/categories/gadgets', backText: 'Back to Sleep Tech' },
   'mattresses': { label: 'Mattress', backLink: '/categories/mattresses', backText: 'Back to Mattresses' },
   'supplements': { label: 'Supplement', backLink: '/categories/supplements', backText: 'Back to Supplements' },
-  'bedding': { label: 'Bedding', backLink: '/categories', backText: 'Back to Categories' },
+  'bedding': { label: 'Eight Sleep accessory', backLink: '/categories/bedding', backText: 'Back to Eight Sleep accessories' },
 };
 
 export async function generateMetadata({ params }: Props) {
@@ -42,7 +41,7 @@ export async function generateMetadata({ params }: Props) {
   const description = `${product.name}: ${product.description}`.slice(0, 160);
 
   return pageMeta({
-    title: product.rating > 0 ? `${product.name} Review` : product.name,
+    title: product.seoTitle || product.name,
     description,
     path: `/reviews/${product.slug}`,
     image: product.image,
@@ -65,9 +64,7 @@ export default async function ProductReviewPage({ params }: Props) {
   const destination = getAffiliateUrl(product.slug);
   const categoryPath = product.category === 'mouth-tape'
     ? '/mouth-tape'
-    : product.category === 'bedding'
-      ? '/categories'
-      : `/categories/${product.category}`;
+    : `/categories/${product.category}`;
 
   return (
     <div className="bg-background">
@@ -79,7 +76,6 @@ export default async function ProductReviewPage({ params }: Props) {
         ])}
       />
       <JsonLd data={productJsonLd(product)} />
-      {product.rating > 0 ? <JsonLd data={editorialReviewJsonLd(product)} /> : null}
       <div className="container py-8">
         <Link href={catInfo.backLink} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> {catInfo.backText}
@@ -92,18 +88,9 @@ export default async function ProductReviewPage({ params }: Props) {
               <div>
                 <Badge variant="secondary" className="mb-2">{product.brand}</Badge>
                 <h1 className="text-4xl md:text-5xl font-semibold tracking-tighter leading-none">{product.name}</h1>
-                <div className="mt-3 flex items-center gap-3">
-                  {product.rating > 0 ? (
-                    <>
-                      <div className="flex items-center text-xl font-semibold">
-                        <Star className="h-5 w-5 fill-yellow-500 text-yellow-500 mr-1.5" /> {product.rating}
-                      </div>
-                      <div className="text-muted-foreground">• Editorial score</div>
-                    </>
-                  ) : (
-                    <div className="text-muted-foreground">Listing notes, not a scored review</div>
-                  )}
-                  <div className="text-muted-foreground">• {product.price}</div>
+                <div className="mt-3 flex items-center gap-3 text-muted-foreground">
+                  <div>Listing notes, not a scored review</div>
+                  <div>• {product.price}</div>
                 </div>
               </div>
             </div>
@@ -207,16 +194,10 @@ export default async function ProductReviewPage({ params }: Props) {
                 <Separator className="my-5" />
 
                 <div className="space-y-2 text-sm">
-                  {product.rating > 0 ? (
-                    <div className="flex justify-between"><span className="text-muted-foreground">Rating</span> <span className="font-medium">{product.rating} / 5 editorial</span></div>
-                  ) : (
-                    <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Not scored</span></div>
-                  )}
+                  <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Not scored</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Best For</span> <span className="font-medium text-right">{product.bestFor.join(', ')}</span></div>
                 </div>
               </div>
-
-              <AdPlaceholder label="Sidebar Display Ad" className="h-52" />
 
               {/* Trust note */}
               <div className="text-xs bg-muted/60 border rounded-xl p-4 text-muted-foreground">
@@ -240,16 +221,13 @@ export default async function ProductReviewPage({ params }: Props) {
               {related.map((r) => (
                 <Link key={r.id} href={`/reviews/${r.slug}`} className="block rounded-xl border p-4 hover:bg-muted/40 transition">
                   <div className="font-medium">{r.name}</div>
-                  <div className="text-sm text-muted-foreground">{r.price}{r.rating > 0 ? ` • ${r.rating}★` : ''}</div>
+                  <div className="text-sm text-muted-foreground">{r.price}</div>
                 </Link>
               ))}
             </div>
           </div>
         )}
 
-        <div className="mt-10">
-          <AdPlaceholder label="Bottom of Review Ad" />
-        </div>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { ContactEmail } from '@/components/ContactEmail';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -19,7 +20,7 @@ export function Footer() {
             <div className="font-semibold tracking-tight text-lg">SleepBetterHub</div>
           </div>
           <p className="text-muted-foreground leading-relaxed pr-4">
-            Science-backed tools and honest reviews for deeper sleep in 2026.
+            Guides and product notes for readers in the UK.
           </p>
         </div>
 
@@ -44,17 +45,20 @@ export function Footer() {
             <li><Link href="/categories/nasal" className="hover:text-foreground">Nasal Strips &amp; Dilators</Link></li>
             <li><Link href="/categories/gadgets" className="hover:text-foreground">Sleep Trackers &amp; Tech</Link></li>
             <li><Link href="/categories/supplements" className="hover:text-foreground">Supplements</Link></li>
-            <li><Link href="/categories/mattresses" className="hover:text-foreground">Mattresses</Link></li>
+            <li><Link href="/categories/mattresses" className="hover:text-foreground">Mattresses &amp; Duvets</Link></li>
+            <li><Link href="/categories/bedding" className="hover:text-foreground">Eight Sleep Accessories</Link></li>
           </ul>
         </div>
 
         <div>
           <div className="font-medium mb-3">Trust &amp; Legal</div>
           <ul className="space-y-2 text-muted-foreground">
-            <li><Link href="/about" className="hover:text-foreground">Affiliate Disclosure</Link></li>
-            <li><Link href="/about" className="hover:text-foreground">Medical Disclaimer</Link></li>
-            <li><Link href="/about" className="hover:text-foreground">Privacy &amp; Data</Link></li>
-            <li><a href="mailto:hello@sleepmask.tech" className="hover:text-foreground">Contact</a></li>
+            <li><Link href="/about#affiliate-disclosure" className="hover:text-foreground">Affiliate Disclosure</Link></li>
+            <li><Link href="/about#medical-disclaimer" className="hover:text-foreground">Medical Disclaimer</Link></li>
+            <li><Link href="/privacy" className="hover:text-foreground">Privacy &amp; Data</Link></li>
+            <li><Link href="/cookies" className="hover:text-foreground">Cookies</Link></li>
+            <li><Link href="/terms" className="hover:text-foreground">Terms</Link></li>
+            <li><ContactEmail className="hover:text-foreground" /></li>
           </ul>
           <div className="mt-6 text-[10px] text-muted-foreground leading-snug">
             © {year} SleepBetterHub. Not medical advice.<br />Always consult a healthcare professional.
@@ -65,7 +69,7 @@ export function Footer() {
       <div className="border-t py-4">
         <div className="container text-[10px] text-muted-foreground flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
           <div className="flex items-start gap-2 text-xs leading-relaxed">
-            <Image src="/images/logo.jpg" alt="" width={16} height={16} className="mt-0.5 h-4 w-4 rounded-full object-cover opacity-60" />
+            <Image src="/images/logo.jpg" alt="SleepBetterHub logo" width={16} height={16} className="mt-0.5 h-4 w-4 rounded-full object-cover opacity-60" />
             <span>
               Some product links are affiliate links. Amazon links use our Associates tag. Brand links earn a commission only when that brand has given us a code. You should not pay more because you clicked. See the <Link href="/about" className="underline hover:text-foreground">affiliate disclosure</Link>.
             </span>

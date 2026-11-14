@@ -5,8 +5,8 @@ import { getPublishedPosts } from '@/lib/blog';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
-  title: 'Sleep Guides',
-  description: 'Practical UK guides on mouth taping, snoring, side-sleeper pillows, and which duvet tog to buy.',
+  title: 'UK Sleep Guides',
+  description: 'UK guides on mouth tape, snoring, side-sleeper pillows, duvet tog, and nasal strips. Prices are from the listings. This site does not lab-test products.',
   path: '/blog',
 });
 
@@ -16,9 +16,8 @@ export default function BlogIndex() {
   return (
     <div className="container py-12">
       <div className="max-w-2xl">
-        <div className="uppercase tracking-[2px] text-xs text-primary mb-1">RESEARCH &amp; GUIDES</div>
-        <h1 className="text-4xl font-semibold tracking-tighter">Sleep Science &amp; Practical Guides for Insomnia, Anxiety &amp; Mouth Taping</h1>
-        <p className="mt-2 text-muted-foreground">Evidence-based articles on how to fall asleep fast, sleep anxiety remedies, stopping mouth breathing, and what actually works in 2026 — no hype, no fluff. New guides published 1–2× per week.</p>
+        <h1 className="text-4xl font-semibold tracking-tighter">UK sleep guides</h1>
+        <p className="mt-2 text-muted-foreground">Guides on mouth tape, snoring, side-sleeper pillows, duvet tog, and nasal strips. Prices are from the listings. This site does not lab-test products.</p>
       </div>
 
       <div className="mt-10 grid md:grid-cols-2 gap-6">
