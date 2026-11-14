@@ -53,6 +53,109 @@ export function getAllPosts(): BlogPost[] {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'what-tog-duvet',
+    title: 'What Tog Duvet Do I Need?',
+    excerpt: 'Match the tog to the bedroom, not the season on the packet. Which? and The Sleep Charity set the ranges. Three Silentnight doubles had prices on Amazon UK on 14 November 2026.',
+    content: `**Affiliate disclosure.** The three duvet links go to Amazon UK with our Associates tag. Prices were read off those listings on 14 November 2026 and will change. We have not slept under these duvets. The star counts below are Amazon’s, not scores we gave them.
+
+If you are asking what tog duvet you need, start with the room after the heating goes off, and with whether you wake hot or cold. Tog is a measure of how thermally insulating a duvet is. Which? says the scale runs from about 1 to about 15, and that a higher number is warmer. It is not the weight, and it is not the thickness, though a warmer duvet is often thicker.
+
+## The two sources worth using
+
+This is not a temperature test we ran.
+
+- [Which?](https://www.which.co.uk/reviews/duvets/article/choosing-the-best-type-of-duvet-aXUX91B9AImk) says a summer duvet is a low tog between 1 and 4, a winter duvet is 10.5 to 15, and most people find 13.5 tog warm enough for a British winter. An all-season set is usually a light duvet of about 4.5 tog plus a heavier one of about 9 tog. Use the light one in summer, the heavier one in spring and autumn, and both together in winter.
+- [The Sleep Charity](https://thesleepcharity.org.uk/adults/sleep-environment/) says an ideal bedroom is around 16 to 18°C. A room over 24°C is likely to make you restless. A room of about 12°C makes it harder to fall asleep. When the weather is hot, they say to use a lower tog, or just a cotton sheet. Young children and older people may need the room a little warmer. A room thermometer is more useful than guessing.
+
+Those two pages do not publish one shared chart that says “18°C means 10.5 tog”. The practical reading is below. It is a way to use their ranges, not a lab result.
+
+## Which tog to start with
+
+Put a thermometer in the bedroom for two or three nights. Read it an hour after the heating has gone off, not at 6pm when the room is still warm.
+
+- **You throw the duvet off, or the room stays above about 18°C.** Start at the light end. Which?’s summer band is 1 to 4 tog. The light duvet shops actually sell is usually 4.5 tog, which is also the light half of the all-season set Which? describes. 4.5 is a shade warmer than Which?’s summer band. It is still the right first buy if a 13.5 leaves you sweaty.
+- **The room stays around 16 to 18°C and you are not a cold sleeper.** 10.5 tog is the middle of the UK range. Which? puts 10.5 at the bottom of the winter band, so a room that falls well below 16°C can leave a 10.5 feeling thin.
+- **The heating goes off and you wake cold, or the room is draughty.** 13.5 tog. Which? says that is warm enough for most British winters. 15 tog exists. Which? calls 15 the top of the scale, not the default.
+- **The room swings, or two people disagree.** An all-season pair, used separately or clipped together. Which? says that pair is usually about 4.5 plus about 9. We did not find a buy-box price for a combined set on 14 November 2026, so this guide does not link one. Two different single duvets, one each, is the other way couples stop arguing. That is ordinary advice, not a trial.
+
+A duvet does not set the height of your neck. If you wake with a stiff neck, do the photo check in the [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers) guide before you change tog. If the whole room is hot, the [hot sleepers guide](/blog/hot-sleepers-temperature-solutions) covers the window, the sheets, and a cooling cover. The duvet is one layer in that, not the whole fix.
+
+## Three Silentnight doubles that were in stock
+
+Same brand, three togs, double size, so the tog is the thing that changes. The notes are the listing’s own words. UK double is the size that was selected. King and super king are different pages. Open the size menu before you pay.
+
+### Warm room or you overheat: Silentnight 4.5 tog
+
+The [Summer Breeze](/reviews/silentnight-45-tog-duvet) (ASIN B00TQWMVV4, model 609722GE) is 4.5 tog. On 14 November 2026 the size selected was Double, the measurements field said 2 × 2 metres, and the buy box was £20.82, in stock. Silentnight says the filling is lightweight, the cover lets moisture out, and 4.5 tog is for summer and for people who overheat. The material fields say microfibre and hollowfibre. Care says machine wash, with no temperature. The bullets say it does not include contents likely to cause allergies. That is not an Allergy UK certificate. Amazon showed 4.6 out of 5 from 12,201 ratings. [Shop the 4.5 tog double](/go/silentnight-45-tog-duvet).
+
+Buy this if you already know a winter duvet is too much. Do not buy it in a cold, unheated room and then add a second heavy duvet on top without thinking: Which? is talking about a designed pair, not a random stack. The age field on this listing includes “Kid”. This page is about adult duvets.
+
+### Room stays comfortable: Silentnight 10.5 tog
+
+The [Deep Sleep 10.5 tog](/reviews/silentnight-105-tog-duvet) (ASIN B075X1QXK6, model 444736GE) is titled as a 200 × 200 cm double. On 14 November 2026 the buy box was £18.12, in stock. The bullets say 10.5 tog is for all year, it is made in the UK, and there is a 5-year guarantee. The details table on the same page says a two-year warranty. The seasons field says Spring. The warmth field says Heavyweight. Those fields do not match the bullet. Amazon showed 4.7 out of 5 from 9,161 ratings. [Shop the 10.5 tog double](/go/silentnight-105-tog-duvet).
+
+Buy this if the thermometer sits around 16 to 18°C and you are not the cold one in the bed. If you wake cold in January, the 13.5 is the closer match to Which?’s “most people” winter line. If you wake hot, go to the 4.5.
+
+### Heating goes off, or you feel the cold: Silentnight 13.5 tog
+
+The [Deep Sleep 13.5 tog](/reviews/silentnight-135-tog-duvet) (ASIN B01N12TK0A, model 444767GE) had Double selected, measurements of 2 × 2 metres, and a buy box of £21.24, in stock, on 14 November 2026. The bullet says 13.5 tog is for winter. The seasons field also says Winter, which is more consistent than the 10.5 page. The warmth field says Heavyweight. The bullets again say a 5-year guarantee, and the details table again says two years. Made in the UK, machine washable, hollowfibre, on the listing. Amazon showed 4.7 out of 5 from 2,685 ratings. [Shop the 13.5 tog double](/go/silentnight-135-tog-duvet).
+
+Buy this for a British winter in a room that cools down, or if you are the person who steals the duvet. Skip it if your bedroom stays at the top of The Sleep Charity’s range and you already overheat. A 13.5 in an 18°C room is a lot of insulation.
+
+## Allergies, washing, and what “hypoallergenic” means here
+
+Which? separates two words. Hypoallergenic means the filling is not itself a known allergen such as feathers. Dust mites can still live in it. Anti-allergy means the filling has been treated against mites. None of the three Silentnight pages above says Allergy UK. They say the duvet does not include contents likely to cause allergies. That is the first meaning.
+
+Which? also says dust mites are killed by washing at 60°C or above, and that you should only do that if the care label allows it. These three listings say machine washable and do not state the temperature. Read the label in the parcel. A duvet that cannot take a hot wash is a weak choice if you sneeze and itch in bed. Get that checked if you are not sure it is mites.
+
+## Babies are a different tog
+
+Adult 4.5, 10.5 and 13.5 are not baby sleep-bag togs. Do not put one of these duvets over a baby.
+
+The [Lullaby Trust](https://www.lullabytrust.org.uk/baby-safety/baby-product-information/dress-your-baby-for-sleep/) says a baby’s room should be about 16 to 20°C, and that you should follow the sleep-bag maker’s tog guide for that room. They also say not to use two sleep bags together: air trapped between layers makes the baby warmer than adding the two tog numbers would suggest. Overheating raises the risk of sudden infant death. [NHS Start for Life](https://www.nhs.uk/best-start-in-life/baby/baby-basics/newborn-and-baby-sleeping-advice-for-parents/safe-sleep-advice-for-babies/) publishes a separate scale for baby sleeping bags: 2.5 tog for about 16 to 20°C, 1.0 tog for about 20 to 24°C, and 0.5 tog for about 24 to 27°C, with no other bedding. Use those pages, not this one.
+
+## A sensible order
+
+1. Read the thermometer an hour after the heating goes off, for a few nights.
+2. If you wake hot, buy the 4.5 tog double and return it if you then wake cold.
+3. If the room holds 16 to 18°C, buy the 10.5.
+4. If you wake cold, or the room falls away overnight, buy the 13.5.
+5. Keep the old duvet until the new one has lasted a week. A lot of “best duvet” disappointment is the wrong tog for that room.
+
+The mattress underneath is a separate purchase. Notes on that, and on these three duvets, are on the [mattresses and bedding page](/categories/mattresses). This page is not medical advice.`,
+    category: 'Guides',
+    readTime: '12 min',
+    date: '2026-11-14',
+    author: 'SleepBetterHub Editorial Team',
+    image: '/images/hero-bedroom.jpg',
+    imageAlt: 'A dim bedroom with a made bed. Not a photo of a specific duvet.',
+    seoTitle: 'What Tog Duvet Do I Need? (UK)',
+    seoDescription: 'What tog duvet to buy in a UK bedroom: 4.5, 10.5 or 13.5, from Which? and The Sleep Charity, plus three Silentnight prices checked on 14 November 2026.',
+    tags: ['duvets', 'tog', 'hot sleepers', 'bedding', 'winter'],
+    faqs: [
+      {
+        q: 'What tog duvet do I need in the UK?',
+        a: 'It depends on the room after the heating goes off. Which? puts summer at 1 to 4 tog, winter at 10.5 to 15, and says most people find 13.5 enough for a British winter. The Sleep Charity puts a good bedroom at about 16 to 18°C and says to use a lower tog when it is hot. On 14 November 2026 a Silentnight 4.5 tog double was £20.82, a 10.5 was £18.12, and a 13.5 was £21.24, all in stock. We have not slept under them.',
+      },
+      {
+        q: 'What tog duvet is best for winter?',
+        a: 'Which? says 10.5 to 15 tog, and that 13.5 is warm enough for most British winters. Use 10.5 if the bedroom stays heated and you sleep hot. Use 13.5 if the room cools after the heating goes off or you feel the cold. 15 is the top of the scale Which? describes, not the automatic choice.',
+      },
+      {
+        q: 'Is a 10.5 tog duvet warm enough?',
+        a: 'Warm enough in a room that stays around 16 to 18°C if you are not a cold sleeper. Which? places 10.5 at the bottom of the winter range, so a cold or draughty room usually wants 13.5. Silentnight’s 10.5 listing says “all year”. The same page’s seasons field says Spring. Read both.',
+      },
+      {
+        q: 'What tog duvet should a hot sleeper buy?',
+        a: 'A light one. Which?’s summer band is 1 to 4 tog. The Silentnight double linked here is 4.5 tog, which is the light weight shops usually sell, and slightly above that band. Fix the room as well. A thick duvet in a hot room will still wake you.',
+      },
+      {
+        q: 'What tog is a baby duvet?',
+        a: 'Do not use an adult 4.5, 10.5 or 13.5 tog duvet for a baby. NHS Start for Life gives baby sleep bags as 2.5 tog at about 16 to 20°C, 1.0 tog at about 20 to 24°C, and 0.5 tog at about 24 to 27°C, with no other bedding. The Lullaby Trust says to follow the bag maker’s guide and not to stack two bags.',
+      },
+    ],
+  },
+  {
     slug: 'best-pillow-for-side-sleepers',
     title: 'Best Pillow for Side Sleepers: A UK Buying Guide',
     excerpt: 'Side sleepers need enough height to keep the head level with the spine. Here is how to check that tonight, and three Amazon UK pillows with prices checked on 7 November 2026.',
@@ -122,7 +225,7 @@ Stomach sleeping will not be rescued by a side-sleeper pillow. The NHS leaflets 
 
 The [Eight Sleep pillow cover](/reviews/eight-sleep-pillow-cover) is about £999 and only works with an Eight Sleep Pod. It changes temperature. It does not set the height of your neck. Skip it unless you already own the Pod.
 
-A stack of soft hotel pillows feels fine for a night and then collapses. If you wake with a stiff neck, check height first, then whether the fill has gone flat. The mattress underneath changes the gap too. A thick soft mattress lets the shoulder sink, so you need less pillow. That is covered on the [mattresses page](/categories/mattresses), including the Tempur notes. Heat is a different problem: the [hot sleepers guide](/blog/hot-sleepers-temperature-solutions) is the place for room temperature and bedding. The Ultragel pillow is only one small piece of that.
+A stack of soft hotel pillows feels fine for a night and then collapses. If you wake with a stiff neck, check height first, then whether the fill has gone flat. The mattress underneath changes the gap too. A thick soft mattress lets the shoulder sink, so you need less pillow. That is covered on the [mattresses page](/categories/mattresses), including the Tempur notes. Heat is a different problem: the [hot sleepers guide](/blog/hot-sleepers-temperature-solutions) is the place for room temperature, and [what tog duvet do I need](/blog/what-tog-duvet) is the place for the duvet. The Ultragel pillow is only one small piece of that.
 
 ## A sensible order
 
@@ -137,6 +240,7 @@ This page is not medical advice.`,
     readTime: '12 min',
     date: '2026-11-07',
     author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-14',
     image: '/images/hero-bedroom.jpg',
     imageAlt: 'A dim bedroom with a made bed. Not a photo of a specific pillow.',
     seoTitle: 'Best Pillow for Side Sleepers (UK)',
@@ -211,7 +315,7 @@ These are live listings we checked, not a ranking from a private lab test.
 - **Nasal strip:** [Breathe Right Clear](/reviews/breathe-right-clear). £8.98 for 20 clear small/medium strips (two packs of 10) on Amazon UK when checked on 7 November 2026. [Shop Breathe Right](/go/breathe-right-clear).
 - **Reusable dilator:** [Mute](/reviews/nasal-dilator-pro), small 3-pack, about £19.99. Rinse it. [Shop Mute](/go/nasal-dilator-pro).
 - **Mouth tape, firmer hold:** [Hostage Tape](/reviews/hostage-tape), 30 black strips, about £12.90, the listing that is actually in stock under that brand name. [Shop Hostage Tape](/go/hostage-tape).
-- **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape). The 90-strip listing was out of stock on 7 November 2026, so the button opens a tagged Amazon search. Pick an in-stock adult pack and check it is not the children’s version. [Shop MyoTape](/go/mytape).
+- **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape). On 14 November 2026 the old ASIN opened the beard pack, 30 nights, not a search. A search for the brand name was listing other companies’ tape. The button is that beard pack. It is not the kids product, even though one bullet mentions children. [Shop MyoTape](/go/mytape).
 
 Dream Recovery and SayLess are real brands, but they sell from their own sites rather than Amazon UK, and we do not have affiliate codes for them. ZzzTape is in the same position. If you follow those reviews, read the note under the button so you know the click is not commissioned.
 
@@ -233,7 +337,7 @@ This page is not medical advice.`,
     readTime: '11 min',
     date: '2026-11-02',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-07',
+    updated: '2026-11-14',
     image: '/images/nasal-product.jpg',
     seoTitle: 'Mouth Tape vs Nasal Strips for Snoring',
     seoDescription: 'When snoring is a nose problem, buy a nasal strip. When the mouth falls open and the nose is clear, mouth tape is the product to try. A practical UK buyer’s guide.',
@@ -253,7 +357,7 @@ This page is not medical advice.`,
       },
       {
         q: 'What is actually in stock to buy in the UK?',
-        a: 'On 7 November 2026, Breathe Right Clear was £8.98 for 20 strips on Amazon UK. Mute’s small 3-pack was £19.99. Hostage Tape’s 30-strip pouch was £12.90. MyoTape’s 90-strip listing was out of stock, so that button opens a tagged search. SomniFix’s Amazon UK listing was still unavailable; the brand’s own UK shop was selling it.',
+        a: 'On 7 November 2026, Breathe Right Clear was £8.98 for 20 strips on Amazon UK. Mute’s small 3-pack was £19.99. Hostage Tape’s 30-strip pouch was £12.90. Those three prices were not re-read on 14 November because the buy box did not render in the page HTML. MyoTape’s button now opens the beard 30-night pack, not a search. SomniFix’s Amazon UK listing was still unavailable.',
       },
     ],
   },
@@ -272,7 +376,7 @@ Mouth tape is only worth buying if you can already breathe through your nose whi
 ## How the designs differ
 
 - **Strip over the lips.** [Hostage Tape](/reviews/hostage-tape) is a black fabric strip that covers the mouth. The Amazon UK listing of 30 strips calls it beard-friendly. It was in stock at £12.90 on 7 November 2026. [Shop Hostage Tape](/go/hostage-tape).
-- **Strip around the lips.** [MyoTape](/reviews/mytape) is Oxygen Advantage’s design, meant to surround the mouth with elastic tension rather than seal it. The 90-strip listing was out of stock. The button opens a tagged search so you can pick a pack that is in stock, and check it is the adult version. The older listing said it is not for a beard or moustache. [Shop MyoTape](/go/mytape).
+- **Strip around the lips.** [MyoTape](/reviews/mytape) is Oxygen Advantage’s design, meant to surround the mouth with elastic tension rather than seal it. On 14 November 2026 the Amazon button opened the beard pack, 30 nights, with “extra strong” adhesive in the title. That is not the sensitive-skin pack, and it is not a kids pack. [Shop MyoTape](/go/mytape).
 - **Vented strip.** [SomniFix](/reviews/somnifix) has a small hole in the centre. Amazon UK’s listing was still unavailable. The button goes to SomniFix’s own UK shop and is not commissioned.
 - **Brand sites without a code.** Dream Recovery, ZzzTape, and SayLess sell from their own sites. We do not have affiliate codes, and we are not going to invent a winner from a test we did not run. Read the note under each button.
 
@@ -280,7 +384,7 @@ Mouth tape is only worth buying if you can already breathe through your nose whi
 
 1. Blocked nose, a cold, or you cannot nose-breathe while awake: do not tape. Use a [nasal strip or dilator](/categories/nasal), or see a GP if snoring comes with pauses.
 2. Beard or stubble, and the nose is clear: Hostage Tape is the in-stock option whose listing is aimed at facial hair.
-3. You want to be able to open your mouth: MyoTape’s around-the-lips shape is the closer match, once an adult pack is in stock.
+3. You want to be able to open your mouth: MyoTape’s around-the-lips shape is the closer match. The Amazon button is the beard pack. Sensitive-skin and kids packs are on the brand site, and that click is not commissioned.
 4. You want a vent and will buy from the brand: SomniFix, knowing that click is not commissioned.
 
 The longer breathing plan is [how to stop mouth breathing at night](/blog/how-to-stop-mouth-breathing-at-night). If the problem is falling asleep rather than an open mouth, start with [how to fall asleep fast](/blog/how-to-fall-asleep-fast-naturally) and the [sleep hygiene checklist](/blog/sleep-hygiene-2026). This page is not medical advice.` ,
@@ -288,7 +392,7 @@ The longer breathing plan is [how to stop mouth breathing at night](/blog/how-to
     readTime: '7 min',
     date: '2026-01-12',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-07',
+    updated: '2026-11-14',
     image: '/images/dream-recovery-tape.jpg',
     seoTitle: 'Best Mouth Tape 2026: Beard, Skin, and Hold',
     seoDescription: 'How to choose mouth tape in the UK without a fake lab score. Beard hold, a lip-surround strip, a vent, and which listings were in stock in November 2026.',
@@ -361,7 +465,7 @@ Taping is a "forced practice" tool. Real lasting change comes from addressing th
 
 ## Week 3-4: Introduce Mouth Taping
 - Start with short periods (first half of night or during a 90-min nap)
-- Use the gentlest tape you can find (MyoTape or Dream Recovery)
+- Use a gentle tape. Dream Recovery sells one for sensitive skin. The MyoTape button on this site is the beard pack, which the title calls extra strong, so it is the wrong pack for reactive skin.
 - Pair with nasal dilation
 - Keep a journal: How did you sleep? Any panic? Tape still on in morning?
 
@@ -380,6 +484,7 @@ Mouth taping is training wheels. The goal is to not need them forever.` ,
     readTime: '12 min',
     date: '2026-01-05',
     author: 'SleepBetterHub Editorial Team',
+    updated: '2026-11-14',
     image: '/images/nasal-dilator.jpg',
     seoTitle: 'How to Stop Mouth Breathing at Night: 30-Day Nasal Breathing Protocol',
     seoDescription: 'Complete practical plan to transition from mouth breathing to nasal breathing. Nasal hygiene, exercises, and safe mouth taping integration.',
@@ -411,7 +516,7 @@ Here is what actually moves the needle, ranked roughly by impact:
 - Mouth taping (if appropriate candidate)
 - Nasal strips/dilators
 - White noise or pink noise machine
-- A mattress and pillow that keep the spine level. Side sleepers: [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers)
+- A mattress and pillow that keep the spine level. Side sleepers: [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers). The duvet tog is separate: [what tog duvet do I need](/blog/what-tog-duvet)
 - Oura/Whoop/Apple Watch for data and accountability
 - Apigenin + L-Theanine stack (popular and low risk for most)
 
@@ -426,7 +531,7 @@ Start with Tier 1 for 2 weeks. You will likely see bigger improvements than addi
     readTime: '9 min',
     date: '2026-01-02',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-07',
+    updated: '2026-11-14',
     image: '/images/mattress.jpg',
     seoTitle: 'Evidence-Based Sleep Hygiene 2026: What Actually Works',
     seoDescription: 'No-nonsense ranked list of sleep hygiene interventions with real evidence. Focus on the fundamentals that deliver results.',
@@ -450,7 +555,7 @@ Start with Tier 1 for 2 weeks. You will likely see bigger improvements than addi
 - Blackout + quiet (or consistent pink/white noise).
 
 ## Mouth Taping & Nasal Breathing for Faster Sleep Onset
-Many chronic mouth breathers wake more often and take longer to fall back asleep. Once nasal breathing is trained (with proper hygiene + gentle mouth tape like Dream Recovery or MyoTape for sensitive users), users commonly report falling asleep faster and fewer middle-of-night awakenings.
+Many chronic mouth breathers wake more often and take longer to fall back asleep. Once nasal breathing is trained, some people add a gentle mouth tape. Dream Recovery is the sensitive-skin option on this site. The MyoTape button is the beard pack, and the title calls the adhesive extra strong, so it is not the sensitive-skin pack. People who make the switch often report falling asleep faster and fewer middle-of-the-night awakenings. That is reported experience, not a trial this site ran.
 
 See our full guide: [How to Stop Mouth Breathing at Night](/blog/how-to-stop-mouth-breathing-at-night) and the [Mouth Tape Hub](/mouth-tape).
 
@@ -474,8 +579,9 @@ This is not medical advice. If you have chronic insomnia or anxiety affecting sl
     readTime: '13 min',
     date: '2026-02-10',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-07',
+    updated: '2026-11-14',
     image: '/images/eight-sleep-pod.jpg',
+    imageAlt: 'A bed with a white cover. Not a photo of a sleep technique.',
     seoTitle: 'How to Fall Asleep Fast Naturally 2026 — Evidence-Based Insomnia Remedies',
     seoDescription: 'Proven ways to fall asleep faster without pills. CBT-I basics, breathing, temperature, nasal breathing + mouth taping tips, and when to get professional help.',
     tags: ['insomnia', 'how to fall asleep fast', 'sleep anxiety', 'natural remedies'],
@@ -590,7 +696,7 @@ If the pillow is so low that your cheek is crushed into the mattress, the tape i
 
 **You want a vent.** [SomniFix](/reviews/somnifix) has a hole in the centre of a wider strip. Its Amazon UK listing was unavailable. The button goes to the brand’s UK shop and is not commissioned.
 
-**You do not want the lips sealed.** MyoTape sits around the mouth. The 90-strip page was out of stock, so the button opens a tagged search. The older listing said it is not for a beard.
+**You do not want the lips sealed.** MyoTape sits around the mouth. On 14 November 2026 the button opened the beard pack, 30 nights. The older 90-strip page is gone. Do not use that beard pack for a child.
 
 **Dream Recovery and ZzzTape** sell from their own sites. We do not have affiliate codes, and we are not going to rank them from a test we did not run.
 
@@ -605,7 +711,7 @@ Safety notes and the product grid are on the [mouth tape hub](/mouth-tape). The 
     category: 'Mouth Taping',
     readTime: '9 min',
     date: '2026-07-06',
-    updated: '2026-11-07',
+    updated: '2026-11-14',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/mytape.jpg',
     seoTitle: 'Mouth Tape for Side Sleepers',
@@ -779,7 +885,7 @@ Common causes:
 ## Proven Solutions
 1. **Cool the room aggressively** — Use a fan, AC, or open windows strategically.
 2. **Cooling mattress covers** — Products like the Eight Sleep Pod actively regulate temperature throughout the night and have strong user data for hot sleepers.
-3. **Breathable materials** — Look for bamboo, eucalyptus, or high-quality percale cotton sheets. Avoid heavy comforters.
+3. **Breathable materials** — Look for bamboo, eucalyptus, or high-quality percale cotton sheets. The duvet tog is the other half of this: [what tog duvet do I need](/blog/what-tog-duvet). A 13.5 tog in a warm room works against you. A 4.5 tog is the light Silentnight option checked in November 2026.
 4. **Pre-bed cooling routine** — Take a warm (not hot) shower 1-2 hours before bed. The subsequent cool-down signals sleepiness.
 5. **Mouth tape + nasal breathing** — Surprisingly helpful. Mouth breathing can increase perceived heat and dryness.
 
@@ -797,7 +903,7 @@ Track it for a week — your sleep tracker will likely show more deep sleep on c
     category: 'Sleep Optimization',
     readTime: '9 min',
     date: '2026-07-22',
-    updated: '2026-11-07',
+    updated: '2026-11-14',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/sleep-gadget.jpg',
     seoTitle: 'Hot Sleepers Guide 2026: Cool Down Your Nights for Deeper Sleep',
