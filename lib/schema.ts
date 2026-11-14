@@ -21,23 +21,47 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   };
 }
 
+function isAmazonSearch(url: string): boolean {
+  try {
+    const parsed = new URL(url);
+    return parsed.hostname.includes('amazon.') && (parsed.pathname === '/s' || parsed.pathname.startsWith('/gp/search'));
+  } catch {
+    return false;
+  }
+}
+
 export function productJsonLd(product: Product) {
-  const currency = product.price.trim().startsWith('$') ? 'USD' : 'GBP';
+  const destination = getAffiliateUrl(product.slug);
+  const priceText = product.price.trim();
+  const search = isAmazonSearch(destination);
+  // A search is not one product, and a price string without a currency is not an offer.
+  const currency = !search && priceText.includes('£') && !priceText.includes('$')
+    ? 'GBP'
+    : !search && priceText.includes('$') && !priceText.includes('£')
+      ? 'USD'
+      : null;
+  const offer: Record<string, unknown> = {
+    '@type': 'Offer',
+    url: destination,
+  };
+  if (currency && product.priceValue > 0) {
+    offer.priceCurrency = currency;
+    offer.price = product.priceValue;
+  }
+  if (!search && typeof product.inStock === 'boolean') {
+    offer.availability = product.inStock
+      ? 'https://schema.org/InStock'
+      : 'https://schema.org/OutOfStock';
+  }
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: product.name,
     brand: { '@type': 'Brand', name: product.brand },
     description: product.description,
-    image: `${getSiteUrl()}${product.image}`,
-    offers: {
-      '@type': 'Offer',
-      url: getAffiliateUrl(product.slug),
-      ...(product.priceValue > 0 ? { priceCurrency: currency, price: product.priceValue } : {}),
-      availability: product.inStock === false
-        ? 'https://schema.org/OutOfStock'
-        : 'https://schema.org/InStock',
-    },
+    // imageAlt is set when the file is not a photo of this product.
+    ...(product.imageAlt ? {} : { image: `${getSiteUrl()}${product.image}` }),
+    offers: offer,
   };
 }
 

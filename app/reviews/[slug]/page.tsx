@@ -120,9 +120,15 @@ export default async function ProductReviewPage({ params }: Props) {
 
             <div className="prose review-prose mt-8 max-w-none">
               <p className="text-lg text-foreground">{product.longDescription}</p>
-              {product.category === 'mattresses' && (
+              {product.slug.includes('tog-duvet') && (
+                <p>
+                  Which tog to buy depends on the room, not the brand. The buying guide is <Link href="/blog/what-tog-duvet" className="text-primary underline underline-offset-2">what tog duvet do I need</Link>.
+                </p>
+              )}
+              {product.category === 'mattresses' && !product.slug.includes('tog-duvet') && (
                 <p>
                   Pillow height and the mattress are separate choices. The buying guide is <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary underline underline-offset-2">best pillow for side sleepers</Link>.
+                  The duvet is a third choice: <Link href="/blog/what-tog-duvet" className="text-primary underline underline-offset-2">what tog duvet do I need</Link>.
                 </p>
               )}
               {product.slug === 'eight-sleep-pillow-cover' && (
@@ -180,7 +186,7 @@ export default async function ProductReviewPage({ params }: Props) {
           <div className="lg:col-span-5">
             <div className="sticky top-20 space-y-6">
               <div className="rounded-2xl border bg-card p-6">
-                <div className="text-sm uppercase tracking-widest text-muted-foreground">Current best price</div>
+                <div className="text-sm uppercase tracking-widest text-muted-foreground">{product.priceValue > 0 ? 'Price when checked' : 'Price'}</div>
                 <div className={`${product.price.length > 18 ? 'text-2xl' : 'text-4xl'} font-semibold tabular-nums mt-1 tracking-tighter`}>{product.price}</div>
 
                 <a
@@ -218,7 +224,9 @@ export default async function ProductReviewPage({ params }: Props) {
               </div>
 
               <div>
-                <Link href="/quiz" className="text-sm underline text-primary">Not sure? Take our quiz to see if this is a good fit →</Link>
+                {product.category === 'mouth-tape' ? (
+                <Link href="/quiz" className="text-sm underline text-primary">Not sure tape is appropriate? Take the 2-minute quiz →</Link>
+              ) : null}
               </div>
             </div>
           </div>

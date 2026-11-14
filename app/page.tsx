@@ -64,7 +64,6 @@ export default function Home() {
                   fill
                   className="rounded-3xl object-cover shadow-2xl" 
                   priority
-                  loading="eager"
                   sizes="(min-width: 1024px) 40vw, 100vw"
                 />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/10 to-transparent" />
@@ -288,7 +287,7 @@ export default function Home() {
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group block rounded-2xl border bg-card overflow-hidden card-hover">
                 {post.image && (
                   <div className="h-40 overflow-hidden bg-muted">
-                    <Image src={post.image} alt={post.title} width={400} height={200} className="w-full h-full object-cover group-hover:scale-[1.03] transition" />
+                    <Image src={post.image} alt={post.imageAlt || post.title} width={400} height={200} className="w-full h-full object-cover group-hover:scale-[1.03] transition" />
                   </div>
                 )}
                 <div className="p-5">
@@ -302,7 +301,7 @@ export default function Home() {
 
           {/* Targeted internal links for high-volume global searches */}
           <div className="mt-6 text-sm text-muted-foreground">
-            Popular guides: <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary hover:underline">best pillow for side sleepers</Link> · <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary hover:underline">mouth tape vs nasal strips for snoring</Link> · <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/reviews/eight-sleep-pod-6" className="text-primary hover:underline">Eight Sleep Pod 6 review</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">stop mouth breathing at night</Link>
+            Popular guides: <Link href="/blog/what-tog-duvet" className="text-primary hover:underline">what tog duvet do I need</Link> · <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary hover:underline">best pillow for side sleepers</Link> · <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary hover:underline">mouth tape vs nasal strips for snoring</Link> · <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/reviews/eight-sleep-pod-6" className="text-primary hover:underline">Eight Sleep Pod 6 review</Link> · <Link href="/blog/how-to-stop-mouth-breathing-at-night" className="text-primary hover:underline">stop mouth breathing at night</Link>
           </div>
         </div>
       </section>

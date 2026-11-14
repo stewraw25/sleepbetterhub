@@ -2,6 +2,55 @@
 
 Weekly log for Sleep Better Hub (https://sleepbetterhub.vercel.app). Newest week first.
 
+## Week of 14 November 2026
+
+### Search phrase
+
+**what tog duvet**
+
+Google UK autocomplete for “what tog duvet” continues with “for winter”, “do I need”, “for summer”, and “should I get”. “What tog” itself suggests “what tog is a winter duvet” and “what tog duvet”. Tog is a British unit. US searches talk about a comforter or an insert, not a tog. It is mid-November, which is when people in the UK change to a winter duvet.
+
+The site had no duvet page. Last week’s guide was pillows. The week before was mouth tape versus nasal strips. Hostage Tape versus MyoTape was the leftover idea, and autocomplete for “hostage tape vs” still does not suggest MyoTape.
+
+No Google Search Console export, property file, or API credentials are in the repo or the environment.
+
+### What changed
+
+- New guide: `/blog/what-tog-duvet`. It uses Which?’s tog ranges and The Sleep Charity’s 16–18°C bedroom note, then three Silentnight doubles. No editorial star scores. Baby sleep bags are pointed at the Lullaby Trust and NHS Start for Life, because adult togs are the wrong scale.
+- Prices on that guide, read from the Amazon UK buy box on 14 November 2026, all in stock, size Double: Summer Breeze 4.5 tog £20.82 (B00TQWMVV4), Deep Sleep 10.5 tog £18.12 (B075X1QXK6), Deep Sleep 13.5 tog £21.24 (B01N12TK0A). The 10.5 and 13.5 pages say “5 year” in the bullets and “two-year” in the details table. The guide says so.
+- Product schema no longer puts a price on an Amazon search URL, and it no longer marks a bedroom photo as the product image when the alt text says it is not the product. A price is included only when the visible price contains £ or $.
+- Oura ASIN B0CSRFCBJH opened Heritage silver size 6 on 14 November 2026 (canonical B0CSRBXBD5), not size 11. The size list was 6, 8, 9, 10, 12 and 13. The old “£212.86, size 11” line is removed. No buy-box price was in the HTML, so none is shown.
+- MyoTape’s button no longer opens a search. A search for “myotape mouth tape” did not list MyoTape. The old ASIN opened the beard 30-night pack (B0G54DFVX7). The button is that pack. One bullet says it is for children. The page says not to buy it for a child.
+- Tempur, magnesium, apigenin, and L-theanine notes now match what those searches actually listed on 14 November 2026. The URLs were already tagged and well-formed, so the queries were left as they are. The Tempur search’s first results were a topper, a protector, a Queen topper, and a pillow, not an Adapt mattress.
+- Listing pages use each post’s real image alt. The mouth-tape quiz link is only on mouth-tape reviews.
+
+### Affiliate links checked on 14 November 2026
+
+Tag on every Amazon URL: `stewraw25-21`. From this VM, a normal UK product URL 302s to amazon.com because the machine is not in the UK. Adding `creatorsDisableRedirect=true` (a check parameter, not something the site adds) returned the amazon.co.uk HTML. Titles below are from those UK pages. Where the buy box was a spinner and the price was not in the HTML, the old price was left alone rather than guessed.
+
+| Destination | Result |
+| --- | --- |
+| Hostage Tape `B0C9B492LN` | Title is the 30-strip beard-friendly pouch. Tag present. Buy-box price not in the HTML. |
+| Silentnight adjustable pillow `B0DJW5XZSR` | Right title. Buy-box price not in the HTML. |
+| Silentnight Ultragel `B00U8WJM8Q` | Right title. Buy-box price not in the HTML. |
+| Slumberdown pillow 2-pack `B01N46GW3H` | Right title, and the title now says 38 × 64 cm. Buy-box price not in the HTML. |
+| Breathe Right `B0CPY7QDWV` | Right title, clear small/medium, pack of 2. Buy-box price not in the HTML. |
+| Mute `B011LR52UI` | Right title, small 3-pack. Buy-box price not in the HTML. |
+| Oura `B0CSRFCBJH` | Opened Heritage silver size 6, not size 11. No buy-box price in the HTML. Copy corrected. |
+| SomniFix `B076CQ1NR8` | Page says currently unavailable. Button stays on the brand’s UK shop. No tag, because it is not Amazon. |
+| MyoTape search `myotape mouth tape` | Did not list MyoTape. Replaced by the beard pack `B0G54DFVX7`. |
+| Tempur search | Resolves, tag present. First results were not an Adapt mattress. Note updated. |
+| Magnesium, apigenin, L-theanine searches | Resolve, tag present. First results described in the link notes. L-theanine’s first result was 200mg, not the 300mg seen on 7 November. |
+| Three new Silentnight duvet ASINs | In stock at the prices above. Tag added by the existing Amazon link builder. |
+
+### Still open
+
+- No Search Console data. Submit `https://sleepbetterhub.vercel.app/sitemap.xml` if it is not already there.
+- Contact address is still `hello@sleepmask.tech`.
+- Dream Recovery, SomniFix, ZzzTape, SayLess, and Eight Sleep still earn nothing until Stewart adds real affiliate URLs.
+- Pillow, Hostage Tape, Breathe Right, and Mute buy-box prices could not be re-read from the static HTML on this VM. The November 7 figures are still on those pages.
+- Older product cards still show editorial star labels.
+
 ## Week of 7 November 2026
 
 ### Search phrase
