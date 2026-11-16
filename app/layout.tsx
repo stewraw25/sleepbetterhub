@@ -19,6 +19,9 @@ const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: 'LhNrljsSDjqdaucdIGN0zJhNs_XapWpJ9kfsa8NIQ7Q',
+  },
   title: {
     default: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
     template: '%s | SleepBetterHub',
