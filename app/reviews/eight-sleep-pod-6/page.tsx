@@ -9,7 +9,7 @@ import { getProductBySlug } from '@/lib/products';
 import { getInternalAffiliateLink, SPONSORED_REL } from '@/lib/affiliates';
 import { JsonLd } from '@/components/JsonLd';
 import { pageMeta } from '@/lib/seo';
-import { breadcrumbJsonLd, productJsonLd } from '@/lib/schema';
+import { breadcrumbJsonLd } from '@/lib/schema';
 
 export const metadata = pageMeta({
   title: 'Eight Sleep Pod 6 (UK)',
@@ -36,7 +36,6 @@ export default function EightSleepPod6Review() {
           { name: 'Eight Sleep Pod 6', path: '/reviews/eight-sleep-pod-6' },
         ])}
       />
-      <JsonLd data={productJsonLd(product)} />
       <div className="container py-8">
         <Link href="/categories/gadgets" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> Back to Sleep Tech

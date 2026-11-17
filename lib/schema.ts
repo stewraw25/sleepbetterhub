@@ -1,6 +1,4 @@
 import type { BlogPost } from './blog';
-import { getAffiliateUrl } from './affiliates';
-import type { Product } from './products';
 import { getSiteUrl, SITE_NAME } from './site';
 
 export function jsonLdScript(data: object): string {
@@ -21,49 +19,12 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   };
 }
 
-function isAmazonSearch(url: string): boolean {
-  try {
-    const parsed = new URL(url);
-    return parsed.hostname.includes('amazon.') && (parsed.pathname === '/s' || parsed.pathname.startsWith('/gp/search'));
-  } catch {
-    return false;
-  }
-}
-
-export function productJsonLd(product: Product) {
-  const destination = getAffiliateUrl(product.slug);
-  const priceText = product.price.trim();
-  const search = isAmazonSearch(destination);
-  // A search is not one product, and a price string without a currency is not an offer.
-  const currency = !search && priceText.includes('£') && !priceText.includes('$')
-    ? 'GBP'
-    : !search && priceText.includes('$') && !priceText.includes('£')
-      ? 'USD'
-      : null;
-  const offer: Record<string, unknown> = {
-    '@type': 'Offer',
-    url: destination,
-  };
-  if (currency && product.priceValue > 0) {
-    offer.priceCurrency = currency;
-    offer.price = product.priceValue;
-  }
-  if (!search && typeof product.inStock === 'boolean') {
-    offer.availability = product.inStock
-      ? 'https://schema.org/InStock'
-      : 'https://schema.org/OutOfStock';
-  }
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: product.name,
-    brand: { '@type': 'Brand', name: product.brand },
-    description: product.description,
-    // imageAlt is set when the file is not a photo of this product.
-    ...(product.imageAlt ? {} : { image: `${getSiteUrl()}${product.image}` }),
-    offers: offer,
-  };
-}
+// Listing pages are affiliate notes, not a checkout. Do not emit Product or
+// Offer JSON-LD. This site does not sell or ship, and the notes do not show
+// a first-party rating. Offers are read as merchant listings (return policy
+// and shipping). A Product with no review, aggregateRating, or offer is an
+// incomplete product snippet. PR #6 removed the old editorial star markup
+// for the same reason: those numbers were not reviews collected here.
 
 export function articleJsonLd(post: BlogPost) {
   const site = getSiteUrl();

@@ -12,7 +12,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { getProductBySlug, allProducts, categoryLabels } from '@/lib/products';
 import { getAffiliateUrl, getInternalAffiliateLink, shopLabel, SPONSORED_REL } from '@/lib/affiliates';
 import { pageMeta } from '@/lib/seo';
-import { breadcrumbJsonLd, productJsonLd } from '@/lib/schema';
+import { breadcrumbJsonLd } from '@/lib/schema';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -75,7 +75,6 @@ export default async function ProductReviewPage({ params }: Props) {
           { name: product.name, path: `/reviews/${product.slug}` },
         ])}
       />
-      <JsonLd data={productJsonLd(product)} />
       <div className="container py-8">
         <Link href={catInfo.backLink} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> {catInfo.backText}
