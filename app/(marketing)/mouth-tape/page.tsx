@@ -3,7 +3,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
-import { useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
@@ -51,12 +50,13 @@ export default function MouthTapeHub() {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<SortOption>('listed');
   const [view, setView] = useState<'cards' | 'table'>('cards');
-  const params = useSearchParams();
-
+  // Read ?q= after mount. useSearchParams() here made the whole comparison
+  // render client-side only, so the server HTML had no product cards or links.
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
     const incoming = params.get('q') || params.get('search');
     if (incoming) setSearchQuery(incoming);
-  }, [params]);
+  }, []);
 
   // Filter + search + sort logic
   const filteredProducts = useMemo(() => {

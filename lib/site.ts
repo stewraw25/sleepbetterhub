@@ -1,17 +1,24 @@
 /**
  * Public site URL used for canonicals, Open Graph, sitemap, robots, and JSON-LD.
- * Production is https://sleepmask.tech. Set NEXT_PUBLIC_SITE_URL to override.
- * Do not use VERCEL_URL: that hostname changes on every deployment, including previews.
+ * Always https://sleepmask.tech, on every deployment (production and previews).
+ * Deliberately not read from NEXT_PUBLIC_SITE_URL or VERCEL_URL: an env value on a
+ * preview deployment previously leaked *.vercel.app hosts into canonical tags.
  */
 export const DEFAULT_SITE_URL = 'https://sleepmask.tech';
 
 /** Production Vercel alias. Requests to this host redirect to DEFAULT_SITE_URL. Preview hosts are left alone. */
 export const LEGACY_VERCEL_HOST = 'sleepbetterhub.vercel.app';
 
+export const SITE_URL = DEFAULT_SITE_URL;
+
 export function getSiteUrl(): string {
-  const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  if (configured) return configured.replace(/\/$/, '');
-  return DEFAULT_SITE_URL;
+  return SITE_URL;
+}
+
+/** True only for the Vercel production deployment (or a non-Vercel build). */
+export function isProductionDeployment(): boolean {
+  const env = process.env.VERCEL_ENV;
+  return !env || env === 'production';
 }
 
 export const SITE_NAME = 'SleepBetterHub';
