@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ContactEmail } from '@/components/ContactEmail';
 import { pageMeta } from '@/lib/seo';
-import { DATA_CONTROLLER_PLACEHOLDER } from '@/lib/site';
+import { DATA_CONTROLLER_NAME } from '@/lib/site';
 
 export const metadata: Metadata = pageMeta({
   title: 'Terms',
@@ -21,7 +21,7 @@ export default function TermsPage() {
       <div className="prose prose-neutral dark:prose-invert mt-10 max-w-none text-[15px]">
         <h2>What the site is</h2>
         <p>
-          SleepBetterHub publishes guides and product notes for readers in the UK. It does not sell the products, take payment, or create customer accounts. The legal name of the publisher is not confirmed on this page: {DATA_CONTROLLER_PLACEHOLDER}.
+          SleepBetterHub publishes guides and product notes for readers in the UK. It does not sell the products, take payment, or create customer accounts. The publisher is {DATA_CONTROLLER_NAME}.
         </p>
 
         <h2>Not medical advice</h2>

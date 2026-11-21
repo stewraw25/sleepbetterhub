@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ContactEmail } from '@/components/ContactEmail';
 import { pageMeta } from '@/lib/seo';
-import { DATA_CONTROLLER_PLACEHOLDER, POSTAL_ADDRESS_PLACEHOLDER } from '@/lib/site';
+import { DATA_CONTROLLER_NAME } from '@/lib/site';
 
 export const metadata: Metadata = pageMeta({
   title: 'Privacy',
@@ -21,8 +21,7 @@ export default function PrivacyPage() {
       <div className="prose prose-neutral dark:prose-invert mt-10 max-w-none text-[15px]">
         <h2>Who is responsible</h2>
         <p>
-          The site is published as SleepBetterHub. The legal name of the data controller has not been confirmed for this page:{' '}
-          {DATA_CONTROLLER_PLACEHOLDER}. A postal address has not been published: {POSTAL_ADDRESS_PLACEHOLDER}.
+          The site is published as SleepBetterHub. The data controller is {DATA_CONTROLLER_NAME}. A street address is not published on this page.
           To ask a privacy question, or to ask for your email to be deleted, use <ContactEmail className="underline" />.
         </p>
 
