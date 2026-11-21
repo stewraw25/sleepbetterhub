@@ -1,7 +1,21 @@
 import type { NextConfig } from "next";
-import { DEFAULT_SITE_URL, LEGACY_VERCEL_HOST } from "./lib/site";
+import { DEFAULT_SITE_URL, LEGACY_VERCEL_HOST, isProductionDeployment } from "./lib/site";
+
+const NOINDEX = { key: "X-Robots-Tag", value: "noindex, nofollow" };
 
 const nextConfig: NextConfig = {
+  async headers() {
+    return [
+      // Preview deployments: never indexable.
+      ...(isProductionDeployment() ? [] : [{ source: "/:path*", headers: [NOINDEX] }]),
+      // Any *.vercel.app hostname (including per-deployment URLs of production builds).
+      {
+        source: "/:path*",
+        has: [{ type: "host" as const, value: "(?<vhost>.*\\.vercel\\.app)" }],
+        headers: [NOINDEX],
+      },
+    ];
+  },
   async redirects() {
     return [
       // Only the production Vercel alias. Preview hosts do not match.
