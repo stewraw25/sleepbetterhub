@@ -10,8 +10,8 @@ interface Message {
   suggestions?: Array<{ slug: string; name: string; link?: string }>;
 }
 
-export function AIChat() {
-  const [isOpen, setIsOpen] = useState(false);
+export function AIChat({ initialOpen = false }: { initialOpen?: boolean }) {
+  const [isOpen, setIsOpen] = useState(initialOpen);
   const [messages, setMessages] = useState<Message[]>([
     { 
       role: 'assistant', 

@@ -5,17 +5,17 @@ import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
   title: 'Sleep Product Categories',
-  description: 'Browse reviews of nasal strips, sleep trackers, supplements, and mattresses, with links through to the mouth tape comparison.',
+  description: 'Browse sleep masks, nasal strips, sleep trackers, supplements, and bedding, with links through to the mouth tape comparison.',
   path: '/categories',
 });
 
-const categorySlugs = ['nasal', 'gadgets', 'mattresses', 'supplements', 'bedding'] as const;
+const categorySlugs = ['sleep-masks', 'nasal', 'gadgets', 'mattresses', 'supplements', 'bedding'] as const;
 
 export default function CategoriesIndex() {
   return (
     <div className="container py-12">
       <h1 className="text-4xl font-semibold tracking-tighter mb-3">All Sleep Categories</h1>
-      <p className="text-muted-foreground max-w-prose mb-10">Product notes by category. Mouth tape, pillows, and duvet tog have their own guides.</p>
+      <p className="text-muted-foreground max-w-prose mb-10">Product notes by category. Mouth tape, pillows, duvet tog, and sleep masks have their own guides.</p>
 
       <div className="grid md:grid-cols-2 gap-5">
         {categorySlugs.map((slug) => {
@@ -36,6 +36,8 @@ export default function CategoriesIndex() {
         <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary underline underline-offset-2">pillow guide</Link>
         {' · '}
         <Link href="/blog/what-tog-duvet" className="text-primary underline underline-offset-2">duvet tog guide</Link>
+        {' · '}
+        <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary underline underline-offset-2">sleep mask guide</Link>
       </p>
     </div>
   );

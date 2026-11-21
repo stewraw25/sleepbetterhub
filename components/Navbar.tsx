@@ -12,6 +12,7 @@ import { useTheme } from 'next-themes';
 const navLinks = [
   { href: '/mouth-tape', label: 'Mouth Tape' },
   { href: '/blog/best-pillow-for-side-sleepers', label: 'Pillows' },
+  { href: '/blog/best-sleep-mask-for-side-sleepers', label: 'Sleep masks' },
   { href: '/categories/bedding', label: 'Accessories' },
   { href: '/quiz', label: 'Quiz' },
   { href: '/blog', label: 'Guides' },
