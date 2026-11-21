@@ -22,7 +22,15 @@ export async function POST(req: NextRequest) {
     link: `/reviews/${slug}`,
   });
 
-  if (lower.includes('mouth tape') || lower.includes('tape')) {
+  if (lower.includes('sleep mask') || lower.includes('eye mask')) {
+    reply = 'The sleep-mask guide is for side sleepers: light at the nose, and whether the cup digs into the temple. Three Amazon UK masks were in stock on 21 November 2026. This site has not worn them.';
+    suggestions = [
+      { slug: 'best-sleep-mask-for-side-sleepers', name: 'Sleep mask guide', link: '/blog/best-sleep-mask-for-side-sleepers' },
+      ...allProducts
+        .filter((p) => p.category === 'sleep-masks')
+        .map((p) => productLink(p.slug, p.name)),
+    ];
+  } else if (lower.includes('mouth tape') || lower.includes('tape')) {
     const mouthTapes = allProducts.filter((p) => p.category === 'mouth-tape').slice(0, 3);
     reply = 'The mouth-tape hub compares strips listed for side sleepers, beards, CPAP users, and sensitive skin. Read the safety notes before you try one. This site has not tested the tapes, and mouth tape is not a treatment.';
     suggestions = mouthTapes.map((p) => productLink(p.slug, p.name));
@@ -57,11 +65,11 @@ export async function POST(req: NextRequest) {
       { slug: 'bedding', name: 'Eight Sleep accessories', link: '/categories/bedding' },
     ];
   } else if (lower.includes('duvet') || lower.includes('tog')) {
-    reply = 'The duvet guide matches tog to the bedroom, using Which? and The Sleep Charity, plus three Silentnight prices checked on 14 November 2026. This site has not slept under them.';
+    reply = 'The duvet guide matches tog to the bedroom, using Which? and The Sleep Charity, plus three Silentnight prices checked on 21 November 2026. The 10.5 tog featured offer that day was Amazon Resale. This site has not slept under them.';
     suggestions = [{ slug: 'what-tog-duvet', name: 'What tog duvet', link: '/blog/what-tog-duvet' }];
   } else {
     const recentPosts = getPublishedPosts().slice(0, 2);
-    reply = 'Try a product name or a guide title, or say mouth tape, pillow, duvet, or supplements. This assistant only points at pages on the site. It is not medical advice and it has not tested products.';
+    reply = 'Try a product name or a guide title, or say mouth tape, pillow, duvet, sleep mask, or supplements. This assistant only points at pages on the site. It is not medical advice and it has not tested products.';
     suggestions = recentPosts.map((p) => ({ slug: p.slug, name: p.title, link: `/blog/${p.slug}` }));
   }
 

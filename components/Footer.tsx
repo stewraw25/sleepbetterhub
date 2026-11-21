@@ -33,6 +33,7 @@ export function Footer() {
             <li><Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="hover:text-foreground">Tape vs Nasal Strips</Link></li>
             <li><Link href="/blog/best-pillow-for-side-sleepers" className="hover:text-foreground">Pillow for Side Sleepers</Link></li>
             <li><Link href="/blog/what-tog-duvet" className="hover:text-foreground">What Tog Duvet</Link></li>
+            <li><Link href="/blog/best-sleep-mask-for-side-sleepers" className="hover:text-foreground">Sleep Mask for Side Sleepers</Link></li>
             <li><Link href="/about" className="hover:text-foreground">About Us</Link></li>
           </ul>
         </div>
@@ -47,6 +48,7 @@ export function Footer() {
             <li><Link href="/categories/supplements" className="hover:text-foreground">Supplements</Link></li>
             <li><Link href="/categories/mattresses" className="hover:text-foreground">Mattresses &amp; Duvets</Link></li>
             <li><Link href="/categories/bedding" className="hover:text-foreground">Eight Sleep Accessories</Link></li>
+            <li><Link href="/categories/sleep-masks" className="hover:text-foreground">Sleep Masks</Link></li>
           </ul>
         </div>
 

@@ -2,6 +2,57 @@
 
 Weekly log for Sleep Better Hub (https://sleepmask.tech). Newest week first.
 
+## Week of 21 November 2026
+
+### Search phrase
+
+**best sleep mask for side sleepers**
+
+Google UK autocomplete for “best sleep mask” puts “best sleep mask for side sleepers” first, then “best sleep mask uk”. “Best eye mask for sleeping” also suggests the UK. The site had no sleep-mask page. Last week’s guide was duvet tog. The week before was pillows. The domain is sleepmask.tech, and the phrase is a buying query with live Amazon UK listings.
+
+No Google Search Console export, property file, or API credentials are in the repo or the environment. A Google site-verification meta tag is in the layout. That is not query data.
+
+### What changed
+
+- New guide: `/blog/best-sleep-mask-for-side-sleepers`. It uses NHS Every Mind Matters (an eye mask after the curtains are closed) and The Sleep Charity’s lighting notes (light through the eyelids, blackout curtains first, a mask for shift work). Three in-stock Amazon UK masks. No editorial star scores. The photos are bedroom pictures, and the alt text says so.
+- Prices on that guide, read on 21 November 2026: Manta Pro £55.20 (B0C36K8SJJ, sold by MantaSleep), MyHalos grey £9.99 against a £13.99 list price (B0F7HJ428M, sold by First Option Products, number 1 in Sleep Masks), Umisleep black £5.12 against a £7.99 list price (B09DXYX7BQ, sold by PRDE). MyHalos’s short title says cotton and the material field says memory foam. Umisleep’s material field lists two fabrics.
+- The chat widget’s code now loads when the button is opened, instead of with the first page.
+- Homepage, guide index, and category descriptions now name the guides the site actually has, including sleep masks.
+
+### Affiliate links checked on 21 November 2026
+
+Tag on every Amazon URL: `stewraw25-21`. A normal fetch from this VM was blocked. Pages below were read with a browser-style fetch of the amazon.co.uk HTML, using `creatorsDisableRedirect=true` only as a check. The site does not add that parameter. Brand sites that are not Amazon returned HTTP 200 and still have no affiliate code.
+
+| Destination | Result |
+| --- | --- |
+| Hostage Tape old `B0C9B492LN` | Now opens `B0FBTK5YGG`. Title says “for Women, 30-Pack” and also “Beard & CPAP-Friendly”. Colour Rose. Buy box £10.32, was £17.75. Button updated to the current ASIN so the tag is on that page. |
+| MyoTape `B0G54DFVX7` | Still the beard 30-night pack. Temporarily out of stock. Price shown £14.99. The children bullet is still there. |
+| Breathe Right `B0CPY7QDWV` | Still Clear small/medium, pack of 2. £8.98, in stock. |
+| Mute `B011LR52UI` | Still the small 3-pack. £19.99, in stock. |
+| Oura `B0CSRFCBJH` | Still opens Heritage silver size 6 (page ASIN B0CSRBXBD5). Total £193.80, of which £32.53 is estimated import charges. The page did not say in stock or unavailable. ASIN kept, because it is the URL that selects size 6. |
+| SomniFix `B076CQ1NR8` | Still currently unavailable. Button stays on the brand’s UK shop. No tag, because it is not Amazon. |
+| Silentnight adjustable pillow `B0DJW5XZSR` | Currently unavailable. No new price. Last readable price remains £32.98 from 7 November. Button still opens that listing. |
+| Silentnight Ultragel `B00U8WJM8Q` | Right title. £25.50, in stock. Was £29.14 on 7 November. |
+| Slumberdown pillow 2-pack `B01N46GW3H` | Right title. £27.11, in stock. Title says 38 × 64 cm. The description still says L74, W48 cm. |
+| Duvet 4.5 `B00TQWMVV4` | Double, £20.99, in stock. List price £24.99. Was £20.82. |
+| Duvet 10.5 `B075X1QXK6` | Featured offer was Amazon Resale at £26.59, one left. £20.87 was shown from other sellers, with no condition. Bullets still say 5 years. The details table still says two years. The description says wash at 40°C. |
+| Duvet 13.5 `B01N12TK0A` | Double, £22.05, in stock. Same warranty clash. Description says wash at 40°C. Was £21.24. |
+| Tempur search | Resolves, tag present. First results were other brands’ hybrid mattresses, not a TEMPUR-Adapt. Note updated. Query left as it is. |
+| Magnesium search | Resolves, tag present. First result was Pure Encapsulations 120mg, not Thorne. Note updated. |
+| Apigenin search | Resolves, tag present. First result was Welzo 50mg. A 100mg product was also listed. Note updated. |
+| L-theanine search | Resolves, tag present. First result was New Leaf 400mg, not 200mg. Note updated. |
+| Three new sleep-mask ASINs | In stock at the prices above. Tag added by the existing Amazon link builder. |
+| Dream Recovery, ZzzTape, SayLess, four Eight Sleep URLs | Brand sites returned 200. Still no affiliate code. |
+
+### Still open
+
+- No Search Console data. Submit `https://sleepmask.tech/sitemap.xml` if it is not already there.
+- Contact address is still `hello@sleepmask.tech`.
+- Dream Recovery, SomniFix, ZzzTape, SayLess, and Eight Sleep still earn nothing until Stewart adds real affiliate URLs.
+- The Silentnight adjustable pillow and the MyoTape beard pack were not available to buy on 21 November 2026. The buttons still open those exact listings.
+- The 10.5 tog buy box was a resale offer. People should open the other sellers before they pay it.
+- Older product cards still show editorial star labels where a rating was set in the data. The new mask pages do not.
+
 ## Week of 14 November 2026
 
 ### Search phrase

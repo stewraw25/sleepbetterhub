@@ -36,7 +36,7 @@ export default async function SearchPage({
           id="q"
           name="q"
           defaultValue={query}
-          placeholder="Try pillow, Oura, or duvet tog"
+          placeholder="Try sleep mask, pillow, or duvet tog"
           className="flex-1 rounded-md border bg-background px-3 py-2 text-sm"
         />
         <button type="submit" className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground">

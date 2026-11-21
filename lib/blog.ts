@@ -53,10 +53,112 @@ export function getAllPosts(): BlogPost[] {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'best-sleep-mask-for-side-sleepers',
+    title: 'Best Sleep Mask for Side Sleepers',
+    excerpt: 'On your side, one eye is against the pillow. NHS and The Sleep Charity say when an eye mask is worth having. Three Amazon UK masks were in stock on 21 November 2026.',
+    content: `**Affiliate disclosure.** The three mask links go to Amazon UK with our Associates tag. Prices were read off those listings on 21 November 2026 and will change. We have not worn these masks. The star counts below are Amazon’s, not scores we gave them.
+
+If you are looking for the best sleep mask for side sleepers, start with the eye that is on the pillow, not with a silk claim. A flat mask presses that eye. A deep cup can press the temple instead, and then the mask is the thing keeping you awake. Light also leaks in beside the nose when the mask does not meet the bridge.
+
+## What the published advice actually says
+
+This is not a light test we ran.
+
+- [NHS Every Mind Matters](https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/) says you may sleep more easily in a room that is quiet, dark and cool. The list starts with earplugs if noise is the problem, the phone on silent, curtains fully closed, clocks out of view, and the phone face down. An eye mask is the next line: wear one if light is still a problem. Temperature and a window, if it is safe to open, are on the same list.
+- [The Sleep Charity](https://thesleepcharity.org.uk/adults/sleep-environment/) says light and dark tell the body when to wake and when to sleep. In the dark, the body releases melatonin. Light, including small amounts, is read as a signal to be awake. Their line on eyelids is the useful one for a mask: even while you are asleep, light can be detected through the eyelids, so the room needs to be dark to stay asleep. They say you ideally should not be able to see the other side of the bedroom. Curtains that are well lined, and a blackout blind, come first. An eye mask is the extra step, and they name shift workers who are trying to sleep in daylight. They also say an alarm-clock glow or a TV standby light is enough to matter, so cover those or turn them off.
+
+Neither page ranks a brand. A mask is what you add when the room is still bright. It is not a treatment for insomnia. If the problem is snoring with pauses, choking, or sleepiness that gets in the way of the day, that belongs with a GP, not a strap.
+
+## How to tell if a mask will work on your side
+
+Do this with the mask you already own, or in the shop, before you care about the price.
+
+1. Put it on and lie on your usual side for a minute. The eye against the pillow should not hurt. If a cup digs into the temple, that mask is too bulky for the way you lie, whatever the title says.
+2. In a dark room, look toward a lamp or a phone. A glow at the nose means the seal is the problem. A thicker fabric will not fix a gap.
+3. A mask does not hold your neck up. If you wake with a stiff neck, do the photo check in the [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers) guide. The adjustable Silentnight on that page was unavailable on 21 November 2026. The height check still comes before a new mask.
+4. A mask sits on your face and can make you warmer. If you throw the covers off, the duvet tog is the other half of that. [What tog duvet do I need](/blog/what-tog-duvet) is the page for the room. The [hot sleepers guide](/blog/hot-sleepers-temperature-solutions) covers the window and the sheets.
+
+## Three masks that were in stock
+
+Same job, three shapes. The notes are the listing’s own words.
+
+### If the mask itself is what hurts: Manta Pro
+
+The [Manta Pro](/reviews/manta-pro-sleep-mask) (ASIN B0C36K8SJJ, model PRO) is titled as a sleep mask for side sleepers. On 21 November 2026 the buy box was £55.20 and the page said in stock. MantaSleep sells it and Amazon dispatches it. The bullets say a slim angled strap and C-shaped eye cups. The description says those cups sit flat against the temple, so there is nothing between your head and the pillow. That is the reason to pay this much, if it is true on your face. We have not checked it. The material field says polyester. Care says machine wash. The age field says Adult. The colour field says “Blackone”. Amazon showed 4.1 out of 5 from 1,801 ratings, and it was number 70 in Sleep Masks. The safety line says not to use it if you have difficulty breathing or removing the mask yourself, and that it is not suitable for children without supervision. [Shop the Manta Pro](/go/manta-pro-sleep-mask).
+
+Buy this if a normal cup leaves a lump under your temple. Do not buy it for a child, and do not buy it if you cannot get a mask off on your own.
+
+### If you want cups off the eyes, at the price people are actually paying: MyHalos
+
+The [MyHalos 3D mask](/reviews/myhalos-3d-sleep-mask) (ASIN B0F7HJ428M, model HM-SL3P-MASK) opened on grey. On 21 November 2026 the buy box was £9.99, in stock, against a list price of £13.99. The page said 200+ bought in the past month. It was number 1 in Sleep Masks. Amazon showed 4.6 out of 5 from 27,193 ratings. First Option Products sells it and Amazon dispatches it.
+
+Read the title twice. The short title says cotton. The material field says memory foam. The longer title says soft cotton and “side sleeper friendly”. The five bullets talk about blackout, a flexible nose piece, no pressure on the eyes, memory foam, a pouch, and a 1-year warranty. They do not describe a strap that sits flat on a pillow. “Side sleeper” is in the longer title, not in the instructions. Dimensions on the page: 27.38 × 13.16 × 1.88 cm, 60 g. Care is hand wash only. The safety line says hand wash only, keep it away from fire, and do not use it if you cannot breathe or take the mask off yourself. The age field says Adult. [Shop the MyHalos mask](/go/myhalos-3d-sleep-mask).
+
+Buy this if you want the cups off your eyelids and you will return it if the cup hurts your temple. Do not buy it because it is number 1. That rank moves.
+
+### If the budget is about £5: Umisleep
+
+The [Umisleep mask](/reviews/umisleep-side-sleeper-mask) (ASIN B09DXYX7BQ, model YZ01) is titled for side sleepers, and the colour on the page was black. On 21 November 2026 the buy box was £5.12, in stock, against a list price of £7.99. The page showed Amazon’s Choice and said 100+ bought in the past week. It was number 16 in Sleep Masks. Amazon showed 4.5 out of 5 from 3,481 ratings. PRDE sells it and Amazon dispatches it.
+
+The first bullet says a curved structure, designed for side sleepers, to avoid pressure on the face. Later bullets say it meets the nose, the strap adjusts, and a 3D socket leaves room for eyelashes. The material field says “100% Memory Foam, 83% Nylon and 17% Spandex”. That is two fabrics on one line. Care is hand wash only. The age field says Women, Men. The only safety line is to check the material if you react to fabrics. Dimensions: 22 × 1.2 × 10 cm, 38 g. [Shop the Umisleep mask](/go/umisleep-side-sleeper-mask).
+
+Buy this if you want to find out whether any contoured mask helps, without spending £55. Skip it if you need the listing to say one material and mean it.
+
+## Silk, children, and what a mask will not do
+
+A silk cover is a fabric question. It does not stop a flat mask pressing the eye that is on the pillow. These three were chosen because the listing talks about side sleeping or about cups, not because of a cloth claim. We did not add a fourth.
+
+Manta and MyHalos both say not to use the mask if you cannot remove it yourself. Manta adds that it is not for children without supervision. Umisleep’s age field says women and men. Do not put an adult mask on a baby, and do not use one for a child who cannot pull it off.
+
+A dark room is also not a cure. The NHS page above is sleep hygiene. If you are awake for hours, anxious in bed, or exhausted in the day, the eye mask is the small step after the curtains. It is not the whole plan. The [sleep hygiene checklist](/blog/sleep-hygiene-2026) is the longer list.
+
+## A sensible order
+
+1. Close the curtains and cover standby lights. Both sources above start there.
+2. If the room is still bright, try a mask on your side for a minute before you pay.
+3. If a cup digs into the temple, look at the Manta, which is the one that claims the cups sit flat. It was £55.20.
+4. If you mainly want the fabric off your eyelids, the MyHalos was the number 1 sleep mask that day, at £9.99. Read the cotton and foam lines before you trust the title.
+5. If £5 is the ceiling, the Umisleep title and first bullet say side sleepers. The materials line does not agree with itself.
+6. Shift work in daylight is the case The Sleep Charity names for an eye mask. Keep using it only if you can take it off, and only after the room is as dark as the curtains allow.
+
+The notes on these three are on the [sleep masks page](/categories/sleep-masks). This page is not medical advice.`,
+    category: 'Guides',
+    readTime: '11 min',
+    date: '2026-11-21',
+    author: 'SleepBetterHub Editorial Team',
+    image: '/images/hero-bedroom.jpg',
+    imageAlt: 'A dim bedroom with a made bed. Not a photo of a sleep mask.',
+    seoTitle: 'Best Sleep Mask for Side Sleepers (UK)',
+    seoDescription: 'How to choose a sleep mask for side sleeping in the UK, using NHS and Sleep Charity advice, with three Amazon prices from 21 November 2026.',
+    tags: ['sleep mask', 'side sleepers', 'eye mask', 'blackout', 'buying guide'],
+    faqs: [
+      {
+        q: 'What is the best sleep mask for side sleepers in the UK?',
+        a: 'The one that blocks light at the nose and does not press the eye or the temple that is against the pillow. On 21 November 2026 three Amazon UK masks were in stock: Manta Pro at £55.20, which claims flat cups for side sleeping; MyHalos at £9.99, the number 1 sleep mask that day, whose longer title says side-sleeper friendly; and Umisleep at £5.12, whose title and first bullet say side sleepers. We have not worn them. NHS Every Mind Matters says to wear an eye mask only if the room is still bright after the curtains are closed.',
+      },
+      {
+        q: 'Do side sleepers need a contoured sleep mask?',
+        a: 'Often, because a flat mask presses the eye that is on the pillow. A deep cup can press the temple instead. Lie on your side for a minute before you decide. Manta’s listing says its cups sit flat against the temple. MyHalos and Umisleep describe 3D cups and say they are for side sleepers. Those are the makers’ claims.',
+      },
+      {
+        q: 'Is a silk sleep mask better for side sleeping?',
+        a: 'Silk is the fabric against the skin. It does not decide whether the mask digs into your temple. The three masks linked here were chosen because the listings talk about side sleeping or about cups. A silk mask can still be the wrong shape.',
+      },
+      {
+        q: 'Will a sleep mask help me sleep?',
+        a: 'It can block light that is still getting in after the curtains are closed. The Sleep Charity says light can be detected through the eyelids, and that an eye mask is useful for shift workers sleeping in daylight. NHS Every Mind Matters lists an eye mask after curtains, a silent phone, and clocks kept out of view. A mask is not a treatment for insomnia.',
+      },
+      {
+        q: 'Are these sleep masks safe for children?',
+        a: 'Do not use these listings for a child. Manta says its mask is not suitable for children without supervision, and both Manta and MyHalos say not to use a mask if the person cannot remove it themselves. Umisleep’s age field says women and men. Baby sleep is a different subject.',
+      },
+    ],
+  },
+  {
     slug: 'what-tog-duvet',
     title: 'What Tog Duvet Do I Need?',
-    excerpt: 'Match the tog to the bedroom, not the season on the packet. Which? and The Sleep Charity set the ranges. Three Silentnight doubles had prices on Amazon UK on 14 November 2026.',
-    content: `**Affiliate disclosure.** The three duvet links go to Amazon UK with our Associates tag. Prices were read off those listings on 14 November 2026 and will change. We have not slept under these duvets. The star counts below are Amazon’s, not scores we gave them.
+    excerpt: 'Match the tog to the bedroom, not the season on the packet. Which? and The Sleep Charity set the ranges. Three Silentnight doubles were checked again on Amazon UK on 21 November 2026.',
+    content: `**Affiliate disclosure.** The three duvet links go to Amazon UK with our Associates tag. Prices were read off those listings on 21 November 2026 and will change. We have not slept under these duvets. The star counts below are Amazon’s, not scores we gave them.
 
 If you are asking what tog duvet you need, start with the room after the heating goes off, and with whether you wake hot or cold. Tog is a measure of how thermally insulating a duvet is. Which? says the scale runs from about 1 to about 15, and that a higher number is warmer. It is not the weight, and it is not the thickness, though a warmer duvet is often thicker.
 
@@ -86,19 +188,19 @@ Same brand, three togs, double size, so the tog is the thing that changes. The n
 
 ### Warm room or you overheat: Silentnight 4.5 tog
 
-The [Summer Breeze](/reviews/silentnight-45-tog-duvet) (ASIN B00TQWMVV4, model 609722GE) is 4.5 tog. On 14 November 2026 the size selected was Double, the measurements field said 2 × 2 metres, and the buy box was £20.82, in stock. Silentnight says the filling is lightweight, the cover lets moisture out, and 4.5 tog is for summer and for people who overheat. The material fields say microfibre and hollowfibre. Care says machine wash, with no temperature. The bullets say it does not include contents likely to cause allergies. That is not an Allergy UK certificate. Amazon showed 4.6 out of 5 from 12,201 ratings. [Shop the 4.5 tog double](/go/silentnight-45-tog-duvet).
+The [Summer Breeze](/reviews/silentnight-45-tog-duvet) (ASIN B00TQWMVV4, model 609722GE) is 4.5 tog. On 21 November 2026 the title still said Double, and the buy box was £20.99, in stock, against a list price of £24.99. Silentnight says the filling is lightweight, the cover lets moisture out, and 4.5 tog is for summer and for people who overheat. The material fields say microfibre and hollowfibre. Care says machine wash, with no temperature. The bullets say it does not include contents likely to cause allergies. That is not an Allergy UK certificate. Amazon showed 4.6 out of 5 from 12,204 ratings. [Shop the 4.5 tog double](/go/silentnight-45-tog-duvet).
 
 Buy this if you already know a winter duvet is too much. Do not buy it in a cold, unheated room and then add a second heavy duvet on top without thinking: Which? is talking about a designed pair, not a random stack. The age field on this listing includes “Kid”. This page is about adult duvets.
 
 ### Room stays comfortable: Silentnight 10.5 tog
 
-The [Deep Sleep 10.5 tog](/reviews/silentnight-105-tog-duvet) (ASIN B075X1QXK6, model 444736GE) is titled as a 200 × 200 cm double. On 14 November 2026 the buy box was £18.12, in stock. The bullets say 10.5 tog is for all year, it is made in the UK, and there is a 5-year guarantee. The details table on the same page says a two-year warranty. The seasons field says Spring. The warmth field says Heavyweight. Those fields do not match the bullet. Amazon showed 4.7 out of 5 from 9,161 ratings. [Shop the 10.5 tog double](/go/silentnight-105-tog-duvet).
+The [Deep Sleep 10.5 tog](/reviews/silentnight-105-tog-duvet) (ASIN B075X1QXK6, model 444736GE) is titled as a 200 × 200 cm double. On 21 November 2026 the featured offer was Amazon Resale at £26.59, with one left. The page also showed £20.87 from other sellers and did not say whether that offer was new. Open the other-sellers list before you pay a resale price for a second-hand duvet. The bullets say 10.5 tog is for all year, it is made in the UK, and there is a 5-year guarantee. The details table on the same page says a two-year warranty. The product description says machine washable at 40°C. The seasons field says Spring. The warmth field says Heavyweight. Those fields do not match the bullet. Amazon showed 4.7 out of 5 from 9,169 ratings. [Shop the 10.5 tog double](/go/silentnight-105-tog-duvet).
 
 Buy this if the thermometer sits around 16 to 18°C and you are not the cold one in the bed. If you wake cold in January, the 13.5 is the closer match to Which?’s “most people” winter line. If you wake hot, go to the 4.5.
 
 ### Heating goes off, or you feel the cold: Silentnight 13.5 tog
 
-The [Deep Sleep 13.5 tog](/reviews/silentnight-135-tog-duvet) (ASIN B01N12TK0A, model 444767GE) had Double selected, measurements of 2 × 2 metres, and a buy box of £21.24, in stock, on 14 November 2026. The bullet says 13.5 tog is for winter. The seasons field also says Winter, which is more consistent than the 10.5 page. The warmth field says Heavyweight. The bullets again say a 5-year guarantee, and the details table again says two years. Made in the UK, machine washable, hollowfibre, on the listing. Amazon showed 4.7 out of 5 from 2,685 ratings. [Shop the 13.5 tog double](/go/silentnight-135-tog-duvet).
+The [Deep Sleep 13.5 tog](/reviews/silentnight-135-tog-duvet) (ASIN B01N12TK0A, model 444767GE) was in stock at £22.05 on 21 November 2026, and the title still said Double. The bullet says 13.5 tog is for winter. The seasons field also says Winter, which is more consistent than the 10.5 page. The warmth field says Heavyweight. The bullets again say a 5-year guarantee, and the details table again says two years. The product description says machine washable at 40°C. Made in the UK, hollowfibre, on the listing. Amazon showed 4.7 out of 5 from 2,690 ratings. [Shop the 13.5 tog double](/go/silentnight-135-tog-duvet).
 
 Buy this for a British winter in a room that cools down, or if you are the person who steals the duvet. Skip it if your bedroom stays at the top of The Sleep Charity’s range and you already overheat. A 13.5 in an 18°C room is a lot of insulation.
 
@@ -106,7 +208,7 @@ Buy this for a British winter in a room that cools down, or if you are the perso
 
 Which? separates two words. Hypoallergenic means the filling is not itself a known allergen such as feathers. Dust mites can still live in it. Anti-allergy means the filling has been treated against mites. None of the three Silentnight pages above says Allergy UK. They say the duvet does not include contents likely to cause allergies. That is the first meaning.
 
-Which? also says dust mites are killed by washing at 60°C or above, and that you should only do that if the care label allows it. These three listings say machine washable and do not state the temperature. Read the label in the parcel. A duvet that cannot take a hot wash is a weak choice if you sneeze and itch in bed. Get that checked if you are not sure it is mites.
+Which? also says dust mites are killed by washing at 60°C or above, and that you should only do that if the care label allows it. On 21 November 2026 the 10.5 and 13.5 product descriptions said machine washable at 40°C. That is below the temperature Which? gives for mites. The 4.5 bullets say machine wash and still do not give a temperature. Read the label in the parcel. A duvet that cannot take a hot wash is a weak choice if you sneeze and itch in bed. Get that checked if you are not sure it is mites.
 
 ## Babies are a different tog
 
@@ -126,16 +228,17 @@ The mattress underneath is a separate purchase. Notes on that, and on these thre
     category: 'Guides',
     readTime: '12 min',
     date: '2026-11-14',
+    updated: '2026-11-21',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/hero-bedroom.jpg',
     imageAlt: 'A dim bedroom with a made bed. Not a photo of a specific duvet.',
     seoTitle: 'What Tog Duvet Do I Need? (UK)',
-    seoDescription: 'What tog duvet to buy in a UK bedroom: 4.5, 10.5 or 13.5, from Which? and The Sleep Charity, plus three Silentnight prices checked on 14 November 2026.',
+    seoDescription: 'What tog duvet to buy in a UK bedroom: 4.5, 10.5 or 13.5, from Which? and The Sleep Charity, plus three Silentnight prices checked on 21 November 2026.',
     tags: ['duvets', 'tog', 'hot sleepers', 'bedding', 'winter'],
     faqs: [
       {
         q: 'What tog duvet do I need in the UK?',
-        a: 'It depends on the room after the heating goes off. Which? puts summer at 1 to 4 tog, winter at 10.5 to 15, and says most people find 13.5 enough for a British winter. The Sleep Charity puts a good bedroom at about 16 to 18°C and says to use a lower tog when it is hot. On 14 November 2026 a Silentnight 4.5 tog double was £20.82, a 10.5 was £18.12, and a 13.5 was £21.24, all in stock. We have not slept under them.',
+        a: 'It depends on the room after the heating goes off. Which? puts summer at 1 to 4 tog, winter at 10.5 to 15, and says most people find 13.5 enough for a British winter. The Sleep Charity puts a good bedroom at about 16 to 18°C and says to use a lower tog when it is hot. On 21 November 2026 a Silentnight 4.5 tog double was £20.99 and in stock, a 13.5 was £22.05 and in stock, and the 10.5 featured offer was Amazon Resale at £26.59 with one left. We have not slept under them.',
       },
       {
         q: 'What tog duvet is best for winter?',
@@ -158,7 +261,7 @@ The mattress underneath is a separate purchase. Notes on that, and on these thre
   {
     slug: 'best-pillow-for-side-sleepers',
     title: 'Best Pillow for Side Sleepers: A UK Buying Guide',
-    excerpt: 'Side sleepers need enough height to keep the head level with the spine. Here is how to check that tonight, and three Amazon UK pillows with prices checked on 7 November 2026.',
+    excerpt: 'Side sleepers need enough height to keep the head level with the spine. Here is how to check that tonight, and three Amazon UK pillows rechecked on 21 November 2026. The adjustable one was unavailable.',
     content: `**Affiliate disclosure.** The pillow links below go to Amazon UK with our Associates tag. Prices were read off those listings on 7 November 2026 and will change. We have not slept on these pillows. This site does not publish star ratings for them.
 
 If you are looking for the best pillow for side sleepers, start with height, not the brand. On your side, your shoulder holds your head away from the mattress. The pillow has to fill that gap so your nose stays roughly in line with the centre of your chest. Too thick, and the neck bends upward. Too thin, and the head drops toward the bed.
@@ -187,27 +290,27 @@ Change the height you already have before you change brand. Two thinner pillows,
 
 ## Which of these three to buy
 
-These are live Amazon UK listings. The notes are the maker’s claims and what the page itself says. They are not a sleep test.
+These are Amazon UK listings. The notes are the maker’s claims and what the page itself says. They are not a sleep test. On 21 November 2026 the adjustable pillow was unavailable. The other two were in stock.
 
 ### If you do not know your height yet: Silentnight adjustable
 
 The [Silentnight Adjustable Memory Foam Pillow](/reviews/silentnight-adjustable-pillow) (ASIN B0DJW5XZSR, model 589963GE) is shredded memory foam in a zip. You add or remove fill. Silentnight also puts hollowfibre and mesh sides around that foam, and says the cover comes off and can go in the washing machine. Amazon’s firmness field says Medium. The page does not give a height in centimetres. Shopper comments on the listing disagree about whether the fill stays high enough, which is the useful warning: start with more fill, then take some out, rather than the other way round.
 
-Price on 7 November 2026: £32.98 for one pillow. Amazon showed 4.4 out of 5 from 209 ratings. [Shop the adjustable pillow](/go/silentnight-adjustable-pillow).
+On 7 November 2026 the price was £32.98. On 21 November 2026 the same page said it was currently unavailable and did not show a new price. Amazon showed 4.4 out of 5 from 211 ratings. The button still opens that listing, so you can see if it has come back. [Shop the adjustable pillow](/go/silentnight-adjustable-pillow).
 
-Buy this one if you are between sizes, you share a bed with someone who sleeps differently, or your current pillow is almost right but a bit low or a bit high.
+Buy this one if you are between sizes, you share a bed with someone who sleeps differently, or your current pillow is almost right but a bit low or a bit high. Do not wait on it if you need a pillow this week. It was not for sale on 21 November.
 
 ### If fibre pillows go flat by morning: Silentnight Ultragel
 
 The [Ultragel Premier](/reviews/silentnight-ultragel-pillow) (ASIN B00U8WJM8Q, model 430388GE) is a gel-foam core with hollowfibre around it and mesh sides. Silentnight says the core is five times more breathable than standard memory foam and that it does not go flat overnight. That “five times” line is theirs. The title says firm support. The same page’s firmness field says Medium. Amazon lists it for side and back sleepers and quotes a 2-year guarantee. It does not say you can unzip it and change the height.
 
-Price on 7 November 2026: £29.14. Amazon showed 4.2 out of 5 from 1,200 ratings. [Shop the Ultragel pillow](/go/silentnight-ultragel-pillow).
+On 21 November 2026 the price was £25.50 and the page said in stock. It also showed 12% savings. Amazon showed 4.2 out of 5 from 1,202 ratings. [Shop the Ultragel pillow](/go/silentnight-ultragel-pillow).
 
-Buy this one if your complaint is a fibre pillow that collapses, or you sleep hot and want the cooling claim. If the photo test says you need a very high pillow, get the adjustable one instead. A fixed core that is too tall will bend your neck up, and you cannot remove fill.
+Buy this one if your complaint is a fibre pillow that collapses, or you sleep hot and want the cooling claim. If the photo test says you need a very high pillow, the adjustable Silentnight is the better shape, but it was unavailable on 21 November. A towel inside the pillowcase is the way to test height until that listing returns. A fixed core that is too tall will bend your neck up, and you cannot remove fill.
 
 ### If you want two pillows and will check the size: Slumberdown
 
-The [Slumberdown Memory Foam Plus 2-pack](/reviews/slumberdown-memory-foam-pillow) (ASIN B01N46GW3H) is a memory-foam wrap around hollowfibre. The title says the pillows are UK-made, for back and side sleepers, with a soft knit cover. The bullets mention a 2-year guarantee. Care is wipe clean only, so use a protector. The price on 7 November 2026 was £31.90 for two, about £15.95 each. Amazon showed 4.1 out of 5 from 934 ratings.
+The [Slumberdown Memory Foam Plus 2-pack](/reviews/slumberdown-memory-foam-pillow) (ASIN B01N46GW3H) is a memory-foam wrap around hollowfibre. The title says the pillows are UK-made, for back and side sleepers, with a soft knit cover. The bullets mention a 2-year guarantee. Care is wipe clean only, so use a protector. On 21 November 2026 the 2-pack was £27.11 and in stock. The page priced that at £13.56 a pillow. Amazon showed 4.1 out of 5 from 936 ratings.
 
 Read the size before you order. The title says 38 × 64 cm. The description on the same listing says L74 × W48 cm. Those are not the same pillow. [Shop the Slumberdown 2-pack](/go/slumberdown-memory-foam-pillow).
 
@@ -225,6 +328,8 @@ Stomach sleeping will not be rescued by a side-sleeper pillow. The NHS leaflets 
 
 The [Eight Sleep pillow cover](/reviews/eight-sleep-pillow-cover) is about £999 and only works with an Eight Sleep Pod. It changes temperature. It does not set the height of your neck. Skip it unless you already own the Pod.
 
+Light is a different problem from pillow height. If the room is still bright after the curtains are closed, the buying notes are in [best sleep mask for side sleepers](/blog/best-sleep-mask-for-side-sleepers). A mask will not hold your neck up.
+
 A stack of soft hotel pillows feels fine for a night and then collapses. If you wake with a stiff neck, check height first, then whether the fill has gone flat. The mattress underneath changes the gap too. A thick soft mattress lets the shoulder sink, so you need less pillow. That is covered on the [mattresses page](/categories/mattresses), including the Tempur notes. Heat is a different problem: the [hot sleepers guide](/blog/hot-sleepers-temperature-solutions) is the place for room temperature, and [what tog duvet do I need](/blog/what-tog-duvet) is the place for the duvet. The Ultragel pillow is only one small piece of that.
 
 ## A sensible order
@@ -240,7 +345,7 @@ This page is not medical advice.`,
     readTime: '12 min',
     date: '2026-11-07',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-14',
+    updated: '2026-11-21',
     image: '/images/hero-bedroom.jpg',
     imageAlt: 'A dim bedroom with a made bed. Not a photo of a specific pillow.',
     seoTitle: 'Best Pillow for Side Sleepers (UK)',
@@ -249,7 +354,7 @@ This page is not medical advice.`,
     faqs: [
       {
         q: 'What is the best pillow for side sleepers in the UK?',
-        a: 'The one that keeps your head level with your spine. If you do not know that height yet, the Silentnight adjustable pillow (a zip with shredded memory foam, £32.98 on 7 November 2026) is the practical first buy. If fibre pillows go flat, the Silentnight Ultragel at £29.14 is a fixed gel-foam core. We have not sleep-tested either of them.',
+        a: 'The one that keeps your head level with your spine. If you do not know that height yet, the Silentnight adjustable pillow is the practical shape, but on 21 November 2026 that listing was unavailable. The last price we could read was £32.98 on 7 November. The Silentnight Ultragel was £25.50 and in stock that day. It is a fixed gel-foam core. We have not sleep-tested either of them.',
       },
       {
         q: 'How high should a pillow be for side sleepers?',
@@ -314,8 +419,8 @@ These are live listings we checked, not a ranking from a private lab test.
 
 - **Nasal strip:** [Breathe Right Clear](/reviews/breathe-right-clear). £8.98 for 20 clear small/medium strips (two packs of 10) on Amazon UK when checked on 7 November 2026. [Shop Breathe Right](/go/breathe-right-clear).
 - **Reusable dilator:** [Mute](/reviews/nasal-dilator-pro), small 3-pack, about £19.99. Rinse it. [Shop Mute](/go/nasal-dilator-pro).
-- **Mouth tape, firmer hold:** [Hostage Tape](/reviews/hostage-tape), 30 black strips, about £12.90, the listing that is actually in stock under that brand name. [Shop Hostage Tape](/go/hostage-tape).
-- **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape). On 14 November 2026 the old ASIN opened the beard pack, 30 nights, not a search. A search for the brand name was listing other companies’ tape. The button is that beard pack. It is not the kids product, even though one bullet mentions children. [Shop MyoTape](/go/mytape).
+- **Mouth tape, firmer hold:** [Hostage Tape](/reviews/hostage-tape). On 21 November 2026 the old ASIN opened a 30-pack titled “for Women”, colour Rose, at £10.32, with £17.75 crossed out. The bullets still say beard-friendly and PAP-friendly. [Shop Hostage Tape](/go/hostage-tape).
+- **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape). The button is the beard pack, 30 nights. On 21 November 2026 that page showed £14.99 and said it was temporarily out of stock. It is not the kids product, even though one bullet mentions children. [Shop MyoTape](/go/mytape).
 
 Dream Recovery and SayLess are real brands, but they sell from their own sites rather than Amazon UK, and we do not have affiliate codes for them. ZzzTape is in the same position. If you follow those reviews, read the note under the button so you know the click is not commissioned.
 
@@ -337,10 +442,10 @@ This page is not medical advice.`,
     readTime: '11 min',
     date: '2026-11-02',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-14',
+    updated: '2026-11-21',
     image: '/images/nasal-product.jpg',
     seoTitle: 'Mouth Tape vs Nasal Strips for Snoring',
-    seoDescription: 'When snoring is a nose problem, buy a nasal strip. When the mouth falls open and the nose is clear, mouth tape is the product to try. A practical UK buyer’s guide.',
+    seoDescription: 'When snoring is a nose problem, buy a nasal strip. When the mouth falls open and the nose is clear, mouth tape is the one to try.',
     tags: ['snoring', 'mouth tape', 'nasal strips', 'buyer guide'],
     faqs: [
       {
@@ -357,7 +462,7 @@ This page is not medical advice.`,
       },
       {
         q: 'What is actually in stock to buy in the UK?',
-        a: 'On 7 November 2026, Breathe Right Clear was £8.98 for 20 strips on Amazon UK. Mute’s small 3-pack was £19.99. Hostage Tape’s 30-strip pouch was £12.90. Those three prices were not re-read on 14 November because the buy box did not render in the page HTML. MyoTape’s button now opens the beard 30-night pack, not a search. SomniFix’s Amazon UK listing was still unavailable.',
+        a: 'On 21 November 2026, Breathe Right Clear was £8.98 for 20 strips and in stock. Mute’s small 3-pack was £19.99 and in stock. Hostage Tape’s old ASIN opened a 30-pack titled for women, colour Rose, at £10.32. MyoTape’s beard pack showed £14.99 and was temporarily out of stock. SomniFix’s Amazon UK listing was still unavailable.',
       },
     ],
   },
@@ -375,16 +480,16 @@ Mouth tape is only worth buying if you can already breathe through your nose whi
 
 ## How the designs differ
 
-- **Strip over the lips.** [Hostage Tape](/reviews/hostage-tape) is a black fabric strip that covers the mouth. The Amazon UK listing of 30 strips calls it beard-friendly. It was in stock at £12.90 on 7 November 2026. [Shop Hostage Tape](/go/hostage-tape).
-- **Strip around the lips.** [MyoTape](/reviews/mytape) is Oxygen Advantage’s design, meant to surround the mouth with elastic tension rather than seal it. On 14 November 2026 the Amazon button opened the beard pack, 30 nights, with “extra strong” adhesive in the title. That is not the sensitive-skin pack, and it is not a kids pack. [Shop MyoTape](/go/mytape).
+- **Strip over the lips.** [Hostage Tape](/reviews/hostage-tape) covers the mouth. On 21 November 2026 the listing that opened was a 30-pack titled “for Women”, colour Rose, at £10.32. The bullets still call it beard-friendly and PAP-friendly. [Shop Hostage Tape](/go/hostage-tape).
+- **Strip around the lips.** [MyoTape](/reviews/mytape) is Oxygen Advantage’s design, meant to surround the mouth with elastic tension rather than seal it. The Amazon button is the beard pack, 30 nights. On 21 November 2026 it showed £14.99 and was temporarily out of stock. That is not the sensitive-skin pack, and it is not a kids pack. [Shop MyoTape](/go/mytape).
 - **Vented strip.** [SomniFix](/reviews/somnifix) has a small hole in the centre. Amazon UK’s listing was still unavailable. The button goes to SomniFix’s own UK shop and is not commissioned.
 - **Brand sites without a code.** Dream Recovery, ZzzTape, and SayLess sell from their own sites. We do not have affiliate codes, and we are not going to invent a winner from a test we did not run. Read the note under each button.
 
 ## A simple way to choose
 
 1. Blocked nose, a cold, or you cannot nose-breathe while awake: do not tape. Use a [nasal strip or dilator](/categories/nasal), or see a GP if snoring comes with pauses.
-2. Beard or stubble, and the nose is clear: Hostage Tape is the in-stock option whose listing is aimed at facial hair.
-3. You want to be able to open your mouth: MyoTape’s around-the-lips shape is the closer match. The Amazon button is the beard pack. Sensitive-skin and kids packs are on the brand site, and that click is not commissioned.
+2. Beard or stubble, and the nose is clear: Hostage Tape’s bullets still say facial hair, but on 21 November 2026 the title said “for Women” and the colour was Rose. Read both.
+3. You want to be able to open your mouth: MyoTape’s around-the-lips shape is the closer match. The Amazon button is the beard pack, and on 21 November 2026 it was temporarily out of stock. Sensitive-skin and kids packs are on the brand site, and that click is not commissioned.
 4. You want a vent and will buy from the brand: SomniFix, knowing that click is not commissioned.
 
 The longer breathing plan is [how to stop mouth breathing at night](/blog/how-to-stop-mouth-breathing-at-night). If the problem is falling asleep rather than an open mouth, start with [how to fall asleep fast](/blog/how-to-fall-asleep-fast-naturally) and the [sleep hygiene checklist](/blog/sleep-hygiene-2026). This page is not medical advice.` ,
@@ -392,7 +497,7 @@ The longer breathing plan is [how to stop mouth breathing at night](/blog/how-to
     readTime: '7 min',
     date: '2026-01-12',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-14',
+    updated: '2026-11-21',
     image: '/images/dream-recovery-tape.jpg',
     seoTitle: 'Best Mouth Tape 2026: Beard, Skin, and Hold',
     seoDescription: 'How to choose mouth tape in the UK without a fake lab score. Beard hold, a lip-surround strip, a vent, and which listings were in stock in November 2026.',
@@ -506,7 +611,7 @@ Here is what actually moves the needle, ranked roughly by impact:
 1. Consistent sleep/wake times (±30 min) — even weekends
 2. Morning sunlight within 30-60 min of waking (10-30 mins)
 3. Cool bedroom (60-67°F / 15-19°C is ideal for most)
-4. Complete darkness (blackout curtains or eye mask)
+4. Complete darkness. Close the curtains first. If light is still a problem, an [eye mask](/blog/best-sleep-mask-for-side-sleepers) is the extra step NHS Every Mind Matters names.
 5. No caffeine after ~2pm (or 8-10 hours before bed for slow metabolizers)
 
 ## Tier 2: High-Impact Practices
@@ -535,7 +640,7 @@ Start with the first group for two weeks before adding gadgets. This site has no
     readTime: '9 min',
     date: '2026-01-02',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-14',
+    updated: '2026-11-21',
     image: '/images/mattress.jpg',
     seoTitle: 'Sleep Hygiene Checklist',
     seoDescription: 'A checklist of sleep habits often discussed for insomnia, and when to speak to a GP. This site has not ranked them in a lab.',
@@ -678,7 +783,7 @@ If the pillow is so low that your cheek is crushed into the mattress, the tape i
 
 ## Which listing matches which problem
 
-**Beard or stubble.** [Hostage Tape](/reviews/hostage-tape) is the Amazon UK listing that calls itself beard-friendly. Thirty strips were £12.90 on 7 November 2026. [Shop Hostage Tape](/go/hostage-tape).
+**Beard or stubble.** [Hostage Tape](/reviews/hostage-tape) is the Amazon UK listing whose bullets still say beard-friendly. On 21 November 2026 the title said “for Women”, the colour was Rose, and the buy box was £10.32 for 30 strips. [Shop Hostage Tape](/go/hostage-tape).
 
 **You want a vent.** [SomniFix](/reviews/somnifix) has a hole in the centre of a wider strip. Its Amazon UK listing was unavailable. The button goes to the brand’s UK shop and is not commissioned.
 
@@ -697,7 +802,7 @@ Safety notes and the product grid are on the [mouth tape hub](/mouth-tape). The 
     category: 'Mouth Taping',
     readTime: '9 min',
     date: '2026-07-06',
-    updated: '2026-11-14',
+    updated: '2026-11-21',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/mytape.jpg',
     seoTitle: 'Mouth Tape for Side Sleepers',
@@ -954,7 +1059,7 @@ Everything else is optional.
 
 ## Making It Stick When Life Gets Messy
 - **Travel / Jet lag**: Anchor to the new time zone immediately. Get morning light at the new destination's morning. Use strategic light exposure and avoid long naps.
-- **Kids / Family**: Protect your wind-down even if it means going to bed earlier than your partner. Use earplugs + eye mask if needed. A consistent schedule helps children too.
+- **Kids / Family**: Protect your wind-down even if it means going to bed earlier than your partner. Use earplugs, and an [eye mask](/blog/best-sleep-mask-for-side-sleepers) if the room is not dark. A consistent schedule helps children too. Do not use an adult sleep mask on a baby.
 - **Shift work**: Use light boxes or bright light exposure at the "start" of your "day" and complete darkness for sleep. Blackout curtains and white noise are non-negotiable.
 - **High stress periods**: Double down on the basics rather than adding supplements. Sleep is the first thing to suffer when stressed, so protect the non-negotiables.
 
@@ -972,6 +1077,7 @@ Start ridiculously small. One consistent wake time for 14 days will move the nee
     category: 'Sleep Optimization',
     readTime: '9 min',
     date: '2026-08-05',
+    updated: '2026-11-21',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/hero-bedroom.jpg',
     seoTitle: 'Sleep Habits That Stick',

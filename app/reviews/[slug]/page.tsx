@@ -31,6 +31,7 @@ const categoryMeta: Record<string, { label: string; backLink: string; backText: 
   'mattresses': { label: 'Mattress', backLink: '/categories/mattresses', backText: 'Back to Mattresses' },
   'supplements': { label: 'Supplement', backLink: '/categories/supplements', backText: 'Back to Supplements' },
   'bedding': { label: 'Eight Sleep accessory', backLink: '/categories/bedding', backText: 'Back to Eight Sleep accessories' },
+  'sleep-masks': { label: 'Sleep Mask', backLink: '/categories/sleep-masks', backText: 'Back to Sleep Masks' },
 };
 
 export async function generateMetadata({ params }: Props) {
@@ -106,6 +107,11 @@ export default async function ProductReviewPage({ params }: Props) {
 
             <div className="prose review-prose mt-8 max-w-none">
               <p className="text-lg text-foreground">{product.longDescription}</p>
+              {product.category === 'sleep-masks' && (
+                <p>
+                  Side sleeping changes which mask is comfortable. The buying guide is <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary underline underline-offset-2">best sleep mask for side sleepers</Link>.
+                </p>
+              )}
               {product.slug.includes('tog-duvet') && (
                 <p>
                   Which tog to buy depends on the room, not the brand. The buying guide is <Link href="/blog/what-tog-duvet" className="text-primary underline underline-offset-2">what tog duvet do I need</Link>.
