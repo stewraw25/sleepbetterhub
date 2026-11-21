@@ -377,92 +377,126 @@ This page is not medical advice.`,
   {
     slug: 'mouth-tape-vs-nasal-strips-for-snoring',
     title: 'Mouth Tape vs Nasal Strips for Snoring: Which Should You Buy?',
-    excerpt: 'They are not substitutes. Nasal strips open the nose. Mouth tape keeps the lips together. Here is how to choose, what to skip, and which UK listings are actually in stock.',
-    content: `**Affiliate disclosure.** Some links below go to Amazon with our Associates tag. Brand-site links are marked on the product page when they are not commissioned. Prices were checked in November 2026 and will move.
+    excerpt: 'If your mouth falls open at night, the NHS lists a chin strap or a vestibular shield, not mouth tape. Nasal strips are for a blocked or narrow nose. Here is how those options compare, including the cautions from Which? and a 2025 review of mouth tape.',
+    content: `**Affiliate disclosure.** Some links below go to Amazon with our Associates tag. Brand-site links are marked on the product page when they are not commissioned. Prices were checked in November 2026 and will move. This page is not medical advice.
 
-If you are comparing mouth tape vs nasal strips for snoring, start with where the noise is coming from. A strip across the nose can only change the nose. Tape on the lips can only change whether the mouth hangs open. Neither one holds the throat open, so neither one is a treatment for obstructive sleep apnoea.
+If your mouth falls open while you sleep, the [NHS snoring page](https://www.nhs.uk/symptoms/snoring/) lists a chin strap to hold your mouth closed, or a vestibular shield, which is a device you wear in your mouth to encourage you to breathe through your nose. If the problem is a blocked or narrow airway in the nose, it lists nasal strips or dilators, or a decongestant or nasal spray. Mouth tape is not on that table.
 
-## What each product actually changes
+A 2025 systematic review of mouth taping (Rhee and colleagues, 10 studies and 213 people) found limited evidence of benefit and raised a risk of harm if the nose is blocked. [Which?](https://www.which.co.uk/reviews/anti-snoring-devices/article/best-anti-snoring-devices-aFe7y5S0IyKU) did not test mouth tape, because of those safety concerns. If you still want to try tape, treat it as a secondary option only after the NHS matches, and only if your nose is already clear.
 
-Snoring is tissue vibrating in a narrowed airway. The narrow point might be the nostrils, the soft palate, the tongue, or several of those at once. That is why two people with the same complaint can need different products.
+The NHS page was last reviewed on 4 August 2023.
+
+## Match the product to the cause
+
+Snoring is tissue vibrating in a narrowed airway. The narrow point might be the nostrils, the soft palate, the tongue, or several of those at once. That is why two people with the same complaint can need different products. The NHS puts it in a simple table:
+
+- **Mouth falling open when you are asleep:** a chin strap, or a vestibular shield.
+- **Blocked or narrow airways in your nose:** nasal strips or dilators that hold the nose open, or decongestants or nasal sprays to reduce swelling.
+- **Tongue partially blocking the back of your throat:** a mandibular advancement device, fitted with advice from a dentist or a doctor. Neither tape nor a strip holds the throat open.
+
+The NHS also suggests starting with ordinary changes: sleep on your side, lose weight if you are overweight, do not smoke, drink less alcohol, and avoid sleeping pills. See a GP if those changes do not help, if snoring is having a big impact, or if you feel sleepy in the day, your breathing stops and starts, or you gasp or choke in your sleep. Those last signs can be sleep apnoea, which can be serious if it is not treated.
+
+## When a nasal strip or dilator is the closer match
 
 External nasal strips, such as Breathe Right, stick across the bridge of the nose. Flexible bands try to lift the nostrils slightly. Breathe Right says the strips are clinically shown to reduce snoring by improving nasal airflow. Take that as a claim about the nose, not a claim that a strip treats sleep apnoea. People with a collapsing nasal valve, a cold, or a night of allergy congestion are the ones most likely to feel a difference.
 
 Internal dilators do the same job from inside the nostril. Mute, made by Rhinomed, is the one widely stocked on Amazon UK. Rhinomed says its trials found about 38 percent more nasal airflow. That number is the manufacturer's, not a test we ran. Dilators suit people whose skin reacts to adhesive.
 
-Mouth tape is a small adhesive strip that keeps the lips together so you are more likely to breathe through your nose. It does not open a blocked nose. If you cannot breathe through your nose, covering the mouth can make the night worse. That is the main safety problem, and it is why tape is a bad first purchase for someone whose snoring starts with congestion.
-
-The research on tape is thinner than the marketing. A small preliminary study of mouth-breathers with mild sleep apnoea (Lee and colleagues, Healthcare, 2022) reported improvement in that selected group. It is not evidence that tape is safe or useful for everyone who snores. The Sleep Foundation's summary is the fair public one: most reported benefits are anecdotal, and people with untreated apnoea, a blocked nose, or trouble breathing through the nose should not tape.
-
-## When a nasal strip is the right purchase
-
-Buy a nasal strip or a dilator if any of these are true:
+A strip or a dilator is a reasonable thing to try if:
 
 - Your nose feels blocked, whistly, or one-sided when you lie down.
 - You wake with a dry mouth because air will not come through your nose.
 - You want something you can use on a bad-allergy night without covering your mouth.
-- Adhesive on the lips has already irritated you, in which case try a dilator rather than another tape.
 
 Skip strips if your nose is already clear and the snore is a throat snore: very loud, with gasping or pauses. A strip will not fix that. In that case the useful next step is a GP or a sleep clinic, not a bigger pack of strips.
 
-## When mouth tape is the right purchase
+## If your mouth falls open
 
-Buy mouth tape only if you can already breathe comfortably through your nose for several minutes while you are awake, and your complaint is an open mouth, a dry mouth, or a partner who says you snore with your mouth open.
+This is the case where older versions of this page pointed people to mouth tape. The NHS does not. For a mouth that falls open, it lists a chin strap or a vestibular shield.
 
-Do not buy it, and do not try it, if you have untreated sleep apnoea, a cold, a blocked nose, COPD, or you have been drinking. Test the feeling while you are awake before you ever use it in bed. Our [mouth tape comparison](/mouth-tape) has the safety notes next to each product.
+A chin strap is a soft band that holds the jaw up so the mouth is less likely to drop open. A vestibular shield sits in the mouth and is meant to make you breathe through your nose. Both still need a nose you can already breathe through. Talk to a pharmacist or a GP before you buy a device you wear in your mouth, and do not use either as a treatment for suspected sleep apnoea without clinical advice.
+
+## What the evidence says about mouth tape
+
+Mouth tape is a small adhesive strip that keeps the lips together so you are more likely to breathe through your nose. It does not open a blocked nose. If you cannot breathe through your nose, covering the mouth can make the night worse.
+
+The research is thinner than the marketing. Rhee and colleagues (2025) reviewed 10 studies with 213 people in total. Two studies reported an improvement in sleep apnoea measures; others found no difference. The authors warned of a risk of asphyxiation or low oxygen if the nose is blocked, and many of the studies excluded anyone with nasal problems. That is a small, mixed evidence base, not a reason to treat tape as the default fix for an open mouth.
+
+Which? reached a similar caution in its anti-snoring device guide (updated 10 November 2026). It did not test mouth tape, for the safety of its testers. Professor Chatrath, quoted there, says you should not use mouth tape if there is a specific reason you cannot breathe through your nose, such as a deviated septum or sinusitis, and that it is better to avoid tape after a lot to eat or drink because of the risk of vomiting and then choking. If someone still chooses to try it, he suggests starting with a small tape in the day, when you can take it off easily, and only considering a night-time trial after you can manage around 20 minutes in those daytime tests.
+
+## Who should not use mouth tape
+
+Do not buy it, and do not try it, if any of these apply:
+
+- You cannot breathe comfortably through your nose while you are awake, including with a cold, hay fever, sinusitis or a deviated septum.
+- You have, or might have, sleep apnoea: loud snoring, pauses, gasping or choking, or sleepiness that gets in the way of the day.
+- You have been drinking, or you have taken sleeping pills or other sedating medicines.
+- You feel sick, or you might vomit in the night.
+- It would be used on a child.
+
+If you use CPAP, ask your sleep clinic before you add anything over your mouth. Clinicians often look at a chin strap, a humidifier or a decongestant for mouth leaks, rather than tape.
+
+## If you still want to try tape
+
+Only consider it if you can already breathe comfortably through your nose for several minutes while you are awake, and you have read the NHS options above. Test the feeling while you are awake before you ever use it in bed. Avoid tapes that cover the whole mouth. Our [mouth tape comparison](/mouth-tape) has the safety notes next to each product.
 
 A vented strip such as SomniFix leaves a small hole in the centre. Some people find that less alarming. It still does not open the nose. SomniFix's own UK shop is the live place to buy it right now; the long-standing Amazon UK listing is unavailable.
 
-## What we would buy in the UK this month
+## Listings we checked in the UK this month
 
-These are live listings we checked, not a ranking from a private lab test.
+These are live listings we checked, not a ranking from a private lab test, and not a suggestion that tape comes before the NHS options.
 
-- **Nasal strip:** [Breathe Right Clear](/reviews/breathe-right-clear). £8.98 for 20 clear small/medium strips (two packs of 10) on Amazon UK when checked on 7 November 2026. [Shop Breathe Right](/go/breathe-right-clear).
-- **Reusable dilator:** [Mute](/reviews/nasal-dilator-pro), small 3-pack, about £19.99. Rinse it. [Shop Mute](/go/nasal-dilator-pro).
-- **Mouth tape, firmer hold:** [Hostage Tape](/reviews/hostage-tape). On 21 November 2026 the old ASIN opened a 30-pack titled “for Women”, colour Rose, at £10.32, with £17.75 crossed out. The bullets still say beard-friendly and PAP-friendly. [Shop Hostage Tape](/go/hostage-tape).
+- **Nasal strip, for a blocked or narrow nose:** [Breathe Right Clear](/reviews/breathe-right-clear). £8.98 for 20 clear small/medium strips (two packs of 10) on Amazon UK when checked on 7 November 2026. [Shop Breathe Right](/go/breathe-right-clear).
+- **Reusable dilator, for the same cause:** [Mute](/reviews/nasal-dilator-pro), small 3-pack, about £19.99. Rinse it. [Shop Mute](/go/nasal-dilator-pro).
+- **Mouth tape, firmer hold, only if the cautions above do not apply:** [Hostage Tape](/reviews/hostage-tape). On 21 November 2026 the old ASIN opened a 30-pack titled “for Women”, colour Rose, at £10.32, with £17.75 crossed out. The bullets still say beard-friendly and PAP-friendly. [Shop Hostage Tape](/go/hostage-tape).
 - **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape). The button is the beard pack, 30 nights. On 21 November 2026 that page showed £14.99 and said it was temporarily out of stock. It is not the kids product, even though one bullet mentions children. [Shop MyoTape](/go/mytape).
 
 Dream Recovery and SayLess are real brands, but they sell from their own sites rather than Amazon UK, and we do not have affiliate codes for them. ZzzTape is in the same position. If you follow those reviews, read the note under the button so you know the click is not commissioned.
 
-## A sensible order if you want to try both
+## A sensible order if you want to try a shop-bought option
 
-1. Sort the nose out first. A saline rinse, then a strip or a dilator, for a few nights.
-2. Only add tape once nasal breathing is easy while you are awake.
-3. If the tape comes off, or you wake anxious, stop. A stronger adhesive is not the fix for a blocked nose.
-4. Keep the rest of the night boring: a cool room, a regular wake time, and less alcohol late. Tape will not outrun those.
+1. Use the NHS lifestyle steps first, and see a GP if the warning signs above are present.
+2. If the nose is blocked or narrow, try a saline rinse, then a strip or a dilator, for a few nights.
+3. If the mouth falls open and the nose is clear, look at a chin strap or ask a clinician about a vestibular shield before you look at tape.
+4. Only add tape if you can breathe through your nose comfortably while awake, you have tried it in the day, and none of the “do not use” points apply.
+5. If the tape comes off, or you wake anxious, stop. A stronger adhesive is not the fix for a blocked nose.
 
 The longer version of the breathing work is our [30-day plan to stop mouth breathing at night](/blog/how-to-stop-mouth-breathing-at-night). The product grid is on the [mouth tape hub](/mouth-tape) and the [nasal strips page](/categories/nasal). If you are unsure tape is even appropriate, use the [two-minute quiz](/quiz) before you buy.
 
-## When to skip both
+## When to skip these products and see a GP
 
-See a doctor before you buy either product if snoring comes with pauses, choking, morning headaches, or sleepiness that gets in the way of the day. Mouth tape and nasal strips are cheap experiments for simple mouth breathing or a stuffy nose. They are not a sleep study.
+See a doctor before you buy a strip, a dilator, a chin strap or tape if snoring comes with pauses, choking, morning headaches, or sleepiness that gets in the way of the day. These products do not hold the throat open, and they are not a sleep study.
 
 This page is not medical advice.`,
     category: 'Guides',
-    readTime: '11 min',
+    readTime: '12 min',
     date: '2026-11-02',
     author: 'SleepBetterHub Editorial Team',
     updated: '2026-11-21',
     image: '/images/nasal-product.jpg',
     seoTitle: 'Mouth Tape vs Nasal Strips for Snoring',
-    seoDescription: 'When snoring is a nose problem, buy a nasal strip. When the mouth falls open and the nose is clear, mouth tape is the one to try.',
+    seoDescription: 'If your mouth falls open, the NHS lists a chin strap or a vestibular shield. Nasal strips are for a blocked nose. Mouth tape has limited evidence and safety cautions.',
     tags: ['snoring', 'mouth tape', 'nasal strips', 'buyer guide'],
     faqs: [
       {
         q: 'Which is better for snoring, mouth tape or nasal strips?',
-        a: 'If your nose feels blocked, start with a nasal strip or an internal dilator. If your nose is clear and you snore with your mouth open, mouth tape is the closer match. They change different parts of the airway.',
+        a: 'They are for different causes, and they are not the only options. If your nose feels blocked, the NHS lists nasal strips or dilators. If your mouth falls open, it lists a chin strap or a vestibular shield. Mouth tape is not on that NHS table, and the evidence for it is limited.',
+      },
+      {
+        q: 'Does the NHS recommend mouth tape if my mouth falls open?',
+        a: 'No. For a mouth that falls open while you sleep, the NHS snoring page lists a chin strap to hold your mouth closed, or a vestibular shield to encourage nose breathing. Mouth tape is not listed there.',
       },
       {
         q: 'Can I use mouth tape and nasal strips on the same night?',
-        a: 'Yes, in that order: open the nose first, then add tape only if you can breathe through your nose comfortably while awake. Do not tape if you still feel blocked.',
+        a: 'Only if your nose is already clear enough to breathe through comfortably while you are awake, and none of the safety cautions apply. Open the nose first with a strip or dilator if it is blocked. Do not tape if you still feel blocked, and do not treat that combination as a treatment for sleep apnoea.',
       },
       {
         q: 'Will mouth tape or nasal strips treat sleep apnoea?',
-        a: 'No. Loud snoring with pauses, choking, or strong daytime sleepiness needs a clinician. These products do not hold the throat open.',
+        a: 'No. Loud snoring with pauses, choking, or strong daytime sleepiness needs a clinician. These products do not hold the throat open. A 2025 review of mouth tape found only limited evidence of benefit and warned about breathing risks if the nose is blocked.',
       },
       {
         q: 'What is actually in stock to buy in the UK?',
-        a: 'On 21 November 2026, Breathe Right Clear was £8.98 for 20 strips and in stock. Mute’s small 3-pack was £19.99 and in stock. Hostage Tape’s old ASIN opened a 30-pack titled for women, colour Rose, at £10.32. MyoTape’s beard pack showed £14.99 and was temporarily out of stock. SomniFix’s Amazon UK listing was still unavailable.',
+        a: 'On 21 November 2026, Breathe Right Clear was £8.98 for 20 strips and in stock. Mute’s small 3-pack was £19.99 and in stock. Hostage Tape’s old ASIN opened a 30-pack titled for women, colour Rose, at £10.32. MyoTape’s beard pack showed £14.99 and was temporarily out of stock. SomniFix’s Amazon UK listing was still unavailable. Chin straps and vestibular shields are the NHS-listed options if your mouth falls open; check with a pharmacist or GP before you buy a device you wear in your mouth.',
       },
     ],
   },
