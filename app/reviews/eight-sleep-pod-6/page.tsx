@@ -287,7 +287,6 @@ export default function EightSleepPod6Review() {
                 <Separator className="my-5" />
 
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Not scored</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Trial and warranty</span> <span className="font-medium text-right">Confirm on the brand site</span></div>
                 </div>
               </div>
@@ -401,7 +400,7 @@ export default function EightSleepPod6Review() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link href="/reviews/oura-ring-gen3" className="block rounded-xl border p-4 hover:bg-muted/40 transition">
               <div className="font-medium">Oura Ring Gen3</div>
-              <div className="text-sm text-muted-foreground">Sleep-tracking ring. Not scored here.</div>
+              <div className="text-sm text-muted-foreground">Sleep-tracking ring.</div>
             </Link>
             <Link href="/blog/hot-sleepers-temperature-solutions" className="block rounded-xl border p-4 hover:bg-muted/40 transition">
               <div className="font-medium">Hot Sleepers Guide</div>

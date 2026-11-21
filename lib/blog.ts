@@ -261,7 +261,7 @@ The mattress underneath is a separate purchase. Notes on that, and on these thre
   {
     slug: 'best-pillow-for-side-sleepers',
     title: 'Best Pillow for Side Sleepers: A UK Buying Guide',
-    excerpt: 'Side sleepers need enough height to keep the head level with the spine. Here is how to check that tonight, and three Amazon UK pillows rechecked on 21 November 2026. The adjustable one was unavailable.',
+    excerpt: 'Side sleepers need enough height to keep the head level with the spine. Here is how to check that tonight, and three Amazon UK pillows rechecked on 21 November 2026. The adjustable pillow is now the 2-pack, which was in stock.',
     content: `**Affiliate disclosure.** The pillow links below go to Amazon UK with our Associates tag. Prices were read off those listings on 7 November 2026 and will change. We have not slept on these pillows. This site does not publish star ratings for them.
 
 If you are looking for the best pillow for side sleepers, start with height, not the brand. On your side, your shoulder holds your head away from the mattress. The pillow has to fill that gap so your nose stays roughly in line with the centre of your chest. Too thick, and the neck bends upward. Too thin, and the head drops toward the bed.
@@ -290,15 +290,15 @@ Change the height you already have before you change brand. Two thinner pillows,
 
 ## Which of these three to buy
 
-These are Amazon UK listings. The notes are the maker’s claims and what the page itself says. They are not a sleep test. On 21 November 2026 the adjustable pillow was unavailable. The other two were in stock.
+These are Amazon UK listings. The notes are the maker’s claims and what the page itself says. They are not a sleep test. On 21 November 2026 the single adjustable pillow was still unavailable, so the button now opens the 2-pack of the same pillow, which was in stock. The other two pillows were also in stock.
 
 ### If you do not know your height yet: Silentnight adjustable
 
-The [Silentnight Adjustable Memory Foam Pillow](/reviews/silentnight-adjustable-pillow) (ASIN B0DJW5XZSR, model 589963GE) is shredded memory foam in a zip. You add or remove fill. Silentnight also puts hollowfibre and mesh sides around that foam, and says the cover comes off and can go in the washing machine. Amazon’s firmness field says Medium. The page does not give a height in centimetres. Shopper comments on the listing disagree about whether the fill stays high enough, which is the useful warning: start with more fill, then take some out, rather than the other way round.
+The [Silentnight Adjustable Memory Foam Pillow](/reviews/silentnight-adjustable-pillow) 2-pack (ASIN B0DK78ZGZS, model 589963GE) is shredded memory foam in a zip. You add or remove fill. Silentnight also puts hollowfibre and mesh sides around that foam, and says the cover comes off and can go in the washing machine. The page does not give a height in centimetres. Shopper comments on the listing disagree about whether the fill stays high enough, which is the useful warning: start with more fill, then take some out, rather than the other way round.
 
-On 7 November 2026 the price was £32.98. On 21 November 2026 the same page said it was currently unavailable and did not show a new price. Amazon showed 4.4 out of 5 from 211 ratings. The button still opens that listing, so you can see if it has come back. [Shop the adjustable pillow](/go/silentnight-adjustable-pillow).
+The single-pillow listing (B0DJW5XZSR) was still currently unavailable on 21 November 2026. The 2-pack of the same pillow was £38.24, against a list price of £44.99, and the page said in stock. Branded_Bedding sells and dispatches it. Amazon showed 4.4 out of 5 from 211 ratings. Those are Amazon’s shopper ratings, not a score from us. [Shop the adjustable pillow 2-pack](/go/silentnight-adjustable-pillow).
 
-Buy this one if you are between sizes, you share a bed with someone who sleeps differently, or your current pillow is almost right but a bit low or a bit high. Do not wait on it if you need a pillow this week. It was not for sale on 21 November.
+Buy this one if you are between sizes, you share a bed with someone who sleeps differently, or your current pillow is almost right but a bit low or a bit high. It is a 2-pack, so there is a spare in the box.
 
 ### If fibre pillows go flat by morning: Silentnight Ultragel
 
@@ -306,7 +306,7 @@ The [Ultragel Premier](/reviews/silentnight-ultragel-pillow) (ASIN B00U8WJM8Q, m
 
 On 21 November 2026 the price was £25.50 and the page said in stock. It also showed 12% savings. Amazon showed 4.2 out of 5 from 1,202 ratings. [Shop the Ultragel pillow](/go/silentnight-ultragel-pillow).
 
-Buy this one if your complaint is a fibre pillow that collapses, or you sleep hot and want the cooling claim. If the photo test says you need a very high pillow, the adjustable Silentnight is the better shape, but it was unavailable on 21 November. A towel inside the pillowcase is the way to test height until that listing returns. A fixed core that is too tall will bend your neck up, and you cannot remove fill.
+Buy this one if your complaint is a fibre pillow that collapses, or you sleep hot and want the cooling claim. If the photo test says you need a very high pillow, the adjustable Silentnight 2-pack is the better shape, because you can add or remove fill. A fixed core that is too tall will bend your neck up, and you cannot remove fill.
 
 ### If you want two pillows and will check the size: Slumberdown
 
@@ -449,7 +449,7 @@ These are live listings we checked, not a ranking from a private lab test, and n
 - **Nasal strip, for a blocked or narrow nose:** [Breathe Right Clear](/reviews/breathe-right-clear). £8.98 for 20 clear small/medium strips (two packs of 10) on Amazon UK when checked on 7 November 2026. [Shop Breathe Right](/go/breathe-right-clear).
 - **Reusable dilator, for the same cause:** [Mute](/reviews/nasal-dilator-pro), small 3-pack, about £19.99. Rinse it. [Shop Mute](/go/nasal-dilator-pro).
 - **Mouth tape, firmer hold, only if the cautions above do not apply:** [Hostage Tape](/reviews/hostage-tape). On 21 November 2026 the old ASIN opened a 30-pack titled “for Women”, colour Rose, at £10.32, with £17.75 crossed out. The bullets still say beard-friendly and PAP-friendly. [Shop Hostage Tape](/go/hostage-tape).
-- **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape). The button is the beard pack, 30 nights. On 21 November 2026 that page showed £14.99 and said it was temporarily out of stock. It is not the kids product, even though one bullet mentions children. [Shop MyoTape](/go/mytape).
+- **Mouth tape that surrounds the lips instead of sealing them:** [MyoTape](/reviews/mytape). The button is the sensitive-skin, medium pack, 30 nights (B0G54CZM1F). On 21 November 2026 that page showed £14.99 and said it was in stock. The beard pack was still temporarily out of stock. It is not the kids product. [Shop MyoTape](/go/mytape).
 
 Dream Recovery and SayLess are real brands, but they sell from their own sites rather than Amazon UK, and we do not have affiliate codes for them. ZzzTape is in the same position. If you follow those reviews, read the note under the button so you know the click is not commissioned.
 
@@ -496,7 +496,7 @@ This page is not medical advice.`,
       },
       {
         q: 'What is actually in stock to buy in the UK?',
-        a: 'On 21 November 2026, Breathe Right Clear was £8.98 for 20 strips and in stock. Mute’s small 3-pack was £19.99 and in stock. Hostage Tape’s old ASIN opened a 30-pack titled for women, colour Rose, at £10.32. MyoTape’s beard pack showed £14.99 and was temporarily out of stock. SomniFix’s Amazon UK listing was still unavailable. Chin straps and vestibular shields are the NHS-listed options if your mouth falls open; check with a pharmacist or GP before you buy a device you wear in your mouth.',
+        a: 'On 21 November 2026, Breathe Right Clear was £8.98 for 20 strips and in stock. Mute’s small 3-pack was £19.99 and in stock. Hostage Tape’s old ASIN opened a 30-pack titled for women, colour Rose, at £10.32. MyoTape’s sensitive-skin, medium 30-night pack was £14.99 and in stock; the beard pack was still temporarily out of stock. SomniFix’s Amazon UK listing was still unavailable. Chin straps and vestibular shields are the NHS-listed options if your mouth falls open; check with a pharmacist or GP before you buy a device you wear in your mouth.',
       },
     ],
   },
@@ -515,7 +515,7 @@ Mouth tape is only worth buying if you can already breathe through your nose whi
 ## How the designs differ
 
 - **Strip over the lips.** [Hostage Tape](/reviews/hostage-tape) covers the mouth. On 21 November 2026 the listing that opened was a 30-pack titled “for Women”, colour Rose, at £10.32. The bullets still call it beard-friendly and PAP-friendly. [Shop Hostage Tape](/go/hostage-tape).
-- **Strip around the lips.** [MyoTape](/reviews/mytape) is Oxygen Advantage’s design, meant to surround the mouth with elastic tension rather than seal it. The Amazon button is the beard pack, 30 nights. On 21 November 2026 it showed £14.99 and was temporarily out of stock. That is not the sensitive-skin pack, and it is not a kids pack. [Shop MyoTape](/go/mytape).
+- **Strip around the lips.** [MyoTape](/reviews/mytape) is Oxygen Advantage’s design, meant to surround the mouth with elastic tension rather than seal it. The Amazon button is the sensitive-skin, medium pack, 30 nights (B0G54CZM1F). On 21 November 2026 it showed £14.99 and was in stock. The beard pack was still temporarily out of stock. This is not a kids pack. [Shop MyoTape](/go/mytape).
 - **Vented strip.** [SomniFix](/reviews/somnifix) has a small hole in the centre. Amazon UK’s listing was still unavailable. The button goes to SomniFix’s own UK shop and is not commissioned.
 - **Brand sites without a code.** Dream Recovery, ZzzTape, and SayLess sell from their own sites. We do not have affiliate codes, and we are not going to invent a winner from a test we did not run. Read the note under each button.
 
@@ -523,7 +523,7 @@ Mouth tape is only worth buying if you can already breathe through your nose whi
 
 1. Blocked nose, a cold, or you cannot nose-breathe while awake: do not tape. Use a [nasal strip or dilator](/categories/nasal), or see a GP if snoring comes with pauses.
 2. Beard or stubble, and the nose is clear: Hostage Tape’s bullets still say facial hair, but on 21 November 2026 the title said “for Women” and the colour was Rose. Read both.
-3. You want to be able to open your mouth: MyoTape’s around-the-lips shape is the closer match. The Amazon button is the beard pack, and on 21 November 2026 it was temporarily out of stock. Sensitive-skin and kids packs are on the brand site, and that click is not commissioned.
+3. You want to be able to open your mouth, or you want a gentler adhesive: MyoTape’s around-the-lips shape is the closer match. The Amazon button is the sensitive-skin, medium pack, which was in stock on 21 November 2026. Kids packs are a different product; do not buy this one for a child.
 4. You want a vent and will buy from the brand: SomniFix, knowing that click is not commissioned.
 
 The longer breathing plan is [how to stop mouth breathing at night](/blog/how-to-stop-mouth-breathing-at-night). If the problem is falling asleep rather than an open mouth, start with [how to fall asleep fast](/blog/how-to-fall-asleep-fast-naturally) and the [sleep hygiene checklist](/blog/sleep-hygiene-2026). This page is not medical advice.` ,
@@ -608,7 +608,7 @@ Taping is a "forced practice" tool. Real lasting change comes from addressing th
 
 ## Week 3-4: Introduce Mouth Taping
 - Start with short periods (first half of night or during a 90-min nap)
-- Use a gentle tape. Dream Recovery sells one for sensitive skin. The MyoTape button on this site is the beard pack, which the title calls extra strong, so it is the wrong pack for reactive skin.
+- Use a gentle tape. The MyoTape button on this site is the sensitive-skin, medium pack, 30 nights, which was in stock on Amazon UK on 21 November 2026. Dream Recovery also sells a sensitive-skin tape on its own site, and that click is not commissioned.
 - Pair with nasal dilation
 - Keep a journal: How did you sleep? Any panic? Tape still on in morning?
 
@@ -627,7 +627,7 @@ Mouth taping is training wheels. The goal is to not need them forever.` ,
     readTime: '12 min',
     date: '2026-01-05',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-14',
+    updated: '2026-11-21',
     image: '/images/nasal-dilator.jpg',
     seoTitle: 'Stop Mouth Breathing at Night',
     seoDescription: 'Steps people try when they want to breathe through the nose at night, including nasal hygiene and when not to use tape. Not a reader trial.',
@@ -698,7 +698,7 @@ Start with the first group for two weeks before adding gadgets. This site has no
 - Blackout + quiet (or consistent pink/white noise).
 
 ## Mouth Taping & Nasal Breathing for Faster Sleep Onset
-Many chronic mouth breathers wake more often and take longer to fall back asleep. Once nasal breathing is trained, some people add a gentle mouth tape. Dream Recovery is the sensitive-skin option on this site. The MyoTape button is the beard pack, and the title calls the adhesive extra strong, so it is not the sensitive-skin pack. People who make the switch often report falling asleep faster and fewer middle-of-the-night awakenings. That is reported experience, not a trial this site ran.
+Many chronic mouth breathers wake more often and take longer to fall back asleep. Once nasal breathing is trained, some people add a gentle mouth tape. The MyoTape button on this site is the sensitive-skin, medium pack, 30 nights, which was in stock on Amazon UK on 21 November 2026. Dream Recovery also sells a sensitive-skin tape on its own site, and that click is not commissioned. People who make the switch often report falling asleep faster and fewer middle-of-the-night awakenings. That is reported experience, not a trial this site ran.
 
 See our full guide: [How to Stop Mouth Breathing at Night](/blog/how-to-stop-mouth-breathing-at-night) and the [Mouth Tape Hub](/mouth-tape).
 
@@ -722,7 +722,7 @@ This is not medical advice. If you have chronic insomnia or anxiety affecting sl
     readTime: '13 min',
     date: '2026-02-10',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-14',
+    updated: '2026-11-21',
     image: '/images/eight-sleep-pod.jpg',
     imageAlt: 'A bed with a white cover. Not a photo of a sleep technique.',
     seoTitle: 'How to Fall Asleep Faster',
@@ -821,7 +821,7 @@ If the pillow is so low that your cheek is crushed into the mattress, the tape i
 
 **You want a vent.** [SomniFix](/reviews/somnifix) has a hole in the centre of a wider strip. Its Amazon UK listing was unavailable. The button goes to the brand’s UK shop and is not commissioned.
 
-**You do not want the lips sealed.** MyoTape sits around the mouth. On 14 November 2026 the button opened the beard pack, 30 nights. The older 90-strip page is gone. Do not use that beard pack for a child.
+**You do not want the lips sealed.** MyoTape sits around the mouth. On 21 November 2026 the button opened the sensitive-skin, medium pack, 30 nights, which was in stock. The beard pack was still temporarily out of stock. Do not buy this pack for a child.
 
 **Dream Recovery and ZzzTape** sell from their own sites. We do not have affiliate codes, and we are not going to rank them from a test we did not run.
 

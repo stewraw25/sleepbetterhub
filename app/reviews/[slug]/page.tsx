@@ -199,7 +199,6 @@ export default async function ProductReviewPage({ params }: Props) {
                 <Separator className="my-5" />
 
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between"><span className="text-muted-foreground">Score</span> <span className="font-medium">Not scored</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Best For</span> <span className="font-medium text-right">{product.bestFor.join(', ')}</span></div>
                 </div>
               </div>

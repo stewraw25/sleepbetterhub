@@ -23,11 +23,8 @@ export function isProductionDeployment(): boolean {
 
 export const SITE_NAME = 'SleepBetterHub';
 
-/** Used on the privacy and terms pages. Not a guessed legal name. */
-export const DATA_CONTROLLER_PLACEHOLDER = '[DATA CONTROLLER NAME – Stewart to confirm]';
-
-/** Used on the privacy page. Not a guessed address. */
-export const POSTAL_ADDRESS_PLACEHOLDER = '[POSTAL ADDRESS – Stewart to confirm]';
+/** Legal name used on the privacy and terms pages. No street address is published. */
+export const DATA_CONTROLLER_NAME = 'Stewart Rawson';
 
 /**
  * Single contact address and the From address on newsletter mail.
