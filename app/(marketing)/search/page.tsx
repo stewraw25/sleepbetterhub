@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { pageMeta } from '@/lib/seo';
 import { searchGuides, searchProducts } from '@/lib/search';
-import { getInternalAffiliateLink, shopLabel, getAffiliateUrl, SPONSORED_REL } from '@/lib/affiliates';
+import { getInternalAffiliateLink, productShopLabel, SPONSORED_REL } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
   ...pageMeta({
@@ -69,7 +69,7 @@ export default async function SearchPage({
                     <div className="mt-2 flex gap-3 text-sm">
                       <Link href={`/reviews/${product.slug}`} className="text-primary underline underline-offset-2">Read notes</Link>
                       <a href={getInternalAffiliateLink(product.slug)} target="_blank" rel={SPONSORED_REL} className="text-primary underline underline-offset-2">
-                        {shopLabel(getAffiliateUrl(product.slug))}
+                        {productShopLabel(product)}
                       </a>
                     </div>
                   </li>

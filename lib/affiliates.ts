@@ -41,6 +41,13 @@ export function shopLabel(url: string): string {
   return isCommissionedAffiliate(url) ? 'View on Amazon' : 'View on brand site';
 }
 
+/** Prefer a product-specific button label when the default would be unclear. */
+export function productShopLabel(product: { slug: string; shopButtonLabel?: string }): string {
+  const custom = product.shopButtonLabel?.trim();
+  if (custom) return custom;
+  return shopLabel(getAffiliateUrl(product.slug));
+}
+
 function getAmazonUrl(asin: string): string {
   if (!AMAZON_TAG) {
     return `https://${AMAZON_DOMAIN}/dp/${asin}`;

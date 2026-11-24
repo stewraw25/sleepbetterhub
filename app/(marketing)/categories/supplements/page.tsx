@@ -7,7 +7,7 @@ import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
   title: 'Sleep Supplements',
-  description: 'Magnesium glycinate, L-theanine, and apigenin notes, with honest limits on what Amazon UK actually stocks.',
+  description: 'Magnesium glycinate, L-theanine, and apigenin notes, with links to specific Amazon UK listings checked on 24 November 2026.',
   path: '/categories/supplements',
   image: '/images/magnesium-supplement.jpg',
 });
@@ -20,7 +20,7 @@ export default function SupplementsCategory() {
       <div className="mb-8">
         <Link href="/categories" className="text-sm text-muted-foreground">← All Categories</Link>
         <h1 className="text-4xl tracking-tighter font-semibold mt-2">Supplements &amp; Sleep Routines</h1>
-        <p className="text-muted-foreground mt-2 max-w-prose">Notes on magnesium glycinate, L-theanine, and apigenin. The shop buttons open Amazon UK searches, not a named bottle this site has checked as in stock. This is not a dose.</p>
+        <p className="text-muted-foreground mt-2 max-w-prose">Notes on magnesium glycinate, L-theanine, and apigenin. The shop buttons go to specific Amazon UK listings checked on 24 November 2026. Confirm the brand, dose, and price on Amazon. This site has not tested the products, and this is not a dose.</p>
       </div>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">

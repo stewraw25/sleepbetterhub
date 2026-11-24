@@ -9,7 +9,7 @@ import { Separator } from '@/components/ui/separator';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 import { SafetyAlert } from '@/components/SafetyAlert';
 import { getProductBySlug, allProducts, categoryLabels } from '@/lib/products';
-import { getAffiliateUrl, getInternalAffiliateLink, shopLabel, SPONSORED_REL } from '@/lib/affiliates';
+import { getInternalAffiliateLink, productShopLabel, SPONSORED_REL } from '@/lib/affiliates';
 import { pageMeta } from '@/lib/seo';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
@@ -61,7 +61,6 @@ export default async function ProductReviewPage({ params }: Props) {
     .slice(0, 3);
 
   const catInfo = categoryMeta[product.category] || { backLink: '/categories', backText: 'Back to Categories' };
-  const destination = getAffiliateUrl(product.slug);
   const categoryPath = product.category === 'mouth-tape'
     ? '/mouth-tape'
     : `/categories/${product.category}`;
@@ -106,6 +105,11 @@ export default async function ProductReviewPage({ params }: Props) {
 
             <div className="prose review-prose mt-8 max-w-none">
               <p className="text-lg text-foreground">{product.longDescription}</p>
+              {product.slug === 'tempur-pedic-adapt' && (
+                <p>
+                  This page is about the TEMPUR EASE mattress topper made from TEMPUR Adapt material. It is not the TEMPUR Adapt mattress.
+                </p>
+              )}
               {product.category === 'sleep-masks' && (
                 <p>
                   A general chooser is <Link href="/blog/best-sleep-mask-uk" className="text-primary underline underline-offset-2">how to choose a sleep mask in the UK</Link>. Side sleeping changes which mask is comfortable; that guide is <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary underline underline-offset-2">best sleep mask for side sleepers</Link>.
@@ -186,7 +190,7 @@ export default async function ProductReviewPage({ params }: Props) {
                   rel={SPONSORED_REL}
                   className="mt-5 block"
                 >
-                  <Button size="lg" className="w-full text-base h-12">{shopLabel(destination)}</Button>
+                  <Button size="lg" className="w-full text-base h-12">{productShopLabel(product)}</Button>
                 </a>
                 <div className="mt-3">
                   <AffiliateDisclosure />

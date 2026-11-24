@@ -849,7 +849,7 @@ Always consult a healthcare professional for persistent insomnia or anxiety diso
     excerpt: 'What people repeat about magnesium glycinate, L-theanine, and apigenin. This site has not tested the combination and does not set a dose.',
     content: `People often mention magnesium glycinate, L-theanine, and apigenin together. This page is not a test of that combination, and it is not a dose you should follow without your own clinician.
 
-The shop buttons on the product pages open Amazon UK searches, not a Thorne, Momentous, or Sports Research bottle.
+The shop buttons on the product pages go to specific Amazon UK listings: EVO Nutrition magnesium glycinate, Nature’s Best L-theanine 200mg, and Time Health apigenin 50mg. This site has not tested those products.
 
 ## What is often repeated
 These lines are claims you will see elsewhere. This site has not checked them:
@@ -863,12 +863,12 @@ Do not treat a timing you read online as a prescription.
 ## What this page will not claim
 This site has not reviewed the trials, and it does not say the three ingredients have been shown to work together. A step-by-step dose that used to sit here has been removed. Ask a doctor or pharmacist before you start a supplement, especially if you take other medicines.
 
-The notes on this site are [Magnesium Glycinate](/reviews/magnesium-glycinate-sleep), [L-Theanine 200mg](/reviews/l-theanine-200mg), and [Apigenin 50mg](/reviews/apigenin-50mg). Each shop button is an Amazon UK search, not a confirmed brand bottle.`, 
+The notes on this site are [Magnesium Glycinate](/reviews/magnesium-glycinate-sleep), [L-Theanine 200mg](/reviews/l-theanine-200mg), and [Apigenin 50mg](/reviews/apigenin-50mg). Each shop button goes to a specific Amazon UK listing. Confirm the brand, dose, and price on that page. This site has not tested the products.`, 
     category: 'Supplements',
     readTime: '10 min',
     date: '2026-07-02',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-07',
+    updated: '2026-11-24',
     image: '/images/magnesium-supplement.jpg',
     seoTitle: 'Magnesium, Theanine, Apigenin',
     seoDescription: 'Notes on magnesium, L-theanine, and apigenin as they are sold. Not a dose chart from this site, and not a lab test.',
