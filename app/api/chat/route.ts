@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
         .map((p) => productLink(p.slug, p.name)),
     ];
   } else if (lower.includes('supplement') || lower.includes('magnesium') || lower.includes('theanine') || lower.includes('apigenin')) {
-    reply = 'The supplement pages describe magnesium glycinate, L-theanine, and apigenin as they are sold. The shop buttons open Amazon UK searches, not a named bottle this site has checked. This is not a dose and not a test.';
+    reply = 'The supplement pages describe magnesium glycinate, L-theanine, and apigenin as they are sold. The shop buttons go to specific Amazon UK listings. Confirm the brand, dose, and price on Amazon. This is not a dose and not a test.';
     suggestions = allProducts
       .filter((p) => p.category === 'supplements')
       .slice(0, 3)

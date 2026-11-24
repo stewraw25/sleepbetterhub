@@ -171,7 +171,7 @@ export default function Home() {
                 Eight Sleep’s temperature-controlled cover. The product note repeats a stated range of 12°C to 43°C and dual-zone control. This site has not tested it, and it has not verified athlete or Formula 1 use.
               </p>
               <p className="text-muted-foreground mb-6">
-                <span className="font-medium text-foreground">Listed from £2,295</span> • Confirm the current price on Eight Sleep’s site
+                <span className="font-medium text-foreground">Listed from £2,099 (was £2,499 on 24 Nov 2026)</span> • Confirm the current price on Eight Sleep’s site
               </p>
               <div className="flex gap-3">
                 <Link href="/reviews/eight-sleep-pod-6">

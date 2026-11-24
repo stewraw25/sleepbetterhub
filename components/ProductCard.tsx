@@ -70,7 +70,7 @@ export function ProductCard({ product, showBestFor = true }: ProductCardProps) {
               rel={SPONSORED_REL}
               className="inline-flex items-center gap-1 rounded-lg px-3 py-1 text-xs font-semibold bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
             >
-              Shop now <ExternalLink className="h-3 w-3" />
+              {product.shopButtonLabel || 'Shop now'} <ExternalLink className="h-3 w-3" />
             </a>
           </div>
         </div>

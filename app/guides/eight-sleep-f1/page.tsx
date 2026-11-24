@@ -78,7 +78,7 @@ export default function EightSleepF1Guide() {
 
               <h2>What the product page does say</h2>
               <p>
-                The <Link href="/reviews/eight-sleep-pod-6">Pod 6 notes</Link> repeat Eight Sleep’s own description of a cover that heats and cools the bed, with a stated range of 12°C to 43°C. That figure is the manufacturer’s, not a measurement from this site. The same page lists a price that was already on the site, from £2,295, and says to confirm the current price and membership on Eight Sleep’s UK site.
+                The <Link href="/reviews/eight-sleep-pod-6">Pod 6 notes</Link> repeat Eight Sleep’s own description of a cover that heats and cools the bed, with a stated range of 12°C to 43°C. That figure is the manufacturer’s, not a measurement from this site. The same page lists a price checked on 24 November 2026, £2,099 (was £2,499), and says to confirm the current price and membership on Eight Sleep’s UK site.
               </p>
               <p>
                 The Base, Blanket, and Pillow Cover are on the <Link href="/categories/bedding">accessories page</Link>. Those shop buttons have no affiliate code.
@@ -123,7 +123,7 @@ export default function EightSleepF1Guide() {
                 <div className="p-5">
                   <div className="font-semibold mb-1">Eight Sleep Pod 6</div>
                   <div className="text-sm text-muted-foreground mb-3">Temperature-controlled cover. Not tested on this site.</div>
-                  <div className="text-2xl font-semibold tracking-tight">Listed from £2,295</div>
+                  <div className="text-2xl font-semibold tracking-tight">Listed from £2,099 (was £2,499, 24 Nov 2026)</div>
                   <a href={affiliateLink} target="_blank" rel={SPONSORED_REL} className="mt-3 block">
                     <Button className="w-full">Shop Eight Sleep UK</Button>
                   </a>

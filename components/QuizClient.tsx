@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { mouthTapeProducts, Product } from '@/lib/products';
-import { getAffiliateUrl, getInternalAffiliateLink, shopLabel, SPONSORED_REL } from '@/lib/affiliates';
+import { getInternalAffiliateLink, productShopLabel, SPONSORED_REL } from '@/lib/affiliates';
 import { ArrowRight, RotateCcw, CheckCircle } from 'lucide-react';
 
 type Answer = {
@@ -205,7 +205,7 @@ export default function QuizClient() {
                     <Button variant="outline">Read notes</Button>
                   </Link>
                   <a href={getInternalAffiliateLink(product.slug)} target="_blank" rel={SPONSORED_REL}>
-                    <Button>{shopLabel(getAffiliateUrl(product.slug))}</Button>
+                    <Button>{productShopLabel(product)}</Button>
                   </a>
                 </div>
               </div>
