@@ -110,6 +110,31 @@ function checkData(data, visible, errors, counts) {
       }
     }
 
+    if (hasType(node, 'BreadcrumbList')) {
+      const elements = Array.isArray(node.itemListElement) ? node.itemListElement : [];
+      if (elements.length === 0) {
+        errors.push('BreadcrumbList has no itemListElement');
+      }
+      elements.forEach((item, index) => {
+        const name = typeof item?.name === 'string' ? item.name.trim() : '';
+        const url = typeof item?.item === 'string'
+          ? item.item
+          : (item?.item && typeof item.item === 'object' ? (item.item['@id'] || item.item.url || '') : '');
+        const itemName = item?.item && typeof item.item === 'object' && typeof item.item.name === 'string'
+          ? item.item.name.trim()
+          : '';
+        if (!name) {
+          errors.push(`BreadcrumbList item ${index + 1} is missing name`);
+        }
+        if (!url) {
+          errors.push(`BreadcrumbList item ${index + 1} ("${name || 'unnamed'}") is missing item URL`);
+        }
+        if (itemName && name && itemName !== name) {
+          errors.push(`BreadcrumbList item ${index + 1} has mismatched names ("${name}" vs "${itemName}")`);
+        }
+      });
+    }
+
     if (hasType(node, 'Offer')) {
       counts.offers += 1;
       if (!nonempty(node.hasMerchantReturnPolicy)) {

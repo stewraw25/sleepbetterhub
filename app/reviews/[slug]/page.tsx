@@ -8,11 +8,10 @@ import { Separator } from '@/components/ui/separator';
 
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 import { SafetyAlert } from '@/components/SafetyAlert';
-import { JsonLd } from '@/components/JsonLd';
 import { getProductBySlug, allProducts, categoryLabels } from '@/lib/products';
 import { getAffiliateUrl, getInternalAffiliateLink, shopLabel, SPONSORED_REL } from '@/lib/affiliates';
 import { pageMeta } from '@/lib/seo';
-import { breadcrumbJsonLd } from '@/lib/schema';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -69,15 +68,15 @@ export default async function ProductReviewPage({ params }: Props) {
 
   return (
     <div className="bg-background">
-      <JsonLd
-        data={breadcrumbJsonLd([
-          { name: 'Home', path: '/' },
-          { name: categoryLabels[product.category], path: categoryPath },
-          { name: product.name, path: `/reviews/${product.slug}` },
-        ])}
-      />
       <div className="container py-8">
-        <Link href={catInfo.backLink} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
+        <Breadcrumbs
+          items={[
+            { name: 'Home', path: '/' },
+            { name: categoryLabels[product.category], path: categoryPath },
+            { name: product.name, path: `/reviews/${product.slug}` },
+          ]}
+        />
+        <Link href={catInfo.backLink} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mt-4 mb-6">
           <ArrowLeft className="h-4 w-4" /> {catInfo.backText}
         </Link>
 
@@ -109,7 +108,7 @@ export default async function ProductReviewPage({ params }: Props) {
               <p className="text-lg text-foreground">{product.longDescription}</p>
               {product.category === 'sleep-masks' && (
                 <p>
-                  Side sleeping changes which mask is comfortable. The buying guide is <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary underline underline-offset-2">best sleep mask for side sleepers</Link>.
+                  A general chooser is <Link href="/blog/best-sleep-mask-uk" className="text-primary underline underline-offset-2">how to choose a sleep mask in the UK</Link>. Side sleeping changes which mask is comfortable; that guide is <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary underline underline-offset-2">best sleep mask for side sleepers</Link>.
                 </p>
               )}
               {product.slug.includes('tog-duvet') && (

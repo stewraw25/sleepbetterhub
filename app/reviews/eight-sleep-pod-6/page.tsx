@@ -7,13 +7,12 @@ import { Separator } from '@/components/ui/separator';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { getProductBySlug } from '@/lib/products';
 import { getInternalAffiliateLink, SPONSORED_REL } from '@/lib/affiliates';
-import { JsonLd } from '@/components/JsonLd';
 import { pageMeta } from '@/lib/seo';
-import { breadcrumbJsonLd } from '@/lib/schema';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata = pageMeta({
   title: 'Eight Sleep Pod 6 (UK)',
-  description: 'What Eight Sleep says the Pod 6 cover does, the price previously listed from £2,295, and that this site has not tested it.',
+  description: 'What Eight Sleep’s UK site said about the Pod 6 Cover on 24 November 2026, including the sale price, membership, and that this site has not tested it.',
   path: '/reviews/eight-sleep-pod-6',
   image: '/images/eight-sleep-pod.jpg',
 });
@@ -29,15 +28,15 @@ export default function EightSleepPod6Review() {
 
   return (
     <div className="bg-background">
-      <JsonLd
-        data={breadcrumbJsonLd([
-          { name: 'Home', path: '/' },
-          { name: 'Sleep trackers', path: '/categories/gadgets' },
-          { name: 'Eight Sleep Pod 6', path: '/reviews/eight-sleep-pod-6' },
-        ])}
-      />
       <div className="container py-8">
-        <Link href="/categories/gadgets" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6">
+        <Breadcrumbs
+          items={[
+            { name: 'Home', path: '/' },
+            { name: 'Sleep Trackers & Gadgets', path: '/categories/gadgets' },
+            { name: 'Eight Sleep Pod 6', path: '/reviews/eight-sleep-pod-6' },
+          ]}
+        />
+        <Link href="/categories/gadgets" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mt-4 mb-6">
           <ArrowLeft className="h-4 w-4" /> Back to Sleep Tech
         </Link>
 
@@ -60,7 +59,7 @@ export default function EightSleepPod6Review() {
             </div>
 
             <div className="mt-6 rounded-3xl overflow-hidden border bg-card aspect-[16/9] md:aspect-[16/8.5] relative">
-              <Image src={product.image} alt="Eight Sleep Pod 6 temperature-controlled mattress cover — UK review 2026" fill sizes="(max-width: 1024px) 100vw, 800px" className="object-cover" />
+              <Image src={product.image} alt="A bed with a cover. This is not a photograph taken to test the Eight Sleep Pod 6." fill sizes="(max-width: 1024px) 100vw, 800px" className="object-cover" />
             </div>
 
             {/* AFFILIATE DISCLOSURE */}
@@ -70,16 +69,17 @@ export default function EightSleepPod6Review() {
 
             <div className="prose review-prose mt-8 max-w-none">
               {/* WHAT IS IT */}
-              <h2>What Is the Eight Sleep Pod 6?</h2>
+              <h2>What Eight Sleep says the Pod 6 is</h2>
               <p>
-                The Eight Sleep Pod 6 is a smart mattress cover that actively heats or cools your bed using water circulation technology. 
-                It fits over your existing mattress (check compatibility) and connects to a bedside Hub unit that regulates temperature 
-                between 12°C and 43°C throughout the night.
+                Eight Sleep’s UK site, checked on 24 November 2026, describes the Pod 6 as a mattress Cover plus a Hub. The Cover is
+                listed as one inch thick and made to fit over an existing mattress. The site says each side of the bed can be cooled
+                or heated independently from 12°C to 43°C, and that sensors in the Cover track sleep and health. The Hub is listed at
+                42 cm × 20 cm × 16.5 cm and 6.9 kg, with a 550 W output, and is said to fit under most bed frames.
               </p>
               <p>
-                Beyond temperature control, the Pod 6 includes comprehensive sleep tracking — measuring heart rate, HRV, respiratory rate, 
-                and sleep stages — all without wearing anything on your wrist. The Autopilot feature uses this data to automatically 
-                adjust your bed temperature during different sleep phases.
+                The same page describes Autopilot, which it says adjusts temperature during the night, and a vibration and thermal
+                alarm. Those are the maker’s claims. This site has not tested the Cover, the Hub, or the alarm, and it has not
+                compared the tracking with a wearable.
               </p>
 
               {/* WHO IS IT FOR */}
@@ -87,23 +87,23 @@ export default function EightSleepPod6Review() {
               <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
                 <div className="rounded-xl border bg-emerald-50 dark:bg-emerald-950/30 p-4">
                   <div className="font-semibold text-emerald-800 dark:text-emerald-200 mb-2 flex items-center gap-2">
-                    <Check className="h-4 w-4" /> Great fit if you...
+                    <Check className="h-4 w-4" /> The listing is aimed at you if you...
                   </div>
                   <ul className="text-sm space-y-1.5 text-emerald-900 dark:text-emerald-100">
                     <li>• Wake up hot or throw off covers at night</li>
                     <li>• Share a bed with someone who prefers different temperatures</li>
-                    <li>• Want data-driven sleep optimisation without a wearable</li>
+                    <li>• Want the tracking and automatic adjustments the maker describes, without a wearable</li>
                     <li>• Want the temperature features the maker describes</li>
                     <li>• Have tried cheaper cooling solutions without success</li>
                   </ul>
                 </div>
                 <div className="rounded-xl border bg-rose-50 dark:bg-rose-950/30 p-4">
                   <div className="font-semibold text-rose-800 dark:text-rose-200 mb-2 flex items-center gap-2">
-                    <X className="h-4 w-4" /> Probably not for you if...
+                    <X className="h-4 w-4" /> It may be a poor fit if...
                   </div>
                   <ul className="text-sm space-y-1.5 text-rose-900 dark:text-rose-100">
-                    <li>• Budget is a primary concern (£2,295+ plus subscription)</li>
-                    <li>• You sleep fine already — this won't create miracles</li>
+                    <li>• The price is the main barrier (£2,099 on sale on 24 November 2026, plus membership)</li>
+                    <li>• You already sleep well and are not looking for a heating and cooling cover</li>
                     <li>• You prefer minimal tech in the bedroom</li>
                     <li>• Your mattress isn't compatible (check sizing guide)</li>
                     <li>• You rent and move frequently (setup is involved)</li>
@@ -112,49 +112,68 @@ export default function EightSleepPod6Review() {
               </div>
 
               {/* POD 6 VS PREVIOUS */}
-              <h2>Pod 6 vs Previous Generations</h2>
+              <h2>How this page relates to older Pod models</h2>
               <p>
-                Eight Sleep has iterated several times. The Pod 6 (launched 2024, current model in UK as of late 2026) 
-                brings improved temperature range, faster cooling response, and refined Autopilot algorithms compared to the Pod 3 and Pod 4.
+                This site used to have a Pod 4 page. That address now redirects to this Pod 6 page. Do not treat this page as a
+                comparison test of Pod 4, Pod 5, and Pod 6. This site has not measured differences between generations.
               </p>
               <p>
-                Key improvements in the Pod 6 include a thinner profile, quieter operation, and better integration with the Eight Sleep app. 
-                The dual-zone system now responds faster when one partner gets into bed later than the other.
+                What we can say from the public UK listing on 24 November 2026 is that Pod 6 is the model Eight Sleep is selling
+                now, that solo sizes start at a lower price than the standard Cover, and that the Cover is described as one inch
+                thick. Confirm sizes and compatibility on Eight Sleep’s own size guide before you buy.
               </p>
 
               {/* UK PRICING */}
-              <h2>UK Pricing and Sizes (2026)</h2>
-              <p className="text-muted-foreground italic">Prices as advertised on eightsleep.com/uk — always verify current pricing before purchase.</p>
+              <h2>UK pricing and sizes, checked 24 November 2026</h2>
+              <p className="text-muted-foreground italic">Figures below were read from eightsleep.com/uk on 24 November 2026, during a Black Friday sale. They will change. Confirm the current price, membership, and delivery date before you buy.</p>
               <div className="not-prose my-6 overflow-x-auto">
                 <table className="w-full text-sm border rounded-lg">
                   <thead className="bg-muted/50">
                     <tr>
                       <th className="text-left p-3 font-medium">Product</th>
-                      <th className="text-left p-3 font-medium">UK Price (approx.)</th>
-                      <th className="text-left p-3 font-medium">Notes</th>
+                      <th className="text-left p-3 font-medium">UK price that day</th>
+                      <th className="text-left p-3 font-medium">Notes from the listing</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-t">
-                      <td className="p-3">Pod 6 Cover (Double/King)</td>
-                      <td className="p-3 font-medium">From £2,295</td>
-                      <td className="p-3 text-muted-foreground">Cover only — fits your existing mattress</td>
+                      <td className="p-3">Pod 6 Cover (standard sizes)</td>
+                      <td className="p-3 font-medium">£2,099, was £2,499</td>
+                      <td className="p-3 text-muted-foreground">Cover and Hub. The page said £400 off. Mattress and frame are not included.</td>
                     </tr>
                     <tr className="border-t">
-                      <td className="p-3">Pod 6 + Base Bundle</td>
-                      <td className="p-3 font-medium">From £3,295</td>
-                      <td className="p-3 text-muted-foreground">Includes the Eight Sleep base frame</td>
+                      <td className="p-3">Solo Cover sizes</td>
+                      <td className="p-3 font-medium">From £1,799</td>
+                      <td className="p-3 text-muted-foreground">Advertised for a UK Single, or one side of a UK King or Super King.</td>
                     </tr>
                     <tr className="border-t">
-                      <td className="p-3">Autopilot Membership</td>
-                      <td className="p-3 font-medium">£15/month or £190/year</td>
-                      <td className="p-3 text-muted-foreground">Required for smart features</td>
+                      <td className="p-3">Eight Sleep Base</td>
+                      <td className="p-3 font-medium">£1,399, was £1,699</td>
+                      <td className="p-3 text-muted-foreground">Optional add-on on the same page, listed at £300 off.</td>
+                    </tr>
+                    <tr className="border-t">
+                      <td className="p-3">Blanket add-on</td>
+                      <td className="p-3 font-medium">£599, was £799</td>
+                      <td className="p-3 text-muted-foreground">Optional. The page describes it as a hydro-powered duvet insert.</td>
+                    </tr>
+                    <tr className="border-t">
+                      <td className="p-3">Autopilot Standard</td>
+                      <td className="p-3 font-medium">£17/month or £199/year</td>
+                      <td className="p-3 text-muted-foreground">Listed for automatic temperature, tracking, and the alarm. Confirm what still works without it.</td>
+                    </tr>
+                    <tr className="border-t">
+                      <td className="p-3">Autopilot Enhanced</td>
+                      <td className="p-3 font-medium">£25/month or £299/year</td>
+                      <td className="p-3 text-muted-foreground">A higher tier on the same page. Confirm what it adds, and what the warranty is tied to.</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <p>
-                <strong>The subscription question:</strong> Eight Sleep’s own pages describe Autopilot, sleep numbers, and the alarm as membership features. Confirm what still works without it, and the current fee, before you buy.
+                Standard Cover sizes listed were UK Double, King, Super King, and Emperor. Solo sizes listed were UK Single, Solo King, and Solo Super King. Use Eight Sleep’s size guide, in centimetres, before you order.
+              </p>
+              <p>
+                <strong>The subscription question:</strong> Eight Sleep’s own pages describe Autopilot, tracking, and the alarm as membership features. Confirm what still works without it, and the current fee, before you buy.
               </p>
 
               {/* AUTOPILOT / FEATURES */}
@@ -176,20 +195,20 @@ export default function EightSleepPod6Review() {
               
               <h3>Noise</h3>
               <p>
-                The Hub unit makes some noise — it's not silent. Eight Sleep rates it at around 25-30 dB when actively cooling, 
-                similar to a quiet fan. This site has not measured that. If you are very sensitive to noise, treat it as an open question.
+                The Hub is a machine that sits near the bed. This site has not measured how loud it is, and Eight Sleep’s UK product
+                page on 24 November 2026 did not print a decibel rating in the text we checked. If you are very sensitive to noise, treat that as an open question and look at the current listing.
               </p>
 
-              <h3>Leaks and Reliability</h3>
+              <h3>Water in the system</h3>
               <p>
-                Water-based systems always carry some leak risk. Eight Sleep's Pod 6 uses a sealed system and the Cover has a waterproof 
-                layer, but early generations had more leak reports. The Pod 6 has improved reliability, and the company offers a warranty. 
-                Follow setup instructions carefully and check connections periodically.
+                The system uses water in the Cover. That always carries some leak risk. This site has not inspected the seals, and it
+                does not have data on how often leaks happen. Follow Eight Sleep’s setup instructions and read the current warranty before you buy.
               </p>
 
-              <h3>Warranty and Returns (UK)</h3>
+              <h3>Trial and warranty (UK), as listed on 24 November 2026</h3>
               <p>
-                Earlier copy on this page stated a 30-night UK trial and a 2-year limited warranty. Confirm both on Eight Sleep’s site. This site has not re-checked those terms and has not run a trial.
+                The UK product page that day listed a 30-night risk-free trial and a 5-year warranty. Confirm both on Eight Sleep’s
+                site, including what the warranty is tied to and whether a membership tier affects it. This site has not run a trial.
               </p>
 
               {/* F1 ANGLE */}
@@ -207,7 +226,7 @@ export default function EightSleepPod6Review() {
               </p>
 
               {/* PROS */}
-              <h2>What We Like</h2>
+              <h2>What the listing supports</h2>
               <ul>
                 {product.pros.map((pro, i) => (
                   <li key={i} className="flex gap-2"><Check className="mt-1 h-4 w-4 text-emerald-600 shrink-0" /> {pro}</li>
@@ -215,7 +234,7 @@ export default function EightSleepPod6Review() {
               </ul>
 
               {/* CONS */}
-              <h2>What Could Be Better</h2>
+              <h2>Limits and costs to check</h2>
               <ul>
                 {product.cons.map((con, i) => (
                   <li key={i} className="flex gap-2"><X className="mt-1 h-4 w-4 text-rose-600 shrink-0" /> {con}</li>
@@ -229,15 +248,15 @@ export default function EightSleepPod6Review() {
               </ol>
 
               {/* VERDICT */}
-              <h2>The Verdict: Is Eight Sleep Pod 6 Worth It?</h2>
+              <h2>What this page can and cannot tell you</h2>
               <p>
-                If you wake hot, or you share a bed with someone who wants a different temperature, the maker’s pitch is a cover that heats and cools. This site has not tested whether it does that for you.
+                If you wake hot, or you share a bed with someone who wants a different temperature, the maker’s pitch is a cover that heats and cools each side. This site has not tested whether it does that for you.
               </p>
               <p>
-                The price is the main barrier. The figure on this page is from £2,295 plus a membership. Confirm both before you buy.
+                The price is the main barrier. On 24 November 2026 the Cover was listed at £2,099, against a standard price of £2,499, plus an Autopilot membership. Confirm both, and the trial terms, on Eight Sleep’s site before you buy.
               </p>
               <p>
-                There is no recommendation from a test. If you buy, confirm the current trial terms on Eight Sleep’s site first.
+                There is no recommendation from a test, and no affiliate code on the button.
               </p>
             </div>
 

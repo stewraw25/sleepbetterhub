@@ -25,10 +25,11 @@ const nextConfig: NextConfig = {
         destination: `${DEFAULT_SITE_URL}/:path*`,
         permanent: true,
       },
+      // statusCode 301 (not permanent:true, which Next.js emits as 308).
       {
         source: '/reviews/eight-sleep-pod-4',
         destination: '/reviews/eight-sleep-pod-6',
-        permanent: true,
+        statusCode: 301,
       },
     ];
   },
