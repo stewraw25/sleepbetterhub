@@ -53,12 +53,77 @@ export function getAllPosts(): BlogPost[] {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'best-sleep-mask-uk',
+    title: 'How to Choose a Sleep Mask in the UK',
+    excerpt: 'A general UK guide to sleep masks: when an eye mask is worth having, how shapes differ, and three Amazon listings last checked on 21 November 2026. This site has not worn them.',
+    content: `**Affiliate disclosure.** The three mask links go to Amazon UK with our Associates tag. Prices were read off those listings on 21 November 2026 and will change. A further check of those pages was blocked on 24 November 2026, so the figures have not been updated. Confirm the buy box before you pay. We have not worn these masks. The star counts below are Amazon’s, not scores we gave them.
+
+If you want a sleep mask in the UK, start with the room and the way you lie, not with a silk claim. A mask is what you add when curtains, a blind, and a covered clock still leave the room too bright. It is not a treatment for insomnia, snoring, or a stiff neck.
+
+Side sleepers have a separate, longer page: [best sleep mask for side sleepers](/blog/best-sleep-mask-for-side-sleepers). Use that if the question is a cup digging into the temple, or light leaking in beside the nose when one eye is on the pillow. This page is the general chooser.
+
+## What the published advice actually says
+
+This is not a light test we ran.
+
+- [NHS Every Mind Matters](https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/) says you may sleep more easily in a room that is quiet, dark and cool. The list starts with earplugs if noise is the problem, the phone on silent, curtains fully closed, clocks out of view, and the phone face down. An eye mask is the next line: wear one if light is still a problem.
+- [The Sleep Charity](https://thesleepcharity.org.uk/adults/sleep-environment/) says light and dark tell the body when to wake and when to sleep. Even while you are asleep, light can be detected through the eyelids, so the room needs to be dark to stay asleep. They say you ideally should not be able to see the other side of the bedroom. Curtains that are well lined, and a blackout blind, come first. An eye mask is the extra step, and they name shift workers who are trying to sleep in daylight. A TV standby light or an alarm-clock glow is enough to matter, so cover those or turn them off.
+
+Neither page ranks a brand. If the problem is snoring with pauses, choking, or sleepiness that gets in the way of the day, that belongs with a GP, not a strap.
+
+## How the shapes differ
+
+Listings use a few repeated design words. They are descriptions, not scores.
+
+- **A flat mask** sits close to the eyelids. It can work if you sleep on your back and do not mind pressure on the eyes. On your side, that same flat panel is pressed into the eye that is on the pillow.
+- **A 3D or contoured cup** leaves a space over the eye, which the listing usually describes as room for eyelashes or “no pressure on the eyes”. A deeper cup can still press the temple when you lie on your side.
+- **A side-sleeper design** is written for that temple problem. The [Manta Pro](/reviews/manta-pro-sleep-mask) listing describes C-shaped cups that sit flat against the temple so nothing sits between your head and the pillow. That is Manta’s claim. This site has not worn it.
+
+A mask will also make your face a little warmer. If you already throw the covers off, the [what tog duvet](/blog/what-tog-duvet) guide is the other half of that. A stiff neck is a pillow-height problem: [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers).
+
+## Three Amazon UK listings, last checked 21 November 2026
+
+The same three masks appear in the side-sleeper guide. They are used here because those ASINs were in stock on that date, with a published price. This is not a ranking, and it is not a wear test. Shop buttons go through this site's /go/ links and use the Associates tag stewraw25-21.
+
+### Manta Pro
+
+The [Manta Pro](/reviews/manta-pro-sleep-mask) (ASIN B0C36K8SJJ, model PRO) is titled as a sleep mask for side sleepers. On 21 November 2026 the buy box was £55.20 and the page said in stock. MantaSleep sells it and Amazon dispatches it. The bullets say a slim angled strap and C-shaped eye cups. The description says those cups sit flat against the temple. The material field says polyester. Care says machine wash. The age field says Adult. Amazon showed 4.1 out of 5 from 1,801 ratings; those ratings are Amazon’s. The safety line says not to use it if you have difficulty breathing or removing the mask yourself, and that it is not suitable for children without supervision. [Shop the Manta Pro](/go/manta-pro-sleep-mask).
+
+### MyHalos 3D
+
+The [MyHalos 3D mask](/reviews/myhalos-3d-sleep-mask) (ASIN B0F7HJ428M, model HM-SL3P-MASK) opened on grey. On 21 November 2026 the buy box was £9.99, in stock, against a list price of £13.99. First Option Products sells it and Amazon dispatches it. The short title says cotton. The material field says memory foam. The bullets describe 3D cups, a flexible nose piece, and no pressure on the eyes. “Side sleeper” appears in the longer title, not in those bullets. Care is hand wash only. The safety line says keep it away from fire, and not to use it if you cannot remove it yourself. Amazon showed 4.6 out of 5 from 27,193 ratings; those ratings are Amazon’s. [Shop the MyHalos 3D mask](/go/myhalos-3d-sleep-mask).
+
+### Umisleep
+
+The [Umisleep mask](/reviews/umisleep-side-sleeper-mask) (ASIN B09DXYX7BQ, model YZ01) is titled “Sleep Mask for Side Sleepers”, colour black. On 21 November 2026 the buy box was £5.12, in stock, against a list price of £7.99. PRDE sells it and Amazon dispatches it. The first bullet says a curved structure, designed for side sleepers, to avoid pressure on the face. Later bullets mention a nose seal and 3D space for eyelashes. The material field lists two compositions on the same line. Care is hand wash only. The safety line is about checking the material if you react to fabrics. Amazon showed 4.5 out of 5 from 3,481 ratings; those ratings are Amazon’s. [Shop the Umisleep mask](/go/umisleep-side-sleeper-mask).
+
+## A simple way to choose
+
+1. Make the room as dark as you reasonably can first: curtains, a blind, phones face down, clock glow covered. The NHS and Sleep Charity lists above start there.
+2. If you sleep on your side, or you already know a flat mask presses your eye, read the [side-sleeper guide](/blog/best-sleep-mask-for-side-sleepers) and try the on-your-side check described there before you pay.
+3. If you sleep on your back and want a low price while you find out whether a mask helps at all, the Umisleep or MyHalos listings were the cheaper two on 21 November 2026. That is a price fact from that day, not a quality score.
+4. If the listing’s point is cups that sit flat against the temple, that is the Manta Pro page. It was also the expensive one of the three.
+5. Do not use a mask if you cannot take it off yourself. Read the safety line on the listing, and do not buy an adult mask for a child unless the page says it is suitable.
+
+The product notes, and the same three shop buttons, are also on the [sleep masks category page](/categories/sleep-masks). This page is not medical advice.`,
+    category: 'Guides',
+    readTime: '8 min',
+    date: '2026-11-24',
+    updated: '2026-11-24',
+    author: 'SleepBetterHub Editorial Team',
+    image: '/images/hero-bedroom.jpg',
+    imageAlt: 'A dim bedroom. This is not a photograph of a sleep mask.',
+    seoTitle: 'Best Sleep Mask UK: How to Choose',
+    seoDescription: 'How to choose a sleep mask in the UK, from NHS and Sleep Charity advice, plus three Amazon listings last checked on 21 November 2026. Not a wear test.',
+    tags: ['sleep masks', 'blackout', 'side sleepers', 'UK buying guide'],
+  },
+  {
     slug: 'best-sleep-mask-for-side-sleepers',
     title: 'Best Sleep Mask for Side Sleepers',
     excerpt: 'On your side, one eye is against the pillow. NHS and The Sleep Charity say when an eye mask is worth having. Three Amazon UK masks were in stock on 21 November 2026.',
     content: `**Affiliate disclosure.** The three mask links go to Amazon UK with our Associates tag. Prices were read off those listings on 21 November 2026 and will change. We have not worn these masks. The star counts below are Amazon’s, not scores we gave them.
 
-If you are looking for the best sleep mask for side sleepers, start with the eye that is on the pillow, not with a silk claim. A flat mask presses that eye. A deep cup can press the temple instead, and then the mask is the thing keeping you awake. Light also leaks in beside the nose when the mask does not meet the bridge.
+This page is for side sleepers. The general chooser, including back sleepers, is [how to choose a sleep mask in the UK](/blog/best-sleep-mask-uk). If you are looking for the best sleep mask for side sleepers, start with the eye that is on the pillow, not with a silk claim. A flat mask presses that eye. A deep cup can press the temple instead, and then the mask is the thing keeping you awake. Light also leaks in beside the nose when the mask does not meet the bridge.
 
 ## What the published advice actually says
 
@@ -157,10 +222,14 @@ The notes on these three are on the [sleep masks page](/categories/sleep-masks).
   {
     slug: 'what-tog-duvet',
     title: 'What Tog Duvet Do I Need?',
-    excerpt: 'Match the tog to the bedroom, not the season on the packet. Which? and The Sleep Charity set the ranges. Three Silentnight doubles were checked again on Amazon UK on 21 November 2026.',
+    excerpt: 'For a UK winter, match the tog to the bedroom after the heating goes off. Which? and The Sleep Charity set the ranges. Three Silentnight doubles were last checked on Amazon UK on 21 November 2026.',
     content: `**Affiliate disclosure.** The three duvet links go to Amazon UK with our Associates tag. Prices were read off those listings on 21 November 2026 and will change. We have not slept under these duvets. The star counts below are Amazon’s, not scores we gave them.
 
-If you are asking what tog duvet you need, start with the room after the heating goes off, and with whether you wake hot or cold. Tog is a measure of how thermally insulating a duvet is. Which? says the scale runs from about 1 to about 15, and that a higher number is warmer. It is not the weight, and it is not the thickness, though a warmer duvet is often thicker.
+Late November into winter is when this question usually comes up in the UK: the heating goes off overnight, and a duvet that felt fine in September no longer does. Start with the room after the heating goes off, and with whether you wake hot or cold, not with the season printed on the packet.
+
+The prices and stock notes below were read on Amazon UK on 21 November 2026 and will change. A further check of those same listings was blocked on 24 November 2026, so the figures have not been updated. Confirm the buy box before you pay. We have not slept under these duvets.
+
+Tog is a measure of how thermally insulating a duvet is. Which? says the scale runs from about 1 to about 15, and that a higher number is warmer. It is not the weight, and it is not the thickness, though a warmer duvet is often thicker. For most British winters, Which? says 13.5 tog is warm enough. A 10.5 tog sits at the bottom of that winter band, so a room that falls well below 16°C can leave it feeling thin. A 4.5 tog is the light end, for a room that stays warm or for someone who already overheats.
 
 ## The two sources worth using
 
@@ -228,12 +297,12 @@ The mattress underneath is a separate purchase. Notes on that, and on these thre
     category: 'Guides',
     readTime: '12 min',
     date: '2026-11-14',
-    updated: '2026-11-21',
+    updated: '2026-11-24',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/hero-bedroom.jpg',
     imageAlt: 'A dim bedroom with a made bed. Not a photo of a specific duvet.',
     seoTitle: 'What Tog Duvet Do I Need? (UK)',
-    seoDescription: 'What tog duvet to buy in a UK bedroom: 4.5, 10.5 or 13.5, from Which? and The Sleep Charity, plus three Silentnight prices checked on 21 November 2026.',
+    seoDescription: 'What tog duvet to buy for a UK winter bedroom: 4.5, 10.5 or 13.5, from Which? and The Sleep Charity, plus three Silentnight prices checked on 21 November 2026.',
     tags: ['duvets', 'tog', 'hot sleepers', 'bedding', 'winter'],
     faqs: [
       {
@@ -506,7 +575,9 @@ This page is not medical advice.`,
     excerpt: 'There is no lab panel behind this page. Choose by the shape of the strip, whether you have a beard, and which UK listing is actually in stock.',
     content: `**Affiliate disclosure.** Some links go to Amazon with our Associates tag. Brand-site links are marked on the product page when they are not commissioned.
 
-An earlier version of this page described an eight-week test with 12 people. This site did not run that test. What follows is how the strips are designed, and which shops were actually selling them on 7 November 2026.
+This is the buying guide: how the designs differ, and which UK listings were in stock. The comparison table, plus longer notes on types, beards, CPAP, snoring, and how to apply a strip, are on the [mouth tape hub](/mouth-tape).
+
+An earlier version of this page described an eight-week test with 12 people. This site did not run that test. What follows is how the strips are designed, and which shops were actually selling them in November 2026.
 
 ## Start with the nose
 
@@ -531,7 +602,7 @@ The longer breathing plan is [how to stop mouth breathing at night](/blog/how-to
     readTime: '7 min',
     date: '2026-01-12',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-21',
+    updated: '2026-11-24',
     image: '/images/dream-recovery-tape.jpg',
     seoTitle: 'Best Mouth Tape 2026: Beard, Skin, and Hold',
     seoDescription: 'How to choose mouth tape in the UK without a fake lab score. Beard hold, a lip-surround strip, a vent, and which listings were in stock in November 2026.',
@@ -698,7 +769,7 @@ Start with the first group for two weeks before adding gadgets. This site has no
 - Blackout + quiet (or consistent pink/white noise).
 
 ## Mouth Taping & Nasal Breathing for Faster Sleep Onset
-Many chronic mouth breathers wake more often and take longer to fall back asleep. Once nasal breathing is trained, some people add a gentle mouth tape. The MyoTape button on this site is the sensitive-skin, medium pack, 30 nights, which was in stock on Amazon UK on 21 November 2026. Dream Recovery also sells a sensitive-skin tape on its own site, and that click is not commissioned. People who make the switch often report falling asleep faster and fewer middle-of-the-night awakenings. That is reported experience, not a trial this site ran.
+Many chronic mouth breathers wake more often and take longer to fall back asleep. Once nasal breathing is trained, some people add a gentle mouth tape. The MyoTape button on this site is the sensitive-skin, medium pack, 30 nights, which was in stock on Amazon UK on 21 November 2026. Dream Recovery also sells a sensitive-skin tape on its own site, and that click is not commissioned. This site has not measured whether mouth tape helps people fall asleep faster, or wake less often. Treat any such claim as unverified here. Only consider a strip if you can already breathe through your nose while awake, and read the safety notes on the mouth tape hub first.
 
 See our full guide: [How to Stop Mouth Breathing at Night](/blog/how-to-stop-mouth-breathing-at-night) and the [Mouth Tape Hub](/mouth-tape).
 
@@ -722,7 +793,7 @@ This is not medical advice. If you have chronic insomnia or anxiety affecting sl
     readTime: '13 min',
     date: '2026-02-10',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-21',
+    updated: '2026-11-24',
     image: '/images/eight-sleep-pod.jpg',
     imageAlt: 'A bed with a white cover. Not a photo of a sleep technique.',
     seoTitle: 'How to Fall Asleep Faster',

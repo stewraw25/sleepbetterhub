@@ -6,7 +6,8 @@ import { Newsletter } from '@/components/Newsletter';
 import { BlogBody } from '@/components/BlogBody';
 import { JsonLd } from '@/components/JsonLd';
 import { pageMeta } from '@/lib/seo';
-import { articleJsonLd, breadcrumbJsonLd, faqJsonLd } from '@/lib/schema';
+import { articleJsonLd, faqJsonLd } from '@/lib/schema';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -52,23 +53,16 @@ export default async function BlogPost({ params }: Props) {
 
   return (
     <article className="container max-w-3xl py-10">
-      <JsonLd
-        data={breadcrumbJsonLd([
-          { name: 'Home', path: '/' },
-          { name: 'Guides', path: '/blog' },
-          { name: post.title, path: `/blog/${post.slug}` },
-        ])}
-      />
       <JsonLd data={articleJsonLd(post)} />
       {post.faqs && post.faqs.length > 0 ? <JsonLd data={faqJsonLd(post.faqs)} /> : null}
 
-      <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground">
-        <Link href="/" className="hover:text-foreground">Home</Link>
-        <span aria-hidden="true"> / </span>
-        <Link href="/blog" className="hover:text-foreground">Guides</Link>
-        <span aria-hidden="true"> / </span>
-        <span className="text-foreground">{post.title}</span>
-      </nav>
+      <Breadcrumbs
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'Guides', path: '/blog' },
+          { name: post.title, path: `/blog/${post.slug}` },
+        ]}
+      />
 
       <header className="mt-6 mb-8">
         <div className="text-xs uppercase tracking-widest text-primary">{post.category} • {post.readTime} read</div>

@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.updated || post.date),
     changeFrequency: 'monthly',
-    priority: post.slug === 'mouth-tape-vs-nasal-strips-for-snoring' || post.slug === 'best-pillow-for-side-sleepers' || post.slug === 'what-tog-duvet' || post.slug === 'best-sleep-mask-for-side-sleepers' ? 0.9 : 0.7,
+    priority: post.slug === 'mouth-tape-vs-nasal-strips-for-snoring' || post.slug === 'best-pillow-for-side-sleepers' || post.slug === 'what-tog-duvet' || post.slug === 'best-sleep-mask-for-side-sleepers' || post.slug === 'best-sleep-mask-uk' ? 0.9 : 0.7,
   }));
 
   return [...staticPages, ...productPages, ...blogPages];

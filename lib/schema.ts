@@ -1,21 +1,38 @@
 import type { BlogPost } from './blog';
 import { getSiteUrl, SITE_NAME } from './site';
 
+export type BreadcrumbItem = { name: string; path: string };
+
 export function jsonLdScript(data: object): string {
   return JSON.stringify(data).replace(/</g, '\\u003c');
 }
 
-export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
+/**
+ * BreadcrumbList for Google. Every ListItem must have a non-empty name and an
+ * item URL. The name is also repeated on the item object so parsers that only
+ * read item.name still have a label (the Search Console API had been showing
+ * "Unnamed item" on otherwise valid pages).
+ */
+export function breadcrumbJsonLd(items: BreadcrumbItem[]) {
   const site = getSiteUrl();
+  const crumbs = items.filter((item) => item.name.trim().length > 0);
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: items.map((item, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: item.name,
-      item: `${site}${item.path === '/' ? '' : item.path}`,
-    })),
+    itemListElement: crumbs.map((item, index) => {
+      const url = `${site}${item.path === '/' ? '' : item.path}`;
+      const name = item.name.trim();
+      return {
+        '@type': 'ListItem',
+        position: index + 1,
+        name,
+        item: {
+          '@type': 'WebPage',
+          '@id': url,
+          name,
+        },
+      };
+    }),
   };
 }
 

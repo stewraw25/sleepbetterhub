@@ -23,9 +23,10 @@ export async function POST(req: NextRequest) {
   });
 
   if (lower.includes('sleep mask') || lower.includes('eye mask')) {
-    reply = 'The sleep-mask guide is for side sleepers: light at the nose, and whether the cup digs into the temple. Three Amazon UK masks were in stock on 21 November 2026. This site has not worn them.';
+    reply = 'There is a general UK sleep-mask guide, and a longer page for side sleepers if the question is light at the nose or a cup digging into the temple. Three Amazon UK masks were last checked on 21 November 2026. This site has not worn them.';
     suggestions = [
-      { slug: 'best-sleep-mask-for-side-sleepers', name: 'Sleep mask guide', link: '/blog/best-sleep-mask-for-side-sleepers' },
+      { slug: 'best-sleep-mask-uk', name: 'Sleep mask guide (UK)', link: '/blog/best-sleep-mask-uk' },
+      { slug: 'best-sleep-mask-for-side-sleepers', name: 'Side-sleeper sleep mask guide', link: '/blog/best-sleep-mask-for-side-sleepers' },
       ...allProducts
         .filter((p) => p.category === 'sleep-masks')
         .map((p) => productLink(p.slug, p.name)),
