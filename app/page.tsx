@@ -7,7 +7,7 @@ import { SPONSORED_REL } from '@/lib/affiliates';
 
 export const metadata: Metadata = pageMeta({
   title: 'SleepBetterHub | Mouth Tape & Sleep Reviews',
-  description: 'UK guides on mouth tape, nasal strips, pillows, duvet tog, and sleep masks. Prices come from the listings. This site has not tested the products.',
+  description: 'UK guides on mouth tape, nasal strips, pillows, duvet tog, sleep masks, and earplugs. Prices come from the listings. This site has not tested the products.',
   path: '/',
   absoluteTitle: true,
 });
@@ -299,7 +299,7 @@ export default function Home() {
 
           {/* Targeted internal links for high-volume global searches */}
           <div className="mt-6 text-sm text-muted-foreground">
-            Popular guides: <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary hover:underline">best sleep mask for side sleepers</Link> · <Link href="/blog/what-tog-duvet" className="text-primary hover:underline">what tog duvet do I need</Link> · <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary hover:underline">best pillow for side sleepers</Link> · <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary hover:underline">mouth tape vs nasal strips for snoring</Link> · <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link> · <Link href="/reviews/eight-sleep-pod-6" className="text-primary hover:underline">Eight Sleep Pod 6 review</Link>
+            Popular guides: <Link href="/blog/best-earplugs-for-side-sleepers" className="text-primary hover:underline">best earplugs for side sleepers</Link> · <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary hover:underline">best sleep mask for side sleepers</Link> · <Link href="/blog/what-tog-duvet" className="text-primary hover:underline">what tog duvet do I need</Link> · <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary hover:underline">best pillow for side sleepers</Link> · <Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="text-primary hover:underline">mouth tape vs nasal strips for snoring</Link> · <Link href="/mouth-tape" className="text-primary hover:underline">best mouth tape 2026</Link>
           </div>
         </div>
       </section>

@@ -31,6 +31,7 @@ const categoryMeta: Record<string, { label: string; backLink: string; backText: 
   'supplements': { label: 'Supplement', backLink: '/categories/supplements', backText: 'Back to Supplements' },
   'bedding': { label: 'Eight Sleep accessory', backLink: '/categories/bedding', backText: 'Back to Eight Sleep accessories' },
   'sleep-masks': { label: 'Sleep Mask', backLink: '/categories/sleep-masks', backText: 'Back to Sleep Masks' },
+  'earplugs': { label: 'Earplugs', backLink: '/categories/earplugs', backText: 'Back to Earplugs' },
 };
 
 export async function generateMetadata({ params }: Props) {
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Props) {
   const product = getProductBySlug(slug);
   if (!product) return { title: 'Review Not Found' };
 
-  const description = `${product.name}: ${product.description}`.slice(0, 160);
+  const description = `${product.name}. ${product.description}`;
 
   return pageMeta({
     title: product.seoTitle || product.name,
@@ -108,6 +109,12 @@ export default async function ProductReviewPage({ params }: Props) {
               {product.slug === 'tempur-pedic-adapt' && (
                 <p>
                   This page is about the TEMPUR EASE mattress topper made from TEMPUR Adapt material. It is not the TEMPUR Adapt mattress.
+                </p>
+              )}
+              {product.category === 'earplugs' && (
+                <p>
+                  Side sleeping changes which plug is comfortable. The buying guide is <Link href="/blog/best-earplugs-for-side-sleepers" className="text-primary underline underline-offset-2">best earplugs for side sleepers</Link>.
+                  Light is a separate problem: <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary underline underline-offset-2">best sleep mask for side sleepers</Link>.
                 </p>
               )}
               {product.category === 'sleep-masks' && (

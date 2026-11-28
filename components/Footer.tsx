@@ -35,6 +35,7 @@ export function Footer() {
             <li><Link href="/blog/what-tog-duvet" className="hover:text-foreground">What Tog Duvet</Link></li>
             <li><Link href="/blog/best-sleep-mask-uk" className="hover:text-foreground">Sleep Mask Guide (UK)</Link></li>
             <li><Link href="/blog/best-sleep-mask-for-side-sleepers" className="hover:text-foreground">Sleep Mask for Side Sleepers</Link></li>
+            <li><Link href="/blog/best-earplugs-for-side-sleepers" className="hover:text-foreground">Earplugs for Side Sleepers</Link></li>
             <li><Link href="/about" className="hover:text-foreground">About Us</Link></li>
           </ul>
         </div>
@@ -50,6 +51,7 @@ export function Footer() {
             <li><Link href="/categories/mattresses" className="hover:text-foreground">Mattresses &amp; Duvets</Link></li>
             <li><Link href="/categories/bedding" className="hover:text-foreground">Eight Sleep Accessories</Link></li>
             <li><Link href="/categories/sleep-masks" className="hover:text-foreground">Sleep Masks</Link></li>
+            <li><Link href="/categories/earplugs" className="hover:text-foreground">Earplugs</Link></li>
           </ul>
         </div>
 

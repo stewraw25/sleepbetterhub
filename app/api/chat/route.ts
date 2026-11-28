@@ -22,7 +22,15 @@ export async function POST(req: NextRequest) {
     link: `/reviews/${slug}`,
   });
 
-  if (lower.includes('sleep mask') || lower.includes('eye mask')) {
+  if (lower.includes('earplug') || lower.includes('ear plug') || lower.includes('earplugs')) {
+    reply = 'There is a UK guide for earplugs if you sleep on your side and the pillow presses the plug into your ear. Three Amazon UK listings were checked on 28 November 2026. This site has not worn them. Earplugs do not treat the person who snores.';
+    suggestions = [
+      { slug: 'best-earplugs-for-side-sleepers', name: 'Earplugs for side sleepers', link: '/blog/best-earplugs-for-side-sleepers' },
+      ...allProducts
+        .filter((p) => p.category === 'earplugs')
+        .map((p) => productLink(p.slug, p.name)),
+    ];
+  } else if (lower.includes('sleep mask') || lower.includes('eye mask')) {
     reply = 'There is a general UK sleep-mask guide, and a longer page for side sleepers if the question is light at the nose or a cup digging into the temple. Three Amazon UK masks were last checked on 21 November 2026. This site has not worn them.';
     suggestions = [
       { slug: 'best-sleep-mask-uk', name: 'Sleep mask guide (UK)', link: '/blog/best-sleep-mask-uk' },
@@ -36,9 +44,10 @@ export async function POST(req: NextRequest) {
     reply = 'The mouth-tape hub compares strips listed for side sleepers, beards, CPAP users, and sensitive skin. Read the safety notes before you try one. This site has not tested the tapes, and mouth tape is not a treatment.';
     suggestions = mouthTapes.map((p) => productLink(p.slug, p.name));
   } else if (lower.includes('side sleep') || lower.includes('side sleeper') || lower.includes('pillow')) {
-    reply = 'For side sleeping, start with the pillow-height guide. Mouth tapes tagged for side sleepers are on the comparison page. This site has not tested those products.';
+    reply = 'For side sleeping, start with the pillow-height guide. If the pillow presses a plug into your ear, use the earplug guide. This site has not tested those products.';
     suggestions = [
       { slug: 'best-pillow-for-side-sleepers', name: 'Pillow guide', link: '/blog/best-pillow-for-side-sleepers' },
+      { slug: 'best-earplugs-for-side-sleepers', name: 'Earplugs for side sleepers', link: '/blog/best-earplugs-for-side-sleepers' },
       ...allProducts
         .filter((p) => p.bestFor.includes('Side Sleepers'))
         .slice(0, 2)
@@ -70,7 +79,7 @@ export async function POST(req: NextRequest) {
     suggestions = [{ slug: 'what-tog-duvet', name: 'What tog duvet', link: '/blog/what-tog-duvet' }];
   } else {
     const recentPosts = getPublishedPosts().slice(0, 2);
-    reply = 'Try a product name or a guide title, or say mouth tape, pillow, duvet, sleep mask, or supplements. This assistant only points at pages on the site. It is not medical advice and it has not tested products.';
+    reply = 'Try a product name or a guide title, or say mouth tape, pillow, duvet, sleep mask, earplugs, or supplements. This assistant only points at pages on the site. It is not medical advice and it has not tested products.';
     suggestions = recentPosts.map((p) => ({ slug: p.slug, name: p.title, link: `/blog/${p.slug}` }));
   }
 

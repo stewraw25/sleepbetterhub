@@ -2,6 +2,62 @@
 
 Weekly log for Sleep Better Hub (https://sleepmask.tech). Newest week first.
 
+## Week of 28 November 2026
+
+### Search phrase
+
+**best earplugs for side sleepers**
+
+Google UK autocomplete for “best earplugs for” includes “best earplugs for sleeping” first and “best earplugs for side sleepers” further down. “Best ear plugs for” also suggests “sleeping uk” and “side sleepers”. “Best earplugs for sleeping” suggests “on side”. The site already had sleep masks, pillows, and duvet tog. It had no earplug page. NHS Every Mind Matters lists earplugs before an eye mask when noise is the problem, so the new page sits next to last week’s mask guide.
+
+No Google Search Console export, property file, or API credentials are in the repo or the environment. A Google site-verification meta tag is in the layout. That is not query data.
+
+### What changed
+
+- New guide: `/blog/best-earplugs-for-side-sleepers`. It uses NHS Every Mind Matters (earplugs if noise is the problem; steady sound is the other option) and The Sleep Charity’s noise notes (glazing and soft floors first, foam plugs for what still gets in, white noise for some people). Three in-stock Amazon UK plugs. No editorial star scores. The photos are bedroom pictures. The guide says that in the text, and the alt text says it too.
+- Prices on that guide, read on 28 November 2026: Loop Quiet 2 white £15.95 against a £19.95 list price (B0D3V4V1KD, sold by Loop Earplugs UK, number 1 in Ear Plugs). Alpine SleepDeep 3-size pack £12.99 against a £16.95 list price (B0GMQV4K1C, sold by Alpine Hearing Protection). The Alpine bullets say 27 dB SNR and a later line says 27 dB NRR. Mack’s Pillow Soft £7.95 (B003LZQGN6, sold by Ana Wiz Ltd). The title says 6 pairs and the net content field says 12 pair. One bullet is still in German. The warning says cover the ear and do not push the putty into the canal.
+- Meta descriptions are cut on a word boundary. Any Amazon destination from `/go/` keeps the tag `stewraw25-21` on amazon.co.uk, including an override that forgot it.
+- The earplug guide is linked from the mask guides, the pillow guide, the snoring guide, the hygiene checklist, the homepage, the footer, and the new earplugs category.
+
+### Affiliate links checked on 28 November 2026
+
+Tag on every Amazon URL: `stewraw25-21`. A plain fetch from this VM was blocked by Amazon’s captcha. The pages below were read with a browser-style fetch of the amazon.co.uk HTML. The site does not add `creatorsDisableRedirect`. Brand sites that are not Amazon returned HTTP 200 and still have no affiliate code.
+
+Every current Amazon button was already `https://www.amazon.co.uk/dp/{ASIN}` with `tag=stewraw25-21`. None were missing the tag, on amazon.com, or pointing at a dead page. Prices below are the 28 November buy box. Older pages still date their own earlier reading, so those sentences were left as a dated check rather than rewritten as if they were taken today.
+
+| Destination | Result |
+| --- | --- |
+| Hostage Tape `B0FBTK5YGG` | Same “for Women” 30-pack, beard and CPAP still in the title. In stock. Buy box £12.90. Was £10.32 on 21 November. |
+| MyoTape `B0G54CZM1F` | Still the sensitive-skin, medium 30-night pack. In stock, £14.99. |
+| Breathe Right `B0CPY7QDWV` | Still Clear small/medium, pack of 2. £8.98, in stock. |
+| Mute `B011LR52UI` | Still the small 3-pack. £19.99, in stock. |
+| Oura `B0CSRFCBJH` | Still opens Heritage silver size 6 (page ASIN B0CSRBXBD5). Only 1 left. Total £191.74, of which £32.19 is estimated import charges. Item price £159.55. |
+| Silentnight adjustable pillow `B0DK78ZGZS` | 2-pack. £38.24, in stock. |
+| Silentnight Ultragel `B00U8WJM8Q` | Right title. £25.41, in stock. Was £25.50 on 21 November. |
+| Slumberdown pillow 2-pack `B01N46GW3H` | Right title. £27.11, in stock. |
+| Duvet 4.5 `B00TQWMVV4` | Double, £20.99, in stock. |
+| Duvet 10.5 `B075X1QXK6` | £26.59. The page showed both “in stock” sold by Amazon and “only 1 left” sold by Amazon Resale. |
+| Duvet 13.5 `B01N12TK0A` | Double, £25.98, in stock. Was £22.05 on 21 November. |
+| Manta `B0C36K8SJJ` | Right title. £55.20, in stock. |
+| MyHalos `B0F7HJ428M` | Grey. £9.99, in stock. |
+| Umisleep `B09DXYX7BQ` | The linked colour was in stock at £5.12. A different “newer version” on the same page said currently unavailable. The button still opens the in-stock listing. |
+| Magnesium `B0CJJS3Y85` | EVO Nutrition magnesium glycinate, 120 capsules. £7.60, in stock. |
+| Apigenin `B0C3J54NZJ` | Time Health 50mg, 120 capsules. £18.26, in stock. |
+| L-theanine `B0FVGC5GX4` | Nature’s Best 200mg, 60 capsules. £11.00, in stock. |
+| TEMPUR topper `B0DYL16MFF` | TEMPUR EASE double 135x190cm, 3cm. £339.99, list £352.11. Only 10 left. Still a topper, not the Adapt mattress. |
+| Three new earplug ASINs | In stock at the prices above. Tag added by the existing Amazon link builder. |
+| Dream Recovery, SomniFix, ZzzTape, SayLess, four Eight Sleep URLs | Brand sites returned 200. Still no affiliate code. |
+
+### Still open
+
+- No Search Console data. Submit `https://sleepmask.tech/sitemap.xml` if it is not already there.
+- Contact address is still `hello@sleepmask.tech`.
+- Dream Recovery, SomniFix, ZzzTape, SayLess, and Eight Sleep still earn nothing until Stewart adds real affiliate URLs.
+- Hostage Tape’s buy box moved from £10.32 to £12.90. The product note still dates the 21 November figure.
+- The 13.5 tog buy box moved from £22.05 to £25.98. The product note still dates the 21 November figure.
+- Oura size 6 had one left, and the total including import charges was £191.74.
+- The 10.5 tog page still shows an Amazon Resale offer.
+
 ## Week of 21 November 2026
 
 ### Search phrase

@@ -53,6 +53,106 @@ export function getAllPosts(): BlogPost[] {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'best-earplugs-for-side-sleepers',
+    title: 'Best Earplugs for Side Sleepers',
+    excerpt: 'On your side, the pillow presses the ear. NHS and The Sleep Charity say when earplugs are worth trying. Three Amazon UK plugs were in stock on 28 November 2026.',
+    content: `**Affiliate disclosure.** The three earplug links go to Amazon UK with our Associates tag. Prices were read off those listings on 28 November 2026 and will change. We have not worn these plugs. The star counts below are Amazon’s, not scores we gave them.
+
+The picture at the top is a dim bedroom. It is not a photograph of these earplugs.
+
+If you are looking for the best earplugs for side sleepers, start with the ear that is against the pillow. A foam cylinder that sticks out becomes a lever. The pillow pushes it further into the canal, and the plug is what wakes you. A plug that sits flush, or a piece of putty that only covers the opening, is the shape this page is about.
+
+This is a buying guide, not a wear test. Noise from a partner who snores is a different problem from being the person who snores. If you are the snorer, read [mouth tape vs nasal strips for snoring](/blog/mouth-tape-vs-nasal-strips-for-snoring) and the safety notes. Earplugs do not treat that.
+
+## What the published advice actually says
+
+This is not a noise test we ran.
+
+- [NHS Every Mind Matters](https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/) says you may sleep more easily in a room that is quiet, dark and cool. Earplugs are the first item on that list, if noise is the problem. A silent phone, closed curtains, clocks out of view, and an eye mask come after. The same list also names background sound: rainfall, gentle music, or white noise. If the problem is still being awake for hours, the NHS insomnia pages are the next stop, not another pair of plugs.
+- [The Sleep Charity](https://thesleepcharity.org.uk/adults/sleep-environment/) says most people need a quiet bedroom. Loud, sudden, or repetitive noise interrupts sleep, and noise in deep sleep does the most damage. Their practical order starts with the building: double glazing for outside noise, and rugs or carpet if the household is loud. Foam earplugs are the thing they name for noise that still gets in, especially in warmer months when a window is open. They also say some people sleep better with a steady sound, such as white noise, than with silence.
+
+Neither page ranks a brand. A plug is what you add when the room is still noisy. It is not a treatment for insomnia. If the snoring you can hear comes with pauses, choking, or sleepiness that gets in the way of the day, that belongs with a GP, whether or not you are the person wearing the plugs.
+
+Light is the other half of the same NHS list. The mask pages are [how to choose a sleep mask in the UK](/blog/best-sleep-mask-uk) and [best sleep mask for side sleepers](/blog/best-sleep-mask-for-side-sleepers). A stiff neck is a pillow problem: [best pillow for side sleepers](/blog/best-pillow-for-side-sleepers).
+
+## How the shapes differ
+
+Listings use a few repeated design words. They are descriptions, not scores.
+
+- **Foam** expands in the canal and usually leaves a stem outside the ear. That stem is what the pillow presses when you lie on your side. The Sleep Charity names foam plugs for noise in general. This page does not link a foam pack, because the three listings below are the shapes written for side sleeping or for covering the opening.
+- **A low-profile reusable plug** is meant to sit in the canal without a long stem. Loop’s bullet says that, inserted correctly, Quiet 2 should not stick out, and that it is for side-sleepers. Alpine’s title and first bullet say the oval SleepDeep plugs are designed for side sleepers.
+- **Mouldable putty** is pressed over the opening. Mack’s warning says “cover only” and “do not force plug into ear canal.” Nothing is supposed to sit inside the canal for the pillow to drive deeper.
+
+A plug will not hold your neck up, and it will not darken the room. Do the pillow check and the curtain check as well. The longer habit list is the [sleep hygiene checklist](/blog/sleep-hygiene-2026).
+
+## Three Amazon UK listings, checked 28 November 2026
+
+Same job, three shapes. Shop buttons go through this site’s /go/ links and use the Associates tag stewraw25-21.
+
+### If you want a reusable plug that claims it will not stick out: Loop Quiet 2
+
+The [Loop Quiet 2](/reviews/loop-quiet-2) (ASIN B0D3V4V1KD, model en-qt-wht-03) opened on white. On 28 November 2026 the buy box was £15.95, in stock, against a list price of £19.95. Loop Earplugs UK sells it and Amazon dispatches it. The material field says silicone. The bullets say up to 24 dB (SNR), four tip sizes from XS to L, and comfort “even for side-sleepers.” One bullet says that, inserted correctly, the plugs should not stick out. The details table also lists the noise reduction rating as 24. Amazon showed 4.1 out of 5 from 35,393 ratings. It was number 1 in Ear Plugs, and the page said 2,000-plus bought in the past month. The safety line says small parts may be a choking hazard for children under 3. [Shop the Loop Quiet 2](/go/loop-quiet-2).
+
+Buy this if you want a washable plug and the listing’s point is that it sits flush. Do not buy it for a toddler. Do not buy it because it is number 1. That rank moves.
+
+### If the listing itself is written for side sleeping: Alpine SleepDeep
+
+The [Alpine SleepDeep](/reviews/alpine-sleepdeep) (ASIN B0GMQV4K1C, model 111.21.168) is a pack of three sizes, small, medium and large. The title includes “Side Sleeping.” On 28 November 2026 the buy box was £12.99, in stock, against a list price of £16.95. Alpine Hearing Protection sells it and Amazon dispatches it. The colour field says White/Blue. The material field says thermoplastic polyurethane. The bullets say silicone-free, an oval shape, and that body heat moulds the plug. The noise bullet says up to 27 dB (SNR), and that you should still hear an alarm or a baby monitor. That hearing claim is Alpine’s. We have not checked it. The details table lists both the single number rating and the noise reduction rating as 27, and a later paragraph says 27 dB NRR. Those are different names for a rating. Read the label you care about rather than treating 27 as one universal number. A line on the page also says “While promotional stock lasts.” Amazon showed 3.8 out of 5 from 27,257 ratings, number 11 in Ear Plugs, and 1,000-plus bought in the past month. The bullets we read did not give an age limit. [Shop the Alpine SleepDeep](/go/alpine-sleepdeep).
+
+Buy this if you want the pack that says side sleeper in the title and gives you three sizes. Skip it if you need the listing to use one rating system and mean it.
+
+### If you do not want anything in the canal: Mack’s Pillow Soft
+
+[Mack’s Pillow Soft](/reviews/macks-pillow-soft) (ASIN B003LZQGN6, model 7) is silicone putty. On 28 November 2026 the buy box was £7.95 and the page said in stock. Ana Wiz Ltd sells it and Amazon dispatches it. The title says 6 pairs, 12 count. The package size field says 6 pairs. The net content field says 12 pair. Those are not the same count. Check the menu before you pay. One bullet is still in German: “Ungiftiger, hypoallergener Schutz.” The description says the putty moulds to the ear and reduces noise by 22 decibels. The details table lists the single number rating and the noise reduction rating as 22. Amazon showed 4.3 out of 5 from 42,466 ratings, and it was number 26 in Ear Plugs. The page said 700-plus bought in the past month.
+
+The safety text is the reason this shape is on the page, and it is also the warning. It says use the whole earplug, cover only, and do not force it into the ear canal. It says not to cut or stretch it. It says a misused plug may lodge and should be removed by an ear, nose and throat doctor only. It says adult supervision is required under 15, and to keep the plugs away from infants, because a swallowed piece can block the airway. In the UK, a plug that will not come out is NHS 111 or a GP, not a cotton bud and not the US phone number printed on the listing. [Shop Mack’s Pillow Soft](/go/macks-pillow-soft).
+
+Buy this if canal plugs hurt and you will follow the cover-only line. Do not buy it for a child who might put it in their mouth.
+
+## A simple way to choose
+
+1. Close what you can close first. The Sleep Charity starts with glazing and soft floors. The NHS list starts with earplugs only once noise is the remaining problem, and it also offers steady sound instead of silence.
+2. Lie on your usual side with the plug in for a minute. Pain at the canal means that shape is wrong, whatever the title says.
+3. If you want a reusable plug that claims it will not stick out, that is the Loop Quiet 2. It was £15.95, and it was number 1 in Ear Plugs that day.
+4. If you want the title that says side sleeping, and three sizes in the box, that is the Alpine SleepDeep. It was £12.99. The page calls 27 both SNR and NRR.
+5. If you want nothing inside the canal, that is Mack’s putty, at £7.95, with the cover-only warning. Read the pair count. The page disagrees with itself.
+6. Check that you can still hear a smoke alarm. Alpine says you should. The other two listings do not make that promise. We have not measured any of them.
+7. Do not use these for a baby. Loop warns about choking under 3. Mack’s wants supervision under 15. Alpine’s bullets did not state an age.
+
+The notes on these three are on the [earplugs page](/categories/earplugs). This page is not medical advice.`,
+    category: 'Guides',
+    readTime: '10 min',
+    date: '2026-11-28',
+    author: 'SleepBetterHub Editorial Team',
+    image: '/images/hero-bedroom.jpg',
+    imageAlt: 'A dim bedroom. This is not a photograph of earplugs.',
+    seoTitle: 'Best Earplugs for Side Sleepers (UK)',
+    seoDescription: 'How to choose earplugs for side sleeping in the UK, using NHS and Sleep Charity advice, with three Amazon prices from 28 November 2026.',
+    tags: ['earplugs', 'side sleepers', 'noise', 'snoring', 'buying guide'],
+    faqs: [
+      {
+        q: 'What are the best earplugs for side sleepers in the UK?',
+        a: 'The ones that block enough noise without the pillow driving a stem into the ear canal. On 28 November 2026 three Amazon UK listings were in stock: Loop Quiet 2 at £15.95, which says the plugs should not stick out and names side-sleepers; Alpine SleepDeep at £12.99, whose title says side sleeping; and Mack’s Pillow Soft putty at £7.95, whose warning says cover the opening and do not push it into the canal. We have not worn them. NHS Every Mind Matters lists earplugs when noise is still a problem after the room is quiet.',
+      },
+      {
+        q: 'Are foam earplugs a bad idea for side sleepers?',
+        a: 'Foam often leaves a stem outside the ear, and that stem is what the pillow presses. The Sleep Charity still names foam plugs for noise in general, especially with a window open. This page links the shapes written for side sleeping or for covering the ear, not a foam pack. Lie on your side for a minute before you decide a foam plug is comfortable.',
+      },
+      {
+        q: 'Will sleep earplugs block a smoke alarm?',
+        a: 'They can reduce it. Alpine’s listing says SleepDeep should still let you hear an alarm or a baby monitor. That is Alpine’s claim, and this site has not tested it. Loop and Mack’s pages checked on 28 November 2026 do not make that promise. Confirm you can hear the alarm in your own room.',
+      },
+      {
+        q: 'Can children use these earplugs?',
+        a: 'Do not use these listings for a baby. Loop says the plugs may be a choking hazard under 3. Mack’s says adult supervision is required under 15 and to keep the putty away from infants, because a swallowed piece can block the airway. Alpine’s bullets did not state an age. A plug that will not come out needs NHS 111 or a GP, not a cotton bud.',
+      },
+      {
+        q: 'Do earplugs help if my partner snores?',
+        a: 'They can make the noise quieter for the person who is listening. They do not treat the person who snores. If that snoring comes with pauses, choking, or daytime sleepiness, the NHS route is a GP. Mouth tape and nasal strips are a different choice, with their own safety notes, and only for the person who snores.',
+      },
+    ],
+  },
+  {
     slug: 'best-sleep-mask-uk',
     title: 'How to Choose a Sleep Mask in the UK',
     excerpt: 'A general UK guide to sleep masks: when an eye mask is worth having, how shapes differ, and three Amazon listings last checked on 21 November 2026. This site has not worn them.',
@@ -66,7 +166,7 @@ Side sleepers have a separate, longer page: [best sleep mask for side sleepers](
 
 This is not a light test we ran.
 
-- [NHS Every Mind Matters](https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/) says you may sleep more easily in a room that is quiet, dark and cool. The list starts with earplugs if noise is the problem, the phone on silent, curtains fully closed, clocks out of view, and the phone face down. An eye mask is the next line: wear one if light is still a problem.
+- [NHS Every Mind Matters](https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/) says you may sleep more easily in a room that is quiet, dark and cool. The list starts with [earplugs](/blog/best-earplugs-for-side-sleepers) if noise is the problem, the phone on silent, curtains fully closed, clocks out of view, and the phone face down. An eye mask is the next line: wear one if light is still a problem.
 - [The Sleep Charity](https://thesleepcharity.org.uk/adults/sleep-environment/) says light and dark tell the body when to wake and when to sleep. Even while you are asleep, light can be detected through the eyelids, so the room needs to be dark to stay asleep. They say you ideally should not be able to see the other side of the bedroom. Curtains that are well lined, and a blackout blind, come first. An eye mask is the extra step, and they name shift workers who are trying to sleep in daylight. A TV standby light or an alarm-clock glow is enough to matter, so cover those or turn them off.
 
 Neither page ranks a brand. If the problem is snoring with pauses, choking, or sleepiness that gets in the way of the day, that belongs with a GP, not a strap.
@@ -109,7 +209,7 @@ The product notes, and the same three shop buttons, are also on the [sleep masks
     category: 'Guides',
     readTime: '8 min',
     date: '2026-11-24',
-    updated: '2026-11-24',
+    updated: '2026-11-28',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/hero-bedroom.jpg',
     imageAlt: 'A dim bedroom. This is not a photograph of a sleep mask.',
@@ -129,7 +229,7 @@ This page is for side sleepers. The general chooser, including back sleepers, is
 
 This is not a light test we ran.
 
-- [NHS Every Mind Matters](https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/) says you may sleep more easily in a room that is quiet, dark and cool. The list starts with earplugs if noise is the problem, the phone on silent, curtains fully closed, clocks out of view, and the phone face down. An eye mask is the next line: wear one if light is still a problem. Temperature and a window, if it is safe to open, are on the same list.
+- [NHS Every Mind Matters](https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/) says you may sleep more easily in a room that is quiet, dark and cool. The list starts with [earplugs](/blog/best-earplugs-for-side-sleepers) if noise is the problem, the phone on silent, curtains fully closed, clocks out of view, and the phone face down. An eye mask is the next line: wear one if light is still a problem. Temperature and a window, if it is safe to open, are on the same list.
 - [The Sleep Charity](https://thesleepcharity.org.uk/adults/sleep-environment/) says light and dark tell the body when to wake and when to sleep. In the dark, the body releases melatonin. Light, including small amounts, is read as a signal to be awake. Their line on eyelids is the useful one for a mask: even while you are asleep, light can be detected through the eyelids, so the room needs to be dark to stay asleep. They say you ideally should not be able to see the other side of the bedroom. Curtains that are well lined, and a blackout blind, come first. An eye mask is the extra step, and they name shift workers who are trying to sleep in daylight. They also say an alarm-clock glow or a TV standby light is enough to matter, so cover those or turn them off.
 
 Neither page ranks a brand. A mask is what you add when the room is still bright. It is not a treatment for insomnia. If the problem is snoring with pauses, choking, or sleepiness that gets in the way of the day, that belongs with a GP, not a strap.
@@ -190,6 +290,7 @@ The notes on these three are on the [sleep masks page](/categories/sleep-masks).
     category: 'Guides',
     readTime: '11 min',
     date: '2026-11-21',
+    updated: '2026-11-28',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/hero-bedroom.jpg',
     imageAlt: 'A dim bedroom with a made bed. Not a photo of a sleep mask.',
@@ -397,7 +498,7 @@ Stomach sleeping will not be rescued by a side-sleeper pillow. The NHS leaflets 
 
 The [Eight Sleep pillow cover](/reviews/eight-sleep-pillow-cover) is about £999 and only works with an Eight Sleep Pod. It changes temperature. It does not set the height of your neck. Skip it unless you already own the Pod.
 
-Light is a different problem from pillow height. If the room is still bright after the curtains are closed, the buying notes are in [best sleep mask for side sleepers](/blog/best-sleep-mask-for-side-sleepers). A mask will not hold your neck up.
+Light is a different problem from pillow height. If the room is still bright after the curtains are closed, the buying notes are in [best sleep mask for side sleepers](/blog/best-sleep-mask-for-side-sleepers). A mask will not hold your neck up. Noise is a third problem. If a plug hurts the ear that is on the pillow, the buying notes are in [best earplugs for side sleepers](/blog/best-earplugs-for-side-sleepers).
 
 A stack of soft hotel pillows feels fine for a night and then collapses. If you wake with a stiff neck, check height first, then whether the fill has gone flat. The mattress underneath changes the gap too. A thick soft mattress lets the shoulder sink, so you need less pillow. That is covered on the [mattresses page](/categories/mattresses), including the Tempur notes. Heat is a different problem: the [hot sleepers guide](/blog/hot-sleepers-temperature-solutions) is the place for room temperature, and [what tog duvet do I need](/blog/what-tog-duvet) is the place for the duvet. The Ultragel pillow is only one small piece of that.
 
@@ -414,7 +515,7 @@ This page is not medical advice.`,
     readTime: '12 min',
     date: '2026-11-07',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-21',
+    updated: '2026-11-28',
     image: '/images/hero-bedroom.jpg',
     imageAlt: 'A dim bedroom with a made bed. Not a photo of a specific pillow.',
     seoTitle: 'Best Pillow for Side Sleepers (UK)',
@@ -530,7 +631,7 @@ Dream Recovery and SayLess are real brands, but they sell from their own sites r
 4. Only add tape if you can breathe through your nose comfortably while awake, you have tried it in the day, and none of the “do not use” points apply.
 5. If the tape comes off, or you wake anxious, stop. A stronger adhesive is not the fix for a blocked nose.
 
-The longer version of the breathing work is our [30-day plan to stop mouth breathing at night](/blog/how-to-stop-mouth-breathing-at-night). The product grid is on the [mouth tape hub](/mouth-tape) and the [nasal strips page](/categories/nasal). If you are unsure tape is even appropriate, use the [two-minute quiz](/quiz) before you buy.
+The longer version of the breathing work is our [30-day plan to stop mouth breathing at night](/blog/how-to-stop-mouth-breathing-at-night). The product grid is on the [mouth tape hub](/mouth-tape) and the [nasal strips page](/categories/nasal). If you are the person trying to sleep next to the snoring, that is a different question: [best earplugs for side sleepers](/blog/best-earplugs-for-side-sleepers). Plugs do not treat the snorer. If you are unsure tape is even appropriate, use the [two-minute quiz](/quiz) before you buy.
 
 ## When to skip these products and see a GP
 
@@ -541,7 +642,7 @@ This page is not medical advice.`,
     readTime: '12 min',
     date: '2026-11-02',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-21',
+    updated: '2026-11-28',
     image: '/images/nasal-product.jpg',
     seoTitle: 'Mouth Tape vs Nasal Strips for Snoring',
     seoDescription: 'If your mouth falls open, the NHS lists a chin strap or a vestibular shield. Nasal strips are for a blocked nose. Mouth tape has limited evidence and safety cautions.',
@@ -716,7 +817,7 @@ Here is what actually moves the needle, ranked roughly by impact:
 1. Consistent sleep/wake times (±30 min) — even weekends
 2. Morning sunlight within 30-60 min of waking (10-30 mins)
 3. Cool bedroom (60-67°F / 15-19°C is ideal for most)
-4. Complete darkness. Close the curtains first. If light is still a problem, an [eye mask](/blog/best-sleep-mask-for-side-sleepers) is the extra step NHS Every Mind Matters names.
+4. Complete darkness. Close the curtains first. If light is still a problem, an [eye mask](/blog/best-sleep-mask-for-side-sleepers) is the extra step NHS Every Mind Matters names. If noise is the problem, the same NHS list puts [earplugs](/blog/best-earplugs-for-side-sleepers) first.
 5. No caffeine after ~2pm (or 8-10 hours before bed for slow metabolizers)
 
 ## Tier 2: High-Impact Practices
@@ -745,7 +846,7 @@ Start with the first group for two weeks before adding gadgets. This site has no
     readTime: '9 min',
     date: '2026-01-02',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-21',
+    updated: '2026-11-28',
     image: '/images/mattress.jpg',
     seoTitle: 'Sleep Hygiene Checklist',
     seoDescription: 'A checklist of sleep habits often discussed for insomnia, and when to speak to a GP. This site has not ranked them in a lab.',
@@ -766,7 +867,7 @@ Start with the first group for two weeks before adding gadgets. This site has no
 ## Temperature & Environment Hacks
 - Cool room (15–19°C / 60–67°F) is the single biggest environmental lever.
 - Hot shower or bath 1–2 hours before bed (then cool room = natural temperature drop).
-- Blackout + quiet (or consistent pink/white noise).
+- Blackout + quiet (or consistent pink/white noise). If you sleep on your side and the noise is the problem, see [best earplugs for side sleepers](/blog/best-earplugs-for-side-sleepers).
 
 ## Mouth Taping & Nasal Breathing for Faster Sleep Onset
 Many chronic mouth breathers wake more often and take longer to fall back asleep. Once nasal breathing is trained, some people add a gentle mouth tape. The MyoTape button on this site is the sensitive-skin, medium pack, 30 nights, which was in stock on Amazon UK on 21 November 2026. Dream Recovery also sells a sensitive-skin tape on its own site, and that click is not commissioned. This site has not measured whether mouth tape helps people fall asleep faster, or wake less often. Treat any such claim as unverified here. Only consider a strip if you can already breathe through your nose while awake, and read the safety notes on the mouth tape hub first.
@@ -793,7 +894,7 @@ This is not medical advice. If you have chronic insomnia or anxiety affecting sl
     readTime: '13 min',
     date: '2026-02-10',
     author: 'SleepBetterHub Editorial Team',
-    updated: '2026-11-24',
+    updated: '2026-11-28',
     image: '/images/eight-sleep-pod.jpg',
     imageAlt: 'A bed with a white cover. Not a photo of a sleep technique.',
     seoTitle: 'How to Fall Asleep Faster',
@@ -1164,7 +1265,7 @@ Everything else is optional.
 
 ## Making It Stick When Life Gets Messy
 - **Travel / Jet lag**: Anchor to the new time zone immediately. Get morning light at the new destination's morning. Use strategic light exposure and avoid long naps.
-- **Kids / Family**: Protect your wind-down even if it means going to bed earlier than your partner. Use earplugs, and an [eye mask](/blog/best-sleep-mask-for-side-sleepers) if the room is not dark. A consistent schedule helps children too. Do not use an adult sleep mask on a baby.
+- **Kids / Family**: Protect your wind-down even if it means going to bed earlier than your partner. Use [earplugs](/blog/best-earplugs-for-side-sleepers), and an [eye mask](/blog/best-sleep-mask-for-side-sleepers) if the room is not dark. A consistent schedule helps children too. Do not use these adult plugs, or an adult sleep mask, on a baby.
 - **Shift work**: Use light boxes or bright light exposure at the "start" of your "day" and complete darkness for sleep. Blackout curtains and white noise are non-negotiable.
 - **High stress periods**: Double down on the basics rather than adding supplements. Sleep is the first thing to suffer when stressed, so protect the non-negotiables.
 
@@ -1182,7 +1283,7 @@ Start ridiculously small. One consistent wake time for 14 days will move the nee
     category: 'Sleep Optimization',
     readTime: '9 min',
     date: '2026-08-05',
-    updated: '2026-11-21',
+    updated: '2026-11-28',
     author: 'SleepBetterHub Editorial Team',
     image: '/images/hero-bedroom.jpg',
     seoTitle: 'Sleep Habits That Stick',

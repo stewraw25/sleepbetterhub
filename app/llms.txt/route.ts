@@ -21,7 +21,7 @@ export function GET() {
   lines.push(`# ${SITE_NAME}`);
   lines.push('');
   lines.push(
-    '> UK guides to sleep products: mouth tape, nasal strips, sleep masks, pillows, duvets, sleep trackers and sleep supplements. ' +
+    '> UK guides to sleep products: mouth tape, nasal strips, sleep masks, earplugs, pillows, duvets, sleep trackers and sleep supplements. ' +
       'Pages explain how to choose and link to shops, labelled as affiliate links. The site has not run its own product tests and does not publish star ratings. ' +
       'Nothing here is medical advice. For snoring with pauses in breathing, choking or daytime sleepiness, the pages point readers to the NHS and a GP.',
   );

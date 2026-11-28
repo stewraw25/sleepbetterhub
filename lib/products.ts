@@ -3,7 +3,7 @@ export type Product = {
   slug: string;
   name: string;
   brand: string;
-  category: 'mouth-tape' | 'nasal' | 'gadgets' | 'mattresses' | 'supplements' | 'bedding' | 'sleep-masks';
+  category: 'mouth-tape' | 'nasal' | 'gadgets' | 'mattresses' | 'supplements' | 'bedding' | 'sleep-masks' | 'earplugs';
   price: string; // e.g. "£13.49 / 30 strips" (GBP for UK/international compatibility)
   priceValue: number; // for sorting
   bestFor: string[]; // tags
@@ -880,6 +880,123 @@ export const allProducts: Product[] = [
     imageAlt: 'A made bed. This is not a photograph of the Umisleep sleep mask.',
     inStock: true,
   },
+  {
+    id: 'ep1',
+    slug: 'loop-quiet-2',
+    name: 'Loop Quiet 2 Earplugs',
+    seoTitle: 'Loop Quiet 2 Earplugs',
+    brand: 'Loop',
+    category: 'earplugs',
+    price: '£15.95',
+    priceValue: 15.95,
+    bestFor: ['Side Sleepers', 'Reusable', 'Low Profile'],
+    pros: [
+      'The bullets say the plugs are comfortable for side-sleepers and should not stick out when inserted correctly',
+      'Four tip sizes, XS to L, and a carry case',
+      'The bullets say 24 dB (SNR). Sold by Loop Earplugs UK and dispatched by Amazon',
+    ],
+    cons: [
+      '£15.95 on 28 November 2026, against a list price of £19.95',
+      'The safety line is a choking warning for children under 3',
+      'We have not worn them',
+    ],
+    description: 'White, £15.95, in stock on 28 November 2026. The listing says they should not stick out.',
+    longDescription: 'The Loop Quiet 2 (model en-qt-wht-03, ASIN B0D3V4V1KD) opened on white. On 28 November 2026 the buy box was £15.95, in stock, against a list price of £19.95. Loop Earplugs UK sells it and Amazon dispatches it. The material field says silicone. The bullets say up to 24 dB (SNR), four tip sizes from XS to L, and that the plugs offer comfort day and night, even for side-sleepers. One bullet says that, inserted correctly, they should not stick out. The product information table lists the single number rating and the noise reduction rating as 24 as well. Amazon showed 4.1 out of 5 from 35,393 ratings, and the page said it was number 1 in Ear Plugs. Those ratings and that rank are Amazon’s. The safety line says the product contains small parts and may be a choking hazard for children under 3. We have not worn them.',
+    safetyNotes: [
+      'Loop says this contains small parts and may be a choking hazard for children under 3. Keep it away from young children.',
+      'A plug that hurts, or that you cannot get out, is a reason to stop and ask NHS 111 or a GP. Do not dig in the ear.',
+      'Earplugs are not a treatment for the person who snores. Pauses, choking, or daytime sleepiness belong with a GP.',
+    ],
+    howToUse: [
+      'The listing says to use the QR code in the pack for the fitting steps, and to twist the plug so it sits in.',
+      'Try it on your side before you rely on it. The bullet claims it should not stick out. That is Loop’s claim.',
+      'Check you can still hear a smoke alarm. This page has not measured that.',
+    ],
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0D3V4V1KD?tag=stewraw25-21',
+    amazonAsin: 'B0D3V4V1KD',
+    linkNote: 'Loop Quiet 2, white, ASIN B0D3V4V1KD. £15.95 and in stock on Amazon UK on 28 November 2026. List price on the page was £19.95. Sold by Loop Earplugs UK.',
+    image: '/images/hero-bedroom.jpg',
+    imageAlt: 'A dim bedroom. This is not a photograph of the Loop earplugs.',
+    inStock: true,
+  },
+  {
+    id: 'ep2',
+    slug: 'alpine-sleepdeep',
+    name: 'Alpine SleepDeep Earplugs',
+    seoTitle: 'Alpine SleepDeep Earplugs',
+    brand: 'Alpine',
+    category: 'earplugs',
+    price: '£12.99',
+    priceValue: 12.99,
+    bestFor: ['Side Sleepers', 'Snoring Noise', 'Three Sizes'],
+    pros: [
+      'The title and the first bullet both say the plugs are for side sleeping',
+      'Three sizes in the pack, small, medium and large',
+      'The bullet says up to 27 dB (SNR), and that you should still hear an alarm or a baby monitor',
+    ],
+    cons: [
+      'The bullets say silicone-free. The material field says thermoplastic polyurethane',
+      'The bullets say 27 dB (SNR). The details table also lists a noise reduction rating of 27. Those are different rating names',
+      'A line on the page says “While promotional stock lasts.” We have not worn them',
+    ],
+    description: 'Three sizes, £12.99, in stock on 28 November 2026. The title says side sleeping.',
+    longDescription: 'The Alpine SleepDeep multi-size pack (model 111.21.168, ASIN B0GMQV4K1C) is titled for sleep, and the title includes “Side Sleeping”. On 28 November 2026 the buy box was £12.99, in stock, against a list price of £16.95. Alpine Hearing Protection sells it and Amazon dispatches it. The colour field says White/Blue. The material field says thermoplastic polyurethane. The bullets say the plugs are silicone-free and hypoallergenic, reusable for up to 6 months, and designed for side sleepers, with an oval shape that uses body heat to mould. Those are Alpine’s claims. The noise bullet says up to 27 dB (SNR), and that you can still hear an alarm or a baby monitor. The product information table lists both the single number rating and the noise reduction rating as 27. A later paragraph on the same page says 27 dB NRR. SNR and NRR are not the same system. The page uses both labels for 27. A line under the rating says “While promotional stock lasts.” Amazon showed 3.8 out of 5 from 27,257 ratings, and the page said it was number 11 in Ear Plugs. Those figures are Amazon’s. The bullets on this page did not include a child warning. We have not worn them.',
+    safetyNotes: [
+      'The bullets say you should still hear an alarm or a baby monitor. Check that yourself. This site has not measured it.',
+      'The bullets we read did not state an age limit. Do not use an adult plug for a baby.',
+      'If a plug will not come out, do not dig. Contact NHS 111 or a GP.',
+    ],
+    howToUse: [
+      'The listing says to start with the multi-size pack and watch Alpine’s how-to video so the size stays in.',
+      'Lie on your side. The first bullet claims the oval shape is comfortable there. That is Alpine’s claim.',
+      'The page says they are reusable for up to 6 months and easy to clean. Follow the pack.',
+    ],
+    affiliateLink: 'https://www.amazon.co.uk/dp/B0GMQV4K1C?tag=stewraw25-21',
+    amazonAsin: 'B0GMQV4K1C',
+    linkNote: 'Alpine SleepDeep, 3-size pack, ASIN B0GMQV4K1C. £12.99 and in stock on Amazon UK on 28 November 2026. List price on the page was £16.95. Sold by Alpine Hearing Protection.',
+    image: '/images/hero-bedroom.jpg',
+    imageAlt: 'A dim bedroom. This is not a photograph of the Alpine earplugs.',
+    inStock: true,
+  },
+  {
+    id: 'ep3',
+    slug: 'macks-pillow-soft',
+    name: "Mack's Pillow Soft Earplugs",
+    seoTitle: "Mack's Pillow Soft Earplugs",
+    brand: "Mack's",
+    category: 'earplugs',
+    price: '£7.95 / 6 pairs',
+    priceValue: 7.95,
+    bestFor: ['Side Sleepers', 'Mouldable', 'Cover the Ear'],
+    pros: [
+      'The safety line says to cover the ear and not to force the plug into the canal',
+      'The description says mouldable silicone putty that reduces noise by 22 decibels',
+      '£7.95 for a 6-pair pack on 28 November 2026, in stock, dispatched by Amazon',
+    ],
+    cons: [
+      'One bullet is still in German: “Ungiftiger, hypoallergener Schutz.”',
+      'The title says 6 pairs. The net content field says 12 pair. Check the pack size',
+      'The warning says adult supervision under 15, and that a misused plug can lodge in the ear. We have not worn them',
+    ],
+    description: 'Silicone putty, £7.95 for 6 pairs, in stock on 28 November 2026. Cover the ear. Do not push it in.',
+    longDescription: "Mack's Pillow Soft (model 7, ASIN B003LZQGN6) is a mouldable silicone putty. On 28 November 2026 the buy box was £7.95 and the page said in stock. Ana Wiz Ltd sells it and Amazon dispatches it. The title says 6 pairs, 12 count. The package size field says 6 pairs. The net content field on the same page says 12 pair, and the number-of-items field says 12. Those counts do not agree. Confirm the pack before you pay. The bullets are short, and one of them is the German sentence “Ungiftiger, hypoallergener Schutz.” The description says the putty moulds to the ear and reduces noise by 22 decibels, and that the plugs are for sleeping and snoring among other uses. The product information table lists the single number rating and the noise reduction rating as 22. Amazon showed 4.3 out of 5 from 42,466 ratings, and the page said it was number 26 in Ear Plugs. Those ratings are Amazon’s. The safety text says: use the whole earplug, cover only, do not force it into the ear canal, and do not cut or stretch it. It says a misused plug may lodge and should be removed by an ear, nose and throat doctor only. It also says adult supervision is required for children under 15, and to keep the plugs away from infants. We have not worn them.",
+    safetyNotes: [
+      "Mack's says cover only, and do not force the plug into the ear canal. Do not cut it up.",
+      'The same warning says a lodged plug should be removed by an ENT doctor only. In the UK, that is NHS 111 or a GP, not a cotton bud.',
+      'Adult supervision under 15, on the listing. Keep it away from infants. The warning says a swallowed plug can block the airway.',
+    ],
+    howToUse: [
+      'Soften a whole piece and cover the ear opening. The listing says not to push it into the canal.',
+      'Lie on your side. Putty sits over the opening, so there is less of a stem for the pillow to press in. That is how the product is described, not a test we ran.',
+      'The title and the net content field disagree about how many pairs are in the box. Read both before you buy.',
+    ],
+    affiliateLink: 'https://www.amazon.co.uk/dp/B003LZQGN6?tag=stewraw25-21',
+    amazonAsin: 'B003LZQGN6',
+    linkNote: "Mack's Pillow Soft, 6-pair pack, ASIN B003LZQGN6. £7.95 and in stock on Amazon UK on 28 November 2026. Sold by Ana Wiz Ltd. The title says 6 pairs and the net content field says 12 pair.",
+    image: '/images/mattress.jpg',
+    imageAlt: "A made bed. This is not a photograph of Mack's earplugs.",
+    inStock: true,
+  },
   // Supplements
   {
     id: 's1',
@@ -1010,4 +1127,5 @@ export const categoryLabels: Record<Product['category'], string> = {
   'supplements': 'Supplements & Routines',
   'bedding': 'Eight Sleep Accessories',
   'sleep-masks': 'Sleep Masks',
+  'earplugs': 'Earplugs',
 };
