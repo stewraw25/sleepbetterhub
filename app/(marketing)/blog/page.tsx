@@ -6,7 +6,7 @@ import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
   title: 'UK Sleep Guides',
-  description: 'UK guides on sleep masks, mouth tape, snoring, side-sleeper pillows, and duvet tog. Prices are from the listings. This site does not lab-test products.',
+  description: 'UK guides on earplugs, sleep masks, mouth tape, snoring, side-sleeper pillows, and duvet tog. Prices are from the listings. This site does not lab-test products.',
   path: '/blog',
 });
 
@@ -17,7 +17,7 @@ export default function BlogIndex() {
     <div className="container py-12">
       <div className="max-w-2xl">
         <h1 className="text-4xl font-semibold tracking-tighter">UK sleep guides</h1>
-        <p className="mt-2 text-muted-foreground">Guides on sleep masks, mouth tape, snoring, side-sleeper pillows, and duvet tog. Prices are from the listings. This site does not lab-test products.</p>
+        <p className="mt-2 text-muted-foreground">Guides on earplugs, sleep masks, mouth tape, snoring, side-sleeper pillows, and duvet tog. Prices are from the listings. This site does not lab-test products.</p>
       </div>
 
       <div className="mt-10 grid md:grid-cols-2 gap-6">
@@ -37,7 +37,7 @@ export default function BlogIndex() {
                   <span>•</span>
                   <span>{post.readTime}</span>
                   <span>•</span>
-                  <span>{new Date(post.date).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })}</span>
+                  <span>{new Date(post.date).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })}</span>
                 </div>
                 <h2 className="mt-2 text-2xl font-semibold tracking-tight group-hover:text-primary transition line-clamp-2">{post.title}</h2>
                 <p className="mt-3 text-muted-foreground line-clamp-3">{post.excerpt}</p>

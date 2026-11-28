@@ -26,6 +26,7 @@ export default function SleepMasksCategory() {
           Start with <Link href="/blog/best-sleep-mask-uk" className="text-primary underline underline-offset-2">how to choose a sleep mask in the UK</Link> if you want the general chooser.
           Use <Link href="/blog/best-sleep-mask-for-side-sleepers" className="text-primary underline underline-offset-2">best sleep mask for side sleepers</Link> if the question is light at the nose, or a cup digging into the temple.
           Pillow height is a different problem: <Link href="/blog/best-pillow-for-side-sleepers" className="text-primary underline underline-offset-2">best pillow for side sleepers</Link>.
+          Noise is another: <Link href="/blog/best-earplugs-for-side-sleepers" className="text-primary underline underline-offset-2">best earplugs for side sleepers</Link>.
         </p>
       </div>
 

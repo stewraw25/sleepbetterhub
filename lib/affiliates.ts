@@ -55,6 +55,29 @@ function getAmazonUrl(asin: string): string {
   return `https://${AMAZON_DOMAIN}/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ogi&th=1`;
 }
 
+/**
+ * Every Amazon destination uses the UK store and the site's Associates tag.
+ * A -21 tag is not credited on amazon.com. Brand sites are left unchanged.
+ */
+export function withAmazonTag(url: string): string {
+  let parsed: URL;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return url;
+  }
+  const host = parsed.hostname.toLowerCase();
+  if (!host.includes('amazon.')) return url;
+  if (host === 'amazon.com' || host.endsWith('.amazon.com')) {
+    parsed.protocol = 'https:';
+    parsed.hostname = AMAZON_DOMAIN;
+  }
+  if (parsed.searchParams.get('tag') !== AMAZON_TAG) {
+    parsed.searchParams.set('tag', AMAZON_TAG);
+  }
+  return parsed.toString();
+}
+
 const AFFILIATE_OVERRIDES: Record<string, string> = {
   // Per-product full URL overrides (highest priority)
   // Mouth Tape
@@ -95,15 +118,15 @@ const AFFILIATE_OVERRIDES: Record<string, string> = {
  */
 export function getAffiliateUrl(slug: string): string {
   const override = AFFILIATE_OVERRIDES[slug];
-  if (override) return override;
+  if (override) return withAmazonTag(override);
 
   const product = getProductBySlug(slug);
 
   if (product?.amazonAsin) {
-    return getAmazonUrl(product.amazonAsin);
+    return withAmazonTag(getAmazonUrl(product.amazonAsin));
   }
 
-  return product?.affiliateLink || '#';
+  return withAmazonTag(product?.affiliateLink || '#');
 }
 
 /**

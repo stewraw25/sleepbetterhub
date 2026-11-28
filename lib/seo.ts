@@ -14,6 +14,16 @@ type PageMetaInput = {
 const TITLE_SUFFIX = ' | SleepBetterHub';
 const TITLE_LIMIT = 60;
 
+/** Cut a meta description on a word boundary so Google does not inherit a mid-word snippet. */
+export function clipDescription(text: string, limit = 160): string {
+  const clean = text.replace(/\s+/g, ' ').trim();
+  if (clean.length <= limit) return clean;
+  const cut = clean.slice(0, limit - 1);
+  const space = cut.lastIndexOf(' ');
+  const base = (space > 90 ? cut.slice(0, space) : cut).replace(/[.,;:–—-]+$/, '').trim();
+  return `${base}…`;
+}
+
 /** Keep the rendered `<title>` (including the layout suffix) within a sensible length. */
 export function fitTitle(title: string): string {
   if (title.length + TITLE_SUFFIX.length <= TITLE_LIMIT) return title;
@@ -36,10 +46,11 @@ export function pageMeta({
   const url = `${site}${path === '/' ? '' : path}`;
   const visibleTitle = absoluteTitle ? title : fitTitle(title);
   const imageAlt = visibleTitle;
+  const visibleDescription = clipDescription(description);
 
   return {
     title: absoluteTitle ? { absolute: visibleTitle } : visibleTitle,
-    description,
+    description: visibleDescription,
     alternates: {
       canonical: url,
       languages: {
@@ -49,7 +60,7 @@ export function pageMeta({
     },
     openGraph: {
       title: visibleTitle,
-      description,
+      description: visibleDescription,
       url,
       siteName: SITE_NAME,
       type,
@@ -59,7 +70,7 @@ export function pageMeta({
     twitter: {
       card: 'summary_large_image',
       title: visibleTitle,
-      description,
+      description: visibleDescription,
       images: [image],
     },
   };

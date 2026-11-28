@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props) {
   const description = post.seoDescription || post.excerpt;
   return pageMeta({
     title: post.seoTitle || post.title,
-    description: description.length > 160 ? `${description.slice(0, 157)}...` : description,
+    description,
     path: `/blog/${post.slug}`,
     image: post.image,
     type: 'article',

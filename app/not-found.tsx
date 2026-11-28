@@ -17,6 +17,8 @@ export default function NotFound() {
         <li><Link href="/" className="underline underline-offset-2">Home</Link></li>
         <li><Link href="/mouth-tape" className="underline underline-offset-2">Mouth tape comparison</Link></li>
         <li><Link href="/blog/what-tog-duvet" className="underline underline-offset-2">What tog duvet do I need</Link></li>
+        <li><Link href="/blog/best-earplugs-for-side-sleepers" className="underline underline-offset-2">Best earplugs for side sleepers</Link></li>
+        <li><Link href="/blog/best-sleep-mask-for-side-sleepers" className="underline underline-offset-2">Best sleep mask for side sleepers</Link></li>
         <li><Link href="/blog/best-pillow-for-side-sleepers" className="underline underline-offset-2">Best pillow for side sleepers</Link></li>
         <li><Link href="/blog/mouth-tape-vs-nasal-strips-for-snoring" className="underline underline-offset-2">Mouth tape vs nasal strips for snoring</Link></li>
         <li><Link href="/blog" className="underline underline-offset-2">All guides</Link></li>

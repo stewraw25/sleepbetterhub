@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/categories/mattresses', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/categories/bedding', priority: 0.65, changeFrequency: 'monthly' as const },
     { path: '/categories/sleep-masks', priority: 0.75, changeFrequency: 'weekly' as const },
+    { path: '/categories/earplugs', priority: 0.75, changeFrequency: 'weekly' as const },
     { path: '/guides/eight-sleep-f1', priority: 0.55, changeFrequency: 'monthly' as const },
   ].map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
@@ -39,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.updated || post.date),
     changeFrequency: 'monthly',
-    priority: post.slug === 'mouth-tape-vs-nasal-strips-for-snoring' || post.slug === 'best-pillow-for-side-sleepers' || post.slug === 'what-tog-duvet' || post.slug === 'best-sleep-mask-for-side-sleepers' || post.slug === 'best-sleep-mask-uk' ? 0.9 : 0.7,
+    priority: post.slug === 'mouth-tape-vs-nasal-strips-for-snoring' || post.slug === 'best-pillow-for-side-sleepers' || post.slug === 'what-tog-duvet' || post.slug === 'best-sleep-mask-for-side-sleepers' || post.slug === 'best-sleep-mask-uk' || post.slug === 'best-earplugs-for-side-sleepers' ? 0.9 : 0.7,
   }));
 
   return [...staticPages, ...productPages, ...blogPages];
